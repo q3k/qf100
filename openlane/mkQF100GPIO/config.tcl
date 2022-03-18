@@ -18,31 +18,28 @@ set ::env(STD_CELL_LIBRARY) "sky130_fd_sc_hd"
 
 set script_dir [file dirname [file normalize [info script]]]
 
-set ::env(DESIGN_NAME) mkQF100Fabric
+set ::env(DESIGN_NAME) mkQF100GPIO
 
 set ::env(VERILOG_FILES) "\
 	$::env(CARAVEL_ROOT)/verilog/rtl/defines.v \
-	$script_dir/../../verilog/rtl/mkQF100Fabric.v"
+	$script_dir/../../verilog/rtl/mkQF100GPIO.v"
 
 set ::env(DESIGN_IS_CORE) 0
 
 set ::env(CLOCK_PORT) "CLK"
 set ::env(CLOCK_NET) "CLK"
-set ::env(CLOCK_PERIOD) "20"
-
-#set ::env(FP_SIZING) absolute
-#set ::env(DIE_AREA) "0 0 500 500"
+set ::env(CLOCK_PERIOD) "10"
 
 set ::env(FP_SIZING) relative
-set ::env(FP_CORE_UTIL) "30"
+set ::env(FP_CORE_UTIL) "40"
 
 set ::env(FP_PIN_ORDER_CFG) $script_dir/pin_order.cfg
 
 set ::env(PL_BASIC_PLACEMENT) 0
-set ::env(PL_TARGET_DENSITY) 0.35
+set ::env(PL_TARGET_DENSITY) 0.45
 #set ::env(PL_ROUTABILITY_DRIVEN) 1
 #set ::env(PL_SKIP_INITIAL_PLACEMENT) 1
-set ::env(SYNTH_STRATEGY) "DELAY 0"
+#set ::env(SYNTH_STRATEGY) "DELAY 1"
 
 # Maximum layer used for routing is metal 4.
 # This is because this macro will be inserted in a top level (user_project_wrapper) 
@@ -57,7 +54,7 @@ set ::env(RT_MAX_LAYER) {met4}
 set ::env(VDD_NETS) [list {VPWR}]
 set ::env(GND_NETS) [list {VGND}]
 
-set ::env(DIODE_INSERTION_STRATEGY) 2 
+#set ::env(DIODE_INSERTION_STRATEGY) 2 
 #set ::env(GLB_RT_MAX_DIODE_INS_ITERS) 2
 # If you're going to use multiple power domains, then disable cvc run.
 set ::env(RUN_CVC) 1

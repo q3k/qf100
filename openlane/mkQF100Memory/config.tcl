@@ -34,12 +34,12 @@ set ::env(CLOCK_PERIOD) "30"
 #set ::env(DIE_AREA) "0 0 600 300"
 
 set ::env(FP_SIZING) relative
-set ::env(FP_CORE_UTIL) "30"
+set ::env(FP_CORE_UTIL) "25"
 
 set ::env(FP_PIN_ORDER_CFG) $script_dir/pin_order.cfg
 
 set ::env(PL_BASIC_PLACEMENT) 0
-set ::env(PL_TARGET_DENSITY) 0.35
+set ::env(PL_TARGET_DENSITY) 0.30
 set ::env(PL_ROUTABILITY_DRIVEN) 1
 #set ::env(PL_SKIP_INITIAL_PLACEMENT) 1
 #set ::env(SYNTH_STRATEGY) "DELAY 0"

@@ -13,7 +13,7 @@ module mkQF100SPI(
     inout VPWR;
     inout VGND;
 `endif
-  reg \$auto$verilog_backend.cc:2083:dump_module$204  = 0;
+  reg \$auto$verilog_backend.cc:2083:dump_module$205  = 0;
   (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:710.3-722.6" *)
   reg [8:0] _000_;
   (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:726.3-792.6" *)
@@ -110,350 +110,352 @@ module mkQF100SPI(
   wire _046_;
   (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:328.7-328.30" *)
   wire _047_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:328.7-328.51" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:328.7-328.47" *)
   wire _048_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:328.7-329.35" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:328.7-328.68" *)
   wire _049_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:333.7-333.30" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:328.7-329.35" *)
   wire _050_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:333.7-333.58" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:333.7-333.30" *)
   wire _051_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:337.7-338.25" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:333.7-333.58" *)
   wire _052_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:337.7-339.63" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:337.7-338.25" *)
   wire _053_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:337.7-340.34" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:337.7-339.63" *)
   wire _054_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:344.7-344.30" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:337.7-340.34" *)
   wire _055_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:344.7-344.53" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:344.7-344.30" *)
   wire _056_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:344.7-345.20" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:344.7-344.53" *)
   wire _057_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:344.7-346.34" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:344.7-345.20" *)
   wire _058_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:350.7-350.62" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:344.7-346.34" *)
   wire _059_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:350.7-355.20" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:350.7-350.62" *)
   wire _060_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:359.7-360.25" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:350.7-355.20" *)
   wire _061_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:359.7-361.64" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:359.7-360.25" *)
   wire _062_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:365.7-365.30" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:359.7-361.64" *)
   wire _063_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:365.7-365.52" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:365.7-365.30" *)
   wire _064_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:365.7-366.25" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:365.7-365.52" *)
   wire _065_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:370.7-370.69" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:365.7-366.25" *)
   wire _066_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:374.7-375.34" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:370.7-370.69" *)
   wire _067_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:374.7-376.29" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:374.7-375.34" *)
   wire _068_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:380.7-380.60" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:374.7-376.29" *)
   wire _069_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:382.7-383.51" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:380.7-380.60" *)
   wire _070_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:382.7-384.32" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:382.7-383.51" *)
   wire _071_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:382.7-385.16" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:382.7-384.32" *)
   wire _072_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:382.7-386.17" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:382.7-385.16" *)
   wire _073_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:388.7-388.47" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:382.7-386.17" *)
   wire _074_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:388.7-388.61" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:388.7-388.47" *)
   wire _075_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:388.7-389.25" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:388.7-388.61" *)
   wire _076_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:391.7-392.51" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:388.7-389.25" *)
   wire _077_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:405.7-406.38" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:391.7-392.51" *)
   wire _078_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:433.7-433.30" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:405.7-406.38" *)
   wire _079_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:433.7-433.58" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:433.7-433.30" *)
   wire _080_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:440.7-440.30" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:433.7-433.58" *)
   wire _081_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:440.7-441.64" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:440.7-440.30" *)
   wire _082_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:452.7-452.33" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:440.7-441.64" *)
   wire _083_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:452.7-454.41" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:452.7-452.33" *)
   wire _084_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:479.7-481.32" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:452.7-454.41" *)
   wire _085_;
   (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:479.7-480.44" *)
   wire _086_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:498.7-499.51" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:479.7-481.32" *)
   wire _087_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:498.7-500.33" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:498.7-499.51" *)
   wire _088_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:504.7-504.66" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:498.7-500.33" *)
   wire _089_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:527.7-528.34" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:504.7-504.66" *)
   wire _090_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:527.7-529.29" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:527.7-528.34" *)
   wire _091_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:546.7-546.37" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:527.7-529.29" *)
   wire _092_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:546.7-546.51" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:546.7-546.37" *)
   wire _093_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:546.7-547.24" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:546.7-546.51" *)
   wire _094_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:555.7-555.60" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:546.7-547.24" *)
   wire _095_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:556.7-557.51" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:555.7-555.60" *)
   wire _096_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:556.7-558.32" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:556.7-557.51" *)
   wire _097_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:567.7-568.51" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:556.7-558.32" *)
   wire _098_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:567.7-569.32" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:567.7-568.51" *)
   wire _099_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:567.7-570.16" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:567.7-569.32" *)
   wire _100_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:567.7-571.17" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:567.7-570.16" *)
   wire _101_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:597.7-597.60" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:567.7-571.17" *)
   wire _102_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:598.7-598.47" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:597.7-597.60" *)
   wire _103_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:598.7-598.61" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:598.7-598.47" *)
   wire _104_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:598.7-599.25" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:598.7-598.61" *)
   wire _105_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:604.7-605.51" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:598.7-599.25" *)
   wire _106_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:606.7-606.60" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:604.7-605.51" *)
   wire _107_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:606.7-607.15" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:606.7-606.60" *)
   wire _108_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:673.4-674.30" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:606.7-607.15" *)
   wire _109_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:697.7-697.37" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:673.4-674.30" *)
   wire _110_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:697.7-697.51" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:697.7-697.37" *)
   wire _111_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:697.7-698.24" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:697.7-697.51" *)
   wire _112_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:700.7-700.30" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:697.7-698.24" *)
   wire _113_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:700.7-700.51" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:700.7-700.30" *)
   wire _114_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:700.7-701.36" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:700.7-700.51" *)
   wire _115_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:314.8-314.52" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:700.7-701.36" *)
   wire _116_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:315.8-315.40" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:314.8-314.52" *)
   wire _117_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:333.35-333.44" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:315.8-315.40" *)
   wire _118_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:340.7-340.34" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:333.35-333.44" *)
   wire _119_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:344.34-344.53" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:340.7-340.34" *)
   wire _120_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:346.7-346.34" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:344.34-344.53" *)
   wire _121_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:350.36-350.62" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:346.7-346.34" *)
   wire _122_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:352.3-352.29" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:350.36-350.62" *)
   wire _123_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:352.33-352.54" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:352.3-352.29" *)
   wire _124_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:355.3-355.19" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:352.33-352.54" *)
   wire _125_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:361.7-361.64" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:355.3-355.19" *)
   wire _126_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:366.7-366.25" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:361.7-361.64" *)
   wire _127_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:374.7-374.45" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:366.7-366.25" *)
   wire _128_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:376.7-376.29" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:374.7-374.45" *)
   wire _129_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:380.36-380.45" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:376.7-376.29" *)
   wire _130_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:380.49-380.59" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:380.36-380.45" *)
   wire _131_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:389.7-389.25" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:380.49-380.59" *)
   wire _132_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:415.8-415.52" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:389.7-389.25" *)
   wire _133_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:416.8-416.40" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:415.8-415.52" *)
   wire _134_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:433.35-433.44" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:416.8-416.40" *)
   wire _135_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:453.8-453.52" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:433.35-433.44" *)
   wire _136_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:454.8-454.40" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:453.8-453.52" *)
   wire _137_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:500.7-500.33" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:454.8-454.40" *)
   wire _138_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:504.7-504.35" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:500.7-500.33" *)
   wire _139_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:524.7-524.51" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:504.7-504.35" *)
   wire _140_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:527.7-527.45" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:524.7-524.51" *)
   wire _141_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:529.7-529.29" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:527.7-527.45" *)
   wire _142_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:555.36-555.45" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:529.7-529.29" *)
   wire _143_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:555.49-555.59" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:555.36-555.45" *)
   wire _144_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:597.36-597.45" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:555.49-555.59" *)
   wire _145_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:597.49-597.59" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:597.36-597.45" *)
   wire _146_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:599.7-599.25" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:597.49-597.59" *)
   wire _147_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:602.29-602.60" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:599.7-599.25" *)
   wire _148_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:606.36-606.45" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:602.29-602.60" *)
   wire _149_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:606.49-606.59" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:606.36-606.45" *)
   wire _150_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:659.11-659.37" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:606.49-606.59" *)
   wire _151_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:674.4-674.30" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:659.11-659.37" *)
   wire _152_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:688.8-688.18" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:674.4-674.30" *)
   wire _153_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:688.22-688.33" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:688.8-688.18" *)
   wire _154_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:708.21-708.35" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:688.22-688.33" *)
   wire _155_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:314.8-315.40" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:708.21-708.35" *)
   wire _156_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:333.35-333.57" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:314.8-315.40" *)
   wire _157_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:352.3-352.54" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:333.35-333.57" *)
   wire _158_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:353.3-354.28" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:352.3-352.54" *)
   wire _159_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:353.3-355.19" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:353.3-354.28" *)
   wire _160_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:378.7-378.61" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:353.3-355.19" *)
   wire _161_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:380.36-380.59" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:378.7-378.61" *)
   wire _162_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:415.8-416.40" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:380.36-380.59" *)
   wire _163_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:433.35-433.57" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:415.8-416.40" *)
   wire _164_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:453.8-454.40" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:433.35-433.57" *)
   wire _165_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:502.7-502.57" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:453.8-454.40" *)
   wire _166_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:526.7-529.29" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:502.7-502.57" *)
   wire _167_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:545.7-545.61" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:526.7-529.29" *)
   wire _168_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:545.7-547.24" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:545.7-545.61" *)
   wire _169_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:555.36-555.59" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:545.7-547.24" *)
   wire _170_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:555.7-558.32" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:555.36-555.59" *)
   wire _171_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:567.7-572.37" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:555.7-558.32" *)
   wire _172_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:597.36-597.59" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:567.7-572.37" *)
   wire _173_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:597.7-599.25" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:597.36-597.59" *)
   wire _174_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:604.7-607.15" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:597.7-599.25" *)
   wire _175_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:606.36-606.59" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:604.7-607.15" *)
   wire _176_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:623.7-623.59" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:606.36-606.59" *)
   wire _177_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:623.7-624.33" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:623.7-623.59" *)
   wire _178_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:632.7-633.33" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:623.7-624.33" *)
   wire _179_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:641.7-641.65" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:632.7-633.33" *)
   wire _180_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:672.11-674.30" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:641.7-641.65" *)
   wire _181_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:688.8-688.33" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:672.11-674.30" *)
   wire _182_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:705.32-705.60" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:688.8-688.33" *)
   wire _183_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:353.3-353.47" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:705.32-705.60" *)
   wire _184_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:546.7-546.24" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:353.3-353.47" *)
   wire _185_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:704.25-704.34" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:546.7-546.24" *)
   wire _186_;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:704.25-704.34" *)
+  wire _187_;
   (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:709.21-709.30" *)
-  wire [15:0] _187_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:399.9-399.34" *)
   wire [15:0] _188_;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:399.9-399.34" *)
+  wire [15:0] _189_;
   (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:0.0-0.0" *)
-  wire _189_;
+  wire _190_;
   (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:707.21-707.48" *)
-  wire [15:0] _190_;
+  wire [15:0] _191_;
   (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:394.7-394.70" *)
-  wire [8:0] _191_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:395.41-395.57" *)
   wire [8:0] _192_;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:395.41-395.57" *)
+  wire [8:0] _193_;
   (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:703.7-703.63" *)
-  wire [3:0] _193_;
+  wire [3:0] _194_;
   (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:314.7-319.11" *)
-  wire [31:0] _194_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:317.10-319.10" *)
   wire [31:0] _195_;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:317.10-319.10" *)
+  wire [31:0] _196_;
   (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:351.8-355.19" *)
-  wire _196_;
+  wire _197_;
   (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:398.7-400.34" *)
-  wire [15:0] _197_;
+  wire [15:0] _198_;
   (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:415.7-420.11" *)
-  wire [31:0] _198_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:418.10-420.10" *)
   wire [31:0] _199_;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:418.10-420.10" *)
+  wire [31:0] _200_;
   (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:458.7-460.30" *)
-  wire [69:0] _200_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:464.7-466.42" *)
   wire [69:0] _201_;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:464.7-466.42" *)
+  wire [69:0] _202_;
   (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:471.7-473.30" *)
-  wire [33:0] _202_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:475.7-477.42" *)
   wire [33:0] _203_;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:475.7-477.42" *)
+  wire [33:0] _204_;
   (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:490.7-492.25" *)
-  wire [32:0] _204_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:494.7-496.37" *)
   wire [32:0] _205_;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:494.7-496.37" *)
+  wire [32:0] _206_;
   (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:541.7-543.37" *)
-  wire [8:0] _206_;
+  wire [8:0] _207_;
   (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:551.7-553.53" *)
-  wire [15:0] _207_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:628.7-630.14" *)
   wire [15:0] _208_;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:628.7-630.14" *)
+  wire [15:0] _209_;
   (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:637.7-639.42" *)
-  wire [16:0] _209_;
+  wire [16:0] _210_;
   (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:649.7-656.28" *)
-  wire [31:0] _210_;
+  wire [31:0] _211_;
   (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:658.7-675.63" *)
-  wire [32:0] _211_;
+  wire [32:0] _212_;
   (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:676.47-676.70" *)
-  wire [3:0] _212_;
+  wire [3:0] _213_;
   (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:678.7-680.17" *)
-  wire _213_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:679.10-679.44" *)
   wire _214_;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:679.10-679.44" *)
+  wire _215_;
   (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:682.7-684.13" *)
-  wire [3:0] _215_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:683.10-683.57" *)
   wire [3:0] _216_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:688.7-690.66" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:683.10-683.57" *)
   wire [3:0] _217_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:706.21-706.67" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:688.7-690.66" *)
   wire [3:0] _218_;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:706.21-706.67" *)
+  wire [3:0] _219_;
   (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:705.21-705.60" *)
-  wire _219_;
+  wire _220_;
   (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:68.10-68.13" *)
   input CLK;
   wire CLK;
@@ -824,181 +826,182 @@ module mkQF100SPI(
   assign _045_ = res_spien && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:323.7-323.30" *) res_mstmod;
   assign _046_ = _045_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:323.7-324.64" *) IF_res_sendingBit_5_BIT_4_6_THEN_IF_res_ckpl_6_ETC___d194;
   assign _047_ = res_spien && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:328.7-328.30" *) res_mstmod;
-  assign _048_ = _047_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:328.7-328.51" *) res_sendingBit[4];
-  assign _049_ = _048_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:328.7-329.35" *) _189_;
-  assign _050_ = res_spien && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:333.7-333.30" *) res_mstmod;
-  assign _051_ = _050_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:333.7-333.58" *) _157_;
-  assign _052_ = res_clock_8_EQ_0_9_AND_res_spien_1_AND_res_mst_ETC___d40 && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:337.7-338.25" *) res_shiftregTx[16];
-  assign _053_ = _052_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:337.7-339.63" *) IF_res_sendingBit_5_BIT_4_6_THEN_IF_res_sendin_ETC___d49;
-  assign _054_ = _053_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:337.7-340.34" *) _119_;
-  assign _055_ = res_spien && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:344.7-344.30" *) res_mstmod;
-  assign _056_ = _055_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:344.7-344.53" *) _120_;
-  assign _057_ = _056_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:344.7-345.20" *) res_dataValid;
-  assign _058_ = _057_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:344.7-346.34" *) _121_;
-  assign _059_ = res_bus_inner_fReq_rv[69] && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:350.7-350.62" *) _122_;
-  assign _060_ = _059_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:350.7-355.20" *) _196_;
-  assign _061_ = res_clock_8_EQ_0_9_AND_res_spien_1_AND_res_mst_ETC___d40 && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:359.7-360.25" *) res_shiftregTx[16];
-  assign _062_ = _061_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:359.7-361.64" *) _126_;
-  assign _063_ = res_spien && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:365.7-365.30" *) res_mstmod;
-  assign _064_ = _063_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:365.7-365.52" *) res_shiftregTx[16];
-  assign _065_ = _064_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:365.7-366.25" *) _127_;
-  assign _066_ = \res_bus_inner_fRes_rv$port1__read [33] && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:370.7-370.69" *) res_bus_inner_pending;
-  assign _067_ = _128_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:374.7-375.34" *) \res_bus_inner_incoming$whas ;
-  assign _068_ = _067_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:374.7-376.29" *) _129_;
-  assign _069_ = WILL_FIRE_RL_res_lastBit && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:380.7-380.60" *) _162_;
-  assign _070_ = WILL_FIRE_RL_res_wbRequest && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:382.7-383.51" *) _029_;
-  assign _071_ = _070_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:382.7-384.32" *) res_bus_inner_fReq_rv[36];
-  assign _072_ = _071_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:382.7-385.16" *) res_spien;
-  assign _073_ = _072_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:382.7-386.17" *) res_mstmod;
-  assign _074_ = \res_dataRead_rv$port1__read  && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:388.7-388.47" *) res_spien;
-  assign _075_ = _074_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:388.7-388.61" *) res_mstmod;
-  assign _076_ = _075_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:388.7-389.25" *) _132_;
-  assign _077_ = WILL_FIRE_RL_res_wbRequest && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:391.7-392.51" *) _030_;
-  assign _078_ = WILL_FIRE_RL_res_bus_inner_process_outgoing && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:405.7-406.38" *) \res_bus_inner_outgoing$wget [33];
-  assign _079_ = res_spien && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:433.7-433.30" *) res_mstmod;
-  assign _080_ = _079_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:433.7-433.58" *) _164_;
-  assign _081_ = res_spien && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:440.7-440.30" *) res_mstmod;
-  assign _082_ = _081_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:440.7-441.64" *) IF_res_sendingBit_5_BIT_4_6_THEN_IF_res_ckpl_6_ETC___d194;
-  assign _083_ = slave_cyc_i && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:452.7-452.33" *) slave_stb_i;
-  assign _084_ = _083_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:452.7-454.41" *) _165_;
-  assign _085_ = _086_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:479.7-481.32" *) res_bus_inner_fReq_rv[36];
+  assign _048_ = _047_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:328.7-328.47" *) res_dataValid;
+  assign _049_ = _048_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:328.7-328.68" *) res_sendingBit[4];
+  assign _050_ = _049_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:328.7-329.35" *) _190_;
+  assign _051_ = res_spien && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:333.7-333.30" *) res_mstmod;
+  assign _052_ = _051_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:333.7-333.58" *) _158_;
+  assign _053_ = res_clock_8_EQ_0_9_AND_res_spien_1_AND_res_mst_ETC___d40 && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:337.7-338.25" *) res_shiftregTx[16];
+  assign _054_ = _053_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:337.7-339.63" *) IF_res_sendingBit_5_BIT_4_6_THEN_IF_res_sendin_ETC___d49;
+  assign _055_ = _054_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:337.7-340.34" *) _120_;
+  assign _056_ = res_spien && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:344.7-344.30" *) res_mstmod;
+  assign _057_ = _056_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:344.7-344.53" *) _121_;
+  assign _058_ = _057_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:344.7-345.20" *) res_dataValid;
+  assign _059_ = _058_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:344.7-346.34" *) _122_;
+  assign _060_ = res_bus_inner_fReq_rv[69] && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:350.7-350.62" *) _123_;
+  assign _061_ = _060_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:350.7-355.20" *) _197_;
+  assign _062_ = res_clock_8_EQ_0_9_AND_res_spien_1_AND_res_mst_ETC___d40 && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:359.7-360.25" *) res_shiftregTx[16];
+  assign _063_ = _062_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:359.7-361.64" *) _127_;
+  assign _064_ = res_spien && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:365.7-365.30" *) res_mstmod;
+  assign _065_ = _064_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:365.7-365.52" *) res_shiftregTx[16];
+  assign _066_ = _065_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:365.7-366.25" *) _128_;
+  assign _067_ = \res_bus_inner_fRes_rv$port1__read [33] && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:370.7-370.69" *) res_bus_inner_pending;
+  assign _068_ = _129_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:374.7-375.34" *) \res_bus_inner_incoming$whas ;
+  assign _069_ = _068_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:374.7-376.29" *) _130_;
+  assign _070_ = WILL_FIRE_RL_res_lastBit && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:380.7-380.60" *) _163_;
+  assign _071_ = WILL_FIRE_RL_res_wbRequest && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:382.7-383.51" *) _029_;
+  assign _072_ = _071_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:382.7-384.32" *) res_bus_inner_fReq_rv[36];
+  assign _073_ = _072_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:382.7-385.16" *) res_spien;
+  assign _074_ = _073_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:382.7-386.17" *) res_mstmod;
+  assign _075_ = \res_dataRead_rv$port1__read  && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:388.7-388.47" *) res_spien;
+  assign _076_ = _075_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:388.7-388.61" *) res_mstmod;
+  assign _077_ = _076_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:388.7-389.25" *) _133_;
+  assign _078_ = WILL_FIRE_RL_res_wbRequest && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:391.7-392.51" *) _030_;
+  assign _079_ = WILL_FIRE_RL_res_bus_inner_process_outgoing && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:405.7-406.38" *) \res_bus_inner_outgoing$wget [33];
+  assign _080_ = res_spien && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:433.7-433.30" *) res_mstmod;
+  assign _081_ = _080_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:433.7-433.58" *) _165_;
+  assign _082_ = res_spien && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:440.7-440.30" *) res_mstmod;
+  assign _083_ = _082_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:440.7-441.64" *) IF_res_sendingBit_5_BIT_4_6_THEN_IF_res_ckpl_6_ETC___d194;
+  assign _084_ = slave_cyc_i && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:452.7-452.33" *) slave_stb_i;
+  assign _085_ = _084_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:452.7-454.41" *) _166_;
   assign _086_ = WILL_FIRE_RL_res_wbRequest && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:479.7-480.44" *) _031_;
-  assign _087_ = WILL_FIRE_RL_res_wbRequest && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:498.7-499.51" *) _032_;
-  assign _088_ = _087_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:498.7-500.33" *) _138_;
-  assign _089_ = _139_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:504.7-504.66" *) \res_dataRead_rv$port1__read ;
-  assign _090_ = _141_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:527.7-528.34" *) \res_bus_inner_incoming$whas ;
-  assign _091_ = _090_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:527.7-529.29" *) _142_;
-  assign _092_ = _185_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:546.7-546.37" *) res_spien;
-  assign _093_ = _092_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:546.7-546.51" *) res_mstmod;
-  assign _094_ = _093_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:546.7-547.24" *) res_sendingBit[4];
-  assign _095_ = WILL_FIRE_RL_res_lastBit && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:555.7-555.60" *) _170_;
-  assign _096_ = WILL_FIRE_RL_res_wbRequest && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:556.7-557.51" *) _033_;
-  assign _097_ = _096_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:556.7-558.32" *) res_bus_inner_fReq_rv[36];
-  assign _098_ = WILL_FIRE_RL_res_wbRequest && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:567.7-568.51" *) _034_;
-  assign _099_ = _098_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:567.7-569.32" *) res_bus_inner_fReq_rv[36];
-  assign _100_ = _099_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:567.7-570.16" *) res_spien;
-  assign _101_ = _100_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:567.7-571.17" *) res_mstmod;
-  assign _102_ = WILL_FIRE_RL_res_lastBit && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:597.7-597.60" *) _173_;
-  assign _103_ = \res_dataRead_rv$port1__read  && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:598.7-598.47" *) res_spien;
-  assign _104_ = _103_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:598.7-598.61" *) res_mstmod;
-  assign _105_ = _104_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:598.7-599.25" *) _147_;
-  assign _106_ = WILL_FIRE_RL_res_wbRequest && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:604.7-605.51" *) _035_;
-  assign _107_ = WILL_FIRE_RL_res_lastBit && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:606.7-606.60" *) _176_;
-  assign _108_ = _107_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:606.7-607.15" *) res_rbne;
-  assign _109_ = _039_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:673.4-674.30" *) _152_;
-  assign _110_ = _041_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:697.7-697.37" *) res_spien;
-  assign _111_ = _110_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:697.7-697.51" *) res_mstmod;
-  assign _112_ = _111_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:697.7-698.24" *) res_sendingBit[4];
-  assign _113_ = res_spien && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:700.7-700.30" *) res_mstmod;
-  assign _114_ = _113_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:700.7-700.51" *) res_sendingBit[4];
-  assign _115_ = _114_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:700.7-701.36" *) _042_;
-  assign _116_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:314.8-314.52" *) WILL_FIRE_RL_res_bus_inner_process_outgoing;
-  assign _117_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:315.8-315.40" *) \res_bus_inner_outgoing$wget [33];
-  assign _118_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:333.35-333.44" *) res_bden;
-  assign _119_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:340.7-340.34" *) WILL_FIRE_RL_res_wbRequest;
-  assign _120_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:344.34-344.53" *) res_shiftregTx[16];
-  assign _121_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:346.7-346.34" *) WILL_FIRE_RL_res_wbRequest;
-  assign _122_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:350.36-350.62" *) res_bus_inner_fRes_rv[33];
-  assign _123_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:352.3-352.29" *) res_bus_inner_fReq_rv[36];
-  assign _124_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:352.33-352.54" *) res_newConfig_rv[32];
-  assign _125_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:355.3-355.19" *) res_dataRead_rv;
-  assign _126_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:361.7-361.64" *) IF_res_sendingBit_5_BIT_4_6_THEN_IF_res_sendin_ETC___d49;
-  assign _127_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:366.7-366.25" *) res_sendingBit[4];
-  assign _128_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:374.7-374.45" *) \res_bus_inner_fReq_rv$port1__read [69];
-  assign _129_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:376.7-376.29" *) res_bus_inner_pending;
-  assign _130_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:380.36-380.45" *) res_bden;
-  assign _131_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:380.49-380.59" *) res_bdoen;
-  assign _132_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:389.7-389.25" *) res_sendingBit[4];
-  assign _133_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:415.8-415.52" *) WILL_FIRE_RL_res_bus_inner_process_outgoing;
-  assign _134_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:416.8-416.40" *) \res_bus_inner_outgoing$wget [33];
-  assign _135_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:433.35-433.44" *) res_bden;
-  assign _136_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:453.8-453.52" *) WILL_FIRE_RL_res_bus_inner_process_outgoing;
-  assign _137_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:454.8-454.40" *) \res_bus_inner_outgoing$wget [33];
-  assign _138_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:500.7-500.33" *) res_bus_inner_fReq_rv[36];
-  assign _139_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:504.7-504.35" *) \MUX_res_rbne$write_1__SEL_2 ;
-  assign _140_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:524.7-524.51" *) WILL_FIRE_RL_res_bus_inner_process_outgoing;
-  assign _141_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:527.7-527.45" *) \res_bus_inner_fReq_rv$port1__read [69];
-  assign _142_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:529.7-529.29" *) res_bus_inner_pending;
-  assign _143_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:555.36-555.45" *) res_bden;
-  assign _144_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:555.49-555.59" *) res_bdoen;
-  assign _145_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:597.36-597.45" *) res_bden;
-  assign _146_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:597.49-597.59" *) res_bdoen;
-  assign _147_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:599.7-599.25" *) res_sendingBit[4];
-  assign _148_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:602.29-602.60" *) \MUX_res_rxorerr$write_1__SEL_1 ;
-  assign _149_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:606.36-606.45" *) res_bden;
-  assign _150_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:606.49-606.59" *) res_bdoen;
-  assign _151_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:659.11-659.37" *) res_bus_inner_fReq_rv[36];
-  assign _152_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:674.4-674.30" *) res_bus_inner_fReq_rv[36];
-  assign _153_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:688.8-688.18" *) res_spien;
-  assign _154_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:688.22-688.33" *) res_mstmod;
-  assign _155_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:708.21-708.35" *) res_dataValid;
-  assign _156_ = _116_ || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:314.8-315.40" *) _117_;
-  assign _157_ = _118_ || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:333.35-333.57" *) res_bdoen;
-  assign _158_ = _123_ || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:352.3-352.54" *) _124_;
-  assign _159_ = _184_ || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:353.3-354.28" *) res_bus_inner_fReq_rv[36];
-  assign _160_ = _159_ || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:353.3-355.19" *) _125_;
-  assign _161_ = WILL_FIRE_RL_res_startSend || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:378.7-378.61" *) WILL_FIRE_RL_res_nextBit;
-  assign _162_ = _130_ || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:380.36-380.59" *) _131_;
-  assign _163_ = _133_ || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:415.8-416.40" *) _134_;
-  assign _164_ = _135_ || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:433.35-433.57" *) res_bdoen;
-  assign _165_ = _136_ || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:453.8-454.40" *) _137_;
-  assign _166_ = \res_dataRead_rv$EN_port0__write  || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:502.7-502.57" *) res_dataRead_rv;
-  assign _167_ = WILL_FIRE_RL_res_bus_inner_process_outgoing || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:526.7-529.29" *) _091_;
-  assign _168_ = WILL_FIRE_RL_res_startSend || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:545.7-545.61" *) WILL_FIRE_RL_res_nextBit;
-  assign _169_ = _168_ || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:545.7-547.24" *) _094_;
-  assign _170_ = _143_ || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:555.36-555.59" *) _144_;
-  assign _171_ = _095_ || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:555.7-558.32" *) _097_;
-  assign _172_ = _101_ || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:567.7-572.37" *) WILL_FIRE_RL_res_stuffTransmit;
-  assign _173_ = _145_ || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:597.36-597.59" *) _146_;
-  assign _174_ = _102_ || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:597.7-599.25" *) _105_;
-  assign _175_ = _106_ || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:604.7-607.15" *) _108_;
-  assign _176_ = _149_ || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:606.36-606.59" *) _150_;
-  assign _177_ = WILL_FIRE_RL_res_lastBit || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:623.7-623.59" *) WILL_FIRE_RL_res_nextBit;
-  assign _178_ = _177_ || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:623.7-624.33" *) WILL_FIRE_RL_res_startSend;
-  assign _179_ = res_spien_1_AND_res_mstmod_2_3_AND_res_sending_ETC___d97 || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:632.7-633.33" *) WILL_FIRE_RL_res_startSend;
-  assign _180_ = WILL_FIRE_RL_res_lastBit || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:641.7-641.65" *) WILL_FIRE_RL_res_stuffTransmit;
-  assign _181_ = _038_ || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:672.11-674.30" *) _109_;
-  assign _182_ = _153_ || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:688.8-688.33" *) _154_;
-  assign _183_ = res_clock < (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:705.32-705.60" *) halfClock__h2704;
-  assign _184_ = res_bus_inner_fReq_rv[68:37] != (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:353.3-353.47" *) 32'd12;
-  assign _185_ = res_clock != (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:546.7-546.24" *) 9'h000;
-  assign _186_ = ~ (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:704.25-704.34" *) v__h6037;
-  assign _187_ = ~ (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:709.21-709.30" *) x__h3737;
-  assign _188_ = res_shiftregRx | (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:399.9-399.34" *) x__h3737;
-  wire [15:0] _414_ = res_data;
-  assign _189_ = _414_[activeBitNo__h2708 +: 1];
-  assign _190_ = 16'h0001 << (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:707.21-707.48" *) activeBitNo__h2708;
-  assign _191_ = IF_res_psc_2_EQ_0_3_THEN_2_ELSE_IF_res_psc_2_E_ETC___d68 - (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:394.7-394.70" *) 9'h001;
-  assign _192_ = res_clock - (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:395.41-395.57" *) 9'h001;
-  assign _193_ = IF_res_ff16_7_THEN_15_ELSE_7___d48 - (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:703.7-703.63" *) res_sendingBit[3:0];
-  assign _194_ = _156_ ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:314.7-319.11" *) 32'd0 : _195_;
-  assign _195_ = \res_bus_inner_outgoing$wget [32] ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:317.10-319.10" *) \res_bus_inner_outgoing$wget [31:0] : 32'd0;
-  assign _196_ = _028_ ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:351.8-355.19" *) _158_ : _160_;
-  assign _197_ = spiMaster_miso ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:398.7-400.34" *) _188_ : _027_;
-  assign _198_ = _163_ ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:415.7-420.11" *) 32'd0 : _199_;
-  assign _199_ = \res_bus_inner_outgoing$wget [32] ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:418.10-420.10" *) \res_bus_inner_outgoing$wget [31:0] : 32'd0;
-  assign _200_ = WILL_FIRE_RL_res_wbRequest ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:458.7-460.30" *) 70'h0aaaaaaaaaaaaaaaaa : res_bus_inner_fReq_rv;
-  assign _201_ = \MUX_res_bus_inner_pending$write_1__SEL_2  ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:464.7-466.42" *) \res_bus_inner_fReq_rv$port1__write_1  : \res_bus_inner_fReq_rv$port1__read ;
-  assign _202_ = WILL_FIRE_RL_res_wbRequest ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:471.7-473.30" *) \res_bus_inner_fRes_rv$port0__write_1  : res_bus_inner_fRes_rv;
-  assign _203_ = WILL_FIRE_RL_res_bus_inner_process_outgoing ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:475.7-477.42" *) 34'h0aaaaaaaa : \res_bus_inner_fRes_rv$port1__read ;
-  assign _204_ = \res_newConfig_rv$EN_port0__write  ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:490.7-492.25" *) \res_newConfig_rv$port0__write_1  : res_newConfig_rv;
-  assign _205_ = \res_newConfig_rv$port1__read [32] ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:494.7-496.37" *) 33'h0aaaaaaaa : \res_newConfig_rv$port1__read ;
-  assign _206_ = \MUX_res_clock$write_1__SEL_1  ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:541.7-543.37" *) \MUX_res_clock$write_1__VAL_1  : \MUX_res_clock$write_1__VAL_2 ;
-  assign _207_ = \MUX_res_data$write_1__SEL_1  ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:551.7-553.53" *) res_shiftregRx : res_bus_inner_fReq_rv_BITS_35_TO_4__q1[15:0];
-  assign _208_ = res_spien_1_AND_res_mstmod_2_3_AND_res_sending_ETC___d97 ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:628.7-630.14" *) \MUX_res_shiftregRx$write_1__VAL_1  : 16'h0000;
-  assign _209_ = WILL_FIRE_RL_res_lastBit ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:637.7-639.42" *) 17'h0aaaa : \MUX_res_shiftregTx$write_1__VAL_2 ;
-  assign _210_ = _036_ ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:649.7-656.28" *) { 24'h000000, res_sendingBit[4], res_rxorerr, 4'h0, x__h5688, res_rbne } : { 16'h0000, res_data };
-  assign _211_ = _037_ ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:658.7-675.63" *) { _151_, 16'h0000, res_bden, res_bdoen, 2'h0, res_ff16, 3'h0, res_lf, res_spien, res_psc, res_mstmod, res_ckpl, res_ckph } : { _181_, IF_res_bus_inner_fReq_rv_port0__read__28_BITS__ETC___d185 };
-  assign _212_ = res_ff16 ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:676.47-676.70" *) 4'hf : 4'h7;
-  assign _213_ = res_sendingBit[4] ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:678.7-680.17" *) _214_ : res_ckpl;
-  assign _214_ = res_ckpl ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:679.10-679.44" *) v___1__h6039 : v__h6037;
-  assign _215_ = res_sendingBit[4] ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:682.7-684.13" *) _216_ : 4'h0;
-  assign _216_ = res_lf ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:683.10-683.57" *) res_sendingBit[3:0] : swapb___1__h3754;
-  assign _217_ = _182_ ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:688.7-690.66" *) 4'h0 : IF_res_sendingBit_5_BIT_4_6_THEN_IF_res_lf_03__ETC___d106;
-  assign _218_ = res_sendingBit[4] ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:706.21-706.67" *) res_sendingBit[3:0] : 4'h0;
-  assign _219_ = res_ckph ^ (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:705.21-705.60" *) _183_;
+  assign _087_ = _086_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:479.7-481.32" *) res_bus_inner_fReq_rv[36];
+  assign _088_ = WILL_FIRE_RL_res_wbRequest && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:498.7-499.51" *) _032_;
+  assign _089_ = _088_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:498.7-500.33" *) _139_;
+  assign _090_ = _140_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:504.7-504.66" *) \res_dataRead_rv$port1__read ;
+  assign _091_ = _142_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:527.7-528.34" *) \res_bus_inner_incoming$whas ;
+  assign _092_ = _091_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:527.7-529.29" *) _143_;
+  assign _093_ = _186_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:546.7-546.37" *) res_spien;
+  assign _094_ = _093_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:546.7-546.51" *) res_mstmod;
+  assign _095_ = _094_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:546.7-547.24" *) res_sendingBit[4];
+  assign _096_ = WILL_FIRE_RL_res_lastBit && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:555.7-555.60" *) _171_;
+  assign _097_ = WILL_FIRE_RL_res_wbRequest && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:556.7-557.51" *) _033_;
+  assign _098_ = _097_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:556.7-558.32" *) res_bus_inner_fReq_rv[36];
+  assign _099_ = WILL_FIRE_RL_res_wbRequest && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:567.7-568.51" *) _034_;
+  assign _100_ = _099_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:567.7-569.32" *) res_bus_inner_fReq_rv[36];
+  assign _101_ = _100_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:567.7-570.16" *) res_spien;
+  assign _102_ = _101_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:567.7-571.17" *) res_mstmod;
+  assign _103_ = WILL_FIRE_RL_res_lastBit && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:597.7-597.60" *) _174_;
+  assign _104_ = \res_dataRead_rv$port1__read  && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:598.7-598.47" *) res_spien;
+  assign _105_ = _104_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:598.7-598.61" *) res_mstmod;
+  assign _106_ = _105_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:598.7-599.25" *) _148_;
+  assign _107_ = WILL_FIRE_RL_res_wbRequest && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:604.7-605.51" *) _035_;
+  assign _108_ = WILL_FIRE_RL_res_lastBit && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:606.7-606.60" *) _177_;
+  assign _109_ = _108_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:606.7-607.15" *) res_rbne;
+  assign _110_ = _039_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:673.4-674.30" *) _153_;
+  assign _111_ = _041_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:697.7-697.37" *) res_spien;
+  assign _112_ = _111_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:697.7-697.51" *) res_mstmod;
+  assign _113_ = _112_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:697.7-698.24" *) res_sendingBit[4];
+  assign _114_ = res_spien && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:700.7-700.30" *) res_mstmod;
+  assign _115_ = _114_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:700.7-700.51" *) res_sendingBit[4];
+  assign _116_ = _115_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:700.7-701.36" *) _042_;
+  assign _117_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:314.8-314.52" *) WILL_FIRE_RL_res_bus_inner_process_outgoing;
+  assign _118_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:315.8-315.40" *) \res_bus_inner_outgoing$wget [33];
+  assign _119_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:333.35-333.44" *) res_bden;
+  assign _120_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:340.7-340.34" *) WILL_FIRE_RL_res_wbRequest;
+  assign _121_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:344.34-344.53" *) res_shiftregTx[16];
+  assign _122_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:346.7-346.34" *) WILL_FIRE_RL_res_wbRequest;
+  assign _123_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:350.36-350.62" *) res_bus_inner_fRes_rv[33];
+  assign _124_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:352.3-352.29" *) res_bus_inner_fReq_rv[36];
+  assign _125_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:352.33-352.54" *) res_newConfig_rv[32];
+  assign _126_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:355.3-355.19" *) res_dataRead_rv;
+  assign _127_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:361.7-361.64" *) IF_res_sendingBit_5_BIT_4_6_THEN_IF_res_sendin_ETC___d49;
+  assign _128_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:366.7-366.25" *) res_sendingBit[4];
+  assign _129_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:374.7-374.45" *) \res_bus_inner_fReq_rv$port1__read [69];
+  assign _130_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:376.7-376.29" *) res_bus_inner_pending;
+  assign _131_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:380.36-380.45" *) res_bden;
+  assign _132_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:380.49-380.59" *) res_bdoen;
+  assign _133_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:389.7-389.25" *) res_sendingBit[4];
+  assign _134_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:415.8-415.52" *) WILL_FIRE_RL_res_bus_inner_process_outgoing;
+  assign _135_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:416.8-416.40" *) \res_bus_inner_outgoing$wget [33];
+  assign _136_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:433.35-433.44" *) res_bden;
+  assign _137_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:453.8-453.52" *) WILL_FIRE_RL_res_bus_inner_process_outgoing;
+  assign _138_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:454.8-454.40" *) \res_bus_inner_outgoing$wget [33];
+  assign _139_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:500.7-500.33" *) res_bus_inner_fReq_rv[36];
+  assign _140_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:504.7-504.35" *) \MUX_res_rbne$write_1__SEL_2 ;
+  assign _141_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:524.7-524.51" *) WILL_FIRE_RL_res_bus_inner_process_outgoing;
+  assign _142_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:527.7-527.45" *) \res_bus_inner_fReq_rv$port1__read [69];
+  assign _143_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:529.7-529.29" *) res_bus_inner_pending;
+  assign _144_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:555.36-555.45" *) res_bden;
+  assign _145_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:555.49-555.59" *) res_bdoen;
+  assign _146_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:597.36-597.45" *) res_bden;
+  assign _147_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:597.49-597.59" *) res_bdoen;
+  assign _148_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:599.7-599.25" *) res_sendingBit[4];
+  assign _149_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:602.29-602.60" *) \MUX_res_rxorerr$write_1__SEL_1 ;
+  assign _150_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:606.36-606.45" *) res_bden;
+  assign _151_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:606.49-606.59" *) res_bdoen;
+  assign _152_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:659.11-659.37" *) res_bus_inner_fReq_rv[36];
+  assign _153_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:674.4-674.30" *) res_bus_inner_fReq_rv[36];
+  assign _154_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:688.8-688.18" *) res_spien;
+  assign _155_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:688.22-688.33" *) res_mstmod;
+  assign _156_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:708.21-708.35" *) res_dataValid;
+  assign _157_ = _117_ || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:314.8-315.40" *) _118_;
+  assign _158_ = _119_ || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:333.35-333.57" *) res_bdoen;
+  assign _159_ = _124_ || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:352.3-352.54" *) _125_;
+  assign _160_ = _185_ || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:353.3-354.28" *) res_bus_inner_fReq_rv[36];
+  assign _161_ = _160_ || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:353.3-355.19" *) _126_;
+  assign _162_ = WILL_FIRE_RL_res_startSend || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:378.7-378.61" *) WILL_FIRE_RL_res_nextBit;
+  assign _163_ = _131_ || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:380.36-380.59" *) _132_;
+  assign _164_ = _134_ || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:415.8-416.40" *) _135_;
+  assign _165_ = _136_ || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:433.35-433.57" *) res_bdoen;
+  assign _166_ = _137_ || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:453.8-454.40" *) _138_;
+  assign _167_ = \res_dataRead_rv$EN_port0__write  || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:502.7-502.57" *) res_dataRead_rv;
+  assign _168_ = WILL_FIRE_RL_res_bus_inner_process_outgoing || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:526.7-529.29" *) _092_;
+  assign _169_ = WILL_FIRE_RL_res_startSend || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:545.7-545.61" *) WILL_FIRE_RL_res_nextBit;
+  assign _170_ = _169_ || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:545.7-547.24" *) _095_;
+  assign _171_ = _144_ || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:555.36-555.59" *) _145_;
+  assign _172_ = _096_ || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:555.7-558.32" *) _098_;
+  assign _173_ = _102_ || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:567.7-572.37" *) WILL_FIRE_RL_res_stuffTransmit;
+  assign _174_ = _146_ || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:597.36-597.59" *) _147_;
+  assign _175_ = _103_ || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:597.7-599.25" *) _106_;
+  assign _176_ = _107_ || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:604.7-607.15" *) _109_;
+  assign _177_ = _150_ || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:606.36-606.59" *) _151_;
+  assign _178_ = WILL_FIRE_RL_res_lastBit || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:623.7-623.59" *) WILL_FIRE_RL_res_nextBit;
+  assign _179_ = _178_ || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:623.7-624.33" *) WILL_FIRE_RL_res_startSend;
+  assign _180_ = res_spien_1_AND_res_mstmod_2_3_AND_res_sending_ETC___d97 || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:632.7-633.33" *) WILL_FIRE_RL_res_startSend;
+  assign _181_ = WILL_FIRE_RL_res_lastBit || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:641.7-641.65" *) WILL_FIRE_RL_res_stuffTransmit;
+  assign _182_ = _038_ || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:672.11-674.30" *) _110_;
+  assign _183_ = _154_ || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:688.8-688.33" *) _155_;
+  assign _184_ = res_clock < (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:705.32-705.60" *) halfClock__h2704;
+  assign _185_ = res_bus_inner_fReq_rv[68:37] != (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:353.3-353.47" *) 32'd12;
+  assign _186_ = res_clock != (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:546.7-546.24" *) 9'h000;
+  assign _187_ = ~ (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:704.25-704.34" *) v__h6037;
+  assign _188_ = ~ (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:709.21-709.30" *) x__h3737;
+  assign _189_ = res_shiftregRx | (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:399.9-399.34" *) x__h3737;
+  wire [15:0] _416_ = res_data;
+  assign _190_ = _416_[activeBitNo__h2708 +: 1];
+  assign _191_ = 16'h0001 << (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:707.21-707.48" *) activeBitNo__h2708;
+  assign _192_ = IF_res_psc_2_EQ_0_3_THEN_2_ELSE_IF_res_psc_2_E_ETC___d68 - (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:394.7-394.70" *) 9'h001;
+  assign _193_ = res_clock - (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:395.41-395.57" *) 9'h001;
+  assign _194_ = IF_res_ff16_7_THEN_15_ELSE_7___d48 - (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:703.7-703.63" *) res_sendingBit[3:0];
+  assign _195_ = _157_ ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:314.7-319.11" *) 32'd0 : _196_;
+  assign _196_ = \res_bus_inner_outgoing$wget [32] ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:317.10-319.10" *) \res_bus_inner_outgoing$wget [31:0] : 32'd0;
+  assign _197_ = _028_ ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:351.8-355.19" *) _159_ : _161_;
+  assign _198_ = spiMaster_miso ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:398.7-400.34" *) _189_ : _027_;
+  assign _199_ = _164_ ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:415.7-420.11" *) 32'd0 : _200_;
+  assign _200_ = \res_bus_inner_outgoing$wget [32] ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:418.10-420.10" *) \res_bus_inner_outgoing$wget [31:0] : 32'd0;
+  assign _201_ = WILL_FIRE_RL_res_wbRequest ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:458.7-460.30" *) 70'h0aaaaaaaaaaaaaaaaa : res_bus_inner_fReq_rv;
+  assign _202_ = \MUX_res_bus_inner_pending$write_1__SEL_2  ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:464.7-466.42" *) \res_bus_inner_fReq_rv$port1__write_1  : \res_bus_inner_fReq_rv$port1__read ;
+  assign _203_ = WILL_FIRE_RL_res_wbRequest ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:471.7-473.30" *) \res_bus_inner_fRes_rv$port0__write_1  : res_bus_inner_fRes_rv;
+  assign _204_ = WILL_FIRE_RL_res_bus_inner_process_outgoing ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:475.7-477.42" *) 34'h0aaaaaaaa : \res_bus_inner_fRes_rv$port1__read ;
+  assign _205_ = \res_newConfig_rv$EN_port0__write  ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:490.7-492.25" *) \res_newConfig_rv$port0__write_1  : res_newConfig_rv;
+  assign _206_ = \res_newConfig_rv$port1__read [32] ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:494.7-496.37" *) 33'h0aaaaaaaa : \res_newConfig_rv$port1__read ;
+  assign _207_ = \MUX_res_clock$write_1__SEL_1  ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:541.7-543.37" *) \MUX_res_clock$write_1__VAL_1  : \MUX_res_clock$write_1__VAL_2 ;
+  assign _208_ = \MUX_res_data$write_1__SEL_1  ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:551.7-553.53" *) res_shiftregRx : res_bus_inner_fReq_rv_BITS_35_TO_4__q1[15:0];
+  assign _209_ = res_spien_1_AND_res_mstmod_2_3_AND_res_sending_ETC___d97 ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:628.7-630.14" *) \MUX_res_shiftregRx$write_1__VAL_1  : 16'h0000;
+  assign _210_ = WILL_FIRE_RL_res_lastBit ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:637.7-639.42" *) 17'h0aaaa : \MUX_res_shiftregTx$write_1__VAL_2 ;
+  assign _211_ = _036_ ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:649.7-656.28" *) { 24'h000000, res_sendingBit[4], res_rxorerr, 4'h0, x__h5688, res_rbne } : { 16'h0000, res_data };
+  assign _212_ = _037_ ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:658.7-675.63" *) { _152_, 16'h0000, res_bden, res_bdoen, 2'h0, res_ff16, 3'h0, res_lf, res_spien, res_psc, res_mstmod, res_ckpl, res_ckph } : { _182_, IF_res_bus_inner_fReq_rv_port0__read__28_BITS__ETC___d185 };
+  assign _213_ = res_ff16 ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:676.47-676.70" *) 4'hf : 4'h7;
+  assign _214_ = res_sendingBit[4] ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:678.7-680.17" *) _215_ : res_ckpl;
+  assign _215_ = res_ckpl ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:679.10-679.44" *) v___1__h6039 : v__h6037;
+  assign _216_ = res_sendingBit[4] ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:682.7-684.13" *) _217_ : 4'h0;
+  assign _217_ = res_lf ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:683.10-683.57" *) res_sendingBit[3:0] : swapb___1__h3754;
+  assign _218_ = _183_ ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:688.7-690.66" *) 4'h0 : IF_res_sendingBit_5_BIT_4_6_THEN_IF_res_lf_03__ETC___d106;
+  assign _219_ = res_sendingBit[4] ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:706.21-706.67" *) res_sendingBit[3:0] : 4'h0;
+  assign _220_ = res_ckph ^ (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:705.21-705.60" *) _184_;
   always @* begin
-    if (\$auto$verilog_backend.cc:2083:dump_module$204 ) begin end
+    if (\$auto$verilog_backend.cc:2083:dump_module$205 ) begin end
     _019_ = _025_;
     (* parallel_case = 32'd1 *)
     (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:614.5-620.12" *)
@@ -1021,7 +1024,7 @@ module mkQF100SPI(
       \res_sendingBit$D_IN  <= _019_;
   end
   always @* begin
-    if (\$auto$verilog_backend.cc:2083:dump_module$204 ) begin end
+    if (\$auto$verilog_backend.cc:2083:dump_module$205 ) begin end
     _000_ = _024_;
     (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:712.5-721.12" *)
     casez (res_psc)
@@ -1057,7 +1060,7 @@ module mkQF100SPI(
       IF_res_psc_2_EQ_0_3_THEN_2_ELSE_IF_res_psc_2_E_ETC___d68 <= _000_;
   end
   always @* begin
-    if (\$auto$verilog_backend.cc:2083:dump_module$204 ) begin end
+    if (\$auto$verilog_backend.cc:2083:dump_module$205 ) begin end
     _001_ = res_bden;
     _002_ = res_bdoen;
     _003_ = res_bus_inner_fReq_rv;
@@ -1317,28 +1320,28 @@ module mkQF100SPI(
   assign slave_ack_o = _044_;
   assign slave_err_o = 1'h0;
   assign slave_rty_o = 1'h0;
-  assign slave_dat_o = _194_;
+  assign slave_dat_o = _195_;
   assign spiMaster_sclk = _046_;
-  assign spiMaster_mosi = _049_;
-  assign spiMaster_mosi_oe = _051_;
-  assign WILL_FIRE_RL_res_lastBit = _054_;
-  assign WILL_FIRE_RL_res_stuffTransmit = _058_;
-  assign WILL_FIRE_RL_res_wbRequest = _060_;
-  assign WILL_FIRE_RL_res_nextBit = _062_;
-  assign WILL_FIRE_RL_res_startSend = _065_;
-  assign WILL_FIRE_RL_res_bus_inner_process_outgoing = _066_;
-  assign \MUX_res_bus_inner_pending$write_1__SEL_2  = _068_;
-  assign \MUX_res_clock$write_1__SEL_1  = _161_;
-  assign \MUX_res_data$write_1__SEL_1  = _069_;
-  assign \MUX_res_dataValid$write_1__SEL_1  = _073_;
-  assign \MUX_res_rbne$write_1__SEL_2  = _076_;
-  assign \MUX_res_rxorerr$write_1__SEL_1  = _077_;
-  assign \MUX_res_clock$write_1__VAL_1  = _191_;
-  assign \MUX_res_clock$write_1__VAL_2  = _192_;
+  assign spiMaster_mosi = _050_;
+  assign spiMaster_mosi_oe = _052_;
+  assign WILL_FIRE_RL_res_lastBit = _055_;
+  assign WILL_FIRE_RL_res_stuffTransmit = _059_;
+  assign WILL_FIRE_RL_res_wbRequest = _061_;
+  assign WILL_FIRE_RL_res_nextBit = _063_;
+  assign WILL_FIRE_RL_res_startSend = _066_;
+  assign WILL_FIRE_RL_res_bus_inner_process_outgoing = _067_;
+  assign \MUX_res_bus_inner_pending$write_1__SEL_2  = _069_;
+  assign \MUX_res_clock$write_1__SEL_1  = _162_;
+  assign \MUX_res_data$write_1__SEL_1  = _070_;
+  assign \MUX_res_dataValid$write_1__SEL_1  = _074_;
+  assign \MUX_res_rbne$write_1__SEL_2  = _077_;
+  assign \MUX_res_rxorerr$write_1__SEL_1  = _078_;
+  assign \MUX_res_clock$write_1__VAL_1  = _192_;
+  assign \MUX_res_clock$write_1__VAL_2  = _193_;
   assign \MUX_res_sendingBit$write_1__VAL_2  = { 1'h1, _026_ };
-  assign \MUX_res_shiftregRx$write_1__VAL_1  = _197_;
+  assign \MUX_res_shiftregRx$write_1__VAL_1  = _198_;
   assign \MUX_res_shiftregTx$write_1__VAL_2  = { 1'h1, res_data };
-  assign \res_bus_inner_probeAck$PROBE  = _078_;
+  assign \res_bus_inner_probeAck$PROBE  = _079_;
   assign \res_bus_inner_probeAck$PROBE_VALID  = 1'h1;
   assign \res_bus_inner_probeAdr$PROBE  = slave_adr_i;
   assign \res_bus_inner_probeAdr$PROBE_VALID  = 1'h1;
@@ -1346,7 +1349,7 @@ module mkQF100SPI(
   assign \res_bus_inner_probeCyc$PROBE_VALID  = 1'h1;
   assign \res_bus_inner_probeDataIn$PROBE  = slave_dat_i;
   assign \res_bus_inner_probeDataIn$PROBE_VALID  = 1'h1;
-  assign \res_bus_inner_probeDataOut$PROBE  = _198_;
+  assign \res_bus_inner_probeDataOut$PROBE  = _199_;
   assign \res_bus_inner_probeDataOut$PROBE_VALID  = 1'h1;
   assign \res_bus_inner_probeSel$PROBE  = slave_sel_i;
   assign \res_bus_inner_probeSel$PROBE_VALID  = 1'h1;
@@ -1358,34 +1361,34 @@ module mkQF100SPI(
   assign \res_probeMiso$PROBE_VALID  = 1'h1;
   assign \res_probeMosi$PROBE  = spiMaster_mosi;
   assign \res_probeMosi$PROBE_VALID  = 1'h1;
-  assign \res_probeMosiOe$PROBE  = _080_;
+  assign \res_probeMosiOe$PROBE  = _081_;
   assign \res_probeMosiOe$PROBE_VALID  = 1'h1;
   assign \res_probeRbne$PROBE  = res_rbne;
   assign \res_probeRbne$PROBE_VALID  = 1'h1;
   assign \res_probeRxorerr$PROBE  = res_rxorerr;
   assign \res_probeRxorerr$PROBE_VALID  = 1'h1;
-  assign \res_probeSclk$PROBE  = _082_;
+  assign \res_probeSclk$PROBE  = _083_;
   assign \res_probeSclk$PROBE_VALID  = 1'h1;
   assign \res_probeTbe$PROBE  = x__h5688;
   assign \res_probeTbe$PROBE_VALID  = 1'h1;
   assign \res_probeTrans$PROBE  = res_sendingBit[4];
   assign \res_probeTrans$PROBE_VALID  = 1'h1;
   assign \res_bus_inner_incoming$wget  = { slave_adr_i, slave_we_i, slave_dat_i, slave_sel_i };
-  assign \res_bus_inner_incoming$whas  = _084_;
+  assign \res_bus_inner_incoming$whas  = _085_;
   assign \res_bus_inner_outgoing$wget  = { 1'h1, \res_bus_inner_fRes_rv$port1__read [32:0] };
-  assign \res_bus_inner_fReq_rv$port1__read  = _200_;
+  assign \res_bus_inner_fReq_rv$port1__read  = _201_;
   assign \res_bus_inner_fReq_rv$port1__write_1  = { 1'h1, \res_bus_inner_incoming$wget  };
-  assign \res_bus_inner_fReq_rv$port2__read  = _201_;
+  assign \res_bus_inner_fReq_rv$port2__read  = _202_;
   assign \res_bus_inner_fRes_rv$port0__write_1  = { 1'h1, IF_res_bus_inner_fReq_rv_port0__read__28_BITS__ETC___d187 };
-  assign \res_bus_inner_fRes_rv$port1__read  = _202_;
-  assign \res_bus_inner_fRes_rv$port2__read  = _203_;
-  assign \res_newConfig_rv$EN_port0__write  = _085_;
+  assign \res_bus_inner_fRes_rv$port1__read  = _203_;
+  assign \res_bus_inner_fRes_rv$port2__read  = _204_;
+  assign \res_newConfig_rv$EN_port0__write  = _087_;
   assign \res_newConfig_rv$port0__write_1  = { 17'h10000, res_bus_inner_fReq_rv_BITS_35_TO_4__q1[15:14], 2'h0, res_bus_inner_fReq_rv_BITS_35_TO_4__q1[11], 3'h0, res_bus_inner_fReq_rv_BITS_35_TO_4__q1[7:0] };
-  assign \res_newConfig_rv$port1__read  = _204_;
-  assign \res_newConfig_rv$port2__read  = _205_;
-  assign \res_dataRead_rv$EN_port0__write  = _088_;
-  assign \res_dataRead_rv$port1__read  = _166_;
-  assign \res_dataRead_rv$port2__read  = _089_;
+  assign \res_newConfig_rv$port1__read  = _205_;
+  assign \res_newConfig_rv$port2__read  = _206_;
+  assign \res_dataRead_rv$EN_port0__write  = _089_;
+  assign \res_dataRead_rv$port1__read  = _167_;
+  assign \res_dataRead_rv$port2__read  = _090_;
   assign \res_bden$D_IN  = \res_newConfig_rv$port1__read [15];
   assign \res_bden$EN  = \res_newConfig_rv$port1__read [32];
   assign \res_bdoen$D_IN  = \res_newConfig_rv$port1__read [14];
@@ -1394,20 +1397,20 @@ module mkQF100SPI(
   assign \res_bus_inner_fReq_rv$EN  = 1'h1;
   assign \res_bus_inner_fRes_rv$D_IN  = \res_bus_inner_fRes_rv$port2__read ;
   assign \res_bus_inner_fRes_rv$EN  = 1'h1;
-  assign \res_bus_inner_pending$D_IN  = _140_;
-  assign \res_bus_inner_pending$EN  = _167_;
+  assign \res_bus_inner_pending$D_IN  = _141_;
+  assign \res_bus_inner_pending$EN  = _168_;
   assign \res_ckph$D_IN  = \res_newConfig_rv$port1__read [0];
   assign \res_ckph$EN  = \res_newConfig_rv$port1__read [32];
   assign \res_ckpl$D_IN  = \res_newConfig_rv$port1__read [1];
   assign \res_ckpl$EN  = \res_newConfig_rv$port1__read [32];
-  assign \res_clock$D_IN  = _206_;
-  assign \res_clock$EN  = _169_;
-  assign \res_data$D_IN  = _207_;
-  assign \res_data$EN  = _171_;
+  assign \res_clock$D_IN  = _207_;
+  assign \res_clock$EN  = _170_;
+  assign \res_data$D_IN  = _208_;
+  assign \res_data$EN  = _172_;
   assign \res_dataRead_rv$D_IN  = \res_dataRead_rv$port2__read ;
   assign \res_dataRead_rv$EN  = 1'h1;
   assign \res_dataValid$D_IN  = \MUX_res_dataValid$write_1__SEL_1 ;
-  assign \res_dataValid$EN  = _172_;
+  assign \res_dataValid$EN  = _173_;
   assign \res_ff16$D_IN  = \res_newConfig_rv$port1__read [11];
   assign \res_ff16$EN  = \res_newConfig_rv$port1__read [32];
   assign \res_lf$D_IN  = \res_newConfig_rv$port1__read [7];
@@ -1419,33 +1422,33 @@ module mkQF100SPI(
   assign \res_psc$D_IN  = \res_newConfig_rv$port1__read [5:3];
   assign \res_psc$EN  = \res_newConfig_rv$port1__read [32];
   assign \res_rbne$D_IN  = \MUX_res_data$write_1__SEL_1 ;
-  assign \res_rbne$EN  = _174_;
-  assign \res_rxorerr$D_IN  = _148_;
-  assign \res_rxorerr$EN  = _175_;
-  assign \res_sendingBit$EN  = _178_;
-  assign \res_shiftregRx$D_IN  = _208_;
-  assign \res_shiftregRx$EN  = _179_;
-  assign \res_shiftregTx$D_IN  = _209_;
-  assign \res_shiftregTx$EN  = _180_;
+  assign \res_rbne$EN  = _175_;
+  assign \res_rxorerr$D_IN  = _149_;
+  assign \res_rxorerr$EN  = _176_;
+  assign \res_sendingBit$EN  = _179_;
+  assign \res_shiftregRx$D_IN  = _209_;
+  assign \res_shiftregRx$EN  = _180_;
+  assign \res_shiftregTx$D_IN  = _210_;
+  assign \res_shiftregTx$EN  = _181_;
   assign \res_spien$D_IN  = \res_newConfig_rv$port1__read [6];
   assign \res_spien$EN  = \res_newConfig_rv$port1__read [32];
-  assign IF_res_bus_inner_fReq_rv_port0__read__28_BITS__ETC___d185 = _210_;
-  assign IF_res_bus_inner_fReq_rv_port0__read__28_BITS__ETC___d187 = _211_;
-  assign IF_res_ff16_7_THEN_15_ELSE_7___d48 = _212_;
-  assign IF_res_sendingBit_5_BIT_4_6_THEN_IF_res_ckpl_6_ETC___d194 = _213_;
-  assign IF_res_sendingBit_5_BIT_4_6_THEN_IF_res_lf_03__ETC___d106 = _215_;
+  assign IF_res_bus_inner_fReq_rv_port0__read__28_BITS__ETC___d185 = _211_;
+  assign IF_res_bus_inner_fReq_rv_port0__read__28_BITS__ETC___d187 = _212_;
+  assign IF_res_ff16_7_THEN_15_ELSE_7___d48 = _213_;
+  assign IF_res_sendingBit_5_BIT_4_6_THEN_IF_res_ckpl_6_ETC___d194 = _214_;
+  assign IF_res_sendingBit_5_BIT_4_6_THEN_IF_res_lf_03__ETC___d106 = _216_;
   assign IF_res_sendingBit_5_BIT_4_6_THEN_IF_res_sendin_ETC___d49 = _040_;
-  assign activeBitNo__h2708 = _217_;
+  assign activeBitNo__h2708 = _218_;
   assign halfClock__h2704 = { 1'h0, IF_res_psc_2_EQ_0_3_THEN_2_ELSE_IF_res_psc_2_E_ETC___d68[8:1] };
   assign res_bus_inner_fReq_rv_BITS_35_TO_4__q1 = res_bus_inner_fReq_rv[35:4];
-  assign res_clock_8_EQ_0_9_AND_res_spien_1_AND_res_mst_ETC___d40 = _112_;
-  assign res_spien_1_AND_res_mstmod_2_3_AND_res_sending_ETC___d97 = _115_;
-  assign swapb___1__h3754 = _193_;
-  assign v___1__h6039 = _186_;
-  assign v__h6037 = _219_;
-  assign x__h2962 = _218_;
-  assign x__h3737 = _190_;
-  assign x__h5688 = _155_;
-  assign y__h3850 = _187_;
+  assign res_clock_8_EQ_0_9_AND_res_spien_1_AND_res_mst_ETC___d40 = _113_;
+  assign res_spien_1_AND_res_mstmod_2_3_AND_res_sending_ETC___d97 = _116_;
+  assign swapb___1__h3754 = _194_;
+  assign v___1__h6039 = _187_;
+  assign v__h6037 = _220_;
+  assign x__h2962 = _219_;
+  assign x__h3737 = _191_;
+  assign x__h5688 = _156_;
+  assign y__h3850 = _188_;
 endmodule
 

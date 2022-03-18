@@ -1,0 +1,3 @@
+[submodule "qfc"]
+	path = qfc
+	url = https://github.com/q3k/qfc
