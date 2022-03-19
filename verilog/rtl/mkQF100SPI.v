@@ -5,13 +5,13 @@
 (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:43.1-908.10" *)
 module mkQF100SPI(
 `ifdef USE_POWER_PINS
-    VPWR,
-    VGND,
+    vccd1,
+    vssd1,
 `endif
     CLK, RST_N, slave_cyc_i, slave_stb_i, slave_adr_i, slave_dat_i, slave_sel_i, slave_we_i, slave_ack_o, slave_err_o, slave_rty_o, slave_dat_o, spiMaster_sclk, spiMaster_mosi, spiMaster_miso, spiMaster_mosi_oe);
 `ifdef USE_POWER_PINS
-    inout VPWR;
-    inout VGND;
+    inout vccd1;
+    inout vssd1;
 `endif
   reg \$auto$verilog_backend.cc:2083:dump_module$205  = 0;
   (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100SPI.v:710.3-722.6" *)

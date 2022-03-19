@@ -20,13 +20,13 @@ endmodule
 (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:36.1-379.10" *)
 module mkQF105(
 `ifdef USE_POWER_PINS
-    VPWR,
-    VGND,
+    vccd1,
+    vssd1,
 `endif
     wb_clk_i, wb_rst_i, la_data_in, la_oenb, la_data_out, io_in, io_out, io_oeb, irq);
 `ifdef USE_POWER_PINS
-    inout VPWR;
-    inout VGND;
+    inout vccd1;
+    inout vssd1;
 `endif
   (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:318.7-319.42" *)
   wire _00_;
@@ -268,8 +268,8 @@ module mkQF105(
   (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:195.14-220.22" *)
   mkLanaiCPU res_cpu (
 `ifdef USE_POWER_PINS
-    .VPWR(VPWR),
-    .VGND(VGND),
+    .vccd1(vccd1),
+    .vssd1(vssd1),
 `endif
     .CLK(wb_clk_i),
     .EN_dmem_client_request_get(\res_cpu$EN_dmem_client_request_get ),
@@ -300,8 +300,8 @@ module mkQF105(
   (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:223.17-254.40" *)
   mkQF100Fabric res_fabric (
 `ifdef USE_POWER_PINS
-    .VPWR(VPWR),
-    .VGND(VGND),
+    .vccd1(vccd1),
+    .vssd1(vssd1),
 `endif
     .CLK(wb_clk_i),
     .RST_N(\reset_n$RESET_OUT ),
@@ -340,8 +340,8 @@ module mkQF105(
   (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:257.15-271.29" *)
   mkQF100GPIO res_gpio (
 `ifdef USE_POWER_PINS
-    .VPWR(VPWR),
-    .VGND(VGND),
+    .vccd1(vccd1),
+    .vssd1(vssd1),
 `endif
     .CLK(wb_clk_i),
     .RST_N(\reset_n$RESET_OUT ),
@@ -363,8 +363,8 @@ module mkQF105(
   (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:274.17-287.72" *)
   mkQF100Memory res_mem (
 `ifdef USE_POWER_PINS
-    .VPWR(VPWR),
-    .VGND(VGND),
+    .vccd1(vccd1),
+    .vssd1(vssd1),
 `endif
     .CLK(wb_clk_i),
     .EN_memory_dmem_request_put(\res_mem$EN_memory_dmem_request_put ),
@@ -385,8 +385,8 @@ module mkQF105(
   (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:290.14-305.29" *)
   mkQF100SPI res_spi (
 `ifdef USE_POWER_PINS
-    .VPWR(VPWR),
-    .VGND(VGND),
+    .vccd1(vccd1),
+    .vssd1(vssd1),
 `endif
     .CLK(wb_clk_i),
     .RST_N(\reset_n$RESET_OUT ),

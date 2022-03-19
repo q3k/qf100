@@ -2136,13 +2136,13 @@ endmodule
 (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Memory.v:42.1-647.10" *)
 module mkQF100Memory(
 `ifdef USE_POWER_PINS
-    VPWR,
-    VGND,
+    vccd1,
+    vssd1,
 `endif
     CLK, RST_N, memory_imem_request_put, EN_memory_imem_request_put, RDY_memory_imem_request_put, EN_memory_imem_response_get, memory_imem_response_get, RDY_memory_imem_response_get, memory_dmem_request_put, EN_memory_dmem_request_put, RDY_memory_dmem_request_put, EN_memory_dmem_response_get, memory_dmem_response_get, RDY_memory_dmem_response_get);
 `ifdef USE_POWER_PINS
-    inout VPWR;
-    inout VGND;
+    inout vccd1;
+    inout vssd1;
 `endif
   reg \$auto$verilog_backend.cc:2083:dump_module$280  = 0;
   (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Memory.v:533.3-564.6" *)

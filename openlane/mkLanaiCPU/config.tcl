@@ -54,8 +54,8 @@ set ::env(RT_MAX_LAYER) {met4}
 set ::env(DESIGN_IS_CORE) 0
 set ::env(USE_ARC_ANTENNA_CHECK) 1
 
-set ::env(VDD_NETS) [list {VPWR}]
-set ::env(GND_NETS) [list {VGND}]
+set ::env(VDD_NETS) [list {vccd1}]
+set ::env(GND_NETS) [list {vssd1}]
 
 set ::env(ROUTING_CORES) 12
 

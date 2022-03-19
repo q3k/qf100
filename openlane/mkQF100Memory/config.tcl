@@ -54,8 +54,8 @@ set ::env(PL_ROUTABILITY_DRIVEN) 1
 set ::env(RT_MAX_LAYER) {met4}
 
 # You can draw more power domains if you need to 
-set ::env(VDD_NETS) [list {VPWR}]
-set ::env(GND_NETS) [list {VGND}]
+set ::env(VDD_NETS) [list {vccd1}]
+set ::env(GND_NETS) [list {vssd1}]
 
 set ::env(DIODE_INSERTION_STRATEGY) 4 
 set ::env(GLB_RT_MAX_DIODE_INS_ITERS) 10

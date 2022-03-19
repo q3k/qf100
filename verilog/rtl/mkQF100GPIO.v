@@ -5,13 +5,13 @@
 (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100GPIO.v:42.1-1159.10" *)
 module mkQF100GPIO(
 `ifdef USE_POWER_PINS
-    VPWR,
-    VGND,
+    vccd1,
+    vssd1,
 `endif
     CLK, RST_N, slave_cyc_i, slave_stb_i, slave_adr_i, slave_dat_i, slave_sel_i, slave_we_i, slave_ack_o, slave_err_o, slave_rty_o, slave_dat_o, oe, out, in);
 `ifdef USE_POWER_PINS
-    inout VPWR;
-    inout VGND;
+    inout vccd1;
+    inout vssd1;
 `endif
   reg \$auto$verilog_backend.cc:2083:dump_module$360  = 0;
   (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100GPIO.v:936.3-946.6" *)

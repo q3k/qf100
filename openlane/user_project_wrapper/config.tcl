@@ -35,7 +35,6 @@ set ::env(DESIGN_NAME) user_project_wrapper
 ## Source Verilog Files
 set ::env(VERILOG_FILES) "\
 	$::env(CARAVEL_ROOT)/verilog/rtl/defines.v \
-	$script_dir/../../verilog/rtl/ResetInverter.v \
 	$script_dir/../../verilog/rtl/user_project_wrapper.v \
 	$script_dir/../../verilog/rtl/mkQF105.v"
 
@@ -43,7 +42,7 @@ set ::env(VERILOG_FILES) "\
 set ::env(CLOCK_PORT) "wb_clk_i"
 set ::env(CLOCK_NET) "wb_clk_i"
 
-set ::env(CLOCK_PERIOD) "10"
+set ::env(CLOCK_PERIOD) "20"
 
 ## Internal Macros
 ### Macro PDN Connections
@@ -59,18 +58,21 @@ set ::env(VERILOG_FILES_BLACKBOX) "\
 	$script_dir/../../verilog/rtl/mkLanaiCPU.v \
 	$script_dir/../../verilog/rtl/mkQF100Fabric.v \
 	$script_dir/../../verilog/rtl/mkQF100Memory.v \
+	$script_dir/../../verilog/rtl/mkQF100GPIO.v \
 	$script_dir/../../verilog/rtl/mkQF100SPI.v"
 
 set ::env(EXTRA_LEFS) "\
 	$script_dir/../../lef/mkLanaiCPU.lef \
 	$script_dir/../../lef/mkQF100Fabric.lef \
 	$script_dir/../../lef/mkQF100Memory.lef \
+	$script_dir/../../lef/mkQF100GPIO.lef \
 	$script_dir/../../lef/mkQF100SPI.lef"
 
 set ::env(EXTRA_GDS_FILES) "\
 	$script_dir/../../gds/mkLanaiCPU.gds \
 	$script_dir/../../gds/mkQF100Fabric.gds \
 	$script_dir/../../gds/mkQF100Memory.gds \
+	$script_dir/../../gds/mkQF100GPIO.gds \
 	$script_dir/../../gds/mkQF100SPI.gds"
 
 # set ::env(GLB_RT_MAXLAYER) 5
@@ -80,7 +82,7 @@ set ::env(RT_MAX_LAYER) {met4}
 # any issue with pdn connections will be flagged with LVS so it is not a critical check.
 set ::env(FP_PDN_CHECK_NODES) 0
 
-set ::env(PL_TARGET_DENSITY) "0.1"
+set ::env(PL_TARGET_DENSITY) "0.10"
 
 # The following is because there are no std cells in the example wrapper project.
 #set ::env(SYNTH_TOP_LEVEL) 1

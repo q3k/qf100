@@ -30,8 +30,10 @@ set ::env(CLOCK_PORT) "CLK"
 set ::env(CLOCK_NET) "CLK"
 set ::env(CLOCK_PERIOD) "10"
 
-set ::env(FP_SIZING) relateive
-set ::env(FP_CORE_UTIL) "50"
+#set ::env(FP_SIZING) relative
+#set ::env(FP_CORE_UTIL) "50"
+set ::env(FP_SIZING) absolute
+set ::env(DIE_AREA) "0 0 200 250"
 
 set ::env(FP_PIN_ORDER_CFG) $script_dir/pin_order.cfg
 
@@ -51,8 +53,8 @@ set ::env(PL_TARGET_DENSITY) 0.55
 set ::env(RT_MAX_LAYER) {met4}
 
 # You can draw more power domains if you need to 
-set ::env(VDD_NETS) [list {VPWR}]
-set ::env(GND_NETS) [list {VGND}]
+set ::env(VDD_NETS) [list {vccd1}]
+set ::env(GND_NETS) [list {vssd1}]
 
 #set ::env(DIODE_INSERTION_STRATEGY) 2 
 #set ::env(GLB_RT_MAX_DIODE_INS_ITERS) 2

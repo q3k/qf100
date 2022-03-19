@@ -2260,14 +2260,14 @@ endmodule
 (* src = "bazel-out/k8-fastbuild/bin/lanai/Lanai_CPU/mkLanaiCPU.v:70.1-3291.10" *)
 module mkLanaiCPU(
 `ifdef USE_POWER_PINS
-    VPWR,
-    VGND,
+    vccd1,
+    vssd1,
 `endif
     CLK, RST_N, EN_dmem_client_request_get, dmem_client_request_get, RDY_dmem_client_request_get, dmem_client_response_put, EN_dmem_client_response_put, RDY_dmem_client_response_put, EN_imem_client_request_get, imem_client_request_get, RDY_imem_client_request_get, imem_client_response_put, EN_imem_client_response_put, RDY_imem_client_response_put, sysmem_client_cyc_o, sysmem_client_stb_o, sysmem_client_adr_o, sysmem_client_dat_o, sysmem_client_sel_o, sysmem_client_we_o, sysmem_client_ack_i
 , sysmem_client_err_i, sysmem_client_rty_i, sysmem_client_dat_i, readPC, RDY_readPC);
 `ifdef USE_POWER_PINS
-    inout VPWR;
-    inout VGND;
+    inout vccd1;
+    inout vssd1;
 `endif
   reg \$auto$verilog_backend.cc:2083:dump_module$2161  = 0;
   (* src = "bazel-out/k8-fastbuild/bin/lanai/Lanai_CPU/mkLanaiCPU.v:2593.3-2655.6" *)

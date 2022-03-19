@@ -5,14 +5,14 @@
 (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:159.1-903.10" *)
 module mkQF100Fabric(
 `ifdef USE_POWER_PINS
-    VPWR,
-    VGND,
+    vccd1,
+    vssd1,
 `endif
     CLK, RST_N, cpu_cyc_i, cpu_stb_i, cpu_adr_i, cpu_dat_i, cpu_sel_i, cpu_we_i, cpu_ack_o, cpu_err_o, cpu_rty_o, cpu_dat_o, spi_cyc_o, spi_stb_o, spi_adr_o, spi_dat_o, spi_sel_o, spi_we_o, spi_ack_i, spi_err_i, spi_rty_i
 , spi_dat_i, gpio_cyc_o, gpio_stb_o, gpio_adr_o, gpio_dat_o, gpio_sel_o, gpio_we_o, gpio_ack_i, gpio_err_i, gpio_rty_i, gpio_dat_i);
 `ifdef USE_POWER_PINS
-    inout VPWR;
-    inout VGND;
+    inout vccd1;
+    inout vssd1;
 `endif
   reg \$auto$verilog_backend.cc:2083:dump_module$182  = 0;
   (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:827.3-883.6" *)
