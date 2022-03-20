@@ -1,3 +1,7 @@
 # Caravel user project includes	     
 -v $(USER_PROJECT_VERILOG)/gl/user_project_wrapper.v	     
--v $(USER_PROJECT_VERILOG)/gl/user_proj_example.v     
+-v $(USER_PROJECT_VERILOG)/gl/mkLanaiCPU.v
+-v $(USER_PROJECT_VERILOG)/gl/mkQF100Fabric.v
+-v $(USER_PROJECT_VERILOG)/gl/mkQF100Memory.v
+-v $(USER_PROJECT_VERILOG)/gl/mkQF100SPI.v
+-v $(USER_PROJECT_VERILOG)/gl/mkQF100GPIO.v

@@ -1,5 +1,13 @@
 # Caravel user project includes
 -v $(USER_PROJECT_VERILOG)/rtl/user_project_wrapper.v	     
 -v $(USER_PROJECT_VERILOG)/rtl/user_proj_example.v
+-v $(USER_PROJECT_VERILOG)/rtl/mkQF105.v
+-v $(USER_PROJECT_VERILOG)/rtl/mkQF100Fabric.v
+-v $(USER_PROJECT_VERILOG)/rtl/mkQF100FlashController.v
+-v $(USER_PROJECT_VERILOG)/rtl/mkQF100SPI.v
+-v $(USER_PROJECT_VERILOG)/rtl/mkQF100GPIO.v
+-v $(USER_PROJECT_VERILOG)/rtl/mkLanaiCPU.v
+-v $(USER_PROJECT_VERILOG)/rtl/mkLanaiFrontend.v
+-v $(USER_PROJECT_VERILOG)/rtl/mkQF100SPIFlashEmulator.v
 
  
