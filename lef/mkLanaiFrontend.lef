@@ -1,0 +1,5395 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO mkLanaiFrontend
+  CLASS BLOCK ;
+  FOREIGN mkLanaiFrontend ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 272.530 BY 283.250 ;
+  PIN CLK
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 70.760 4.000 71.360 ;
+    END
+  END CLK
+  PIN EN_core_dmem_request_put
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 0.550 0.000 0.830 4.000 ;
+    END
+  END EN_core_dmem_request_put
+  PIN EN_core_dmem_response_get
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1.470 0.000 1.750 4.000 ;
+    END
+  END EN_core_dmem_response_get
+  PIN EN_core_imem_request_put
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 2.850 0.000 3.130 4.000 ;
+    END
+  END EN_core_imem_request_put
+  PIN EN_core_imem_response_get
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 4.230 0.000 4.510 4.000 ;
+    END
+  END EN_core_imem_response_get
+  PIN EN_fmc_dmem_request_get
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 0.720 272.530 1.320 ;
+    END
+  END EN_fmc_dmem_request_get
+  PIN EN_fmc_dmem_response_put
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 2.080 272.530 2.680 ;
+    END
+  END EN_fmc_dmem_response_put
+  PIN EN_fmc_imem_request_get
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 3.440 272.530 4.040 ;
+    END
+  END EN_fmc_imem_request_get
+  PIN EN_fmc_imem_response_put
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 4.800 272.530 5.400 ;
+    END
+  END EN_fmc_imem_response_put
+  PIN EN_ram_dmem_request_get
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 0.550 279.250 0.830 283.250 ;
+    END
+  END EN_ram_dmem_request_get
+  PIN EN_ram_dmem_response_put
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1.470 279.250 1.750 283.250 ;
+    END
+  END EN_ram_dmem_response_put
+  PIN EN_ram_imem_request_get
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 2.850 279.250 3.130 283.250 ;
+    END
+  END EN_ram_imem_request_get
+  PIN EN_ram_imem_response_put
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 4.230 279.250 4.510 283.250 ;
+    END
+  END EN_ram_imem_response_put
+  PIN RDY_core_dmem_request_put
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 5.610 0.000 5.890 4.000 ;
+    END
+  END RDY_core_dmem_request_put
+  PIN RDY_core_dmem_response_get
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 6.990 0.000 7.270 4.000 ;
+    END
+  END RDY_core_dmem_response_get
+  PIN RDY_core_imem_request_put
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 8.370 0.000 8.650 4.000 ;
+    END
+  END RDY_core_imem_request_put
+  PIN RDY_core_imem_response_get
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 9.750 0.000 10.030 4.000 ;
+    END
+  END RDY_core_imem_response_get
+  PIN RDY_fmc_dmem_request_get
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 6.160 272.530 6.760 ;
+    END
+  END RDY_fmc_dmem_request_get
+  PIN RDY_fmc_dmem_response_put
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 7.520 272.530 8.120 ;
+    END
+  END RDY_fmc_dmem_response_put
+  PIN RDY_fmc_imem_request_get
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 8.880 272.530 9.480 ;
+    END
+  END RDY_fmc_imem_request_get
+  PIN RDY_fmc_imem_response_put
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 10.240 272.530 10.840 ;
+    END
+  END RDY_fmc_imem_response_put
+  PIN RDY_ram_dmem_request_get
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 5.610 279.250 5.890 283.250 ;
+    END
+  END RDY_ram_dmem_request_get
+  PIN RDY_ram_dmem_response_put
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 6.990 279.250 7.270 283.250 ;
+    END
+  END RDY_ram_dmem_response_put
+  PIN RDY_ram_imem_request_get
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 8.370 279.250 8.650 283.250 ;
+    END
+  END RDY_ram_imem_request_get
+  PIN RDY_ram_imem_response_put
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 9.750 279.250 10.030 283.250 ;
+    END
+  END RDY_ram_imem_response_put
+  PIN RST_N
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 212.200 4.000 212.800 ;
+    END
+  END RST_N
+  PIN core_dmem_request_put[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 11.130 0.000 11.410 4.000 ;
+    END
+  END core_dmem_request_put[0]
+  PIN core_dmem_request_put[10]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 64.490 0.000 64.770 4.000 ;
+    END
+  END core_dmem_request_put[10]
+  PIN core_dmem_request_put[11]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 69.550 0.000 69.830 4.000 ;
+    END
+  END core_dmem_request_put[11]
+  PIN core_dmem_request_put[12]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 75.070 0.000 75.350 4.000 ;
+    END
+  END core_dmem_request_put[12]
+  PIN core_dmem_request_put[13]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 80.590 0.000 80.870 4.000 ;
+    END
+  END core_dmem_request_put[13]
+  PIN core_dmem_request_put[14]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 85.650 0.000 85.930 4.000 ;
+    END
+  END core_dmem_request_put[14]
+  PIN core_dmem_request_put[15]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 91.170 0.000 91.450 4.000 ;
+    END
+  END core_dmem_request_put[15]
+  PIN core_dmem_request_put[16]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 96.230 0.000 96.510 4.000 ;
+    END
+  END core_dmem_request_put[16]
+  PIN core_dmem_request_put[17]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 101.750 0.000 102.030 4.000 ;
+    END
+  END core_dmem_request_put[17]
+  PIN core_dmem_request_put[18]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 107.270 0.000 107.550 4.000 ;
+    END
+  END core_dmem_request_put[18]
+  PIN core_dmem_request_put[19]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 112.330 0.000 112.610 4.000 ;
+    END
+  END core_dmem_request_put[19]
+  PIN core_dmem_request_put[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 16.190 0.000 16.470 4.000 ;
+    END
+  END core_dmem_request_put[1]
+  PIN core_dmem_request_put[20]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 117.850 0.000 118.130 4.000 ;
+    END
+  END core_dmem_request_put[20]
+  PIN core_dmem_request_put[21]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 122.910 0.000 123.190 4.000 ;
+    END
+  END core_dmem_request_put[21]
+  PIN core_dmem_request_put[22]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 128.430 0.000 128.710 4.000 ;
+    END
+  END core_dmem_request_put[22]
+  PIN core_dmem_request_put[23]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 133.950 0.000 134.230 4.000 ;
+    END
+  END core_dmem_request_put[23]
+  PIN core_dmem_request_put[24]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 139.010 0.000 139.290 4.000 ;
+    END
+  END core_dmem_request_put[24]
+  PIN core_dmem_request_put[25]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 144.530 0.000 144.810 4.000 ;
+    END
+  END core_dmem_request_put[25]
+  PIN core_dmem_request_put[26]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 150.050 0.000 150.330 4.000 ;
+    END
+  END core_dmem_request_put[26]
+  PIN core_dmem_request_put[27]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 155.110 0.000 155.390 4.000 ;
+    END
+  END core_dmem_request_put[27]
+  PIN core_dmem_request_put[28]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 160.630 0.000 160.910 4.000 ;
+    END
+  END core_dmem_request_put[28]
+  PIN core_dmem_request_put[29]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 165.690 0.000 165.970 4.000 ;
+    END
+  END core_dmem_request_put[29]
+  PIN core_dmem_request_put[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 21.710 0.000 21.990 4.000 ;
+    END
+  END core_dmem_request_put[2]
+  PIN core_dmem_request_put[30]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 171.210 0.000 171.490 4.000 ;
+    END
+  END core_dmem_request_put[30]
+  PIN core_dmem_request_put[31]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 176.730 0.000 177.010 4.000 ;
+    END
+  END core_dmem_request_put[31]
+  PIN core_dmem_request_put[32]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 181.790 0.000 182.070 4.000 ;
+    END
+  END core_dmem_request_put[32]
+  PIN core_dmem_request_put[33]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 183.170 0.000 183.450 4.000 ;
+    END
+  END core_dmem_request_put[33]
+  PIN core_dmem_request_put[34]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 184.550 0.000 184.830 4.000 ;
+    END
+  END core_dmem_request_put[34]
+  PIN core_dmem_request_put[35]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 185.930 0.000 186.210 4.000 ;
+    END
+  END core_dmem_request_put[35]
+  PIN core_dmem_request_put[36]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 187.310 0.000 187.590 4.000 ;
+    END
+  END core_dmem_request_put[36]
+  PIN core_dmem_request_put[37]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 188.690 0.000 188.970 4.000 ;
+    END
+  END core_dmem_request_put[37]
+  PIN core_dmem_request_put[38]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 190.070 0.000 190.350 4.000 ;
+    END
+  END core_dmem_request_put[38]
+  PIN core_dmem_request_put[39]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 190.990 0.000 191.270 4.000 ;
+    END
+  END core_dmem_request_put[39]
+  PIN core_dmem_request_put[3]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 27.230 0.000 27.510 4.000 ;
+    END
+  END core_dmem_request_put[3]
+  PIN core_dmem_request_put[40]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 192.370 0.000 192.650 4.000 ;
+    END
+  END core_dmem_request_put[40]
+  PIN core_dmem_request_put[41]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 193.750 0.000 194.030 4.000 ;
+    END
+  END core_dmem_request_put[41]
+  PIN core_dmem_request_put[42]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 195.130 0.000 195.410 4.000 ;
+    END
+  END core_dmem_request_put[42]
+  PIN core_dmem_request_put[43]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 196.510 0.000 196.790 4.000 ;
+    END
+  END core_dmem_request_put[43]
+  PIN core_dmem_request_put[44]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 197.890 0.000 198.170 4.000 ;
+    END
+  END core_dmem_request_put[44]
+  PIN core_dmem_request_put[45]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 199.270 0.000 199.550 4.000 ;
+    END
+  END core_dmem_request_put[45]
+  PIN core_dmem_request_put[46]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 200.650 0.000 200.930 4.000 ;
+    END
+  END core_dmem_request_put[46]
+  PIN core_dmem_request_put[47]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 202.030 0.000 202.310 4.000 ;
+    END
+  END core_dmem_request_put[47]
+  PIN core_dmem_request_put[48]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 203.410 0.000 203.690 4.000 ;
+    END
+  END core_dmem_request_put[48]
+  PIN core_dmem_request_put[49]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 204.790 0.000 205.070 4.000 ;
+    END
+  END core_dmem_request_put[49]
+  PIN core_dmem_request_put[4]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 32.290 0.000 32.570 4.000 ;
+    END
+  END core_dmem_request_put[4]
+  PIN core_dmem_request_put[50]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 205.710 0.000 205.990 4.000 ;
+    END
+  END core_dmem_request_put[50]
+  PIN core_dmem_request_put[51]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 207.090 0.000 207.370 4.000 ;
+    END
+  END core_dmem_request_put[51]
+  PIN core_dmem_request_put[52]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 208.470 0.000 208.750 4.000 ;
+    END
+  END core_dmem_request_put[52]
+  PIN core_dmem_request_put[53]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 209.850 0.000 210.130 4.000 ;
+    END
+  END core_dmem_request_put[53]
+  PIN core_dmem_request_put[54]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 211.230 0.000 211.510 4.000 ;
+    END
+  END core_dmem_request_put[54]
+  PIN core_dmem_request_put[55]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 212.610 0.000 212.890 4.000 ;
+    END
+  END core_dmem_request_put[55]
+  PIN core_dmem_request_put[56]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 213.990 0.000 214.270 4.000 ;
+    END
+  END core_dmem_request_put[56]
+  PIN core_dmem_request_put[57]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 215.370 0.000 215.650 4.000 ;
+    END
+  END core_dmem_request_put[57]
+  PIN core_dmem_request_put[58]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 216.750 0.000 217.030 4.000 ;
+    END
+  END core_dmem_request_put[58]
+  PIN core_dmem_request_put[59]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 218.130 0.000 218.410 4.000 ;
+    END
+  END core_dmem_request_put[59]
+  PIN core_dmem_request_put[5]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 37.810 0.000 38.090 4.000 ;
+    END
+  END core_dmem_request_put[5]
+  PIN core_dmem_request_put[60]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 219.050 0.000 219.330 4.000 ;
+    END
+  END core_dmem_request_put[60]
+  PIN core_dmem_request_put[61]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 220.430 0.000 220.710 4.000 ;
+    END
+  END core_dmem_request_put[61]
+  PIN core_dmem_request_put[62]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 221.810 0.000 222.090 4.000 ;
+    END
+  END core_dmem_request_put[62]
+  PIN core_dmem_request_put[63]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 223.190 0.000 223.470 4.000 ;
+    END
+  END core_dmem_request_put[63]
+  PIN core_dmem_request_put[64]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 224.570 0.000 224.850 4.000 ;
+    END
+  END core_dmem_request_put[64]
+  PIN core_dmem_request_put[65]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 225.950 0.000 226.230 4.000 ;
+    END
+  END core_dmem_request_put[65]
+  PIN core_dmem_request_put[66]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 227.330 0.000 227.610 4.000 ;
+    END
+  END core_dmem_request_put[66]
+  PIN core_dmem_request_put[67]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 228.710 0.000 228.990 4.000 ;
+    END
+  END core_dmem_request_put[67]
+  PIN core_dmem_request_put[68]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 230.090 0.000 230.370 4.000 ;
+    END
+  END core_dmem_request_put[68]
+  PIN core_dmem_request_put[69]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 231.470 0.000 231.750 4.000 ;
+    END
+  END core_dmem_request_put[69]
+  PIN core_dmem_request_put[6]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 42.870 0.000 43.150 4.000 ;
+    END
+  END core_dmem_request_put[6]
+  PIN core_dmem_request_put[70]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 232.390 0.000 232.670 4.000 ;
+    END
+  END core_dmem_request_put[70]
+  PIN core_dmem_request_put[71]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 233.770 0.000 234.050 4.000 ;
+    END
+  END core_dmem_request_put[71]
+  PIN core_dmem_request_put[72]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 235.150 0.000 235.430 4.000 ;
+    END
+  END core_dmem_request_put[72]
+  PIN core_dmem_request_put[73]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 236.530 0.000 236.810 4.000 ;
+    END
+  END core_dmem_request_put[73]
+  PIN core_dmem_request_put[74]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 237.910 0.000 238.190 4.000 ;
+    END
+  END core_dmem_request_put[74]
+  PIN core_dmem_request_put[75]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 239.290 0.000 239.570 4.000 ;
+    END
+  END core_dmem_request_put[75]
+  PIN core_dmem_request_put[76]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 240.670 0.000 240.950 4.000 ;
+    END
+  END core_dmem_request_put[76]
+  PIN core_dmem_request_put[77]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 242.050 0.000 242.330 4.000 ;
+    END
+  END core_dmem_request_put[77]
+  PIN core_dmem_request_put[78]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 243.430 0.000 243.710 4.000 ;
+    END
+  END core_dmem_request_put[78]
+  PIN core_dmem_request_put[79]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 244.810 0.000 245.090 4.000 ;
+    END
+  END core_dmem_request_put[79]
+  PIN core_dmem_request_put[7]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 48.390 0.000 48.670 4.000 ;
+    END
+  END core_dmem_request_put[7]
+  PIN core_dmem_request_put[80]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 245.730 0.000 246.010 4.000 ;
+    END
+  END core_dmem_request_put[80]
+  PIN core_dmem_request_put[81]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 247.110 0.000 247.390 4.000 ;
+    END
+  END core_dmem_request_put[81]
+  PIN core_dmem_request_put[82]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 248.490 0.000 248.770 4.000 ;
+    END
+  END core_dmem_request_put[82]
+  PIN core_dmem_request_put[83]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 249.870 0.000 250.150 4.000 ;
+    END
+  END core_dmem_request_put[83]
+  PIN core_dmem_request_put[84]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 251.250 0.000 251.530 4.000 ;
+    END
+  END core_dmem_request_put[84]
+  PIN core_dmem_request_put[85]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 252.630 0.000 252.910 4.000 ;
+    END
+  END core_dmem_request_put[85]
+  PIN core_dmem_request_put[86]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 254.010 0.000 254.290 4.000 ;
+    END
+  END core_dmem_request_put[86]
+  PIN core_dmem_request_put[87]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 255.390 0.000 255.670 4.000 ;
+    END
+  END core_dmem_request_put[87]
+  PIN core_dmem_request_put[88]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 256.770 0.000 257.050 4.000 ;
+    END
+  END core_dmem_request_put[88]
+  PIN core_dmem_request_put[89]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 258.150 0.000 258.430 4.000 ;
+    END
+  END core_dmem_request_put[89]
+  PIN core_dmem_request_put[8]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 53.910 0.000 54.190 4.000 ;
+    END
+  END core_dmem_request_put[8]
+  PIN core_dmem_request_put[90]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 259.070 0.000 259.350 4.000 ;
+    END
+  END core_dmem_request_put[90]
+  PIN core_dmem_request_put[91]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 260.450 0.000 260.730 4.000 ;
+    END
+  END core_dmem_request_put[91]
+  PIN core_dmem_request_put[92]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 261.830 0.000 262.110 4.000 ;
+    END
+  END core_dmem_request_put[92]
+  PIN core_dmem_request_put[93]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 263.210 0.000 263.490 4.000 ;
+    END
+  END core_dmem_request_put[93]
+  PIN core_dmem_request_put[94]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 264.590 0.000 264.870 4.000 ;
+    END
+  END core_dmem_request_put[94]
+  PIN core_dmem_request_put[95]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 265.970 0.000 266.250 4.000 ;
+    END
+  END core_dmem_request_put[95]
+  PIN core_dmem_request_put[96]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 267.350 0.000 267.630 4.000 ;
+    END
+  END core_dmem_request_put[96]
+  PIN core_dmem_request_put[97]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 268.730 0.000 269.010 4.000 ;
+    END
+  END core_dmem_request_put[97]
+  PIN core_dmem_request_put[98]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 270.110 0.000 270.390 4.000 ;
+    END
+  END core_dmem_request_put[98]
+  PIN core_dmem_request_put[99]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 271.490 0.000 271.770 4.000 ;
+    END
+  END core_dmem_request_put[99]
+  PIN core_dmem_request_put[9]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 58.970 0.000 59.250 4.000 ;
+    END
+  END core_dmem_request_put[9]
+  PIN core_dmem_response_get[0]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 12.510 0.000 12.790 4.000 ;
+    END
+  END core_dmem_response_get[0]
+  PIN core_dmem_response_get[10]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 65.870 0.000 66.150 4.000 ;
+    END
+  END core_dmem_response_get[10]
+  PIN core_dmem_response_get[11]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 70.930 0.000 71.210 4.000 ;
+    END
+  END core_dmem_response_get[11]
+  PIN core_dmem_response_get[12]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 76.450 0.000 76.730 4.000 ;
+    END
+  END core_dmem_response_get[12]
+  PIN core_dmem_response_get[13]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 81.970 0.000 82.250 4.000 ;
+    END
+  END core_dmem_response_get[13]
+  PIN core_dmem_response_get[14]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 87.030 0.000 87.310 4.000 ;
+    END
+  END core_dmem_response_get[14]
+  PIN core_dmem_response_get[15]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 92.550 0.000 92.830 4.000 ;
+    END
+  END core_dmem_response_get[15]
+  PIN core_dmem_response_get[16]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 97.610 0.000 97.890 4.000 ;
+    END
+  END core_dmem_response_get[16]
+  PIN core_dmem_response_get[17]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 103.130 0.000 103.410 4.000 ;
+    END
+  END core_dmem_response_get[17]
+  PIN core_dmem_response_get[18]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 108.650 0.000 108.930 4.000 ;
+    END
+  END core_dmem_response_get[18]
+  PIN core_dmem_response_get[19]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 113.710 0.000 113.990 4.000 ;
+    END
+  END core_dmem_response_get[19]
+  PIN core_dmem_response_get[1]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 17.570 0.000 17.850 4.000 ;
+    END
+  END core_dmem_response_get[1]
+  PIN core_dmem_response_get[20]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 119.230 0.000 119.510 4.000 ;
+    END
+  END core_dmem_response_get[20]
+  PIN core_dmem_response_get[21]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 124.290 0.000 124.570 4.000 ;
+    END
+  END core_dmem_response_get[21]
+  PIN core_dmem_response_get[22]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 129.810 0.000 130.090 4.000 ;
+    END
+  END core_dmem_response_get[22]
+  PIN core_dmem_response_get[23]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 135.330 0.000 135.610 4.000 ;
+    END
+  END core_dmem_response_get[23]
+  PIN core_dmem_response_get[24]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 140.390 0.000 140.670 4.000 ;
+    END
+  END core_dmem_response_get[24]
+  PIN core_dmem_response_get[25]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 145.910 0.000 146.190 4.000 ;
+    END
+  END core_dmem_response_get[25]
+  PIN core_dmem_response_get[26]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 150.970 0.000 151.250 4.000 ;
+    END
+  END core_dmem_response_get[26]
+  PIN core_dmem_response_get[27]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 156.490 0.000 156.770 4.000 ;
+    END
+  END core_dmem_response_get[27]
+  PIN core_dmem_response_get[28]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 162.010 0.000 162.290 4.000 ;
+    END
+  END core_dmem_response_get[28]
+  PIN core_dmem_response_get[29]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 167.070 0.000 167.350 4.000 ;
+    END
+  END core_dmem_response_get[29]
+  PIN core_dmem_response_get[2]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 23.090 0.000 23.370 4.000 ;
+    END
+  END core_dmem_response_get[2]
+  PIN core_dmem_response_get[30]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 172.590 0.000 172.870 4.000 ;
+    END
+  END core_dmem_response_get[30]
+  PIN core_dmem_response_get[31]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 177.650 0.000 177.930 4.000 ;
+    END
+  END core_dmem_response_get[31]
+  PIN core_dmem_response_get[3]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 28.150 0.000 28.430 4.000 ;
+    END
+  END core_dmem_response_get[3]
+  PIN core_dmem_response_get[4]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 33.670 0.000 33.950 4.000 ;
+    END
+  END core_dmem_response_get[4]
+  PIN core_dmem_response_get[5]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 39.190 0.000 39.470 4.000 ;
+    END
+  END core_dmem_response_get[5]
+  PIN core_dmem_response_get[6]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 44.250 0.000 44.530 4.000 ;
+    END
+  END core_dmem_response_get[6]
+  PIN core_dmem_response_get[7]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 49.770 0.000 50.050 4.000 ;
+    END
+  END core_dmem_response_get[7]
+  PIN core_dmem_response_get[8]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 54.830 0.000 55.110 4.000 ;
+    END
+  END core_dmem_response_get[8]
+  PIN core_dmem_response_get[9]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 60.350 0.000 60.630 4.000 ;
+    END
+  END core_dmem_response_get[9]
+  PIN core_imem_request_put[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 13.890 0.000 14.170 4.000 ;
+    END
+  END core_imem_request_put[0]
+  PIN core_imem_request_put[10]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 67.250 0.000 67.530 4.000 ;
+    END
+  END core_imem_request_put[10]
+  PIN core_imem_request_put[11]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 72.310 0.000 72.590 4.000 ;
+    END
+  END core_imem_request_put[11]
+  PIN core_imem_request_put[12]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 77.830 0.000 78.110 4.000 ;
+    END
+  END core_imem_request_put[12]
+  PIN core_imem_request_put[13]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 82.890 0.000 83.170 4.000 ;
+    END
+  END core_imem_request_put[13]
+  PIN core_imem_request_put[14]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 88.410 0.000 88.690 4.000 ;
+    END
+  END core_imem_request_put[14]
+  PIN core_imem_request_put[15]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 93.930 0.000 94.210 4.000 ;
+    END
+  END core_imem_request_put[15]
+  PIN core_imem_request_put[16]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 98.990 0.000 99.270 4.000 ;
+    END
+  END core_imem_request_put[16]
+  PIN core_imem_request_put[17]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 104.510 0.000 104.790 4.000 ;
+    END
+  END core_imem_request_put[17]
+  PIN core_imem_request_put[18]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 109.570 0.000 109.850 4.000 ;
+    END
+  END core_imem_request_put[18]
+  PIN core_imem_request_put[19]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 115.090 0.000 115.370 4.000 ;
+    END
+  END core_imem_request_put[19]
+  PIN core_imem_request_put[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 18.950 0.000 19.230 4.000 ;
+    END
+  END core_imem_request_put[1]
+  PIN core_imem_request_put[20]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 120.610 0.000 120.890 4.000 ;
+    END
+  END core_imem_request_put[20]
+  PIN core_imem_request_put[21]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 125.670 0.000 125.950 4.000 ;
+    END
+  END core_imem_request_put[21]
+  PIN core_imem_request_put[22]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 131.190 0.000 131.470 4.000 ;
+    END
+  END core_imem_request_put[22]
+  PIN core_imem_request_put[23]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 136.710 0.000 136.990 4.000 ;
+    END
+  END core_imem_request_put[23]
+  PIN core_imem_request_put[24]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 141.770 0.000 142.050 4.000 ;
+    END
+  END core_imem_request_put[24]
+  PIN core_imem_request_put[25]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 147.290 0.000 147.570 4.000 ;
+    END
+  END core_imem_request_put[25]
+  PIN core_imem_request_put[26]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 152.350 0.000 152.630 4.000 ;
+    END
+  END core_imem_request_put[26]
+  PIN core_imem_request_put[27]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 157.870 0.000 158.150 4.000 ;
+    END
+  END core_imem_request_put[27]
+  PIN core_imem_request_put[28]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 163.390 0.000 163.670 4.000 ;
+    END
+  END core_imem_request_put[28]
+  PIN core_imem_request_put[29]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 168.450 0.000 168.730 4.000 ;
+    END
+  END core_imem_request_put[29]
+  PIN core_imem_request_put[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 24.470 0.000 24.750 4.000 ;
+    END
+  END core_imem_request_put[2]
+  PIN core_imem_request_put[30]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 173.970 0.000 174.250 4.000 ;
+    END
+  END core_imem_request_put[30]
+  PIN core_imem_request_put[31]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 179.030 0.000 179.310 4.000 ;
+    END
+  END core_imem_request_put[31]
+  PIN core_imem_request_put[3]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 29.530 0.000 29.810 4.000 ;
+    END
+  END core_imem_request_put[3]
+  PIN core_imem_request_put[4]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 35.050 0.000 35.330 4.000 ;
+    END
+  END core_imem_request_put[4]
+  PIN core_imem_request_put[5]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 40.570 0.000 40.850 4.000 ;
+    END
+  END core_imem_request_put[5]
+  PIN core_imem_request_put[6]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 45.630 0.000 45.910 4.000 ;
+    END
+  END core_imem_request_put[6]
+  PIN core_imem_request_put[7]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 51.150 0.000 51.430 4.000 ;
+    END
+  END core_imem_request_put[7]
+  PIN core_imem_request_put[8]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 56.210 0.000 56.490 4.000 ;
+    END
+  END core_imem_request_put[8]
+  PIN core_imem_request_put[9]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 61.730 0.000 62.010 4.000 ;
+    END
+  END core_imem_request_put[9]
+  PIN core_imem_response_get[0]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 14.810 0.000 15.090 4.000 ;
+    END
+  END core_imem_response_get[0]
+  PIN core_imem_response_get[10]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 68.630 0.000 68.910 4.000 ;
+    END
+  END core_imem_response_get[10]
+  PIN core_imem_response_get[11]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 73.690 0.000 73.970 4.000 ;
+    END
+  END core_imem_response_get[11]
+  PIN core_imem_response_get[12]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 79.210 0.000 79.490 4.000 ;
+    END
+  END core_imem_response_get[12]
+  PIN core_imem_response_get[13]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 84.270 0.000 84.550 4.000 ;
+    END
+  END core_imem_response_get[13]
+  PIN core_imem_response_get[14]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 89.790 0.000 90.070 4.000 ;
+    END
+  END core_imem_response_get[14]
+  PIN core_imem_response_get[15]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 95.310 0.000 95.590 4.000 ;
+    END
+  END core_imem_response_get[15]
+  PIN core_imem_response_get[16]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 100.370 0.000 100.650 4.000 ;
+    END
+  END core_imem_response_get[16]
+  PIN core_imem_response_get[17]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 105.890 0.000 106.170 4.000 ;
+    END
+  END core_imem_response_get[17]
+  PIN core_imem_response_get[18]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 110.950 0.000 111.230 4.000 ;
+    END
+  END core_imem_response_get[18]
+  PIN core_imem_response_get[19]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 116.470 0.000 116.750 4.000 ;
+    END
+  END core_imem_response_get[19]
+  PIN core_imem_response_get[1]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 20.330 0.000 20.610 4.000 ;
+    END
+  END core_imem_response_get[1]
+  PIN core_imem_response_get[20]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 121.990 0.000 122.270 4.000 ;
+    END
+  END core_imem_response_get[20]
+  PIN core_imem_response_get[21]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 127.050 0.000 127.330 4.000 ;
+    END
+  END core_imem_response_get[21]
+  PIN core_imem_response_get[22]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 132.570 0.000 132.850 4.000 ;
+    END
+  END core_imem_response_get[22]
+  PIN core_imem_response_get[23]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 137.630 0.000 137.910 4.000 ;
+    END
+  END core_imem_response_get[23]
+  PIN core_imem_response_get[24]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 143.150 0.000 143.430 4.000 ;
+    END
+  END core_imem_response_get[24]
+  PIN core_imem_response_get[25]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 148.670 0.000 148.950 4.000 ;
+    END
+  END core_imem_response_get[25]
+  PIN core_imem_response_get[26]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 153.730 0.000 154.010 4.000 ;
+    END
+  END core_imem_response_get[26]
+  PIN core_imem_response_get[27]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 159.250 0.000 159.530 4.000 ;
+    END
+  END core_imem_response_get[27]
+  PIN core_imem_response_get[28]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 164.310 0.000 164.590 4.000 ;
+    END
+  END core_imem_response_get[28]
+  PIN core_imem_response_get[29]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 169.830 0.000 170.110 4.000 ;
+    END
+  END core_imem_response_get[29]
+  PIN core_imem_response_get[2]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 25.850 0.000 26.130 4.000 ;
+    END
+  END core_imem_response_get[2]
+  PIN core_imem_response_get[30]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 175.350 0.000 175.630 4.000 ;
+    END
+  END core_imem_response_get[30]
+  PIN core_imem_response_get[31]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 180.410 0.000 180.690 4.000 ;
+    END
+  END core_imem_response_get[31]
+  PIN core_imem_response_get[3]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 30.910 0.000 31.190 4.000 ;
+    END
+  END core_imem_response_get[3]
+  PIN core_imem_response_get[4]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 36.430 0.000 36.710 4.000 ;
+    END
+  END core_imem_response_get[4]
+  PIN core_imem_response_get[5]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 41.490 0.000 41.770 4.000 ;
+    END
+  END core_imem_response_get[5]
+  PIN core_imem_response_get[6]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 47.010 0.000 47.290 4.000 ;
+    END
+  END core_imem_response_get[6]
+  PIN core_imem_response_get[7]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 52.530 0.000 52.810 4.000 ;
+    END
+  END core_imem_response_get[7]
+  PIN core_imem_response_get[8]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 57.590 0.000 57.870 4.000 ;
+    END
+  END core_imem_response_get[8]
+  PIN core_imem_response_get[9]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 63.110 0.000 63.390 4.000 ;
+    END
+  END core_imem_response_get[9]
+  PIN fmc_dmem_request_get[0]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 11.600 272.530 12.200 ;
+    END
+  END fmc_dmem_request_get[0]
+  PIN fmc_dmem_request_get[10]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 67.360 272.530 67.960 ;
+    END
+  END fmc_dmem_request_get[10]
+  PIN fmc_dmem_request_get[11]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 72.800 272.530 73.400 ;
+    END
+  END fmc_dmem_request_get[11]
+  PIN fmc_dmem_request_get[12]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 78.240 272.530 78.840 ;
+    END
+  END fmc_dmem_request_get[12]
+  PIN fmc_dmem_request_get[13]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 83.680 272.530 84.280 ;
+    END
+  END fmc_dmem_request_get[13]
+  PIN fmc_dmem_request_get[14]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 89.120 272.530 89.720 ;
+    END
+  END fmc_dmem_request_get[14]
+  PIN fmc_dmem_request_get[15]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 95.240 272.530 95.840 ;
+    END
+  END fmc_dmem_request_get[15]
+  PIN fmc_dmem_request_get[16]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 100.680 272.530 101.280 ;
+    END
+  END fmc_dmem_request_get[16]
+  PIN fmc_dmem_request_get[17]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 106.120 272.530 106.720 ;
+    END
+  END fmc_dmem_request_get[17]
+  PIN fmc_dmem_request_get[18]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 111.560 272.530 112.160 ;
+    END
+  END fmc_dmem_request_get[18]
+  PIN fmc_dmem_request_get[19]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 117.000 272.530 117.600 ;
+    END
+  END fmc_dmem_request_get[19]
+  PIN fmc_dmem_request_get[1]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 17.040 272.530 17.640 ;
+    END
+  END fmc_dmem_request_get[1]
+  PIN fmc_dmem_request_get[20]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 122.440 272.530 123.040 ;
+    END
+  END fmc_dmem_request_get[20]
+  PIN fmc_dmem_request_get[21]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 128.560 272.530 129.160 ;
+    END
+  END fmc_dmem_request_get[21]
+  PIN fmc_dmem_request_get[22]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 134.000 272.530 134.600 ;
+    END
+  END fmc_dmem_request_get[22]
+  PIN fmc_dmem_request_get[23]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 139.440 272.530 140.040 ;
+    END
+  END fmc_dmem_request_get[23]
+  PIN fmc_dmem_request_get[24]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 144.880 272.530 145.480 ;
+    END
+  END fmc_dmem_request_get[24]
+  PIN fmc_dmem_request_get[25]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 150.320 272.530 150.920 ;
+    END
+  END fmc_dmem_request_get[25]
+  PIN fmc_dmem_request_get[26]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 155.760 272.530 156.360 ;
+    END
+  END fmc_dmem_request_get[26]
+  PIN fmc_dmem_request_get[27]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 161.880 272.530 162.480 ;
+    END
+  END fmc_dmem_request_get[27]
+  PIN fmc_dmem_request_get[28]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 167.320 272.530 167.920 ;
+    END
+  END fmc_dmem_request_get[28]
+  PIN fmc_dmem_request_get[29]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 172.760 272.530 173.360 ;
+    END
+  END fmc_dmem_request_get[29]
+  PIN fmc_dmem_request_get[2]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 22.480 272.530 23.080 ;
+    END
+  END fmc_dmem_request_get[2]
+  PIN fmc_dmem_request_get[30]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 178.200 272.530 178.800 ;
+    END
+  END fmc_dmem_request_get[30]
+  PIN fmc_dmem_request_get[31]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 183.640 272.530 184.240 ;
+    END
+  END fmc_dmem_request_get[31]
+  PIN fmc_dmem_request_get[32]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 189.760 272.530 190.360 ;
+    END
+  END fmc_dmem_request_get[32]
+  PIN fmc_dmem_request_get[33]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 191.120 272.530 191.720 ;
+    END
+  END fmc_dmem_request_get[33]
+  PIN fmc_dmem_request_get[34]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 192.480 272.530 193.080 ;
+    END
+  END fmc_dmem_request_get[34]
+  PIN fmc_dmem_request_get[35]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 193.840 272.530 194.440 ;
+    END
+  END fmc_dmem_request_get[35]
+  PIN fmc_dmem_request_get[36]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 195.200 272.530 195.800 ;
+    END
+  END fmc_dmem_request_get[36]
+  PIN fmc_dmem_request_get[37]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 196.560 272.530 197.160 ;
+    END
+  END fmc_dmem_request_get[37]
+  PIN fmc_dmem_request_get[38]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 197.920 272.530 198.520 ;
+    END
+  END fmc_dmem_request_get[38]
+  PIN fmc_dmem_request_get[39]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 199.280 272.530 199.880 ;
+    END
+  END fmc_dmem_request_get[39]
+  PIN fmc_dmem_request_get[3]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 27.920 272.530 28.520 ;
+    END
+  END fmc_dmem_request_get[3]
+  PIN fmc_dmem_request_get[40]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 200.640 272.530 201.240 ;
+    END
+  END fmc_dmem_request_get[40]
+  PIN fmc_dmem_request_get[41]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 202.000 272.530 202.600 ;
+    END
+  END fmc_dmem_request_get[41]
+  PIN fmc_dmem_request_get[42]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 203.360 272.530 203.960 ;
+    END
+  END fmc_dmem_request_get[42]
+  PIN fmc_dmem_request_get[43]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 204.720 272.530 205.320 ;
+    END
+  END fmc_dmem_request_get[43]
+  PIN fmc_dmem_request_get[44]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 206.080 272.530 206.680 ;
+    END
+  END fmc_dmem_request_get[44]
+  PIN fmc_dmem_request_get[45]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 207.440 272.530 208.040 ;
+    END
+  END fmc_dmem_request_get[45]
+  PIN fmc_dmem_request_get[46]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 208.800 272.530 209.400 ;
+    END
+  END fmc_dmem_request_get[46]
+  PIN fmc_dmem_request_get[47]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 210.160 272.530 210.760 ;
+    END
+  END fmc_dmem_request_get[47]
+  PIN fmc_dmem_request_get[48]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 211.520 272.530 212.120 ;
+    END
+  END fmc_dmem_request_get[48]
+  PIN fmc_dmem_request_get[49]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 212.880 272.530 213.480 ;
+    END
+  END fmc_dmem_request_get[49]
+  PIN fmc_dmem_request_get[4]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 34.040 272.530 34.640 ;
+    END
+  END fmc_dmem_request_get[4]
+  PIN fmc_dmem_request_get[50]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 214.240 272.530 214.840 ;
+    END
+  END fmc_dmem_request_get[50]
+  PIN fmc_dmem_request_get[51]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 215.600 272.530 216.200 ;
+    END
+  END fmc_dmem_request_get[51]
+  PIN fmc_dmem_request_get[52]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 216.960 272.530 217.560 ;
+    END
+  END fmc_dmem_request_get[52]
+  PIN fmc_dmem_request_get[53]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 218.320 272.530 218.920 ;
+    END
+  END fmc_dmem_request_get[53]
+  PIN fmc_dmem_request_get[54]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 219.680 272.530 220.280 ;
+    END
+  END fmc_dmem_request_get[54]
+  PIN fmc_dmem_request_get[55]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 221.720 272.530 222.320 ;
+    END
+  END fmc_dmem_request_get[55]
+  PIN fmc_dmem_request_get[56]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 223.080 272.530 223.680 ;
+    END
+  END fmc_dmem_request_get[56]
+  PIN fmc_dmem_request_get[57]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 224.440 272.530 225.040 ;
+    END
+  END fmc_dmem_request_get[57]
+  PIN fmc_dmem_request_get[58]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 225.800 272.530 226.400 ;
+    END
+  END fmc_dmem_request_get[58]
+  PIN fmc_dmem_request_get[59]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 227.160 272.530 227.760 ;
+    END
+  END fmc_dmem_request_get[59]
+  PIN fmc_dmem_request_get[5]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 39.480 272.530 40.080 ;
+    END
+  END fmc_dmem_request_get[5]
+  PIN fmc_dmem_request_get[60]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 228.520 272.530 229.120 ;
+    END
+  END fmc_dmem_request_get[60]
+  PIN fmc_dmem_request_get[61]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 229.880 272.530 230.480 ;
+    END
+  END fmc_dmem_request_get[61]
+  PIN fmc_dmem_request_get[62]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 231.240 272.530 231.840 ;
+    END
+  END fmc_dmem_request_get[62]
+  PIN fmc_dmem_request_get[63]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 232.600 272.530 233.200 ;
+    END
+  END fmc_dmem_request_get[63]
+  PIN fmc_dmem_request_get[64]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 233.960 272.530 234.560 ;
+    END
+  END fmc_dmem_request_get[64]
+  PIN fmc_dmem_request_get[65]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 235.320 272.530 235.920 ;
+    END
+  END fmc_dmem_request_get[65]
+  PIN fmc_dmem_request_get[66]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 236.680 272.530 237.280 ;
+    END
+  END fmc_dmem_request_get[66]
+  PIN fmc_dmem_request_get[67]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 238.040 272.530 238.640 ;
+    END
+  END fmc_dmem_request_get[67]
+  PIN fmc_dmem_request_get[68]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 239.400 272.530 240.000 ;
+    END
+  END fmc_dmem_request_get[68]
+  PIN fmc_dmem_request_get[69]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 240.760 272.530 241.360 ;
+    END
+  END fmc_dmem_request_get[69]
+  PIN fmc_dmem_request_get[6]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 44.920 272.530 45.520 ;
+    END
+  END fmc_dmem_request_get[6]
+  PIN fmc_dmem_request_get[70]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 242.120 272.530 242.720 ;
+    END
+  END fmc_dmem_request_get[70]
+  PIN fmc_dmem_request_get[71]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 243.480 272.530 244.080 ;
+    END
+  END fmc_dmem_request_get[71]
+  PIN fmc_dmem_request_get[72]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 244.840 272.530 245.440 ;
+    END
+  END fmc_dmem_request_get[72]
+  PIN fmc_dmem_request_get[73]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 246.200 272.530 246.800 ;
+    END
+  END fmc_dmem_request_get[73]
+  PIN fmc_dmem_request_get[74]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 247.560 272.530 248.160 ;
+    END
+  END fmc_dmem_request_get[74]
+  PIN fmc_dmem_request_get[75]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 248.920 272.530 249.520 ;
+    END
+  END fmc_dmem_request_get[75]
+  PIN fmc_dmem_request_get[76]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 250.280 272.530 250.880 ;
+    END
+  END fmc_dmem_request_get[76]
+  PIN fmc_dmem_request_get[77]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 251.640 272.530 252.240 ;
+    END
+  END fmc_dmem_request_get[77]
+  PIN fmc_dmem_request_get[78]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 253.680 272.530 254.280 ;
+    END
+  END fmc_dmem_request_get[78]
+  PIN fmc_dmem_request_get[79]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 255.040 272.530 255.640 ;
+    END
+  END fmc_dmem_request_get[79]
+  PIN fmc_dmem_request_get[7]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 50.360 272.530 50.960 ;
+    END
+  END fmc_dmem_request_get[7]
+  PIN fmc_dmem_request_get[80]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 256.400 272.530 257.000 ;
+    END
+  END fmc_dmem_request_get[80]
+  PIN fmc_dmem_request_get[81]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 257.760 272.530 258.360 ;
+    END
+  END fmc_dmem_request_get[81]
+  PIN fmc_dmem_request_get[82]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 259.120 272.530 259.720 ;
+    END
+  END fmc_dmem_request_get[82]
+  PIN fmc_dmem_request_get[83]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 260.480 272.530 261.080 ;
+    END
+  END fmc_dmem_request_get[83]
+  PIN fmc_dmem_request_get[84]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 261.840 272.530 262.440 ;
+    END
+  END fmc_dmem_request_get[84]
+  PIN fmc_dmem_request_get[85]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 263.200 272.530 263.800 ;
+    END
+  END fmc_dmem_request_get[85]
+  PIN fmc_dmem_request_get[86]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 264.560 272.530 265.160 ;
+    END
+  END fmc_dmem_request_get[86]
+  PIN fmc_dmem_request_get[87]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 265.920 272.530 266.520 ;
+    END
+  END fmc_dmem_request_get[87]
+  PIN fmc_dmem_request_get[88]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 267.280 272.530 267.880 ;
+    END
+  END fmc_dmem_request_get[88]
+  PIN fmc_dmem_request_get[89]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 268.640 272.530 269.240 ;
+    END
+  END fmc_dmem_request_get[89]
+  PIN fmc_dmem_request_get[8]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 55.800 272.530 56.400 ;
+    END
+  END fmc_dmem_request_get[8]
+  PIN fmc_dmem_request_get[90]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 270.000 272.530 270.600 ;
+    END
+  END fmc_dmem_request_get[90]
+  PIN fmc_dmem_request_get[91]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 271.360 272.530 271.960 ;
+    END
+  END fmc_dmem_request_get[91]
+  PIN fmc_dmem_request_get[92]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 272.720 272.530 273.320 ;
+    END
+  END fmc_dmem_request_get[92]
+  PIN fmc_dmem_request_get[93]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 274.080 272.530 274.680 ;
+    END
+  END fmc_dmem_request_get[93]
+  PIN fmc_dmem_request_get[94]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 275.440 272.530 276.040 ;
+    END
+  END fmc_dmem_request_get[94]
+  PIN fmc_dmem_request_get[95]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 276.800 272.530 277.400 ;
+    END
+  END fmc_dmem_request_get[95]
+  PIN fmc_dmem_request_get[96]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 278.160 272.530 278.760 ;
+    END
+  END fmc_dmem_request_get[96]
+  PIN fmc_dmem_request_get[97]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 279.520 272.530 280.120 ;
+    END
+  END fmc_dmem_request_get[97]
+  PIN fmc_dmem_request_get[98]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 280.880 272.530 281.480 ;
+    END
+  END fmc_dmem_request_get[98]
+  PIN fmc_dmem_request_get[99]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 282.240 272.530 282.840 ;
+    END
+  END fmc_dmem_request_get[99]
+  PIN fmc_dmem_request_get[9]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 61.240 272.530 61.840 ;
+    END
+  END fmc_dmem_request_get[9]
+  PIN fmc_dmem_response_put[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 12.960 272.530 13.560 ;
+    END
+  END fmc_dmem_response_put[0]
+  PIN fmc_dmem_response_put[10]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 68.720 272.530 69.320 ;
+    END
+  END fmc_dmem_response_put[10]
+  PIN fmc_dmem_response_put[11]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 74.160 272.530 74.760 ;
+    END
+  END fmc_dmem_response_put[11]
+  PIN fmc_dmem_response_put[12]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 79.600 272.530 80.200 ;
+    END
+  END fmc_dmem_response_put[12]
+  PIN fmc_dmem_response_put[13]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 85.040 272.530 85.640 ;
+    END
+  END fmc_dmem_response_put[13]
+  PIN fmc_dmem_response_put[14]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 90.480 272.530 91.080 ;
+    END
+  END fmc_dmem_response_put[14]
+  PIN fmc_dmem_response_put[15]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 96.600 272.530 97.200 ;
+    END
+  END fmc_dmem_response_put[15]
+  PIN fmc_dmem_response_put[16]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 102.040 272.530 102.640 ;
+    END
+  END fmc_dmem_response_put[16]
+  PIN fmc_dmem_response_put[17]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 107.480 272.530 108.080 ;
+    END
+  END fmc_dmem_response_put[17]
+  PIN fmc_dmem_response_put[18]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 112.920 272.530 113.520 ;
+    END
+  END fmc_dmem_response_put[18]
+  PIN fmc_dmem_response_put[19]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 118.360 272.530 118.960 ;
+    END
+  END fmc_dmem_response_put[19]
+  PIN fmc_dmem_response_put[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 18.400 272.530 19.000 ;
+    END
+  END fmc_dmem_response_put[1]
+  PIN fmc_dmem_response_put[20]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 123.800 272.530 124.400 ;
+    END
+  END fmc_dmem_response_put[20]
+  PIN fmc_dmem_response_put[21]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 129.920 272.530 130.520 ;
+    END
+  END fmc_dmem_response_put[21]
+  PIN fmc_dmem_response_put[22]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 135.360 272.530 135.960 ;
+    END
+  END fmc_dmem_response_put[22]
+  PIN fmc_dmem_response_put[23]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 140.800 272.530 141.400 ;
+    END
+  END fmc_dmem_response_put[23]
+  PIN fmc_dmem_response_put[24]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 146.240 272.530 146.840 ;
+    END
+  END fmc_dmem_response_put[24]
+  PIN fmc_dmem_response_put[25]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 151.680 272.530 152.280 ;
+    END
+  END fmc_dmem_response_put[25]
+  PIN fmc_dmem_response_put[26]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 157.120 272.530 157.720 ;
+    END
+  END fmc_dmem_response_put[26]
+  PIN fmc_dmem_response_put[27]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 163.240 272.530 163.840 ;
+    END
+  END fmc_dmem_response_put[27]
+  PIN fmc_dmem_response_put[28]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 168.680 272.530 169.280 ;
+    END
+  END fmc_dmem_response_put[28]
+  PIN fmc_dmem_response_put[29]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 174.120 272.530 174.720 ;
+    END
+  END fmc_dmem_response_put[29]
+  PIN fmc_dmem_response_put[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 23.840 272.530 24.440 ;
+    END
+  END fmc_dmem_response_put[2]
+  PIN fmc_dmem_response_put[30]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 179.560 272.530 180.160 ;
+    END
+  END fmc_dmem_response_put[30]
+  PIN fmc_dmem_response_put[31]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 185.000 272.530 185.600 ;
+    END
+  END fmc_dmem_response_put[31]
+  PIN fmc_dmem_response_put[3]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 29.280 272.530 29.880 ;
+    END
+  END fmc_dmem_response_put[3]
+  PIN fmc_dmem_response_put[4]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 35.400 272.530 36.000 ;
+    END
+  END fmc_dmem_response_put[4]
+  PIN fmc_dmem_response_put[5]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 40.840 272.530 41.440 ;
+    END
+  END fmc_dmem_response_put[5]
+  PIN fmc_dmem_response_put[6]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 46.280 272.530 46.880 ;
+    END
+  END fmc_dmem_response_put[6]
+  PIN fmc_dmem_response_put[7]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 51.720 272.530 52.320 ;
+    END
+  END fmc_dmem_response_put[7]
+  PIN fmc_dmem_response_put[8]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 57.160 272.530 57.760 ;
+    END
+  END fmc_dmem_response_put[8]
+  PIN fmc_dmem_response_put[9]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 62.600 272.530 63.200 ;
+    END
+  END fmc_dmem_response_put[9]
+  PIN fmc_imem_request_get[0]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 14.320 272.530 14.920 ;
+    END
+  END fmc_imem_request_get[0]
+  PIN fmc_imem_request_get[10]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 70.080 272.530 70.680 ;
+    END
+  END fmc_imem_request_get[10]
+  PIN fmc_imem_request_get[11]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 75.520 272.530 76.120 ;
+    END
+  END fmc_imem_request_get[11]
+  PIN fmc_imem_request_get[12]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 80.960 272.530 81.560 ;
+    END
+  END fmc_imem_request_get[12]
+  PIN fmc_imem_request_get[13]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 86.400 272.530 87.000 ;
+    END
+  END fmc_imem_request_get[13]
+  PIN fmc_imem_request_get[14]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 91.840 272.530 92.440 ;
+    END
+  END fmc_imem_request_get[14]
+  PIN fmc_imem_request_get[15]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 97.960 272.530 98.560 ;
+    END
+  END fmc_imem_request_get[15]
+  PIN fmc_imem_request_get[16]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 103.400 272.530 104.000 ;
+    END
+  END fmc_imem_request_get[16]
+  PIN fmc_imem_request_get[17]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 108.840 272.530 109.440 ;
+    END
+  END fmc_imem_request_get[17]
+  PIN fmc_imem_request_get[18]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 114.280 272.530 114.880 ;
+    END
+  END fmc_imem_request_get[18]
+  PIN fmc_imem_request_get[19]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 119.720 272.530 120.320 ;
+    END
+  END fmc_imem_request_get[19]
+  PIN fmc_imem_request_get[1]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 19.760 272.530 20.360 ;
+    END
+  END fmc_imem_request_get[1]
+  PIN fmc_imem_request_get[20]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 125.160 272.530 125.760 ;
+    END
+  END fmc_imem_request_get[20]
+  PIN fmc_imem_request_get[21]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 131.280 272.530 131.880 ;
+    END
+  END fmc_imem_request_get[21]
+  PIN fmc_imem_request_get[22]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 136.720 272.530 137.320 ;
+    END
+  END fmc_imem_request_get[22]
+  PIN fmc_imem_request_get[23]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 142.160 272.530 142.760 ;
+    END
+  END fmc_imem_request_get[23]
+  PIN fmc_imem_request_get[24]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 147.600 272.530 148.200 ;
+    END
+  END fmc_imem_request_get[24]
+  PIN fmc_imem_request_get[25]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 153.040 272.530 153.640 ;
+    END
+  END fmc_imem_request_get[25]
+  PIN fmc_imem_request_get[26]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 159.160 272.530 159.760 ;
+    END
+  END fmc_imem_request_get[26]
+  PIN fmc_imem_request_get[27]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 164.600 272.530 165.200 ;
+    END
+  END fmc_imem_request_get[27]
+  PIN fmc_imem_request_get[28]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 170.040 272.530 170.640 ;
+    END
+  END fmc_imem_request_get[28]
+  PIN fmc_imem_request_get[29]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 175.480 272.530 176.080 ;
+    END
+  END fmc_imem_request_get[29]
+  PIN fmc_imem_request_get[2]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 25.200 272.530 25.800 ;
+    END
+  END fmc_imem_request_get[2]
+  PIN fmc_imem_request_get[30]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 180.920 272.530 181.520 ;
+    END
+  END fmc_imem_request_get[30]
+  PIN fmc_imem_request_get[31]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 186.360 272.530 186.960 ;
+    END
+  END fmc_imem_request_get[31]
+  PIN fmc_imem_request_get[3]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 30.640 272.530 31.240 ;
+    END
+  END fmc_imem_request_get[3]
+  PIN fmc_imem_request_get[4]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 36.760 272.530 37.360 ;
+    END
+  END fmc_imem_request_get[4]
+  PIN fmc_imem_request_get[5]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 42.200 272.530 42.800 ;
+    END
+  END fmc_imem_request_get[5]
+  PIN fmc_imem_request_get[6]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 47.640 272.530 48.240 ;
+    END
+  END fmc_imem_request_get[6]
+  PIN fmc_imem_request_get[7]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 53.080 272.530 53.680 ;
+    END
+  END fmc_imem_request_get[7]
+  PIN fmc_imem_request_get[8]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 58.520 272.530 59.120 ;
+    END
+  END fmc_imem_request_get[8]
+  PIN fmc_imem_request_get[9]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 64.640 272.530 65.240 ;
+    END
+  END fmc_imem_request_get[9]
+  PIN fmc_imem_response_put[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 15.680 272.530 16.280 ;
+    END
+  END fmc_imem_response_put[0]
+  PIN fmc_imem_response_put[10]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 71.440 272.530 72.040 ;
+    END
+  END fmc_imem_response_put[10]
+  PIN fmc_imem_response_put[11]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 76.880 272.530 77.480 ;
+    END
+  END fmc_imem_response_put[11]
+  PIN fmc_imem_response_put[12]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 82.320 272.530 82.920 ;
+    END
+  END fmc_imem_response_put[12]
+  PIN fmc_imem_response_put[13]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 87.760 272.530 88.360 ;
+    END
+  END fmc_imem_response_put[13]
+  PIN fmc_imem_response_put[14]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 93.200 272.530 93.800 ;
+    END
+  END fmc_imem_response_put[14]
+  PIN fmc_imem_response_put[15]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 99.320 272.530 99.920 ;
+    END
+  END fmc_imem_response_put[15]
+  PIN fmc_imem_response_put[16]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 104.760 272.530 105.360 ;
+    END
+  END fmc_imem_response_put[16]
+  PIN fmc_imem_response_put[17]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 110.200 272.530 110.800 ;
+    END
+  END fmc_imem_response_put[17]
+  PIN fmc_imem_response_put[18]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 115.640 272.530 116.240 ;
+    END
+  END fmc_imem_response_put[18]
+  PIN fmc_imem_response_put[19]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 121.080 272.530 121.680 ;
+    END
+  END fmc_imem_response_put[19]
+  PIN fmc_imem_response_put[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 21.120 272.530 21.720 ;
+    END
+  END fmc_imem_response_put[1]
+  PIN fmc_imem_response_put[20]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 127.200 272.530 127.800 ;
+    END
+  END fmc_imem_response_put[20]
+  PIN fmc_imem_response_put[21]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 132.640 272.530 133.240 ;
+    END
+  END fmc_imem_response_put[21]
+  PIN fmc_imem_response_put[22]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 138.080 272.530 138.680 ;
+    END
+  END fmc_imem_response_put[22]
+  PIN fmc_imem_response_put[23]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 143.520 272.530 144.120 ;
+    END
+  END fmc_imem_response_put[23]
+  PIN fmc_imem_response_put[24]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 148.960 272.530 149.560 ;
+    END
+  END fmc_imem_response_put[24]
+  PIN fmc_imem_response_put[25]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 154.400 272.530 155.000 ;
+    END
+  END fmc_imem_response_put[25]
+  PIN fmc_imem_response_put[26]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 160.520 272.530 161.120 ;
+    END
+  END fmc_imem_response_put[26]
+  PIN fmc_imem_response_put[27]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 165.960 272.530 166.560 ;
+    END
+  END fmc_imem_response_put[27]
+  PIN fmc_imem_response_put[28]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 171.400 272.530 172.000 ;
+    END
+  END fmc_imem_response_put[28]
+  PIN fmc_imem_response_put[29]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 176.840 272.530 177.440 ;
+    END
+  END fmc_imem_response_put[29]
+  PIN fmc_imem_response_put[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 26.560 272.530 27.160 ;
+    END
+  END fmc_imem_response_put[2]
+  PIN fmc_imem_response_put[30]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 182.280 272.530 182.880 ;
+    END
+  END fmc_imem_response_put[30]
+  PIN fmc_imem_response_put[31]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 187.720 272.530 188.320 ;
+    END
+  END fmc_imem_response_put[31]
+  PIN fmc_imem_response_put[3]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 32.680 272.530 33.280 ;
+    END
+  END fmc_imem_response_put[3]
+  PIN fmc_imem_response_put[4]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 38.120 272.530 38.720 ;
+    END
+  END fmc_imem_response_put[4]
+  PIN fmc_imem_response_put[5]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 43.560 272.530 44.160 ;
+    END
+  END fmc_imem_response_put[5]
+  PIN fmc_imem_response_put[6]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 49.000 272.530 49.600 ;
+    END
+  END fmc_imem_response_put[6]
+  PIN fmc_imem_response_put[7]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 54.440 272.530 55.040 ;
+    END
+  END fmc_imem_response_put[7]
+  PIN fmc_imem_response_put[8]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 59.880 272.530 60.480 ;
+    END
+  END fmc_imem_response_put[8]
+  PIN fmc_imem_response_put[9]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 268.530 66.000 272.530 66.600 ;
+    END
+  END fmc_imem_response_put[9]
+  PIN ram_dmem_request_get[0]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 11.130 279.250 11.410 283.250 ;
+    END
+  END ram_dmem_request_get[0]
+  PIN ram_dmem_request_get[10]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 64.490 279.250 64.770 283.250 ;
+    END
+  END ram_dmem_request_get[10]
+  PIN ram_dmem_request_get[11]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 69.550 279.250 69.830 283.250 ;
+    END
+  END ram_dmem_request_get[11]
+  PIN ram_dmem_request_get[12]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 75.070 279.250 75.350 283.250 ;
+    END
+  END ram_dmem_request_get[12]
+  PIN ram_dmem_request_get[13]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 80.590 279.250 80.870 283.250 ;
+    END
+  END ram_dmem_request_get[13]
+  PIN ram_dmem_request_get[14]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 85.650 279.250 85.930 283.250 ;
+    END
+  END ram_dmem_request_get[14]
+  PIN ram_dmem_request_get[15]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 91.170 279.250 91.450 283.250 ;
+    END
+  END ram_dmem_request_get[15]
+  PIN ram_dmem_request_get[16]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 96.230 279.250 96.510 283.250 ;
+    END
+  END ram_dmem_request_get[16]
+  PIN ram_dmem_request_get[17]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 101.750 279.250 102.030 283.250 ;
+    END
+  END ram_dmem_request_get[17]
+  PIN ram_dmem_request_get[18]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 107.270 279.250 107.550 283.250 ;
+    END
+  END ram_dmem_request_get[18]
+  PIN ram_dmem_request_get[19]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 112.330 279.250 112.610 283.250 ;
+    END
+  END ram_dmem_request_get[19]
+  PIN ram_dmem_request_get[1]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 16.190 279.250 16.470 283.250 ;
+    END
+  END ram_dmem_request_get[1]
+  PIN ram_dmem_request_get[20]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 117.850 279.250 118.130 283.250 ;
+    END
+  END ram_dmem_request_get[20]
+  PIN ram_dmem_request_get[21]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 122.910 279.250 123.190 283.250 ;
+    END
+  END ram_dmem_request_get[21]
+  PIN ram_dmem_request_get[22]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 128.430 279.250 128.710 283.250 ;
+    END
+  END ram_dmem_request_get[22]
+  PIN ram_dmem_request_get[23]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 133.950 279.250 134.230 283.250 ;
+    END
+  END ram_dmem_request_get[23]
+  PIN ram_dmem_request_get[24]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 139.010 279.250 139.290 283.250 ;
+    END
+  END ram_dmem_request_get[24]
+  PIN ram_dmem_request_get[25]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 144.530 279.250 144.810 283.250 ;
+    END
+  END ram_dmem_request_get[25]
+  PIN ram_dmem_request_get[26]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 150.050 279.250 150.330 283.250 ;
+    END
+  END ram_dmem_request_get[26]
+  PIN ram_dmem_request_get[27]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 155.110 279.250 155.390 283.250 ;
+    END
+  END ram_dmem_request_get[27]
+  PIN ram_dmem_request_get[28]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 160.630 279.250 160.910 283.250 ;
+    END
+  END ram_dmem_request_get[28]
+  PIN ram_dmem_request_get[29]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 165.690 279.250 165.970 283.250 ;
+    END
+  END ram_dmem_request_get[29]
+  PIN ram_dmem_request_get[2]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 21.710 279.250 21.990 283.250 ;
+    END
+  END ram_dmem_request_get[2]
+  PIN ram_dmem_request_get[30]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 171.210 279.250 171.490 283.250 ;
+    END
+  END ram_dmem_request_get[30]
+  PIN ram_dmem_request_get[31]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 176.730 279.250 177.010 283.250 ;
+    END
+  END ram_dmem_request_get[31]
+  PIN ram_dmem_request_get[32]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 181.790 279.250 182.070 283.250 ;
+    END
+  END ram_dmem_request_get[32]
+  PIN ram_dmem_request_get[33]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 183.170 279.250 183.450 283.250 ;
+    END
+  END ram_dmem_request_get[33]
+  PIN ram_dmem_request_get[34]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 184.550 279.250 184.830 283.250 ;
+    END
+  END ram_dmem_request_get[34]
+  PIN ram_dmem_request_get[35]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 185.930 279.250 186.210 283.250 ;
+    END
+  END ram_dmem_request_get[35]
+  PIN ram_dmem_request_get[36]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 187.310 279.250 187.590 283.250 ;
+    END
+  END ram_dmem_request_get[36]
+  PIN ram_dmem_request_get[37]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 188.690 279.250 188.970 283.250 ;
+    END
+  END ram_dmem_request_get[37]
+  PIN ram_dmem_request_get[38]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 190.070 279.250 190.350 283.250 ;
+    END
+  END ram_dmem_request_get[38]
+  PIN ram_dmem_request_get[39]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 190.990 279.250 191.270 283.250 ;
+    END
+  END ram_dmem_request_get[39]
+  PIN ram_dmem_request_get[3]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 27.230 279.250 27.510 283.250 ;
+    END
+  END ram_dmem_request_get[3]
+  PIN ram_dmem_request_get[40]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 192.370 279.250 192.650 283.250 ;
+    END
+  END ram_dmem_request_get[40]
+  PIN ram_dmem_request_get[41]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 193.750 279.250 194.030 283.250 ;
+    END
+  END ram_dmem_request_get[41]
+  PIN ram_dmem_request_get[42]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 195.130 279.250 195.410 283.250 ;
+    END
+  END ram_dmem_request_get[42]
+  PIN ram_dmem_request_get[43]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 196.510 279.250 196.790 283.250 ;
+    END
+  END ram_dmem_request_get[43]
+  PIN ram_dmem_request_get[44]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 197.890 279.250 198.170 283.250 ;
+    END
+  END ram_dmem_request_get[44]
+  PIN ram_dmem_request_get[45]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 199.270 279.250 199.550 283.250 ;
+    END
+  END ram_dmem_request_get[45]
+  PIN ram_dmem_request_get[46]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 200.650 279.250 200.930 283.250 ;
+    END
+  END ram_dmem_request_get[46]
+  PIN ram_dmem_request_get[47]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 202.030 279.250 202.310 283.250 ;
+    END
+  END ram_dmem_request_get[47]
+  PIN ram_dmem_request_get[48]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 203.410 279.250 203.690 283.250 ;
+    END
+  END ram_dmem_request_get[48]
+  PIN ram_dmem_request_get[49]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 204.790 279.250 205.070 283.250 ;
+    END
+  END ram_dmem_request_get[49]
+  PIN ram_dmem_request_get[4]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 32.290 279.250 32.570 283.250 ;
+    END
+  END ram_dmem_request_get[4]
+  PIN ram_dmem_request_get[50]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 205.710 279.250 205.990 283.250 ;
+    END
+  END ram_dmem_request_get[50]
+  PIN ram_dmem_request_get[51]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 207.090 279.250 207.370 283.250 ;
+    END
+  END ram_dmem_request_get[51]
+  PIN ram_dmem_request_get[52]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 208.470 279.250 208.750 283.250 ;
+    END
+  END ram_dmem_request_get[52]
+  PIN ram_dmem_request_get[53]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 209.850 279.250 210.130 283.250 ;
+    END
+  END ram_dmem_request_get[53]
+  PIN ram_dmem_request_get[54]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 211.230 279.250 211.510 283.250 ;
+    END
+  END ram_dmem_request_get[54]
+  PIN ram_dmem_request_get[55]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 212.610 279.250 212.890 283.250 ;
+    END
+  END ram_dmem_request_get[55]
+  PIN ram_dmem_request_get[56]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 213.990 279.250 214.270 283.250 ;
+    END
+  END ram_dmem_request_get[56]
+  PIN ram_dmem_request_get[57]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 215.370 279.250 215.650 283.250 ;
+    END
+  END ram_dmem_request_get[57]
+  PIN ram_dmem_request_get[58]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 216.750 279.250 217.030 283.250 ;
+    END
+  END ram_dmem_request_get[58]
+  PIN ram_dmem_request_get[59]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 218.130 279.250 218.410 283.250 ;
+    END
+  END ram_dmem_request_get[59]
+  PIN ram_dmem_request_get[5]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 37.810 279.250 38.090 283.250 ;
+    END
+  END ram_dmem_request_get[5]
+  PIN ram_dmem_request_get[60]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 219.050 279.250 219.330 283.250 ;
+    END
+  END ram_dmem_request_get[60]
+  PIN ram_dmem_request_get[61]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 220.430 279.250 220.710 283.250 ;
+    END
+  END ram_dmem_request_get[61]
+  PIN ram_dmem_request_get[62]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 221.810 279.250 222.090 283.250 ;
+    END
+  END ram_dmem_request_get[62]
+  PIN ram_dmem_request_get[63]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 223.190 279.250 223.470 283.250 ;
+    END
+  END ram_dmem_request_get[63]
+  PIN ram_dmem_request_get[64]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 224.570 279.250 224.850 283.250 ;
+    END
+  END ram_dmem_request_get[64]
+  PIN ram_dmem_request_get[65]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 225.950 279.250 226.230 283.250 ;
+    END
+  END ram_dmem_request_get[65]
+  PIN ram_dmem_request_get[66]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 227.330 279.250 227.610 283.250 ;
+    END
+  END ram_dmem_request_get[66]
+  PIN ram_dmem_request_get[67]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 228.710 279.250 228.990 283.250 ;
+    END
+  END ram_dmem_request_get[67]
+  PIN ram_dmem_request_get[68]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 230.090 279.250 230.370 283.250 ;
+    END
+  END ram_dmem_request_get[68]
+  PIN ram_dmem_request_get[69]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 231.470 279.250 231.750 283.250 ;
+    END
+  END ram_dmem_request_get[69]
+  PIN ram_dmem_request_get[6]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 42.870 279.250 43.150 283.250 ;
+    END
+  END ram_dmem_request_get[6]
+  PIN ram_dmem_request_get[70]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 232.390 279.250 232.670 283.250 ;
+    END
+  END ram_dmem_request_get[70]
+  PIN ram_dmem_request_get[71]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 233.770 279.250 234.050 283.250 ;
+    END
+  END ram_dmem_request_get[71]
+  PIN ram_dmem_request_get[72]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 235.150 279.250 235.430 283.250 ;
+    END
+  END ram_dmem_request_get[72]
+  PIN ram_dmem_request_get[73]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 236.530 279.250 236.810 283.250 ;
+    END
+  END ram_dmem_request_get[73]
+  PIN ram_dmem_request_get[74]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 237.910 279.250 238.190 283.250 ;
+    END
+  END ram_dmem_request_get[74]
+  PIN ram_dmem_request_get[75]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 239.290 279.250 239.570 283.250 ;
+    END
+  END ram_dmem_request_get[75]
+  PIN ram_dmem_request_get[76]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 240.670 279.250 240.950 283.250 ;
+    END
+  END ram_dmem_request_get[76]
+  PIN ram_dmem_request_get[77]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 242.050 279.250 242.330 283.250 ;
+    END
+  END ram_dmem_request_get[77]
+  PIN ram_dmem_request_get[78]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 243.430 279.250 243.710 283.250 ;
+    END
+  END ram_dmem_request_get[78]
+  PIN ram_dmem_request_get[79]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 244.810 279.250 245.090 283.250 ;
+    END
+  END ram_dmem_request_get[79]
+  PIN ram_dmem_request_get[7]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 48.390 279.250 48.670 283.250 ;
+    END
+  END ram_dmem_request_get[7]
+  PIN ram_dmem_request_get[80]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 245.730 279.250 246.010 283.250 ;
+    END
+  END ram_dmem_request_get[80]
+  PIN ram_dmem_request_get[81]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 247.110 279.250 247.390 283.250 ;
+    END
+  END ram_dmem_request_get[81]
+  PIN ram_dmem_request_get[82]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 248.490 279.250 248.770 283.250 ;
+    END
+  END ram_dmem_request_get[82]
+  PIN ram_dmem_request_get[83]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 249.870 279.250 250.150 283.250 ;
+    END
+  END ram_dmem_request_get[83]
+  PIN ram_dmem_request_get[84]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 251.250 279.250 251.530 283.250 ;
+    END
+  END ram_dmem_request_get[84]
+  PIN ram_dmem_request_get[85]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 252.630 279.250 252.910 283.250 ;
+    END
+  END ram_dmem_request_get[85]
+  PIN ram_dmem_request_get[86]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 254.010 279.250 254.290 283.250 ;
+    END
+  END ram_dmem_request_get[86]
+  PIN ram_dmem_request_get[87]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 255.390 279.250 255.670 283.250 ;
+    END
+  END ram_dmem_request_get[87]
+  PIN ram_dmem_request_get[88]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 256.770 279.250 257.050 283.250 ;
+    END
+  END ram_dmem_request_get[88]
+  PIN ram_dmem_request_get[89]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 258.150 279.250 258.430 283.250 ;
+    END
+  END ram_dmem_request_get[89]
+  PIN ram_dmem_request_get[8]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 53.910 279.250 54.190 283.250 ;
+    END
+  END ram_dmem_request_get[8]
+  PIN ram_dmem_request_get[90]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 259.070 279.250 259.350 283.250 ;
+    END
+  END ram_dmem_request_get[90]
+  PIN ram_dmem_request_get[91]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 260.450 279.250 260.730 283.250 ;
+    END
+  END ram_dmem_request_get[91]
+  PIN ram_dmem_request_get[92]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 261.830 279.250 262.110 283.250 ;
+    END
+  END ram_dmem_request_get[92]
+  PIN ram_dmem_request_get[93]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 263.210 279.250 263.490 283.250 ;
+    END
+  END ram_dmem_request_get[93]
+  PIN ram_dmem_request_get[94]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 264.590 279.250 264.870 283.250 ;
+    END
+  END ram_dmem_request_get[94]
+  PIN ram_dmem_request_get[95]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 265.970 279.250 266.250 283.250 ;
+    END
+  END ram_dmem_request_get[95]
+  PIN ram_dmem_request_get[96]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 267.350 279.250 267.630 283.250 ;
+    END
+  END ram_dmem_request_get[96]
+  PIN ram_dmem_request_get[97]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 268.730 279.250 269.010 283.250 ;
+    END
+  END ram_dmem_request_get[97]
+  PIN ram_dmem_request_get[98]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 270.110 279.250 270.390 283.250 ;
+    END
+  END ram_dmem_request_get[98]
+  PIN ram_dmem_request_get[99]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 271.490 279.250 271.770 283.250 ;
+    END
+  END ram_dmem_request_get[99]
+  PIN ram_dmem_request_get[9]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 58.970 279.250 59.250 283.250 ;
+    END
+  END ram_dmem_request_get[9]
+  PIN ram_dmem_response_put[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 12.510 279.250 12.790 283.250 ;
+    END
+  END ram_dmem_response_put[0]
+  PIN ram_dmem_response_put[10]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 65.870 279.250 66.150 283.250 ;
+    END
+  END ram_dmem_response_put[10]
+  PIN ram_dmem_response_put[11]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 70.930 279.250 71.210 283.250 ;
+    END
+  END ram_dmem_response_put[11]
+  PIN ram_dmem_response_put[12]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 76.450 279.250 76.730 283.250 ;
+    END
+  END ram_dmem_response_put[12]
+  PIN ram_dmem_response_put[13]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 81.970 279.250 82.250 283.250 ;
+    END
+  END ram_dmem_response_put[13]
+  PIN ram_dmem_response_put[14]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 87.030 279.250 87.310 283.250 ;
+    END
+  END ram_dmem_response_put[14]
+  PIN ram_dmem_response_put[15]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 92.550 279.250 92.830 283.250 ;
+    END
+  END ram_dmem_response_put[15]
+  PIN ram_dmem_response_put[16]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 97.610 279.250 97.890 283.250 ;
+    END
+  END ram_dmem_response_put[16]
+  PIN ram_dmem_response_put[17]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 103.130 279.250 103.410 283.250 ;
+    END
+  END ram_dmem_response_put[17]
+  PIN ram_dmem_response_put[18]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 108.650 279.250 108.930 283.250 ;
+    END
+  END ram_dmem_response_put[18]
+  PIN ram_dmem_response_put[19]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 113.710 279.250 113.990 283.250 ;
+    END
+  END ram_dmem_response_put[19]
+  PIN ram_dmem_response_put[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 17.570 279.250 17.850 283.250 ;
+    END
+  END ram_dmem_response_put[1]
+  PIN ram_dmem_response_put[20]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 119.230 279.250 119.510 283.250 ;
+    END
+  END ram_dmem_response_put[20]
+  PIN ram_dmem_response_put[21]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 124.290 279.250 124.570 283.250 ;
+    END
+  END ram_dmem_response_put[21]
+  PIN ram_dmem_response_put[22]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 129.810 279.250 130.090 283.250 ;
+    END
+  END ram_dmem_response_put[22]
+  PIN ram_dmem_response_put[23]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 135.330 279.250 135.610 283.250 ;
+    END
+  END ram_dmem_response_put[23]
+  PIN ram_dmem_response_put[24]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 140.390 279.250 140.670 283.250 ;
+    END
+  END ram_dmem_response_put[24]
+  PIN ram_dmem_response_put[25]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 145.910 279.250 146.190 283.250 ;
+    END
+  END ram_dmem_response_put[25]
+  PIN ram_dmem_response_put[26]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 150.970 279.250 151.250 283.250 ;
+    END
+  END ram_dmem_response_put[26]
+  PIN ram_dmem_response_put[27]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 156.490 279.250 156.770 283.250 ;
+    END
+  END ram_dmem_response_put[27]
+  PIN ram_dmem_response_put[28]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 162.010 279.250 162.290 283.250 ;
+    END
+  END ram_dmem_response_put[28]
+  PIN ram_dmem_response_put[29]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 167.070 279.250 167.350 283.250 ;
+    END
+  END ram_dmem_response_put[29]
+  PIN ram_dmem_response_put[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 23.090 279.250 23.370 283.250 ;
+    END
+  END ram_dmem_response_put[2]
+  PIN ram_dmem_response_put[30]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 172.590 279.250 172.870 283.250 ;
+    END
+  END ram_dmem_response_put[30]
+  PIN ram_dmem_response_put[31]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 177.650 279.250 177.930 283.250 ;
+    END
+  END ram_dmem_response_put[31]
+  PIN ram_dmem_response_put[3]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 28.150 279.250 28.430 283.250 ;
+    END
+  END ram_dmem_response_put[3]
+  PIN ram_dmem_response_put[4]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 33.670 279.250 33.950 283.250 ;
+    END
+  END ram_dmem_response_put[4]
+  PIN ram_dmem_response_put[5]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 39.190 279.250 39.470 283.250 ;
+    END
+  END ram_dmem_response_put[5]
+  PIN ram_dmem_response_put[6]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 44.250 279.250 44.530 283.250 ;
+    END
+  END ram_dmem_response_put[6]
+  PIN ram_dmem_response_put[7]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 49.770 279.250 50.050 283.250 ;
+    END
+  END ram_dmem_response_put[7]
+  PIN ram_dmem_response_put[8]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 54.830 279.250 55.110 283.250 ;
+    END
+  END ram_dmem_response_put[8]
+  PIN ram_dmem_response_put[9]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 60.350 279.250 60.630 283.250 ;
+    END
+  END ram_dmem_response_put[9]
+  PIN ram_imem_request_get[0]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 13.890 279.250 14.170 283.250 ;
+    END
+  END ram_imem_request_get[0]
+  PIN ram_imem_request_get[10]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 67.250 279.250 67.530 283.250 ;
+    END
+  END ram_imem_request_get[10]
+  PIN ram_imem_request_get[11]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 72.310 279.250 72.590 283.250 ;
+    END
+  END ram_imem_request_get[11]
+  PIN ram_imem_request_get[12]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 77.830 279.250 78.110 283.250 ;
+    END
+  END ram_imem_request_get[12]
+  PIN ram_imem_request_get[13]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 82.890 279.250 83.170 283.250 ;
+    END
+  END ram_imem_request_get[13]
+  PIN ram_imem_request_get[14]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 88.410 279.250 88.690 283.250 ;
+    END
+  END ram_imem_request_get[14]
+  PIN ram_imem_request_get[15]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 93.930 279.250 94.210 283.250 ;
+    END
+  END ram_imem_request_get[15]
+  PIN ram_imem_request_get[16]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 98.990 279.250 99.270 283.250 ;
+    END
+  END ram_imem_request_get[16]
+  PIN ram_imem_request_get[17]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 104.510 279.250 104.790 283.250 ;
+    END
+  END ram_imem_request_get[17]
+  PIN ram_imem_request_get[18]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 109.570 279.250 109.850 283.250 ;
+    END
+  END ram_imem_request_get[18]
+  PIN ram_imem_request_get[19]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 115.090 279.250 115.370 283.250 ;
+    END
+  END ram_imem_request_get[19]
+  PIN ram_imem_request_get[1]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 18.950 279.250 19.230 283.250 ;
+    END
+  END ram_imem_request_get[1]
+  PIN ram_imem_request_get[20]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 120.610 279.250 120.890 283.250 ;
+    END
+  END ram_imem_request_get[20]
+  PIN ram_imem_request_get[21]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 125.670 279.250 125.950 283.250 ;
+    END
+  END ram_imem_request_get[21]
+  PIN ram_imem_request_get[22]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 131.190 279.250 131.470 283.250 ;
+    END
+  END ram_imem_request_get[22]
+  PIN ram_imem_request_get[23]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 136.710 279.250 136.990 283.250 ;
+    END
+  END ram_imem_request_get[23]
+  PIN ram_imem_request_get[24]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 141.770 279.250 142.050 283.250 ;
+    END
+  END ram_imem_request_get[24]
+  PIN ram_imem_request_get[25]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 147.290 279.250 147.570 283.250 ;
+    END
+  END ram_imem_request_get[25]
+  PIN ram_imem_request_get[26]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 152.350 279.250 152.630 283.250 ;
+    END
+  END ram_imem_request_get[26]
+  PIN ram_imem_request_get[27]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 157.870 279.250 158.150 283.250 ;
+    END
+  END ram_imem_request_get[27]
+  PIN ram_imem_request_get[28]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 163.390 279.250 163.670 283.250 ;
+    END
+  END ram_imem_request_get[28]
+  PIN ram_imem_request_get[29]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 168.450 279.250 168.730 283.250 ;
+    END
+  END ram_imem_request_get[29]
+  PIN ram_imem_request_get[2]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 24.470 279.250 24.750 283.250 ;
+    END
+  END ram_imem_request_get[2]
+  PIN ram_imem_request_get[30]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 173.970 279.250 174.250 283.250 ;
+    END
+  END ram_imem_request_get[30]
+  PIN ram_imem_request_get[31]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 179.030 279.250 179.310 283.250 ;
+    END
+  END ram_imem_request_get[31]
+  PIN ram_imem_request_get[3]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 29.530 279.250 29.810 283.250 ;
+    END
+  END ram_imem_request_get[3]
+  PIN ram_imem_request_get[4]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 35.050 279.250 35.330 283.250 ;
+    END
+  END ram_imem_request_get[4]
+  PIN ram_imem_request_get[5]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 40.570 279.250 40.850 283.250 ;
+    END
+  END ram_imem_request_get[5]
+  PIN ram_imem_request_get[6]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 45.630 279.250 45.910 283.250 ;
+    END
+  END ram_imem_request_get[6]
+  PIN ram_imem_request_get[7]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 51.150 279.250 51.430 283.250 ;
+    END
+  END ram_imem_request_get[7]
+  PIN ram_imem_request_get[8]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 56.210 279.250 56.490 283.250 ;
+    END
+  END ram_imem_request_get[8]
+  PIN ram_imem_request_get[9]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 61.730 279.250 62.010 283.250 ;
+    END
+  END ram_imem_request_get[9]
+  PIN ram_imem_response_put[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 14.810 279.250 15.090 283.250 ;
+    END
+  END ram_imem_response_put[0]
+  PIN ram_imem_response_put[10]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 68.630 279.250 68.910 283.250 ;
+    END
+  END ram_imem_response_put[10]
+  PIN ram_imem_response_put[11]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 73.690 279.250 73.970 283.250 ;
+    END
+  END ram_imem_response_put[11]
+  PIN ram_imem_response_put[12]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 79.210 279.250 79.490 283.250 ;
+    END
+  END ram_imem_response_put[12]
+  PIN ram_imem_response_put[13]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 84.270 279.250 84.550 283.250 ;
+    END
+  END ram_imem_response_put[13]
+  PIN ram_imem_response_put[14]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 89.790 279.250 90.070 283.250 ;
+    END
+  END ram_imem_response_put[14]
+  PIN ram_imem_response_put[15]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 95.310 279.250 95.590 283.250 ;
+    END
+  END ram_imem_response_put[15]
+  PIN ram_imem_response_put[16]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 100.370 279.250 100.650 283.250 ;
+    END
+  END ram_imem_response_put[16]
+  PIN ram_imem_response_put[17]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 105.890 279.250 106.170 283.250 ;
+    END
+  END ram_imem_response_put[17]
+  PIN ram_imem_response_put[18]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 110.950 279.250 111.230 283.250 ;
+    END
+  END ram_imem_response_put[18]
+  PIN ram_imem_response_put[19]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 116.470 279.250 116.750 283.250 ;
+    END
+  END ram_imem_response_put[19]
+  PIN ram_imem_response_put[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 20.330 279.250 20.610 283.250 ;
+    END
+  END ram_imem_response_put[1]
+  PIN ram_imem_response_put[20]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 121.990 279.250 122.270 283.250 ;
+    END
+  END ram_imem_response_put[20]
+  PIN ram_imem_response_put[21]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 127.050 279.250 127.330 283.250 ;
+    END
+  END ram_imem_response_put[21]
+  PIN ram_imem_response_put[22]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 132.570 279.250 132.850 283.250 ;
+    END
+  END ram_imem_response_put[22]
+  PIN ram_imem_response_put[23]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 137.630 279.250 137.910 283.250 ;
+    END
+  END ram_imem_response_put[23]
+  PIN ram_imem_response_put[24]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 143.150 279.250 143.430 283.250 ;
+    END
+  END ram_imem_response_put[24]
+  PIN ram_imem_response_put[25]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 148.670 279.250 148.950 283.250 ;
+    END
+  END ram_imem_response_put[25]
+  PIN ram_imem_response_put[26]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 153.730 279.250 154.010 283.250 ;
+    END
+  END ram_imem_response_put[26]
+  PIN ram_imem_response_put[27]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 159.250 279.250 159.530 283.250 ;
+    END
+  END ram_imem_response_put[27]
+  PIN ram_imem_response_put[28]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 164.310 279.250 164.590 283.250 ;
+    END
+  END ram_imem_response_put[28]
+  PIN ram_imem_response_put[29]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 169.830 279.250 170.110 283.250 ;
+    END
+  END ram_imem_response_put[29]
+  PIN ram_imem_response_put[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 25.850 279.250 26.130 283.250 ;
+    END
+  END ram_imem_response_put[2]
+  PIN ram_imem_response_put[30]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 175.350 279.250 175.630 283.250 ;
+    END
+  END ram_imem_response_put[30]
+  PIN ram_imem_response_put[31]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 180.410 279.250 180.690 283.250 ;
+    END
+  END ram_imem_response_put[31]
+  PIN ram_imem_response_put[3]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 30.910 279.250 31.190 283.250 ;
+    END
+  END ram_imem_response_put[3]
+  PIN ram_imem_response_put[4]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 36.430 279.250 36.710 283.250 ;
+    END
+  END ram_imem_response_put[4]
+  PIN ram_imem_response_put[5]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 41.490 279.250 41.770 283.250 ;
+    END
+  END ram_imem_response_put[5]
+  PIN ram_imem_response_put[6]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 47.010 279.250 47.290 283.250 ;
+    END
+  END ram_imem_response_put[6]
+  PIN ram_imem_response_put[7]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 52.530 279.250 52.810 283.250 ;
+    END
+  END ram_imem_response_put[7]
+  PIN ram_imem_response_put[8]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 57.590 279.250 57.870 283.250 ;
+    END
+  END ram_imem_response_put[8]
+  PIN ram_imem_response_put[9]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 63.110 279.250 63.390 283.250 ;
+    END
+  END ram_imem_response_put[9]
+  PIN vccd1
+    DIRECTION INPUT ;
+    USE POWER ;
+    PORT
+      LAYER met4 ;
+        RECT 21.040 10.640 22.640 272.240 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 174.640 10.640 176.240 272.240 ;
+    END
+  END vccd1
+  PIN vssd1
+    DIRECTION INPUT ;
+    USE GROUND ;
+    PORT
+      LAYER met4 ;
+        RECT 97.840 10.640 99.440 272.240 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 251.440 10.640 253.040 272.240 ;
+    END
+  END vssd1
+  OBS
+      LAYER li1 ;
+        RECT 5.520 10.795 266.800 272.085 ;
+      LAYER met1 ;
+        RECT 0.530 0.040 272.250 279.100 ;
+      LAYER met2 ;
+        RECT 1.110 278.970 1.190 282.725 ;
+        RECT 2.030 278.970 2.570 282.725 ;
+        RECT 3.410 278.970 3.950 282.725 ;
+        RECT 4.790 278.970 5.330 282.725 ;
+        RECT 6.170 278.970 6.710 282.725 ;
+        RECT 7.550 278.970 8.090 282.725 ;
+        RECT 8.930 278.970 9.470 282.725 ;
+        RECT 10.310 278.970 10.850 282.725 ;
+        RECT 11.690 278.970 12.230 282.725 ;
+        RECT 13.070 278.970 13.610 282.725 ;
+        RECT 14.450 278.970 14.530 282.725 ;
+        RECT 15.370 278.970 15.910 282.725 ;
+        RECT 16.750 278.970 17.290 282.725 ;
+        RECT 18.130 278.970 18.670 282.725 ;
+        RECT 19.510 278.970 20.050 282.725 ;
+        RECT 20.890 278.970 21.430 282.725 ;
+        RECT 22.270 278.970 22.810 282.725 ;
+        RECT 23.650 278.970 24.190 282.725 ;
+        RECT 25.030 278.970 25.570 282.725 ;
+        RECT 26.410 278.970 26.950 282.725 ;
+        RECT 27.790 278.970 27.870 282.725 ;
+        RECT 28.710 278.970 29.250 282.725 ;
+        RECT 30.090 278.970 30.630 282.725 ;
+        RECT 31.470 278.970 32.010 282.725 ;
+        RECT 32.850 278.970 33.390 282.725 ;
+        RECT 34.230 278.970 34.770 282.725 ;
+        RECT 35.610 278.970 36.150 282.725 ;
+        RECT 36.990 278.970 37.530 282.725 ;
+        RECT 38.370 278.970 38.910 282.725 ;
+        RECT 39.750 278.970 40.290 282.725 ;
+        RECT 41.130 278.970 41.210 282.725 ;
+        RECT 42.050 278.970 42.590 282.725 ;
+        RECT 43.430 278.970 43.970 282.725 ;
+        RECT 44.810 278.970 45.350 282.725 ;
+        RECT 46.190 278.970 46.730 282.725 ;
+        RECT 47.570 278.970 48.110 282.725 ;
+        RECT 48.950 278.970 49.490 282.725 ;
+        RECT 50.330 278.970 50.870 282.725 ;
+        RECT 51.710 278.970 52.250 282.725 ;
+        RECT 53.090 278.970 53.630 282.725 ;
+        RECT 54.470 278.970 54.550 282.725 ;
+        RECT 55.390 278.970 55.930 282.725 ;
+        RECT 56.770 278.970 57.310 282.725 ;
+        RECT 58.150 278.970 58.690 282.725 ;
+        RECT 59.530 278.970 60.070 282.725 ;
+        RECT 60.910 278.970 61.450 282.725 ;
+        RECT 62.290 278.970 62.830 282.725 ;
+        RECT 63.670 278.970 64.210 282.725 ;
+        RECT 65.050 278.970 65.590 282.725 ;
+        RECT 66.430 278.970 66.970 282.725 ;
+        RECT 67.810 278.970 68.350 282.725 ;
+        RECT 69.190 278.970 69.270 282.725 ;
+        RECT 70.110 278.970 70.650 282.725 ;
+        RECT 71.490 278.970 72.030 282.725 ;
+        RECT 72.870 278.970 73.410 282.725 ;
+        RECT 74.250 278.970 74.790 282.725 ;
+        RECT 75.630 278.970 76.170 282.725 ;
+        RECT 77.010 278.970 77.550 282.725 ;
+        RECT 78.390 278.970 78.930 282.725 ;
+        RECT 79.770 278.970 80.310 282.725 ;
+        RECT 81.150 278.970 81.690 282.725 ;
+        RECT 82.530 278.970 82.610 282.725 ;
+        RECT 83.450 278.970 83.990 282.725 ;
+        RECT 84.830 278.970 85.370 282.725 ;
+        RECT 86.210 278.970 86.750 282.725 ;
+        RECT 87.590 278.970 88.130 282.725 ;
+        RECT 88.970 278.970 89.510 282.725 ;
+        RECT 90.350 278.970 90.890 282.725 ;
+        RECT 91.730 278.970 92.270 282.725 ;
+        RECT 93.110 278.970 93.650 282.725 ;
+        RECT 94.490 278.970 95.030 282.725 ;
+        RECT 95.870 278.970 95.950 282.725 ;
+        RECT 96.790 278.970 97.330 282.725 ;
+        RECT 98.170 278.970 98.710 282.725 ;
+        RECT 99.550 278.970 100.090 282.725 ;
+        RECT 100.930 278.970 101.470 282.725 ;
+        RECT 102.310 278.970 102.850 282.725 ;
+        RECT 103.690 278.970 104.230 282.725 ;
+        RECT 105.070 278.970 105.610 282.725 ;
+        RECT 106.450 278.970 106.990 282.725 ;
+        RECT 107.830 278.970 108.370 282.725 ;
+        RECT 109.210 278.970 109.290 282.725 ;
+        RECT 110.130 278.970 110.670 282.725 ;
+        RECT 111.510 278.970 112.050 282.725 ;
+        RECT 112.890 278.970 113.430 282.725 ;
+        RECT 114.270 278.970 114.810 282.725 ;
+        RECT 115.650 278.970 116.190 282.725 ;
+        RECT 117.030 278.970 117.570 282.725 ;
+        RECT 118.410 278.970 118.950 282.725 ;
+        RECT 119.790 278.970 120.330 282.725 ;
+        RECT 121.170 278.970 121.710 282.725 ;
+        RECT 122.550 278.970 122.630 282.725 ;
+        RECT 123.470 278.970 124.010 282.725 ;
+        RECT 124.850 278.970 125.390 282.725 ;
+        RECT 126.230 278.970 126.770 282.725 ;
+        RECT 127.610 278.970 128.150 282.725 ;
+        RECT 128.990 278.970 129.530 282.725 ;
+        RECT 130.370 278.970 130.910 282.725 ;
+        RECT 131.750 278.970 132.290 282.725 ;
+        RECT 133.130 278.970 133.670 282.725 ;
+        RECT 134.510 278.970 135.050 282.725 ;
+        RECT 135.890 278.970 136.430 282.725 ;
+        RECT 137.270 278.970 137.350 282.725 ;
+        RECT 138.190 278.970 138.730 282.725 ;
+        RECT 139.570 278.970 140.110 282.725 ;
+        RECT 140.950 278.970 141.490 282.725 ;
+        RECT 142.330 278.970 142.870 282.725 ;
+        RECT 143.710 278.970 144.250 282.725 ;
+        RECT 145.090 278.970 145.630 282.725 ;
+        RECT 146.470 278.970 147.010 282.725 ;
+        RECT 147.850 278.970 148.390 282.725 ;
+        RECT 149.230 278.970 149.770 282.725 ;
+        RECT 150.610 278.970 150.690 282.725 ;
+        RECT 151.530 278.970 152.070 282.725 ;
+        RECT 152.910 278.970 153.450 282.725 ;
+        RECT 154.290 278.970 154.830 282.725 ;
+        RECT 155.670 278.970 156.210 282.725 ;
+        RECT 157.050 278.970 157.590 282.725 ;
+        RECT 158.430 278.970 158.970 282.725 ;
+        RECT 159.810 278.970 160.350 282.725 ;
+        RECT 161.190 278.970 161.730 282.725 ;
+        RECT 162.570 278.970 163.110 282.725 ;
+        RECT 163.950 278.970 164.030 282.725 ;
+        RECT 164.870 278.970 165.410 282.725 ;
+        RECT 166.250 278.970 166.790 282.725 ;
+        RECT 167.630 278.970 168.170 282.725 ;
+        RECT 169.010 278.970 169.550 282.725 ;
+        RECT 170.390 278.970 170.930 282.725 ;
+        RECT 171.770 278.970 172.310 282.725 ;
+        RECT 173.150 278.970 173.690 282.725 ;
+        RECT 174.530 278.970 175.070 282.725 ;
+        RECT 175.910 278.970 176.450 282.725 ;
+        RECT 177.290 278.970 177.370 282.725 ;
+        RECT 178.210 278.970 178.750 282.725 ;
+        RECT 179.590 278.970 180.130 282.725 ;
+        RECT 180.970 278.970 181.510 282.725 ;
+        RECT 182.350 278.970 182.890 282.725 ;
+        RECT 183.730 278.970 184.270 282.725 ;
+        RECT 185.110 278.970 185.650 282.725 ;
+        RECT 186.490 278.970 187.030 282.725 ;
+        RECT 187.870 278.970 188.410 282.725 ;
+        RECT 189.250 278.970 189.790 282.725 ;
+        RECT 190.630 278.970 190.710 282.725 ;
+        RECT 191.550 278.970 192.090 282.725 ;
+        RECT 192.930 278.970 193.470 282.725 ;
+        RECT 194.310 278.970 194.850 282.725 ;
+        RECT 195.690 278.970 196.230 282.725 ;
+        RECT 197.070 278.970 197.610 282.725 ;
+        RECT 198.450 278.970 198.990 282.725 ;
+        RECT 199.830 278.970 200.370 282.725 ;
+        RECT 201.210 278.970 201.750 282.725 ;
+        RECT 202.590 278.970 203.130 282.725 ;
+        RECT 203.970 278.970 204.510 282.725 ;
+        RECT 205.350 278.970 205.430 282.725 ;
+        RECT 206.270 278.970 206.810 282.725 ;
+        RECT 207.650 278.970 208.190 282.725 ;
+        RECT 209.030 278.970 209.570 282.725 ;
+        RECT 210.410 278.970 210.950 282.725 ;
+        RECT 211.790 278.970 212.330 282.725 ;
+        RECT 213.170 278.970 213.710 282.725 ;
+        RECT 214.550 278.970 215.090 282.725 ;
+        RECT 215.930 278.970 216.470 282.725 ;
+        RECT 217.310 278.970 217.850 282.725 ;
+        RECT 218.690 278.970 218.770 282.725 ;
+        RECT 219.610 278.970 220.150 282.725 ;
+        RECT 220.990 278.970 221.530 282.725 ;
+        RECT 222.370 278.970 222.910 282.725 ;
+        RECT 223.750 278.970 224.290 282.725 ;
+        RECT 225.130 278.970 225.670 282.725 ;
+        RECT 226.510 278.970 227.050 282.725 ;
+        RECT 227.890 278.970 228.430 282.725 ;
+        RECT 229.270 278.970 229.810 282.725 ;
+        RECT 230.650 278.970 231.190 282.725 ;
+        RECT 232.030 278.970 232.110 282.725 ;
+        RECT 232.950 278.970 233.490 282.725 ;
+        RECT 234.330 278.970 234.870 282.725 ;
+        RECT 235.710 278.970 236.250 282.725 ;
+        RECT 237.090 278.970 237.630 282.725 ;
+        RECT 238.470 278.970 239.010 282.725 ;
+        RECT 239.850 278.970 240.390 282.725 ;
+        RECT 241.230 278.970 241.770 282.725 ;
+        RECT 242.610 278.970 243.150 282.725 ;
+        RECT 243.990 278.970 244.530 282.725 ;
+        RECT 245.370 278.970 245.450 282.725 ;
+        RECT 246.290 278.970 246.830 282.725 ;
+        RECT 247.670 278.970 248.210 282.725 ;
+        RECT 249.050 278.970 249.590 282.725 ;
+        RECT 250.430 278.970 250.970 282.725 ;
+        RECT 251.810 278.970 252.350 282.725 ;
+        RECT 253.190 278.970 253.730 282.725 ;
+        RECT 254.570 278.970 255.110 282.725 ;
+        RECT 255.950 278.970 256.490 282.725 ;
+        RECT 257.330 278.970 257.870 282.725 ;
+        RECT 258.710 278.970 258.790 282.725 ;
+        RECT 259.630 278.970 260.170 282.725 ;
+        RECT 261.010 278.970 261.550 282.725 ;
+        RECT 262.390 278.970 262.930 282.725 ;
+        RECT 263.770 278.970 264.310 282.725 ;
+        RECT 265.150 278.970 265.690 282.725 ;
+        RECT 266.530 278.970 267.070 282.725 ;
+        RECT 267.910 278.970 268.450 282.725 ;
+        RECT 269.290 278.970 269.830 282.725 ;
+        RECT 270.670 278.970 271.210 282.725 ;
+        RECT 272.050 278.970 272.220 282.725 ;
+        RECT 0.560 4.280 272.220 278.970 ;
+        RECT 1.110 0.010 1.190 4.280 ;
+        RECT 2.030 0.010 2.570 4.280 ;
+        RECT 3.410 0.010 3.950 4.280 ;
+        RECT 4.790 0.010 5.330 4.280 ;
+        RECT 6.170 0.010 6.710 4.280 ;
+        RECT 7.550 0.010 8.090 4.280 ;
+        RECT 8.930 0.010 9.470 4.280 ;
+        RECT 10.310 0.010 10.850 4.280 ;
+        RECT 11.690 0.010 12.230 4.280 ;
+        RECT 13.070 0.010 13.610 4.280 ;
+        RECT 14.450 0.010 14.530 4.280 ;
+        RECT 15.370 0.010 15.910 4.280 ;
+        RECT 16.750 0.010 17.290 4.280 ;
+        RECT 18.130 0.010 18.670 4.280 ;
+        RECT 19.510 0.010 20.050 4.280 ;
+        RECT 20.890 0.010 21.430 4.280 ;
+        RECT 22.270 0.010 22.810 4.280 ;
+        RECT 23.650 0.010 24.190 4.280 ;
+        RECT 25.030 0.010 25.570 4.280 ;
+        RECT 26.410 0.010 26.950 4.280 ;
+        RECT 27.790 0.010 27.870 4.280 ;
+        RECT 28.710 0.010 29.250 4.280 ;
+        RECT 30.090 0.010 30.630 4.280 ;
+        RECT 31.470 0.010 32.010 4.280 ;
+        RECT 32.850 0.010 33.390 4.280 ;
+        RECT 34.230 0.010 34.770 4.280 ;
+        RECT 35.610 0.010 36.150 4.280 ;
+        RECT 36.990 0.010 37.530 4.280 ;
+        RECT 38.370 0.010 38.910 4.280 ;
+        RECT 39.750 0.010 40.290 4.280 ;
+        RECT 41.130 0.010 41.210 4.280 ;
+        RECT 42.050 0.010 42.590 4.280 ;
+        RECT 43.430 0.010 43.970 4.280 ;
+        RECT 44.810 0.010 45.350 4.280 ;
+        RECT 46.190 0.010 46.730 4.280 ;
+        RECT 47.570 0.010 48.110 4.280 ;
+        RECT 48.950 0.010 49.490 4.280 ;
+        RECT 50.330 0.010 50.870 4.280 ;
+        RECT 51.710 0.010 52.250 4.280 ;
+        RECT 53.090 0.010 53.630 4.280 ;
+        RECT 54.470 0.010 54.550 4.280 ;
+        RECT 55.390 0.010 55.930 4.280 ;
+        RECT 56.770 0.010 57.310 4.280 ;
+        RECT 58.150 0.010 58.690 4.280 ;
+        RECT 59.530 0.010 60.070 4.280 ;
+        RECT 60.910 0.010 61.450 4.280 ;
+        RECT 62.290 0.010 62.830 4.280 ;
+        RECT 63.670 0.010 64.210 4.280 ;
+        RECT 65.050 0.010 65.590 4.280 ;
+        RECT 66.430 0.010 66.970 4.280 ;
+        RECT 67.810 0.010 68.350 4.280 ;
+        RECT 69.190 0.010 69.270 4.280 ;
+        RECT 70.110 0.010 70.650 4.280 ;
+        RECT 71.490 0.010 72.030 4.280 ;
+        RECT 72.870 0.010 73.410 4.280 ;
+        RECT 74.250 0.010 74.790 4.280 ;
+        RECT 75.630 0.010 76.170 4.280 ;
+        RECT 77.010 0.010 77.550 4.280 ;
+        RECT 78.390 0.010 78.930 4.280 ;
+        RECT 79.770 0.010 80.310 4.280 ;
+        RECT 81.150 0.010 81.690 4.280 ;
+        RECT 82.530 0.010 82.610 4.280 ;
+        RECT 83.450 0.010 83.990 4.280 ;
+        RECT 84.830 0.010 85.370 4.280 ;
+        RECT 86.210 0.010 86.750 4.280 ;
+        RECT 87.590 0.010 88.130 4.280 ;
+        RECT 88.970 0.010 89.510 4.280 ;
+        RECT 90.350 0.010 90.890 4.280 ;
+        RECT 91.730 0.010 92.270 4.280 ;
+        RECT 93.110 0.010 93.650 4.280 ;
+        RECT 94.490 0.010 95.030 4.280 ;
+        RECT 95.870 0.010 95.950 4.280 ;
+        RECT 96.790 0.010 97.330 4.280 ;
+        RECT 98.170 0.010 98.710 4.280 ;
+        RECT 99.550 0.010 100.090 4.280 ;
+        RECT 100.930 0.010 101.470 4.280 ;
+        RECT 102.310 0.010 102.850 4.280 ;
+        RECT 103.690 0.010 104.230 4.280 ;
+        RECT 105.070 0.010 105.610 4.280 ;
+        RECT 106.450 0.010 106.990 4.280 ;
+        RECT 107.830 0.010 108.370 4.280 ;
+        RECT 109.210 0.010 109.290 4.280 ;
+        RECT 110.130 0.010 110.670 4.280 ;
+        RECT 111.510 0.010 112.050 4.280 ;
+        RECT 112.890 0.010 113.430 4.280 ;
+        RECT 114.270 0.010 114.810 4.280 ;
+        RECT 115.650 0.010 116.190 4.280 ;
+        RECT 117.030 0.010 117.570 4.280 ;
+        RECT 118.410 0.010 118.950 4.280 ;
+        RECT 119.790 0.010 120.330 4.280 ;
+        RECT 121.170 0.010 121.710 4.280 ;
+        RECT 122.550 0.010 122.630 4.280 ;
+        RECT 123.470 0.010 124.010 4.280 ;
+        RECT 124.850 0.010 125.390 4.280 ;
+        RECT 126.230 0.010 126.770 4.280 ;
+        RECT 127.610 0.010 128.150 4.280 ;
+        RECT 128.990 0.010 129.530 4.280 ;
+        RECT 130.370 0.010 130.910 4.280 ;
+        RECT 131.750 0.010 132.290 4.280 ;
+        RECT 133.130 0.010 133.670 4.280 ;
+        RECT 134.510 0.010 135.050 4.280 ;
+        RECT 135.890 0.010 136.430 4.280 ;
+        RECT 137.270 0.010 137.350 4.280 ;
+        RECT 138.190 0.010 138.730 4.280 ;
+        RECT 139.570 0.010 140.110 4.280 ;
+        RECT 140.950 0.010 141.490 4.280 ;
+        RECT 142.330 0.010 142.870 4.280 ;
+        RECT 143.710 0.010 144.250 4.280 ;
+        RECT 145.090 0.010 145.630 4.280 ;
+        RECT 146.470 0.010 147.010 4.280 ;
+        RECT 147.850 0.010 148.390 4.280 ;
+        RECT 149.230 0.010 149.770 4.280 ;
+        RECT 150.610 0.010 150.690 4.280 ;
+        RECT 151.530 0.010 152.070 4.280 ;
+        RECT 152.910 0.010 153.450 4.280 ;
+        RECT 154.290 0.010 154.830 4.280 ;
+        RECT 155.670 0.010 156.210 4.280 ;
+        RECT 157.050 0.010 157.590 4.280 ;
+        RECT 158.430 0.010 158.970 4.280 ;
+        RECT 159.810 0.010 160.350 4.280 ;
+        RECT 161.190 0.010 161.730 4.280 ;
+        RECT 162.570 0.010 163.110 4.280 ;
+        RECT 163.950 0.010 164.030 4.280 ;
+        RECT 164.870 0.010 165.410 4.280 ;
+        RECT 166.250 0.010 166.790 4.280 ;
+        RECT 167.630 0.010 168.170 4.280 ;
+        RECT 169.010 0.010 169.550 4.280 ;
+        RECT 170.390 0.010 170.930 4.280 ;
+        RECT 171.770 0.010 172.310 4.280 ;
+        RECT 173.150 0.010 173.690 4.280 ;
+        RECT 174.530 0.010 175.070 4.280 ;
+        RECT 175.910 0.010 176.450 4.280 ;
+        RECT 177.290 0.010 177.370 4.280 ;
+        RECT 178.210 0.010 178.750 4.280 ;
+        RECT 179.590 0.010 180.130 4.280 ;
+        RECT 180.970 0.010 181.510 4.280 ;
+        RECT 182.350 0.010 182.890 4.280 ;
+        RECT 183.730 0.010 184.270 4.280 ;
+        RECT 185.110 0.010 185.650 4.280 ;
+        RECT 186.490 0.010 187.030 4.280 ;
+        RECT 187.870 0.010 188.410 4.280 ;
+        RECT 189.250 0.010 189.790 4.280 ;
+        RECT 190.630 0.010 190.710 4.280 ;
+        RECT 191.550 0.010 192.090 4.280 ;
+        RECT 192.930 0.010 193.470 4.280 ;
+        RECT 194.310 0.010 194.850 4.280 ;
+        RECT 195.690 0.010 196.230 4.280 ;
+        RECT 197.070 0.010 197.610 4.280 ;
+        RECT 198.450 0.010 198.990 4.280 ;
+        RECT 199.830 0.010 200.370 4.280 ;
+        RECT 201.210 0.010 201.750 4.280 ;
+        RECT 202.590 0.010 203.130 4.280 ;
+        RECT 203.970 0.010 204.510 4.280 ;
+        RECT 205.350 0.010 205.430 4.280 ;
+        RECT 206.270 0.010 206.810 4.280 ;
+        RECT 207.650 0.010 208.190 4.280 ;
+        RECT 209.030 0.010 209.570 4.280 ;
+        RECT 210.410 0.010 210.950 4.280 ;
+        RECT 211.790 0.010 212.330 4.280 ;
+        RECT 213.170 0.010 213.710 4.280 ;
+        RECT 214.550 0.010 215.090 4.280 ;
+        RECT 215.930 0.010 216.470 4.280 ;
+        RECT 217.310 0.010 217.850 4.280 ;
+        RECT 218.690 0.010 218.770 4.280 ;
+        RECT 219.610 0.010 220.150 4.280 ;
+        RECT 220.990 0.010 221.530 4.280 ;
+        RECT 222.370 0.010 222.910 4.280 ;
+        RECT 223.750 0.010 224.290 4.280 ;
+        RECT 225.130 0.010 225.670 4.280 ;
+        RECT 226.510 0.010 227.050 4.280 ;
+        RECT 227.890 0.010 228.430 4.280 ;
+        RECT 229.270 0.010 229.810 4.280 ;
+        RECT 230.650 0.010 231.190 4.280 ;
+        RECT 232.030 0.010 232.110 4.280 ;
+        RECT 232.950 0.010 233.490 4.280 ;
+        RECT 234.330 0.010 234.870 4.280 ;
+        RECT 235.710 0.010 236.250 4.280 ;
+        RECT 237.090 0.010 237.630 4.280 ;
+        RECT 238.470 0.010 239.010 4.280 ;
+        RECT 239.850 0.010 240.390 4.280 ;
+        RECT 241.230 0.010 241.770 4.280 ;
+        RECT 242.610 0.010 243.150 4.280 ;
+        RECT 243.990 0.010 244.530 4.280 ;
+        RECT 245.370 0.010 245.450 4.280 ;
+        RECT 246.290 0.010 246.830 4.280 ;
+        RECT 247.670 0.010 248.210 4.280 ;
+        RECT 249.050 0.010 249.590 4.280 ;
+        RECT 250.430 0.010 250.970 4.280 ;
+        RECT 251.810 0.010 252.350 4.280 ;
+        RECT 253.190 0.010 253.730 4.280 ;
+        RECT 254.570 0.010 255.110 4.280 ;
+        RECT 255.950 0.010 256.490 4.280 ;
+        RECT 257.330 0.010 257.870 4.280 ;
+        RECT 258.710 0.010 258.790 4.280 ;
+        RECT 259.630 0.010 260.170 4.280 ;
+        RECT 261.010 0.010 261.550 4.280 ;
+        RECT 262.390 0.010 262.930 4.280 ;
+        RECT 263.770 0.010 264.310 4.280 ;
+        RECT 265.150 0.010 265.690 4.280 ;
+        RECT 266.530 0.010 267.070 4.280 ;
+        RECT 267.910 0.010 268.450 4.280 ;
+        RECT 269.290 0.010 269.830 4.280 ;
+        RECT 270.670 0.010 271.210 4.280 ;
+        RECT 272.050 0.010 272.220 4.280 ;
+      LAYER met3 ;
+        RECT 3.950 253.280 268.130 282.705 ;
+        RECT 3.950 252.640 268.530 253.280 ;
+        RECT 3.950 221.320 268.130 252.640 ;
+        RECT 3.950 220.680 268.530 221.320 ;
+        RECT 3.950 213.200 268.130 220.680 ;
+        RECT 4.400 211.800 268.130 213.200 ;
+        RECT 3.950 189.360 268.130 211.800 ;
+        RECT 3.950 188.720 268.530 189.360 ;
+        RECT 3.950 158.760 268.130 188.720 ;
+        RECT 3.950 158.120 268.530 158.760 ;
+        RECT 3.950 126.800 268.130 158.120 ;
+        RECT 3.950 126.160 268.530 126.800 ;
+        RECT 3.950 94.840 268.130 126.160 ;
+        RECT 3.950 94.200 268.530 94.840 ;
+        RECT 3.950 71.760 268.130 94.200 ;
+        RECT 4.400 70.360 268.130 71.760 ;
+        RECT 3.950 64.240 268.130 70.360 ;
+        RECT 3.950 63.600 268.530 64.240 ;
+        RECT 3.950 32.280 268.130 63.600 ;
+        RECT 3.950 31.640 268.530 32.280 ;
+        RECT 3.950 0.320 268.130 31.640 ;
+        RECT 3.950 0.175 268.530 0.320 ;
+      LAYER met4 ;
+        RECT 3.975 272.640 263.745 281.345 ;
+        RECT 3.975 10.240 20.640 272.640 ;
+        RECT 23.040 10.240 97.440 272.640 ;
+        RECT 99.840 10.240 174.240 272.640 ;
+        RECT 176.640 10.240 251.040 272.640 ;
+        RECT 253.440 10.240 263.745 272.640 ;
+        RECT 3.975 0.175 263.745 10.240 ;
+  END
+END mkLanaiFrontend
+END LIBRARY
+
