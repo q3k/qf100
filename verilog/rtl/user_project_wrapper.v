@@ -78,6 +78,8 @@ module user_project_wrapper #(
     output [2:0] user_irq
 );
 
+wire rstn_from_caravel = la_oenb[32] ? 1 : la_data_in[32];
+
 /*--------------------------------------*/
 /* User project is instantiated  here   */
 /*--------------------------------------*/
@@ -88,7 +90,7 @@ mkQF105 qf105(
     .vssd1(vssd1),	// User area 1 digital ground
 `endif
     .wb_clk_i(wb_clk_i),
-    .wb_rst_i(wb_rst_i),
+    .wb_rst_i(rstn_from_caravel),
 
     // MGMT SoC Wishbone Slave
 

@@ -2,973 +2,1290 @@
 
 (* hdlname = "\\mkQF100Fabric" *)
 (* top =  1  *)
-(* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:159.1-903.10" *)
+(* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:213.1-1194.10" *)
 module mkQF100Fabric(
 `ifdef USE_POWER_PINS
     vccd1,
     vssd1,
 `endif
     CLK, RST_N, cpu_cyc_i, cpu_stb_i, cpu_adr_i, cpu_dat_i, cpu_sel_i, cpu_we_i, cpu_ack_o, cpu_err_o, cpu_rty_o, cpu_dat_o, spi_cyc_o, spi_stb_o, spi_adr_o, spi_dat_o, spi_sel_o, spi_we_o, spi_ack_i, spi_err_i, spi_rty_i
-, spi_dat_i, gpio_cyc_o, gpio_stb_o, gpio_adr_o, gpio_dat_o, gpio_sel_o, gpio_we_o, gpio_ack_i, gpio_err_i, gpio_rty_i, gpio_dat_i);
+, spi_dat_i, gpio_cyc_o, gpio_stb_o, gpio_adr_o, gpio_dat_o, gpio_sel_o, gpio_we_o, gpio_ack_i, gpio_err_i, gpio_rty_i, gpio_dat_i, ksc_cyc_o, ksc_stb_o, ksc_adr_o, ksc_dat_o, ksc_sel_o, ksc_we_o, ksc_ack_i, ksc_err_i, ksc_rty_i, ksc_dat_i
+);
 `ifdef USE_POWER_PINS
     inout vccd1;
     inout vssd1;
 `endif
-  reg \$auto$verilog_backend.cc:2083:dump_module$182  = 0;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:827.3-883.6" *)
+  reg \$auto$verilog_backend.cc:2083:dump_module$251  = 0;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1101.3-1171.6" *)
   reg [69:0] _000_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:827.3-883.6" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1101.3-1171.6" *)
   reg [33:0] _001_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:827.3-883.6" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1101.3-1171.6" *)
   reg [69:0] _002_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:827.3-883.6" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1101.3-1171.6" *)
   reg [33:0] _003_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:827.3-883.6" *)
-  reg _004_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:827.3-883.6" *)
-  reg _005_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:827.3-883.6" *)
-  reg [69:0] _006_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:827.3-883.6" *)
-  reg [33:0] _007_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:827.3-883.6" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1101.3-1171.6" *)
+  reg [69:0] _004_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1101.3-1171.6" *)
+  reg [33:0] _005_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1101.3-1171.6" *)
+  reg _006_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1101.3-1171.6" *)
+  reg _007_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1101.3-1171.6" *)
   reg _008_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:827.3-883.6" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1101.3-1171.6" *)
   reg [69:0] _009_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:648.7-648.68" *)
-  wire _010_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:692.7-692.68" *)
-  wire _011_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:737.7-737.68" *)
-  wire _012_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:741.7-741.68" *)
-  wire _013_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:750.7-750.68" *)
-  wire _014_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:761.7-761.68" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:819.3-839.6" *)
+  reg [33:0] _010_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1101.3-1171.6" *)
+  reg [33:0] _011_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1101.3-1171.6" *)
+  reg _012_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1101.3-1171.6" *)
+  reg [69:0] _013_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:819.3-839.6" *)
+  reg [33:0] _014_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1009.7-1009.68" *)
   wire _015_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:829.9-829.22" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1020.7-1020.68" *)
   wire _016_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:423.7-424.58" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1103.9-1103.22" *)
   wire _017_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:443.7-444.54" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:855.7-855.68" *)
   wire _018_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:448.7-449.54" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:901.7-901.68" *)
   wire _019_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:476.7-477.54" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:936.7-936.68" *)
   wire _020_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:476.7-478.54" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:981.7-981.68" *)
   wire _021_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:482.7-483.54" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:985.7-985.68" *)
   wire _022_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:487.7-488.54" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:989.7-989.68" *)
   wire _023_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:515.7-516.54" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:998.7-998.68" *)
   wire _024_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:515.7-517.54" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1003.7-1004.48" *)
   wire _025_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:521.7-522.60" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1006.7-1007.49" *)
   wire _026_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:521.7-523.53" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1006.7-1008.37" *)
   wire _027_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:527.7-528.60" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1006.7-1009.68" *)
   wire _028_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:527.7-529.53" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1014.7-1015.48" *)
   wire _029_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:533.7-534.67" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1017.7-1018.49" *)
   wire _030_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:538.7-539.48" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1017.7-1019.37" *)
   wire _031_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:538.7-540.76" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1017.7-1020.68" *)
   wire _032_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:544.7-545.42" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1025.7-1026.48" *)
   wire _033_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:547.7-548.54" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1085.7-1086.76" *)
   wire _034_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:547.7-549.49" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1090.7-1091.54" *)
   wire _035_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:559.7-560.58" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1090.7-1092.49" *)
   wire _036_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:587.7-587.29" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:556.7-557.58" *)
   wire _037_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:598.8-598.31" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:576.7-577.54" *)
   wire _038_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:598.8-598.45" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:581.7-582.54" *)
   wire _039_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:607.8-607.33" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:609.7-610.54" *)
   wire _040_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:607.8-607.48" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:609.7-611.54" *)
   wire _041_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:619.7-620.40" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:615.7-616.54" *)
   wire _042_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:627.7-628.42" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:620.7-621.54" *)
   wire _043_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:645.7-646.49" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:648.7-649.54" *)
   wire _044_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:645.7-647.37" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:648.7-650.54" *)
   wire _045_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:645.7-648.68" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:654.7-655.54" *)
   wire _046_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:651.10-654.13" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:659.7-660.54" *)
   wire _047_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:663.7-664.49" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:687.7-688.54" *)
   wire _048_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:663.7-665.50" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:687.7-689.54" *)
   wire _049_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:663.7-666.54" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:693.7-694.60" *)
   wire _050_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:672.7-673.49" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:693.7-695.53" *)
   wire _051_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:672.7-674.50" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:699.7-700.60" *)
   wire _052_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:672.7-675.54" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:699.7-701.53" *)
   wire _053_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:689.7-690.49" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:699.7-702.42" *)
   wire _054_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:689.7-691.37" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:706.7-707.60" *)
   wire _055_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:689.7-692.68" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:706.7-708.53" *)
   wire _056_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:698.7-699.49" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:706.7-709.44" *)
   wire _057_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:698.7-700.50" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:706.7-710.42" *)
   wire _058_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:698.7-701.54" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:714.7-715.67" *)
   wire _059_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:707.7-708.49" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:719.7-720.48" *)
   wire _060_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:707.7-709.50" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:719.7-721.76" *)
   wire _061_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:707.7-710.54" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:725.7-726.54" *)
   wire _062_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:724.7-725.40" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:725.7-727.49" *)
   wire _063_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:734.7-735.49" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:740.7-741.58" *)
   wire _064_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:734.7-736.37" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:768.7-768.29" *)
   wire _065_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:734.7-737.68" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:779.8-779.31" *)
   wire _066_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:738.7-739.49" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:779.8-779.45" *)
   wire _067_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:738.7-740.37" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:788.8-788.33" *)
   wire _068_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:738.7-741.68" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:788.8-788.48" *)
   wire _069_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:747.7-748.49" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:797.8-797.31" *)
   wire _070_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:747.7-749.37" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:797.8-797.45" *)
   wire _071_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:747.7-750.68" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:809.7-810.40" *)
   wire _072_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:755.7-756.48" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:852.7-853.49" *)
   wire _073_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:758.7-759.49" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:852.7-854.37" *)
   wire _074_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:758.7-760.37" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:852.7-855.68" *)
   wire _075_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:758.7-761.68" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:858.10-861.13" *)
   wire _076_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:766.7-767.48" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:858.10-863.13" *)
   wire _077_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:811.7-812.76" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:872.7-873.49" *)
   wire _078_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:816.7-817.54" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:872.7-874.50" *)
   wire _079_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:816.7-818.49" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:872.7-875.54" *)
   wire _080_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:434.8-434.56" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:881.7-882.49" *)
   wire _081_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:435.8-435.60" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:881.7-883.50" *)
   wire _082_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:453.8-453.62" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:881.7-884.54" *)
   wire _083_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:454.8-454.56" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:898.7-899.49" *)
   wire _084_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:460.8-460.62" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:898.7-900.37" *)
   wire _085_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:461.8-461.56" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:898.7-901.68" *)
   wire _086_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:469.8-469.62" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:907.7-908.49" *)
   wire _087_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:470.8-470.56" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:907.7-909.50" *)
   wire _088_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:492.8-492.62" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:907.7-910.54" *)
   wire _089_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:493.8-493.56" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:916.7-917.49" *)
   wire _090_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:499.8-499.62" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:916.7-918.50" *)
   wire _091_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:500.8-500.56" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:916.7-919.54" *)
   wire _092_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:508.8-508.62" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:933.7-934.49" *)
   wire _093_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:509.8-509.56" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:933.7-935.37" *)
   wire _094_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:523.7-523.53" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:933.7-936.68" *)
   wire _095_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:529.7-529.53" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:942.7-943.49" *)
   wire _096_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:540.7-540.76" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:942.7-944.50" *)
   wire _097_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:545.7-545.42" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:942.7-945.54" *)
   wire _098_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:547.7-547.53" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:951.7-952.49" *)
   wire _099_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:549.7-549.49" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:951.7-953.50" *)
   wire _100_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:569.8-569.56" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:951.7-954.54" *)
   wire _101_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:570.8-570.60" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:968.7-969.40" *)
   wire _102_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:598.21-598.31" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:978.7-979.49" *)
   wire _103_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:598.35-598.45" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:978.7-980.37" *)
   wire _104_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:607.22-607.33" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:978.7-981.68" *)
   wire _105_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:607.37-607.48" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:982.7-983.49" *)
   wire _106_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:620.7-620.40" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:982.7-984.37" *)
   wire _107_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:628.7-628.42" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:982.7-985.68" *)
   wire _108_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:646.7-646.49" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:986.7-987.49" *)
   wire _109_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:647.7-647.37" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:986.7-988.37" *)
   wire _110_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:664.7-664.49" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:986.7-989.68" *)
   wire _111_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:673.7-673.49" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:995.7-996.49" *)
   wire _112_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:678.9-678.63" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:995.7-997.37" *)
   wire _113_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:690.7-690.49" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:995.7-998.68" *)
   wire _114_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:691.7-691.37" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1003.7-1003.42" *)
   wire _115_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:699.7-699.49" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1007.7-1007.49" *)
   wire _116_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:708.7-708.49" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1008.7-1008.37" *)
   wire _117_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:713.9-713.63" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1014.7-1014.44" *)
   wire _118_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:725.7-725.40" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1018.7-1018.49" *)
   wire _119_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:735.7-735.49" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1019.7-1019.37" *)
   wire _120_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:736.7-736.37" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1025.7-1025.44" *)
   wire _121_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:739.7-739.49" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1085.7-1085.71" *)
   wire _122_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:740.7-740.37" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1086.7-1086.76" *)
   wire _123_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:748.7-748.49" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1090.7-1090.53" *)
   wire _124_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:749.7-749.37" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1092.7-1092.49" *)
   wire _125_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:755.7-755.42" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:567.8-567.56" *)
   wire _126_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:759.7-759.49" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:568.8-568.60" *)
   wire _127_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:760.7-760.37" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:586.8-586.62" *)
   wire _128_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:766.7-766.75" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:587.8-587.56" *)
   wire _129_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:811.7-811.71" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:593.8-593.62" *)
   wire _130_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:812.7-812.76" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:594.8-594.56" *)
   wire _131_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:816.7-816.53" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:602.8-602.62" *)
   wire _132_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:818.7-818.49" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:603.8-603.56" *)
   wire _133_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:434.8-435.60" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:625.8-625.62" *)
   wire _134_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:453.8-454.56" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:626.8-626.56" *)
   wire _135_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:460.8-461.56" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:632.8-632.62" *)
   wire _136_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:469.8-470.56" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:633.8-633.56" *)
   wire _137_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:492.8-493.56" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:641.8-641.62" *)
   wire _138_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:499.8-500.56" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:642.8-642.56" *)
   wire _139_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:508.8-509.56" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:664.8-664.62" *)
   wire _140_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:569.8-570.60" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:665.8-665.56" *)
   wire _141_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:592.7-593.75" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:671.8-671.62" *)
   wire _142_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:602.7-602.29" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:672.8-672.56" *)
   wire _143_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:602.7-602.42" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:680.8-680.62" *)
   wire _144_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:611.7-611.31" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:681.8-681.56" *)
   wire _145_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:611.7-611.45" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:695.7-695.53" *)
   wire _146_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:626.7-628.42" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:701.7-701.53" *)
   wire _147_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:638.7-639.75" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:702.7-702.42" *)
   wire _148_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:734.7-741.68" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:708.7-708.53" *)
   wire _149_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:752.7-753.36" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:709.7-709.44" *)
   wire _150_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:763.7-764.36" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:710.7-710.42" *)
   wire _151_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:814.7-815.75" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:721.7-721.76" *)
   wire _152_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:814.7-818.49" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:725.7-725.53" *)
   wire _153_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:651.10-652.13" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:727.7-727.49" *)
   wire _154_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:653.3-654.13" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:750.8-750.56" *)
   wire _155_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:434.7-439.11" *)
-  wire [31:0] _156_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:437.10-439.10" *)
-  wire [31:0] _157_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:453.7-456.59" *)
-  wire [31:0] _158_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:460.7-465.11" *)
-  wire [31:0] _159_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:463.10-465.10" *)
-  wire [31:0] _160_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:469.7-472.57" *)
-  wire [3:0] _161_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:492.7-495.59" *)
-  wire [31:0] _162_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:499.7-504.11" *)
-  wire [31:0] _163_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:502.10-504.10" *)
-  wire [31:0] _164_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:508.7-511.57" *)
-  wire [3:0] _165_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:569.7-574.11" *)
-  wire [31:0] _166_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:572.10-574.10" *)
-  wire [31:0] _167_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:598.7-600.22" *)
-  wire [32:0] _168_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:607.7-609.22" *)
-  wire [32:0] _169_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:615.7-617.50" *)
-  wire [69:0] _170_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:622.7-624.62" *)
-  wire [69:0] _171_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:630.7-632.76" *)
-  wire [33:0] _172_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:634.7-636.50" *)
-  wire [33:0] _173_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:641.7-643.62" *)
-  wire [33:0] _174_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:651.9-656.62" *)
-  wire [31:0] _175_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:659.7-661.46" *)
-  wire [69:0] _176_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:668.7-670.58" *)
-  wire [69:0] _177_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:681.7-683.46" *)
-  wire [33:0] _178_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:685.7-687.58" *)
-  wire [33:0] _179_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:694.7-696.46" *)
-  wire [69:0] _180_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:703.7-705.58" *)
-  wire [69:0] _181_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:716.7-718.46" *)
-  wire [33:0] _182_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:720.7-722.58" *)
-  wire [33:0] _183_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:730.7-732.37" *)
-  wire [69:0] _184_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:743.7-745.49" *)
-  wire [69:0] _185_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:410.8-410.43" *)
-  wire CAN_FIRE_RL_fabric_response_route_1;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:210.10-210.13" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:751.8-751.60" *)
+  wire _156_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:779.21-779.31" *)
+  wire _157_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:779.35-779.45" *)
+  wire _158_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:788.22-788.33" *)
+  wire _159_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:788.37-788.48" *)
+  wire _160_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:797.21-797.31" *)
+  wire _161_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:797.35-797.45" *)
+  wire _162_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:810.7-810.40" *)
+  wire _163_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:853.7-853.49" *)
+  wire _164_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:854.7-854.37" *)
+  wire _165_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:873.7-873.49" *)
+  wire _166_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:882.7-882.49" *)
+  wire _167_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:887.9-887.63" *)
+  wire _168_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:899.7-899.49" *)
+  wire _169_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:900.7-900.37" *)
+  wire _170_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:908.7-908.49" *)
+  wire _171_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:917.7-917.49" *)
+  wire _172_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:922.9-922.63" *)
+  wire _173_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:934.7-934.49" *)
+  wire _174_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:935.7-935.37" *)
+  wire _175_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:943.7-943.49" *)
+  wire _176_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:952.7-952.49" *)
+  wire _177_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:957.9-957.63" *)
+  wire _178_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:969.7-969.40" *)
+  wire _179_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:979.7-979.49" *)
+  wire _180_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:980.7-980.37" *)
+  wire _181_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:983.7-983.49" *)
+  wire _182_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:984.7-984.37" *)
+  wire _183_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:987.7-987.49" *)
+  wire _184_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:988.7-988.37" *)
+  wire _185_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:996.7-996.49" *)
+  wire _186_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:997.7-997.37" *)
+  wire _187_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1000.7-1001.36" *)
+  wire _188_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1011.7-1012.36" *)
+  wire _189_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1022.7-1023.36" *)
+  wire _190_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1088.7-1089.75" *)
+  wire _191_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1088.7-1092.49" *)
+  wire _192_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:567.8-568.60" *)
+  wire _193_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:586.8-587.56" *)
+  wire _194_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:593.8-594.56" *)
+  wire _195_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:602.8-603.56" *)
+  wire _196_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:625.8-626.56" *)
+  wire _197_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:632.8-633.56" *)
+  wire _198_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:641.8-642.56" *)
+  wire _199_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:664.8-665.56" *)
+  wire _200_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:671.8-672.56" *)
+  wire _201_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:680.8-681.56" *)
+  wire _202_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:750.8-751.60" *)
+  wire _203_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:773.7-774.75" *)
+  wire _204_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:783.7-783.29" *)
+  wire _205_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:783.7-783.42" *)
+  wire _206_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:792.7-792.31" *)
+  wire _207_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:792.7-792.45" *)
+  wire _208_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:801.7-801.29" *)
+  wire _209_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:801.7-801.42" *)
+  wire _210_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:816.7-817.43" *)
+  wire _211_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:816.7-818.43" *)
+  wire _212_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:845.7-846.75" *)
+  wire _213_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:978.7-985.68" *)
+  wire _214_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:978.7-989.68" *)
+  wire _215_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:858.10-859.13" *)
+  wire _216_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:860.3-861.13" *)
+  wire _217_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:862.3-863.13" *)
+  wire _218_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:567.7-572.11" *)
+  wire [31:0] _219_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:570.10-572.10" *)
+  wire [31:0] _220_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:586.7-589.59" *)
+  wire [31:0] _221_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:593.7-598.11" *)
+  wire [31:0] _222_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:596.10-598.10" *)
+  wire [31:0] _223_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:602.7-605.57" *)
+  wire [3:0] _224_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:625.7-628.59" *)
+  wire [31:0] _225_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:632.7-637.11" *)
+  wire [31:0] _226_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:635.10-637.10" *)
+  wire [31:0] _227_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:641.7-644.57" *)
+  wire [3:0] _228_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:664.7-667.59" *)
+  wire [31:0] _229_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:671.7-676.11" *)
+  wire [31:0] _230_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:674.10-676.10" *)
+  wire [31:0] _231_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:680.7-683.57" *)
+  wire [3:0] _232_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:750.7-755.11" *)
+  wire [31:0] _233_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:753.10-755.10" *)
+  wire [31:0] _234_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:779.7-781.22" *)
+  wire [32:0] _235_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:788.7-790.22" *)
+  wire [32:0] _236_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:797.7-799.22" *)
+  wire [32:0] _237_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:805.7-807.50" *)
+  wire [69:0] _238_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:812.7-814.62" *)
+  wire [69:0] _239_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:841.7-843.50" *)
+  wire [33:0] _240_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:848.7-850.62" *)
+  wire [33:0] _241_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:858.9-865.62" *)
+  wire [31:0] _242_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:868.7-870.46" *)
+  wire [69:0] _243_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:877.7-879.58" *)
+  wire [69:0] _244_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:890.7-892.46" *)
+  wire [33:0] _245_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:894.7-896.58" *)
+  wire [33:0] _246_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:903.7-905.46" *)
+  wire [69:0] _247_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:912.7-914.58" *)
+  wire [69:0] _248_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:925.7-927.46" *)
+  wire [33:0] _249_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:929.7-931.58" *)
+  wire [33:0] _250_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:938.7-940.46" *)
+  wire [69:0] _251_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:947.7-949.58" *)
+  wire [69:0] _252_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:960.7-962.46" *)
+  wire [33:0] _253_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:964.7-966.58" *)
+  wire [33:0] _254_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:974.7-976.37" *)
+  wire [69:0] _255_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:991.7-993.49" *)
+  wire [69:0] _256_;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:281.10-281.13" *)
   input CLK;
   wire CLK;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:418.8-418.75" *)
-  wire \MUX_fabric_upstreamConnectors_0_inner_fRes_rv$port0__write_1__SEL_2 ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:416.17-416.84" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:549.17-549.84" *)
   wire [33:0] \MUX_fabric_upstreamConnectors_0_inner_fRes_rv$port0__write_1__VAL_1 ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:417.3-417.70" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:550.3-550.70" *)
   wire [33:0] \MUX_fabric_upstreamConnectors_0_inner_fRes_rv$port0__write_1__VAL_2 ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:419.8-419.68" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:551.3-551.70" *)
+  wire [33:0] \MUX_fabric_upstreamConnectors_0_inner_fRes_rv$port0__write_1__VAL_3 ;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:552.8-552.68" *)
   wire \MUX_fabric_upstreamConnectors_0_inner_pending$write_1__SEL_3 ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:211.10-211.15" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:282.10-282.15" *)
   input RST_N;
   wire RST_N;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:411.8-411.42" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:542.8-542.42" *)
   wire WILL_FIRE_RL_fabric_response_route;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:412.8-412.71" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:543.8-543.44" *)
+  wire WILL_FIRE_RL_fabric_response_route_1;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:544.8-544.44" *)
+  wire WILL_FIRE_RL_fabric_response_route_2;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:545.8-545.71" *)
   wire WILL_FIRE_RL_fabric_upstreamConnectors_0_inner_process_outgoing;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:413.8-413.76" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:546.8-546.76" *)
   wire WILL_FIRE_RL_fabric_upstreamConnectors_0_inner_process_outgoing_fast;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:222.10-222.19" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:293.10-293.19" *)
   output cpu_ack_o;
   wire cpu_ack_o;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:216.19-216.28" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:287.19-287.28" *)
   input [31:0] cpu_adr_i;
   wire [31:0] cpu_adr_i;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:214.10-214.19" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:285.10-285.19" *)
   input cpu_cyc_i;
   wire cpu_cyc_i;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:217.19-217.28" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:288.19-288.28" *)
   input [31:0] cpu_dat_i;
   wire [31:0] cpu_dat_i;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:231.19-231.28" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:302.19-302.28" *)
   output [31:0] cpu_dat_o;
   wire [31:0] cpu_dat_o;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:225.10-225.19" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:296.10-296.19" *)
   output cpu_err_o;
   wire cpu_err_o;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:228.10-228.19" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:299.10-299.19" *)
   output cpu_rty_o;
   wire cpu_rty_o;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:218.18-218.27" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:289.18-289.27" *)
   input [3:0] cpu_sel_i;
   wire [3:0] cpu_sel_i;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:215.10-215.19" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:286.10-286.19" *)
   input cpu_stb_i;
   wire cpu_stb_i;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:219.10-219.18" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:290.10-290.18" *)
   input cpu_we_i;
   wire cpu_we_i;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:362.16-362.53" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:480.16-480.53" *)
   reg [69:0] fabric_downstreamConnectors_0_fReq_rv;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:363.17-363.59" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:481.17-481.59" *)
   wire [69:0] \fabric_downstreamConnectors_0_fReq_rv$D_IN ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:364.8-364.48" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:482.8-482.48" *)
   wire \fabric_downstreamConnectors_0_fReq_rv$EN ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:339.8-339.61" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:450.8-450.61" *)
   wire \fabric_downstreamConnectors_0_fReq_rv$EN_port0__write ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:340.8-340.61" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:451.8-451.61" *)
   wire \fabric_downstreamConnectors_0_fReq_rv$EN_port1__write ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:313.17-313.69" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:418.17-418.69" *)
   wire [69:0] \fabric_downstreamConnectors_0_fReq_rv$port0__write_1 ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:314.3-314.52" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:419.3-419.52" *)
   wire [69:0] \fabric_downstreamConnectors_0_fReq_rv$port1__read ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:315.3-315.52" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:420.3-420.52" *)
   wire [69:0] \fabric_downstreamConnectors_0_fReq_rv$port2__read ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:367.16-367.53" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:485.16-485.53" *)
   reg [33:0] fabric_downstreamConnectors_0_fRes_rv;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:368.17-368.59" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:486.17-486.59" *)
   wire [33:0] \fabric_downstreamConnectors_0_fRes_rv$D_IN ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:369.8-369.48" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:487.8-487.48" *)
   wire \fabric_downstreamConnectors_0_fRes_rv$EN ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:341.8-341.61" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:452.8-452.61" *)
   wire \fabric_downstreamConnectors_0_fRes_rv$EN_port0__write ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:327.17-327.69" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:435.17-435.69" *)
   wire [33:0] \fabric_downstreamConnectors_0_fRes_rv$port0__write_1 ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:328.3-328.52" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:436.3-436.52" *)
   wire [33:0] \fabric_downstreamConnectors_0_fRes_rv$port1__read ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:329.3-329.52" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:437.3-437.52" *)
   wire [33:0] \fabric_downstreamConnectors_0_fRes_rv$port2__read ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:337.17-337.60" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:447.17-447.60" *)
   wire [32:0] \fabric_downstreamConnectors_0_incoming$wget ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:342.8-342.51" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:453.8-453.51" *)
   wire \fabric_downstreamConnectors_0_incoming$whas ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:316.3-316.46" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:421.3-421.46" *)
   wire [69:0] \fabric_downstreamConnectors_0_outgoing$wget ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:372.16-372.53" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:490.16-490.53" *)
   reg [69:0] fabric_downstreamConnectors_1_fReq_rv;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:373.17-373.59" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:491.17-491.59" *)
   wire [69:0] \fabric_downstreamConnectors_1_fReq_rv$D_IN ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:374.8-374.48" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:492.8-492.48" *)
   wire \fabric_downstreamConnectors_1_fReq_rv$EN ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:343.8-343.61" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:454.8-454.61" *)
   wire \fabric_downstreamConnectors_1_fReq_rv$EN_port0__write ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:344.8-344.61" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:455.8-455.61" *)
   wire \fabric_downstreamConnectors_1_fReq_rv$EN_port1__write ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:317.3-317.52" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:422.3-422.52" *)
   wire [69:0] \fabric_downstreamConnectors_1_fReq_rv$port1__read ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:318.3-318.52" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:423.3-423.52" *)
   wire [69:0] \fabric_downstreamConnectors_1_fReq_rv$port2__read ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:377.16-377.53" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:495.16-495.53" *)
   reg [33:0] fabric_downstreamConnectors_1_fRes_rv;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:378.17-378.59" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:496.17-496.59" *)
   wire [33:0] \fabric_downstreamConnectors_1_fRes_rv$D_IN ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:379.8-379.48" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:497.8-497.48" *)
   wire \fabric_downstreamConnectors_1_fRes_rv$EN ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:345.8-345.61" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:456.8-456.61" *)
   wire \fabric_downstreamConnectors_1_fRes_rv$EN_port0__write ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:330.3-330.55" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:438.3-438.55" *)
   wire [33:0] \fabric_downstreamConnectors_1_fRes_rv$port0__write_1 ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:331.3-331.52" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:439.3-439.52" *)
   wire [33:0] \fabric_downstreamConnectors_1_fRes_rv$port1__read ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:332.3-332.52" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:440.3-440.52" *)
   wire [33:0] \fabric_downstreamConnectors_1_fRes_rv$port2__read ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:338.3-338.46" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:448.3-448.46" *)
   wire [32:0] \fabric_downstreamConnectors_1_incoming$wget ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:346.8-346.51" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:457.8-457.51" *)
   wire \fabric_downstreamConnectors_1_incoming$whas ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:319.3-319.46" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:424.3-424.46" *)
   wire [69:0] \fabric_downstreamConnectors_1_outgoing$wget ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:382.7-382.36" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:500.16-500.53" *)
+  reg [69:0] fabric_downstreamConnectors_2_fReq_rv;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:501.17-501.59" *)
+  wire [69:0] \fabric_downstreamConnectors_2_fReq_rv$D_IN ;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:502.8-502.48" *)
+  wire \fabric_downstreamConnectors_2_fReq_rv$EN ;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:458.8-458.61" *)
+  wire \fabric_downstreamConnectors_2_fReq_rv$EN_port0__write ;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:459.8-459.61" *)
+  wire \fabric_downstreamConnectors_2_fReq_rv$EN_port1__write ;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:425.3-425.52" *)
+  wire [69:0] \fabric_downstreamConnectors_2_fReq_rv$port1__read ;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:426.3-426.52" *)
+  wire [69:0] \fabric_downstreamConnectors_2_fReq_rv$port2__read ;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:505.16-505.53" *)
+  reg [33:0] fabric_downstreamConnectors_2_fRes_rv;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:506.17-506.59" *)
+  wire [33:0] \fabric_downstreamConnectors_2_fRes_rv$D_IN ;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:507.8-507.48" *)
+  wire \fabric_downstreamConnectors_2_fRes_rv$EN ;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:460.8-460.61" *)
+  wire \fabric_downstreamConnectors_2_fRes_rv$EN_port0__write ;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:441.3-441.55" *)
+  wire [33:0] \fabric_downstreamConnectors_2_fRes_rv$port0__write_1 ;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:442.3-442.52" *)
+  wire [33:0] \fabric_downstreamConnectors_2_fRes_rv$port1__read ;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:443.3-443.52" *)
+  wire [33:0] \fabric_downstreamConnectors_2_fRes_rv$port2__read ;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:449.3-449.46" *)
+  wire [32:0] \fabric_downstreamConnectors_2_incoming$wget ;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:461.8-461.51" *)
+  wire \fabric_downstreamConnectors_2_incoming$whas ;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:427.3-427.46" *)
+  wire [69:0] \fabric_downstreamConnectors_2_outgoing$wget ;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:510.7-510.36" *)
   reg fabric_downstreamPending_0_rv;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:383.8-383.42" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:511.8-511.42" *)
   wire \fabric_downstreamPending_0_rv$D_IN ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:383.44-383.76" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:511.44-511.76" *)
   wire \fabric_downstreamPending_0_rv$EN ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:347.8-347.53" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:462.8-462.53" *)
   wire \fabric_downstreamPending_0_rv$EN_port0__write ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:348.8-348.49" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:463.8-463.49" *)
   wire \fabric_downstreamPending_0_rv$port1__read ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:349.8-349.49" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:464.8-464.49" *)
   wire \fabric_downstreamPending_0_rv$port2__read ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:386.7-386.36" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:514.7-514.36" *)
   reg fabric_downstreamPending_1_rv;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:387.8-387.42" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:515.8-515.42" *)
   wire \fabric_downstreamPending_1_rv$D_IN ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:387.44-387.76" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:515.44-515.76" *)
   wire \fabric_downstreamPending_1_rv$EN ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:350.8-350.53" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:465.8-465.53" *)
   wire \fabric_downstreamPending_1_rv$EN_port0__write ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:351.8-351.49" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:466.8-466.49" *)
   wire \fabric_downstreamPending_1_rv$port1__read ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:352.8-352.49" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:467.8-467.49" *)
   wire \fabric_downstreamPending_1_rv$port2__read ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:390.16-390.57" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:518.7-518.36" *)
+  reg fabric_downstreamPending_2_rv;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:519.8-519.42" *)
+  wire \fabric_downstreamPending_2_rv$D_IN ;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:519.44-519.76" *)
+  wire \fabric_downstreamPending_2_rv$EN ;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:468.8-468.53" *)
+  wire \fabric_downstreamPending_2_rv$EN_port0__write ;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:469.8-469.49" *)
+  wire \fabric_downstreamPending_2_rv$port1__read ;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:470.8-470.49" *)
+  wire \fabric_downstreamPending_2_rv$port2__read ;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:522.16-522.57" *)
   reg [69:0] fabric_upstreamConnectors_0_inner_fReq_rv;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:391.17-391.63" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:523.17-523.63" *)
   wire [69:0] \fabric_upstreamConnectors_0_inner_fReq_rv$D_IN ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:392.8-392.52" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:524.8-524.52" *)
   wire \fabric_upstreamConnectors_0_inner_fReq_rv$EN ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:353.8-353.65" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:471.8-471.65" *)
   wire \fabric_upstreamConnectors_0_inner_fReq_rv$EN_port1__write ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:320.3-320.59" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:428.3-428.59" *)
   wire [69:0] \fabric_upstreamConnectors_0_inner_fReq_rv$port0__write_1 ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:321.3-321.56" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:429.3-429.56" *)
   wire [69:0] \fabric_upstreamConnectors_0_inner_fReq_rv$port1__read ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:322.3-322.56" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:430.3-430.56" *)
   wire [69:0] \fabric_upstreamConnectors_0_inner_fReq_rv$port2__read ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:395.16-395.57" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:527.16-527.57" *)
   reg [33:0] fabric_upstreamConnectors_0_inner_fRes_rv;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:396.17-396.63" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:528.17-528.63" *)
   wire [33:0] \fabric_upstreamConnectors_0_inner_fRes_rv$D_IN ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:397.8-397.52" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:529.8-529.52" *)
   wire \fabric_upstreamConnectors_0_inner_fRes_rv$EN ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:354.8-354.65" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:472.8-472.65" *)
   wire \fabric_upstreamConnectors_0_inner_fRes_rv$EN_port0__write ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:355.8-355.65" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:473.8-473.65" *)
   wire \fabric_upstreamConnectors_0_inner_fRes_rv$EN_port1__write ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:333.3-333.59" *)
-  wire [33:0] \fabric_upstreamConnectors_0_inner_fRes_rv$port0__write_1 ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:334.3-334.56" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:417.16-417.72" *)
+  reg [33:0] \fabric_upstreamConnectors_0_inner_fRes_rv$port0__write_1 ;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:444.3-444.56" *)
   wire [33:0] \fabric_upstreamConnectors_0_inner_fRes_rv$port1__read ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:335.3-335.56" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:445.3-445.56" *)
   wire [33:0] \fabric_upstreamConnectors_0_inner_fRes_rv$port2__read ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:326.17-326.64" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:434.17-434.64" *)
   wire [68:0] \fabric_upstreamConnectors_0_inner_incoming$wget ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:356.8-356.55" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:474.8-474.55" *)
   wire \fabric_upstreamConnectors_0_inner_incoming$whas ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:336.3-336.50" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:446.3-446.50" *)
   wire [33:0] \fabric_upstreamConnectors_0_inner_outgoing$wget ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:357.8-357.55" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:475.8-475.55" *)
   wire \fabric_upstreamConnectors_0_inner_outgoing$whas ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:400.7-400.48" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:532.7-532.48" *)
   reg fabric_upstreamConnectors_0_inner_pending;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:401.8-401.54" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:533.8-533.54" *)
   wire \fabric_upstreamConnectors_0_inner_pending$D_IN ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:402.8-402.52" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:534.8-534.52" *)
   wire \fabric_upstreamConnectors_0_inner_pending$EN ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:299.8-299.56" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:403.8-403.56" *)
   wire \fabric_upstreamConnectors_0_inner_probeAck$PROBE ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:300.8-300.62" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:404.8-404.62" *)
   wire \fabric_upstreamConnectors_0_inner_probeAck$PROBE_VALID ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:295.17-295.65" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:399.17-399.65" *)
   wire [31:0] \fabric_upstreamConnectors_0_inner_probeAdr$PROBE ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:301.8-301.62" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:405.8-405.62" *)
   wire \fabric_upstreamConnectors_0_inner_probeAdr$PROBE_VALID ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:302.8-302.56" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:406.8-406.56" *)
   wire \fabric_upstreamConnectors_0_inner_probeCyc$PROBE ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:303.8-303.62" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:407.8-407.62" *)
   wire \fabric_upstreamConnectors_0_inner_probeCyc$PROBE_VALID ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:296.3-296.54" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:400.3-400.54" *)
   wire [31:0] \fabric_upstreamConnectors_0_inner_probeDataIn$PROBE ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:304.8-304.65" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:408.8-408.65" *)
   wire \fabric_upstreamConnectors_0_inner_probeDataIn$PROBE_VALID ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:297.3-297.55" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:401.3-401.55" *)
   wire [31:0] \fabric_upstreamConnectors_0_inner_probeDataOut$PROBE ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:305.8-305.66" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:409.8-409.66" *)
   wire \fabric_upstreamConnectors_0_inner_probeDataOut$PROBE_VALID ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:298.16-298.64" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:402.16-402.64" *)
   wire [3:0] \fabric_upstreamConnectors_0_inner_probeSel$PROBE ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:306.8-306.62" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:410.8-410.62" *)
   wire \fabric_upstreamConnectors_0_inner_probeSel$PROBE_VALID ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:307.8-307.56" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:411.8-411.56" *)
   wire \fabric_upstreamConnectors_0_inner_probeStb$PROBE ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:308.8-308.62" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:412.8-412.62" *)
   wire \fabric_upstreamConnectors_0_inner_probeStb$PROBE_VALID ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:309.8-309.55" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:413.8-413.55" *)
   wire \fabric_upstreamConnectors_0_inner_probeWe$PROBE ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:310.8-310.61" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:414.8-414.61" *)
   wire \fabric_upstreamConnectors_0_inner_probeWe$PROBE_VALID ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:405.16-405.44" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:537.16-537.44" *)
   reg [69:0] fabric_upstreamRequests_0_rv;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:406.17-406.50" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:538.17-538.50" *)
   wire [69:0] \fabric_upstreamRequests_0_rv$D_IN ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:407.8-407.39" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:539.8-539.39" *)
   wire \fabric_upstreamRequests_0_rv$EN ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:358.8-358.52" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:476.8-476.52" *)
   wire \fabric_upstreamRequests_0_rv$EN_port0__write ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:359.8-359.52" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:477.8-477.52" *)
   wire \fabric_upstreamRequests_0_rv$EN_port1__write ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:323.3-323.46" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:431.3-431.46" *)
   wire [69:0] \fabric_upstreamRequests_0_rv$port0__write_1 ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:324.3-324.43" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:432.3-432.43" *)
   wire [69:0] \fabric_upstreamRequests_0_rv$port1__read ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:325.3-325.43" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:433.3-433.43" *)
   wire [69:0] \fabric_upstreamRequests_0_rv$port2__read ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:276.10-276.20" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:347.10-347.20" *)
   input gpio_ack_i;
   wire gpio_ack_i;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:264.19-264.29" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:335.19-335.29" *)
   output [31:0] gpio_adr_o;
   wire [31:0] gpio_adr_o;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:258.10-258.20" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:329.10-329.20" *)
   output gpio_cyc_o;
   wire gpio_cyc_o;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:279.19-279.29" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:350.19-350.29" *)
   input [31:0] gpio_dat_i;
   wire [31:0] gpio_dat_i;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:267.19-267.29" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:338.19-338.29" *)
   output [31:0] gpio_dat_o;
   wire [31:0] gpio_dat_o;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:277.10-277.20" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:348.10-348.20" *)
   input gpio_err_i;
   wire gpio_err_i;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:278.10-278.20" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:349.10-349.20" *)
   input gpio_rty_i;
   wire gpio_rty_i;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:270.18-270.28" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:341.18-341.28" *)
   output [3:0] gpio_sel_o;
   wire [3:0] gpio_sel_o;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:261.10-261.20" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:332.10-332.20" *)
   output gpio_stb_o;
   wire gpio_stb_o;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:273.10-273.19" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:344.10-344.19" *)
   output gpio_we_o;
   wire gpio_we_o;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:252.10-252.19" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:371.10-371.19" *)
+  input ksc_ack_i;
+  wire ksc_ack_i;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:359.19-359.28" *)
+  output [31:0] ksc_adr_o;
+  wire [31:0] ksc_adr_o;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:353.10-353.19" *)
+  output ksc_cyc_o;
+  wire ksc_cyc_o;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:374.19-374.28" *)
+  input [31:0] ksc_dat_i;
+  wire [31:0] ksc_dat_i;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:362.19-362.28" *)
+  output [31:0] ksc_dat_o;
+  wire [31:0] ksc_dat_o;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:372.10-372.19" *)
+  input ksc_err_i;
+  wire ksc_err_i;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:373.10-373.19" *)
+  input ksc_rty_i;
+  wire ksc_rty_i;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:365.18-365.27" *)
+  output [3:0] ksc_sel_o;
+  wire [3:0] ksc_sel_o;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:356.10-356.19" *)
+  output ksc_stb_o;
+  wire ksc_stb_o;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:368.10-368.18" *)
+  output ksc_we_o;
+  wire ksc_we_o;
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:323.10-323.19" *)
   input spi_ack_i;
   wire spi_ack_i;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:240.19-240.28" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:311.19-311.28" *)
   output [31:0] spi_adr_o;
   wire [31:0] spi_adr_o;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:234.10-234.19" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:305.10-305.19" *)
   output spi_cyc_o;
   wire spi_cyc_o;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:255.19-255.28" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:326.19-326.28" *)
   input [31:0] spi_dat_i;
   wire [31:0] spi_dat_i;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:243.19-243.28" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:314.19-314.28" *)
   output [31:0] spi_dat_o;
   wire [31:0] spi_dat_o;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:253.10-253.19" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:324.10-324.19" *)
   input spi_err_i;
   wire spi_err_i;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:254.10-254.19" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:325.10-325.19" *)
   input spi_rty_i;
   wire spi_rty_i;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:246.18-246.27" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:317.18-317.27" *)
   output [3:0] spi_sel_o;
   wire [3:0] spi_sel_o;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:237.10-237.19" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:308.10-308.19" *)
   output spi_stb_o;
   wire spi_stb_o;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:249.10-249.18" *)
+  (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:320.10-320.18" *)
   output spi_we_o;
   wire spi_we_o;
-  assign _010_ = \fabric_upstreamRequests_0_rv$port1__read [68:45] == (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:648.7-648.68" *) 24'h400130;
-  assign _011_ = \fabric_upstreamRequests_0_rv$port1__read [68:45] == (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:692.7-692.68" *) 24'h400108;
-  assign _012_ = \fabric_upstreamRequests_0_rv$port1__read [68:45] == (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:737.7-737.68" *) 24'h400108;
-  assign _013_ = \fabric_upstreamRequests_0_rv$port1__read [68:45] == (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:741.7-741.68" *) 24'h400130;
-  assign _014_ = \fabric_upstreamRequests_0_rv$port1__read [68:45] == (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:750.7-750.68" *) 24'h400130;
-  assign _015_ = \fabric_upstreamRequests_0_rv$port1__read [68:45] == (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:761.7-761.68" *) 24'h400108;
-  assign _016_ = RST_N == (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:829.9-829.22" *) 1'h0;
-  assign _017_ = \fabric_upstreamConnectors_0_inner_outgoing$whas  && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:423.7-424.58" *) \fabric_upstreamConnectors_0_inner_outgoing$wget [33];
-  assign _018_ = \fabric_downstreamConnectors_0_fReq_rv$port1__read [69] && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:443.7-444.54" *) \fabric_downstreamConnectors_0_outgoing$wget [69];
-  assign _019_ = \fabric_downstreamConnectors_0_fReq_rv$port1__read [69] && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:448.7-449.54" *) \fabric_downstreamConnectors_0_outgoing$wget [69];
-  assign _020_ = \fabric_downstreamConnectors_0_fReq_rv$port1__read [69] && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:476.7-477.54" *) \fabric_downstreamConnectors_0_outgoing$wget [69];
-  assign _021_ = _020_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:476.7-478.54" *) \fabric_downstreamConnectors_0_outgoing$wget [36];
-  assign _022_ = \fabric_downstreamConnectors_1_fReq_rv$port1__read [69] && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:482.7-483.54" *) \fabric_downstreamConnectors_1_outgoing$wget [69];
-  assign _023_ = \fabric_downstreamConnectors_1_fReq_rv$port1__read [69] && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:487.7-488.54" *) \fabric_downstreamConnectors_1_outgoing$wget [69];
-  assign _024_ = \fabric_downstreamConnectors_1_fReq_rv$port1__read [69] && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:515.7-516.54" *) \fabric_downstreamConnectors_1_outgoing$wget [69];
-  assign _025_ = _024_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:515.7-517.54" *) \fabric_downstreamConnectors_1_outgoing$wget [36];
-  assign _026_ = \fabric_downstreamPending_0_rv$port1__read  && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:521.7-522.60" *) \fabric_downstreamConnectors_0_fRes_rv$port1__read [33];
-  assign _027_ = _026_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:521.7-523.53" *) _095_;
-  assign _028_ = \fabric_downstreamPending_1_rv$port1__read  && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:527.7-528.60" *) \fabric_downstreamConnectors_1_fRes_rv$port1__read [33];
-  assign _029_ = _028_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:527.7-529.53" *) _096_;
-  assign _030_ = \fabric_upstreamConnectors_0_inner_fRes_rv$port1__read [33] && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:533.7-534.67" *) \MUX_fabric_upstreamConnectors_0_inner_pending$write_1__SEL_3 ;
-  assign _031_ = \fabric_upstreamConnectors_0_inner_fRes_rv$port1__read [33] && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:538.7-539.48" *) fabric_upstreamConnectors_0_inner_pending;
-  assign _032_ = _031_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:538.7-540.76" *) _097_;
-  assign _033_ = CAN_FIRE_RL_fabric_response_route_1 && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:544.7-545.42" *) _098_;
-  assign _034_ = _099_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:547.7-548.54" *) \fabric_upstreamConnectors_0_inner_incoming$whas ;
-  assign _035_ = _034_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:547.7-549.49" *) _100_;
-  assign _036_ = \fabric_upstreamConnectors_0_inner_outgoing$whas  && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:559.7-560.58" *) \fabric_upstreamConnectors_0_inner_outgoing$wget [33];
-  assign _037_ = cpu_cyc_i && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:587.7-587.29" *) cpu_stb_i;
-  assign _038_ = spi_ack_i && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:598.8-598.31" *) _103_;
-  assign _039_ = _038_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:598.8-598.45" *) _104_;
-  assign _040_ = gpio_ack_i && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:607.8-607.33" *) _105_;
-  assign _041_ = _040_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:607.8-607.48" *) _106_;
-  assign _042_ = \fabric_upstreamConnectors_0_inner_fReq_rv$port1__read [69] && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:619.7-620.40" *) _107_;
-  assign _043_ = CAN_FIRE_RL_fabric_response_route_1 && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:627.7-628.42" *) _108_;
-  assign _044_ = \fabric_upstreamRequests_0_rv$port1__read [69] && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:645.7-646.49" *) _109_;
-  assign _045_ = _044_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:645.7-647.37" *) _110_;
-  assign _046_ = _045_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:645.7-648.68" *) _010_;
-  assign _047_ = _154_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:651.10-654.13" *) _155_;
-  assign _048_ = \fabric_downstreamConnectors_0_fReq_rv$port1__read [69] && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:663.7-664.49" *) _111_;
-  assign _049_ = _048_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:663.7-665.50" *) \fabric_downstreamConnectors_0_incoming$whas ;
-  assign _050_ = _049_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:663.7-666.54" *) \fabric_downstreamConnectors_0_incoming$wget [32];
-  assign _051_ = \fabric_downstreamConnectors_0_fReq_rv$port1__read [69] && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:672.7-673.49" *) _112_;
-  assign _052_ = _051_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:672.7-674.50" *) \fabric_downstreamConnectors_0_incoming$whas ;
-  assign _053_ = _052_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:672.7-675.54" *) \fabric_downstreamConnectors_0_incoming$wget [32];
-  assign _054_ = \fabric_upstreamRequests_0_rv$port1__read [69] && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:689.7-690.49" *) _114_;
-  assign _055_ = _054_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:689.7-691.37" *) _115_;
-  assign _056_ = _055_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:689.7-692.68" *) _011_;
-  assign _057_ = \fabric_downstreamConnectors_1_fReq_rv$port1__read [69] && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:698.7-699.49" *) _116_;
-  assign _058_ = _057_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:698.7-700.50" *) \fabric_downstreamConnectors_1_incoming$whas ;
-  assign _059_ = _058_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:698.7-701.54" *) \fabric_downstreamConnectors_1_incoming$wget [32];
-  assign _060_ = \fabric_downstreamConnectors_1_fReq_rv$port1__read [69] && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:707.7-708.49" *) _117_;
-  assign _061_ = _060_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:707.7-709.50" *) \fabric_downstreamConnectors_1_incoming$whas ;
-  assign _062_ = _061_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:707.7-710.54" *) \fabric_downstreamConnectors_1_incoming$wget [32];
-  assign _063_ = \fabric_upstreamConnectors_0_inner_fReq_rv$port1__read [69] && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:724.7-725.40" *) _119_;
-  assign _064_ = \fabric_upstreamRequests_0_rv$port1__read [69] && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:734.7-735.49" *) _120_;
-  assign _065_ = _064_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:734.7-736.37" *) _121_;
-  assign _066_ = _065_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:734.7-737.68" *) _012_;
-  assign _067_ = \fabric_upstreamRequests_0_rv$port1__read [69] && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:738.7-739.49" *) _122_;
-  assign _068_ = _067_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:738.7-740.37" *) _123_;
-  assign _069_ = _068_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:738.7-741.68" *) _013_;
-  assign _070_ = \fabric_upstreamRequests_0_rv$port1__read [69] && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:747.7-748.49" *) _124_;
-  assign _071_ = _070_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:747.7-749.37" *) _125_;
-  assign _072_ = _071_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:747.7-750.68" *) _014_;
-  assign _073_ = _126_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:755.7-756.48" *) \fabric_downstreamPending_0_rv$port1__read ;
-  assign _074_ = \fabric_upstreamRequests_0_rv$port1__read [69] && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:758.7-759.49" *) _127_;
-  assign _075_ = _074_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:758.7-760.37" *) _128_;
-  assign _076_ = _075_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:758.7-761.68" *) _015_;
-  assign _077_ = _129_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:766.7-767.48" *) \fabric_downstreamPending_1_rv$port1__read ;
-  assign _078_ = _130_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:811.7-812.76" *) _131_;
-  assign _079_ = _132_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:816.7-817.54" *) \fabric_upstreamConnectors_0_inner_incoming$whas ;
-  assign _080_ = _079_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:816.7-818.49" *) _133_;
-  assign _081_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:434.8-434.56" *) \fabric_upstreamConnectors_0_inner_outgoing$whas ;
-  assign _082_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:435.8-435.60" *) \fabric_upstreamConnectors_0_inner_outgoing$wget [33];
-  assign _083_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:453.8-453.62" *) \fabric_downstreamConnectors_0_fReq_rv$port1__read [69];
-  assign _084_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:454.8-454.56" *) \fabric_downstreamConnectors_0_outgoing$wget [69];
-  assign _085_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:460.8-460.62" *) \fabric_downstreamConnectors_0_fReq_rv$port1__read [69];
-  assign _086_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:461.8-461.56" *) \fabric_downstreamConnectors_0_outgoing$wget [69];
-  assign _087_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:469.8-469.62" *) \fabric_downstreamConnectors_0_fReq_rv$port1__read [69];
-  assign _088_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:470.8-470.56" *) \fabric_downstreamConnectors_0_outgoing$wget [69];
-  assign _089_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:492.8-492.62" *) \fabric_downstreamConnectors_1_fReq_rv$port1__read [69];
-  assign _090_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:493.8-493.56" *) \fabric_downstreamConnectors_1_outgoing$wget [69];
-  assign _091_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:499.8-499.62" *) \fabric_downstreamConnectors_1_fReq_rv$port1__read [69];
-  assign _092_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:500.8-500.56" *) \fabric_downstreamConnectors_1_outgoing$wget [69];
-  assign _093_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:508.8-508.62" *) \fabric_downstreamConnectors_1_fReq_rv$port1__read [69];
-  assign _094_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:509.8-509.56" *) \fabric_downstreamConnectors_1_outgoing$wget [69];
-  assign _095_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:523.7-523.53" *) fabric_upstreamConnectors_0_inner_fRes_rv[33];
-  assign _096_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:529.7-529.53" *) fabric_upstreamConnectors_0_inner_fRes_rv[33];
-  assign _097_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:540.7-540.76" *) WILL_FIRE_RL_fabric_upstreamConnectors_0_inner_process_outgoing_fast;
-  assign _098_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:545.7-545.42" *) WILL_FIRE_RL_fabric_response_route;
-  assign _099_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:547.7-547.53" *) fabric_upstreamConnectors_0_inner_fReq_rv[69];
-  assign _100_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:549.7-549.49" *) fabric_upstreamConnectors_0_inner_pending;
-  assign _101_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:569.8-569.56" *) \fabric_upstreamConnectors_0_inner_outgoing$whas ;
-  assign _102_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:570.8-570.60" *) \fabric_upstreamConnectors_0_inner_outgoing$wget [33];
-  assign _103_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:598.21-598.31" *) spi_err_i;
-  assign _104_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:598.35-598.45" *) spi_rty_i;
-  assign _105_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:607.22-607.33" *) gpio_err_i;
-  assign _106_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:607.37-607.48" *) gpio_rty_i;
-  assign _107_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:620.7-620.40" *) fabric_upstreamRequests_0_rv[69];
-  assign _108_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:628.7-628.42" *) WILL_FIRE_RL_fabric_response_route;
-  assign _109_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:646.7-646.49" *) fabric_downstreamConnectors_0_fReq_rv[69];
-  assign _110_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:647.7-647.37" *) fabric_downstreamPending_0_rv;
-  assign _111_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:664.7-664.49" *) fabric_downstreamConnectors_0_fRes_rv[33];
-  assign _112_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:673.7-673.49" *) fabric_downstreamConnectors_0_fRes_rv[33];
-  assign _113_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:678.9-678.63" *) \fabric_downstreamConnectors_0_fReq_rv$port1__read [36];
-  assign _114_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:690.7-690.49" *) fabric_downstreamConnectors_1_fReq_rv[69];
-  assign _115_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:691.7-691.37" *) fabric_downstreamPending_1_rv;
-  assign _116_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:699.7-699.49" *) fabric_downstreamConnectors_1_fRes_rv[33];
-  assign _117_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:708.7-708.49" *) fabric_downstreamConnectors_1_fRes_rv[33];
-  assign _118_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:713.9-713.63" *) \fabric_downstreamConnectors_1_fReq_rv$port1__read [36];
-  assign _119_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:725.7-725.40" *) fabric_upstreamRequests_0_rv[69];
-  assign _120_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:735.7-735.49" *) fabric_downstreamConnectors_1_fReq_rv[69];
-  assign _121_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:736.7-736.37" *) fabric_downstreamPending_1_rv;
-  assign _122_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:739.7-739.49" *) fabric_downstreamConnectors_0_fReq_rv[69];
-  assign _123_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:740.7-740.37" *) fabric_downstreamPending_0_rv;
-  assign _124_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:748.7-748.49" *) fabric_downstreamConnectors_0_fReq_rv[69];
-  assign _125_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:749.7-749.37" *) fabric_downstreamPending_0_rv;
-  assign _126_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:755.7-755.42" *) WILL_FIRE_RL_fabric_response_route;
-  assign _127_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:759.7-759.49" *) fabric_downstreamConnectors_1_fReq_rv[69];
-  assign _128_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:760.7-760.37" *) fabric_downstreamPending_1_rv;
-  assign _129_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:766.7-766.75" *) \MUX_fabric_upstreamConnectors_0_inner_fRes_rv$port0__write_1__SEL_2 ;
-  assign _130_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:811.7-811.71" *) WILL_FIRE_RL_fabric_upstreamConnectors_0_inner_process_outgoing;
-  assign _131_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:812.7-812.76" *) WILL_FIRE_RL_fabric_upstreamConnectors_0_inner_process_outgoing_fast;
-  assign _132_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:816.7-816.53" *) fabric_upstreamConnectors_0_inner_fReq_rv[69];
-  assign _133_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:818.7-818.49" *) fabric_upstreamConnectors_0_inner_pending;
-  assign _134_ = _081_ || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:434.8-435.60" *) _082_;
-  assign _135_ = _083_ || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:453.8-454.56" *) _084_;
-  assign _136_ = _085_ || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:460.8-461.56" *) _086_;
-  assign _137_ = _087_ || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:469.8-470.56" *) _088_;
-  assign _138_ = _089_ || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:492.8-493.56" *) _090_;
-  assign _139_ = _091_ || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:499.8-500.56" *) _092_;
-  assign _140_ = _093_ || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:508.8-509.56" *) _094_;
-  assign _141_ = _101_ || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:569.8-570.60" *) _102_;
-  assign _142_ = WILL_FIRE_RL_fabric_upstreamConnectors_0_inner_process_outgoing || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:592.7-593.75" *) WILL_FIRE_RL_fabric_upstreamConnectors_0_inner_process_outgoing_fast;
-  assign _143_ = spi_ack_i || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:602.7-602.29" *) spi_err_i;
-  assign _144_ = _143_ || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:602.7-602.42" *) spi_rty_i;
-  assign _145_ = gpio_ack_i || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:611.7-611.31" *) gpio_err_i;
-  assign _146_ = _145_ || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:611.7-611.45" *) gpio_rty_i;
-  assign _147_ = WILL_FIRE_RL_fabric_response_route || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:626.7-628.42" *) _043_;
-  assign _148_ = WILL_FIRE_RL_fabric_upstreamConnectors_0_inner_process_outgoing || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:638.7-639.75" *) WILL_FIRE_RL_fabric_upstreamConnectors_0_inner_process_outgoing_fast;
-  assign _149_ = _066_ || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:734.7-741.68" *) _069_;
-  assign _150_ = \fabric_downstreamPending_0_rv$EN_port0__write  || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:752.7-753.36" *) fabric_downstreamPending_0_rv;
-  assign _151_ = \fabric_downstreamPending_1_rv$EN_port0__write  || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:763.7-764.36" *) fabric_downstreamPending_1_rv;
-  assign _152_ = WILL_FIRE_RL_fabric_upstreamConnectors_0_inner_process_outgoing || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:814.7-815.75" *) WILL_FIRE_RL_fabric_upstreamConnectors_0_inner_process_outgoing_fast;
-  assign _153_ = _152_ || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:814.7-818.49" *) _080_;
-  assign _154_ = \fabric_upstreamRequests_0_rv$port1__read [68:45] != (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:651.10-652.13" *) 24'h400130;
-  assign _155_ = \fabric_upstreamRequests_0_rv$port1__read [68:45] != (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:653.3-654.13" *) 24'h400108;
-  assign _156_ = _134_ ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:434.7-439.11" *) 32'd0 : _157_;
-  assign _157_ = \fabric_upstreamConnectors_0_inner_outgoing$wget [32] ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:437.10-439.10" *) \fabric_upstreamConnectors_0_inner_outgoing$wget [31:0] : 32'd0;
-  assign _158_ = _135_ ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:453.7-456.59" *) 32'd0 : \fabric_downstreamConnectors_0_outgoing$wget [68:37];
-  assign _159_ = _136_ ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:460.7-465.11" *) 32'd0 : _160_;
-  assign _160_ = \fabric_downstreamConnectors_0_outgoing$wget [36] ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:463.10-465.10" *) \fabric_downstreamConnectors_0_outgoing$wget [35:4] : 32'd0;
-  assign _161_ = _137_ ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:469.7-472.57" *) 4'h0 : \fabric_downstreamConnectors_0_outgoing$wget [3:0];
-  assign _162_ = _138_ ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:492.7-495.59" *) 32'd0 : \fabric_downstreamConnectors_1_outgoing$wget [68:37];
-  assign _163_ = _139_ ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:499.7-504.11" *) 32'd0 : _164_;
-  assign _164_ = \fabric_downstreamConnectors_1_outgoing$wget [36] ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:502.10-504.10" *) \fabric_downstreamConnectors_1_outgoing$wget [35:4] : 32'd0;
-  assign _165_ = _140_ ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:508.7-511.57" *) 4'h0 : \fabric_downstreamConnectors_1_outgoing$wget [3:0];
-  assign _166_ = _141_ ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:569.7-574.11" *) 32'd0 : _167_;
-  assign _167_ = \fabric_upstreamConnectors_0_inner_outgoing$wget [32] ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:572.10-574.10" *) \fabric_upstreamConnectors_0_inner_outgoing$wget [31:0] : 32'd0;
-  assign _168_ = _039_ ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:598.7-600.22" *) { 1'h1, spi_dat_i } : 33'h100000000;
-  assign _169_ = _041_ ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:607.7-609.22" *) { 1'h1, gpio_dat_i } : 33'h100000000;
-  assign _170_ = \MUX_fabric_upstreamConnectors_0_inner_pending$write_1__SEL_3  ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:615.7-617.50" *) \fabric_upstreamConnectors_0_inner_fReq_rv$port0__write_1  : fabric_upstreamConnectors_0_inner_fReq_rv;
-  assign _171_ = \fabric_upstreamConnectors_0_inner_fReq_rv$EN_port1__write  ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:622.7-624.62" *) 70'h0aaaaaaaaaaaaaaaaa : \fabric_upstreamConnectors_0_inner_fReq_rv$port1__read ;
-  assign _172_ = WILL_FIRE_RL_fabric_response_route ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:630.7-632.76" *) \MUX_fabric_upstreamConnectors_0_inner_fRes_rv$port0__write_1__VAL_1  : \MUX_fabric_upstreamConnectors_0_inner_fRes_rv$port0__write_1__VAL_2 ;
-  assign _173_ = \fabric_upstreamConnectors_0_inner_fRes_rv$EN_port0__write  ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:634.7-636.50" *) \fabric_upstreamConnectors_0_inner_fRes_rv$port0__write_1  : fabric_upstreamConnectors_0_inner_fRes_rv;
-  assign _174_ = \fabric_upstreamConnectors_0_inner_fRes_rv$EN_port1__write  ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:641.7-643.62" *) 34'h0aaaaaaaa : \fabric_upstreamConnectors_0_inner_fRes_rv$port1__read ;
-  assign _175_ = _047_ ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:651.9-656.62" *) \fabric_upstreamRequests_0_rv$port1__read [68:37] : { 24'h000000, \fabric_upstreamRequests_0_rv$port1__read [44:37] };
-  assign _176_ = \fabric_downstreamConnectors_0_fReq_rv$EN_port0__write  ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:659.7-661.46" *) \fabric_downstreamConnectors_0_fReq_rv$port0__write_1  : fabric_downstreamConnectors_0_fReq_rv;
-  assign _177_ = \fabric_downstreamConnectors_0_fReq_rv$EN_port1__write  ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:668.7-670.58" *) 70'h0aaaaaaaaaaaaaaaaa : \fabric_downstreamConnectors_0_fReq_rv$port1__read ;
-  assign _178_ = \fabric_downstreamConnectors_0_fRes_rv$EN_port0__write  ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:681.7-683.46" *) \fabric_downstreamConnectors_0_fRes_rv$port0__write_1  : fabric_downstreamConnectors_0_fRes_rv;
-  assign _179_ = WILL_FIRE_RL_fabric_response_route ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:685.7-687.58" *) 34'h0aaaaaaaa : \fabric_downstreamConnectors_0_fRes_rv$port1__read ;
-  assign _180_ = \fabric_downstreamConnectors_1_fReq_rv$EN_port0__write  ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:694.7-696.46" *) \fabric_downstreamConnectors_0_fReq_rv$port0__write_1  : fabric_downstreamConnectors_1_fReq_rv;
-  assign _181_ = \fabric_downstreamConnectors_1_fReq_rv$EN_port1__write  ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:703.7-705.58" *) 70'h0aaaaaaaaaaaaaaaaa : \fabric_downstreamConnectors_1_fReq_rv$port1__read ;
-  assign _182_ = \fabric_downstreamConnectors_1_fRes_rv$EN_port0__write  ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:716.7-718.46" *) \fabric_downstreamConnectors_1_fRes_rv$port0__write_1  : fabric_downstreamConnectors_1_fRes_rv;
-  assign _183_ = \MUX_fabric_upstreamConnectors_0_inner_fRes_rv$port0__write_1__SEL_2  ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:720.7-722.58" *) 34'h0aaaaaaaa : \fabric_downstreamConnectors_1_fRes_rv$port1__read ;
-  assign _184_ = \fabric_upstreamRequests_0_rv$EN_port0__write  ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:730.7-732.37" *) \fabric_upstreamRequests_0_rv$port0__write_1  : fabric_upstreamRequests_0_rv;
-  assign _185_ = \fabric_upstreamRequests_0_rv$EN_port1__write  ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:743.7-745.49" *) 70'h0aaaaaaaaaaaaaaaaa : \fabric_upstreamRequests_0_rv$port1__read ;
+  assign _015_ = \fabric_upstreamRequests_0_rv$port1__read [68:45] == (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1009.7-1009.68" *) 24'h400108;
+  assign _016_ = \fabric_upstreamRequests_0_rv$port1__read [68:45] == (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1020.7-1020.68" *) 24'h40011c;
+  assign _017_ = RST_N == (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1103.9-1103.22" *) 1'h0;
+  assign _018_ = \fabric_upstreamRequests_0_rv$port1__read [68:45] == (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:855.7-855.68" *) 24'h400130;
+  assign _019_ = \fabric_upstreamRequests_0_rv$port1__read [68:45] == (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:901.7-901.68" *) 24'h400108;
+  assign _020_ = \fabric_upstreamRequests_0_rv$port1__read [68:45] == (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:936.7-936.68" *) 24'h40011c;
+  assign _021_ = \fabric_upstreamRequests_0_rv$port1__read [68:45] == (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:981.7-981.68" *) 24'h40011c;
+  assign _022_ = \fabric_upstreamRequests_0_rv$port1__read [68:45] == (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:985.7-985.68" *) 24'h400108;
+  assign _023_ = \fabric_upstreamRequests_0_rv$port1__read [68:45] == (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:989.7-989.68" *) 24'h400130;
+  assign _024_ = \fabric_upstreamRequests_0_rv$port1__read [68:45] == (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:998.7-998.68" *) 24'h400130;
+  assign _025_ = _115_ && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1003.7-1004.48" *) \fabric_downstreamPending_0_rv$port1__read ;
+  assign _026_ = \fabric_upstreamRequests_0_rv$port1__read [69] && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1006.7-1007.49" *) _116_;
+  assign _027_ = _026_ && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1006.7-1008.37" *) _117_;
+  assign _028_ = _027_ && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1006.7-1009.68" *) _015_;
+  assign _029_ = _118_ && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1014.7-1015.48" *) \fabric_downstreamPending_1_rv$port1__read ;
+  assign _030_ = \fabric_upstreamRequests_0_rv$port1__read [69] && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1017.7-1018.49" *) _119_;
+  assign _031_ = _030_ && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1017.7-1019.37" *) _120_;
+  assign _032_ = _031_ && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1017.7-1020.68" *) _016_;
+  assign _033_ = _121_ && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1025.7-1026.48" *) \fabric_downstreamPending_2_rv$port1__read ;
+  assign _034_ = _122_ && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1085.7-1086.76" *) _123_;
+  assign _035_ = _124_ && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1090.7-1091.54" *) \fabric_upstreamConnectors_0_inner_incoming$whas ;
+  assign _036_ = _035_ && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1090.7-1092.49" *) _125_;
+  assign _037_ = \fabric_upstreamConnectors_0_inner_outgoing$whas  && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:556.7-557.58" *) \fabric_upstreamConnectors_0_inner_outgoing$wget [33];
+  assign _038_ = \fabric_downstreamConnectors_0_fReq_rv$port1__read [69] && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:576.7-577.54" *) \fabric_downstreamConnectors_0_outgoing$wget [69];
+  assign _039_ = \fabric_downstreamConnectors_0_fReq_rv$port1__read [69] && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:581.7-582.54" *) \fabric_downstreamConnectors_0_outgoing$wget [69];
+  assign _040_ = \fabric_downstreamConnectors_0_fReq_rv$port1__read [69] && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:609.7-610.54" *) \fabric_downstreamConnectors_0_outgoing$wget [69];
+  assign _041_ = _040_ && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:609.7-611.54" *) \fabric_downstreamConnectors_0_outgoing$wget [36];
+  assign _042_ = \fabric_downstreamConnectors_1_fReq_rv$port1__read [69] && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:615.7-616.54" *) \fabric_downstreamConnectors_1_outgoing$wget [69];
+  assign _043_ = \fabric_downstreamConnectors_1_fReq_rv$port1__read [69] && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:620.7-621.54" *) \fabric_downstreamConnectors_1_outgoing$wget [69];
+  assign _044_ = \fabric_downstreamConnectors_1_fReq_rv$port1__read [69] && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:648.7-649.54" *) \fabric_downstreamConnectors_1_outgoing$wget [69];
+  assign _045_ = _044_ && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:648.7-650.54" *) \fabric_downstreamConnectors_1_outgoing$wget [36];
+  assign _046_ = \fabric_downstreamConnectors_2_fReq_rv$port1__read [69] && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:654.7-655.54" *) \fabric_downstreamConnectors_2_outgoing$wget [69];
+  assign _047_ = \fabric_downstreamConnectors_2_fReq_rv$port1__read [69] && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:659.7-660.54" *) \fabric_downstreamConnectors_2_outgoing$wget [69];
+  assign _048_ = \fabric_downstreamConnectors_2_fReq_rv$port1__read [69] && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:687.7-688.54" *) \fabric_downstreamConnectors_2_outgoing$wget [69];
+  assign _049_ = _048_ && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:687.7-689.54" *) \fabric_downstreamConnectors_2_outgoing$wget [36];
+  assign _050_ = \fabric_downstreamPending_0_rv$port1__read  && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:693.7-694.60" *) \fabric_downstreamConnectors_0_fRes_rv$port1__read [33];
+  assign _051_ = _050_ && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:693.7-695.53" *) _146_;
+  assign _052_ = \fabric_downstreamPending_1_rv$port1__read  && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:699.7-700.60" *) \fabric_downstreamConnectors_1_fRes_rv$port1__read [33];
+  assign _053_ = _052_ && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:699.7-701.53" *) _147_;
+  assign _054_ = _053_ && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:699.7-702.42" *) _148_;
+  assign _055_ = \fabric_downstreamPending_2_rv$port1__read  && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:706.7-707.60" *) \fabric_downstreamConnectors_2_fRes_rv$port1__read [33];
+  assign _056_ = _055_ && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:706.7-708.53" *) _149_;
+  assign _057_ = _056_ && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:706.7-709.44" *) _150_;
+  assign _058_ = _057_ && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:706.7-710.42" *) _151_;
+  assign _059_ = \fabric_upstreamConnectors_0_inner_fRes_rv$port1__read [33] && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:714.7-715.67" *) \MUX_fabric_upstreamConnectors_0_inner_pending$write_1__SEL_3 ;
+  assign _060_ = \fabric_upstreamConnectors_0_inner_fRes_rv$port1__read [33] && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:719.7-720.48" *) fabric_upstreamConnectors_0_inner_pending;
+  assign _061_ = _060_ && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:719.7-721.76" *) _152_;
+  assign _062_ = _153_ && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:725.7-726.54" *) \fabric_upstreamConnectors_0_inner_incoming$whas ;
+  assign _063_ = _062_ && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:725.7-727.49" *) _154_;
+  assign _064_ = \fabric_upstreamConnectors_0_inner_outgoing$whas  && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:740.7-741.58" *) \fabric_upstreamConnectors_0_inner_outgoing$wget [33];
+  assign _065_ = cpu_cyc_i && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:768.7-768.29" *) cpu_stb_i;
+  assign _066_ = spi_ack_i && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:779.8-779.31" *) _157_;
+  assign _067_ = _066_ && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:779.8-779.45" *) _158_;
+  assign _068_ = gpio_ack_i && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:788.8-788.33" *) _159_;
+  assign _069_ = _068_ && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:788.8-788.48" *) _160_;
+  assign _070_ = ksc_ack_i && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:797.8-797.31" *) _161_;
+  assign _071_ = _070_ && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:797.8-797.45" *) _162_;
+  assign _072_ = \fabric_upstreamConnectors_0_inner_fReq_rv$port1__read [69] && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:809.7-810.40" *) _163_;
+  assign _073_ = \fabric_upstreamRequests_0_rv$port1__read [69] && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:852.7-853.49" *) _164_;
+  assign _074_ = _073_ && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:852.7-854.37" *) _165_;
+  assign _075_ = _074_ && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:852.7-855.68" *) _018_;
+  assign _076_ = _216_ && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:858.10-861.13" *) _217_;
+  assign _077_ = _076_ && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:858.10-863.13" *) _218_;
+  assign _078_ = \fabric_downstreamConnectors_0_fReq_rv$port1__read [69] && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:872.7-873.49" *) _166_;
+  assign _079_ = _078_ && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:872.7-874.50" *) \fabric_downstreamConnectors_0_incoming$whas ;
+  assign _080_ = _079_ && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:872.7-875.54" *) \fabric_downstreamConnectors_0_incoming$wget [32];
+  assign _081_ = \fabric_downstreamConnectors_0_fReq_rv$port1__read [69] && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:881.7-882.49" *) _167_;
+  assign _082_ = _081_ && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:881.7-883.50" *) \fabric_downstreamConnectors_0_incoming$whas ;
+  assign _083_ = _082_ && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:881.7-884.54" *) \fabric_downstreamConnectors_0_incoming$wget [32];
+  assign _084_ = \fabric_upstreamRequests_0_rv$port1__read [69] && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:898.7-899.49" *) _169_;
+  assign _085_ = _084_ && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:898.7-900.37" *) _170_;
+  assign _086_ = _085_ && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:898.7-901.68" *) _019_;
+  assign _087_ = \fabric_downstreamConnectors_1_fReq_rv$port1__read [69] && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:907.7-908.49" *) _171_;
+  assign _088_ = _087_ && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:907.7-909.50" *) \fabric_downstreamConnectors_1_incoming$whas ;
+  assign _089_ = _088_ && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:907.7-910.54" *) \fabric_downstreamConnectors_1_incoming$wget [32];
+  assign _090_ = \fabric_downstreamConnectors_1_fReq_rv$port1__read [69] && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:916.7-917.49" *) _172_;
+  assign _091_ = _090_ && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:916.7-918.50" *) \fabric_downstreamConnectors_1_incoming$whas ;
+  assign _092_ = _091_ && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:916.7-919.54" *) \fabric_downstreamConnectors_1_incoming$wget [32];
+  assign _093_ = \fabric_upstreamRequests_0_rv$port1__read [69] && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:933.7-934.49" *) _174_;
+  assign _094_ = _093_ && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:933.7-935.37" *) _175_;
+  assign _095_ = _094_ && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:933.7-936.68" *) _020_;
+  assign _096_ = \fabric_downstreamConnectors_2_fReq_rv$port1__read [69] && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:942.7-943.49" *) _176_;
+  assign _097_ = _096_ && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:942.7-944.50" *) \fabric_downstreamConnectors_2_incoming$whas ;
+  assign _098_ = _097_ && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:942.7-945.54" *) \fabric_downstreamConnectors_2_incoming$wget [32];
+  assign _099_ = \fabric_downstreamConnectors_2_fReq_rv$port1__read [69] && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:951.7-952.49" *) _177_;
+  assign _100_ = _099_ && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:951.7-953.50" *) \fabric_downstreamConnectors_2_incoming$whas ;
+  assign _101_ = _100_ && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:951.7-954.54" *) \fabric_downstreamConnectors_2_incoming$wget [32];
+  assign _102_ = \fabric_upstreamConnectors_0_inner_fReq_rv$port1__read [69] && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:968.7-969.40" *) _179_;
+  assign _103_ = \fabric_upstreamRequests_0_rv$port1__read [69] && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:978.7-979.49" *) _180_;
+  assign _104_ = _103_ && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:978.7-980.37" *) _181_;
+  assign _105_ = _104_ && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:978.7-981.68" *) _021_;
+  assign _106_ = \fabric_upstreamRequests_0_rv$port1__read [69] && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:982.7-983.49" *) _182_;
+  assign _107_ = _106_ && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:982.7-984.37" *) _183_;
+  assign _108_ = _107_ && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:982.7-985.68" *) _022_;
+  assign _109_ = \fabric_upstreamRequests_0_rv$port1__read [69] && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:986.7-987.49" *) _184_;
+  assign _110_ = _109_ && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:986.7-988.37" *) _185_;
+  assign _111_ = _110_ && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:986.7-989.68" *) _023_;
+  assign _112_ = \fabric_upstreamRequests_0_rv$port1__read [69] && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:995.7-996.49" *) _186_;
+  assign _113_ = _112_ && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:995.7-997.37" *) _187_;
+  assign _114_ = _113_ && (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:995.7-998.68" *) _024_;
+  assign _115_ = ! (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1003.7-1003.42" *) WILL_FIRE_RL_fabric_response_route;
+  assign _116_ = ! (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1007.7-1007.49" *) fabric_downstreamConnectors_1_fReq_rv[69];
+  assign _117_ = ! (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1008.7-1008.37" *) fabric_downstreamPending_1_rv;
+  assign _118_ = ! (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1014.7-1014.44" *) WILL_FIRE_RL_fabric_response_route_1;
+  assign _119_ = ! (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1018.7-1018.49" *) fabric_downstreamConnectors_2_fReq_rv[69];
+  assign _120_ = ! (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1019.7-1019.37" *) fabric_downstreamPending_2_rv;
+  assign _121_ = ! (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1025.7-1025.44" *) WILL_FIRE_RL_fabric_response_route_2;
+  assign _122_ = ! (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1085.7-1085.71" *) WILL_FIRE_RL_fabric_upstreamConnectors_0_inner_process_outgoing;
+  assign _123_ = ! (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1086.7-1086.76" *) WILL_FIRE_RL_fabric_upstreamConnectors_0_inner_process_outgoing_fast;
+  assign _124_ = ! (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1090.7-1090.53" *) fabric_upstreamConnectors_0_inner_fReq_rv[69];
+  assign _125_ = ! (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1092.7-1092.49" *) fabric_upstreamConnectors_0_inner_pending;
+  assign _126_ = ! (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:567.8-567.56" *) \fabric_upstreamConnectors_0_inner_outgoing$whas ;
+  assign _127_ = ! (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:568.8-568.60" *) \fabric_upstreamConnectors_0_inner_outgoing$wget [33];
+  assign _128_ = ! (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:586.8-586.62" *) \fabric_downstreamConnectors_0_fReq_rv$port1__read [69];
+  assign _129_ = ! (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:587.8-587.56" *) \fabric_downstreamConnectors_0_outgoing$wget [69];
+  assign _130_ = ! (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:593.8-593.62" *) \fabric_downstreamConnectors_0_fReq_rv$port1__read [69];
+  assign _131_ = ! (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:594.8-594.56" *) \fabric_downstreamConnectors_0_outgoing$wget [69];
+  assign _132_ = ! (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:602.8-602.62" *) \fabric_downstreamConnectors_0_fReq_rv$port1__read [69];
+  assign _133_ = ! (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:603.8-603.56" *) \fabric_downstreamConnectors_0_outgoing$wget [69];
+  assign _134_ = ! (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:625.8-625.62" *) \fabric_downstreamConnectors_1_fReq_rv$port1__read [69];
+  assign _135_ = ! (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:626.8-626.56" *) \fabric_downstreamConnectors_1_outgoing$wget [69];
+  assign _136_ = ! (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:632.8-632.62" *) \fabric_downstreamConnectors_1_fReq_rv$port1__read [69];
+  assign _137_ = ! (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:633.8-633.56" *) \fabric_downstreamConnectors_1_outgoing$wget [69];
+  assign _138_ = ! (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:641.8-641.62" *) \fabric_downstreamConnectors_1_fReq_rv$port1__read [69];
+  assign _139_ = ! (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:642.8-642.56" *) \fabric_downstreamConnectors_1_outgoing$wget [69];
+  assign _140_ = ! (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:664.8-664.62" *) \fabric_downstreamConnectors_2_fReq_rv$port1__read [69];
+  assign _141_ = ! (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:665.8-665.56" *) \fabric_downstreamConnectors_2_outgoing$wget [69];
+  assign _142_ = ! (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:671.8-671.62" *) \fabric_downstreamConnectors_2_fReq_rv$port1__read [69];
+  assign _143_ = ! (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:672.8-672.56" *) \fabric_downstreamConnectors_2_outgoing$wget [69];
+  assign _144_ = ! (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:680.8-680.62" *) \fabric_downstreamConnectors_2_fReq_rv$port1__read [69];
+  assign _145_ = ! (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:681.8-681.56" *) \fabric_downstreamConnectors_2_outgoing$wget [69];
+  assign _146_ = ! (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:695.7-695.53" *) fabric_upstreamConnectors_0_inner_fRes_rv[33];
+  assign _147_ = ! (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:701.7-701.53" *) fabric_upstreamConnectors_0_inner_fRes_rv[33];
+  assign _148_ = ! (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:702.7-702.42" *) WILL_FIRE_RL_fabric_response_route;
+  assign _149_ = ! (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:708.7-708.53" *) fabric_upstreamConnectors_0_inner_fRes_rv[33];
+  assign _150_ = ! (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:709.7-709.44" *) WILL_FIRE_RL_fabric_response_route_1;
+  assign _151_ = ! (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:710.7-710.42" *) WILL_FIRE_RL_fabric_response_route;
+  assign _152_ = ! (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:721.7-721.76" *) WILL_FIRE_RL_fabric_upstreamConnectors_0_inner_process_outgoing_fast;
+  assign _153_ = ! (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:725.7-725.53" *) fabric_upstreamConnectors_0_inner_fReq_rv[69];
+  assign _154_ = ! (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:727.7-727.49" *) fabric_upstreamConnectors_0_inner_pending;
+  assign _155_ = ! (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:750.8-750.56" *) \fabric_upstreamConnectors_0_inner_outgoing$whas ;
+  assign _156_ = ! (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:751.8-751.60" *) \fabric_upstreamConnectors_0_inner_outgoing$wget [33];
+  assign _157_ = ! (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:779.21-779.31" *) spi_err_i;
+  assign _158_ = ! (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:779.35-779.45" *) spi_rty_i;
+  assign _159_ = ! (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:788.22-788.33" *) gpio_err_i;
+  assign _160_ = ! (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:788.37-788.48" *) gpio_rty_i;
+  assign _161_ = ! (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:797.21-797.31" *) ksc_err_i;
+  assign _162_ = ! (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:797.35-797.45" *) ksc_rty_i;
+  assign _163_ = ! (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:810.7-810.40" *) fabric_upstreamRequests_0_rv[69];
+  assign _164_ = ! (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:853.7-853.49" *) fabric_downstreamConnectors_0_fReq_rv[69];
+  assign _165_ = ! (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:854.7-854.37" *) fabric_downstreamPending_0_rv;
+  assign _166_ = ! (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:873.7-873.49" *) fabric_downstreamConnectors_0_fRes_rv[33];
+  assign _167_ = ! (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:882.7-882.49" *) fabric_downstreamConnectors_0_fRes_rv[33];
+  assign _168_ = ! (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:887.9-887.63" *) \fabric_downstreamConnectors_0_fReq_rv$port1__read [36];
+  assign _169_ = ! (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:899.7-899.49" *) fabric_downstreamConnectors_1_fReq_rv[69];
+  assign _170_ = ! (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:900.7-900.37" *) fabric_downstreamPending_1_rv;
+  assign _171_ = ! (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:908.7-908.49" *) fabric_downstreamConnectors_1_fRes_rv[33];
+  assign _172_ = ! (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:917.7-917.49" *) fabric_downstreamConnectors_1_fRes_rv[33];
+  assign _173_ = ! (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:922.9-922.63" *) \fabric_downstreamConnectors_1_fReq_rv$port1__read [36];
+  assign _174_ = ! (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:934.7-934.49" *) fabric_downstreamConnectors_2_fReq_rv[69];
+  assign _175_ = ! (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:935.7-935.37" *) fabric_downstreamPending_2_rv;
+  assign _176_ = ! (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:943.7-943.49" *) fabric_downstreamConnectors_2_fRes_rv[33];
+  assign _177_ = ! (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:952.7-952.49" *) fabric_downstreamConnectors_2_fRes_rv[33];
+  assign _178_ = ! (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:957.9-957.63" *) \fabric_downstreamConnectors_2_fReq_rv$port1__read [36];
+  assign _179_ = ! (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:969.7-969.40" *) fabric_upstreamRequests_0_rv[69];
+  assign _180_ = ! (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:979.7-979.49" *) fabric_downstreamConnectors_2_fReq_rv[69];
+  assign _181_ = ! (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:980.7-980.37" *) fabric_downstreamPending_2_rv;
+  assign _182_ = ! (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:983.7-983.49" *) fabric_downstreamConnectors_1_fReq_rv[69];
+  assign _183_ = ! (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:984.7-984.37" *) fabric_downstreamPending_1_rv;
+  assign _184_ = ! (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:987.7-987.49" *) fabric_downstreamConnectors_0_fReq_rv[69];
+  assign _185_ = ! (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:988.7-988.37" *) fabric_downstreamPending_0_rv;
+  assign _186_ = ! (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:996.7-996.49" *) fabric_downstreamConnectors_0_fReq_rv[69];
+  assign _187_ = ! (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:997.7-997.37" *) fabric_downstreamPending_0_rv;
+  assign _188_ = \fabric_downstreamPending_0_rv$EN_port0__write  || (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1000.7-1001.36" *) fabric_downstreamPending_0_rv;
+  assign _189_ = \fabric_downstreamPending_1_rv$EN_port0__write  || (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1011.7-1012.36" *) fabric_downstreamPending_1_rv;
+  assign _190_ = \fabric_downstreamPending_2_rv$EN_port0__write  || (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1022.7-1023.36" *) fabric_downstreamPending_2_rv;
+  assign _191_ = WILL_FIRE_RL_fabric_upstreamConnectors_0_inner_process_outgoing || (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1088.7-1089.75" *) WILL_FIRE_RL_fabric_upstreamConnectors_0_inner_process_outgoing_fast;
+  assign _192_ = _191_ || (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1088.7-1092.49" *) _036_;
+  assign _193_ = _126_ || (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:567.8-568.60" *) _127_;
+  assign _194_ = _128_ || (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:586.8-587.56" *) _129_;
+  assign _195_ = _130_ || (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:593.8-594.56" *) _131_;
+  assign _196_ = _132_ || (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:602.8-603.56" *) _133_;
+  assign _197_ = _134_ || (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:625.8-626.56" *) _135_;
+  assign _198_ = _136_ || (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:632.8-633.56" *) _137_;
+  assign _199_ = _138_ || (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:641.8-642.56" *) _139_;
+  assign _200_ = _140_ || (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:664.8-665.56" *) _141_;
+  assign _201_ = _142_ || (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:671.8-672.56" *) _143_;
+  assign _202_ = _144_ || (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:680.8-681.56" *) _145_;
+  assign _203_ = _155_ || (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:750.8-751.60" *) _156_;
+  assign _204_ = WILL_FIRE_RL_fabric_upstreamConnectors_0_inner_process_outgoing || (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:773.7-774.75" *) WILL_FIRE_RL_fabric_upstreamConnectors_0_inner_process_outgoing_fast;
+  assign _205_ = spi_ack_i || (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:783.7-783.29" *) spi_err_i;
+  assign _206_ = _205_ || (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:783.7-783.42" *) spi_rty_i;
+  assign _207_ = gpio_ack_i || (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:792.7-792.31" *) gpio_err_i;
+  assign _208_ = _207_ || (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:792.7-792.45" *) gpio_rty_i;
+  assign _209_ = ksc_ack_i || (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:801.7-801.29" *) ksc_err_i;
+  assign _210_ = _209_ || (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:801.7-801.42" *) ksc_rty_i;
+  assign _211_ = WILL_FIRE_RL_fabric_response_route || (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:816.7-817.43" *) WILL_FIRE_RL_fabric_response_route_1;
+  assign _212_ = _211_ || (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:816.7-818.43" *) WILL_FIRE_RL_fabric_response_route_2;
+  assign _213_ = WILL_FIRE_RL_fabric_upstreamConnectors_0_inner_process_outgoing || (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:845.7-846.75" *) WILL_FIRE_RL_fabric_upstreamConnectors_0_inner_process_outgoing_fast;
+  assign _214_ = _105_ || (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:978.7-985.68" *) _108_;
+  assign _215_ = _214_ || (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:978.7-989.68" *) _111_;
+  assign _216_ = \fabric_upstreamRequests_0_rv$port1__read [68:45] != (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:858.10-859.13" *) 24'h400130;
+  assign _217_ = \fabric_upstreamRequests_0_rv$port1__read [68:45] != (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:860.3-861.13" *) 24'h400108;
+  assign _218_ = \fabric_upstreamRequests_0_rv$port1__read [68:45] != (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:862.3-863.13" *) 24'h40011c;
+  assign _219_ = _193_ ? (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:567.7-572.11" *) 32'd0 : _220_;
+  assign _220_ = \fabric_upstreamConnectors_0_inner_outgoing$wget [32] ? (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:570.10-572.10" *) \fabric_upstreamConnectors_0_inner_outgoing$wget [31:0] : 32'd0;
+  assign _221_ = _194_ ? (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:586.7-589.59" *) 32'd0 : \fabric_downstreamConnectors_0_outgoing$wget [68:37];
+  assign _222_ = _195_ ? (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:593.7-598.11" *) 32'd0 : _223_;
+  assign _223_ = \fabric_downstreamConnectors_0_outgoing$wget [36] ? (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:596.10-598.10" *) \fabric_downstreamConnectors_0_outgoing$wget [35:4] : 32'd0;
+  assign _224_ = _196_ ? (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:602.7-605.57" *) 4'h0 : \fabric_downstreamConnectors_0_outgoing$wget [3:0];
+  assign _225_ = _197_ ? (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:625.7-628.59" *) 32'd0 : \fabric_downstreamConnectors_1_outgoing$wget [68:37];
+  assign _226_ = _198_ ? (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:632.7-637.11" *) 32'd0 : _227_;
+  assign _227_ = \fabric_downstreamConnectors_1_outgoing$wget [36] ? (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:635.10-637.10" *) \fabric_downstreamConnectors_1_outgoing$wget [35:4] : 32'd0;
+  assign _228_ = _199_ ? (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:641.7-644.57" *) 4'h0 : \fabric_downstreamConnectors_1_outgoing$wget [3:0];
+  assign _229_ = _200_ ? (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:664.7-667.59" *) 32'd0 : \fabric_downstreamConnectors_2_outgoing$wget [68:37];
+  assign _230_ = _201_ ? (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:671.7-676.11" *) 32'd0 : _231_;
+  assign _231_ = \fabric_downstreamConnectors_2_outgoing$wget [36] ? (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:674.10-676.10" *) \fabric_downstreamConnectors_2_outgoing$wget [35:4] : 32'd0;
+  assign _232_ = _202_ ? (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:680.7-683.57" *) 4'h0 : \fabric_downstreamConnectors_2_outgoing$wget [3:0];
+  assign _233_ = _203_ ? (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:750.7-755.11" *) 32'd0 : _234_;
+  assign _234_ = \fabric_upstreamConnectors_0_inner_outgoing$wget [32] ? (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:753.10-755.10" *) \fabric_upstreamConnectors_0_inner_outgoing$wget [31:0] : 32'd0;
+  assign _235_ = _067_ ? (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:779.7-781.22" *) { 1'h1, spi_dat_i } : 33'h100000000;
+  assign _236_ = _069_ ? (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:788.7-790.22" *) { 1'h1, gpio_dat_i } : 33'h100000000;
+  assign _237_ = _071_ ? (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:797.7-799.22" *) { 1'h1, ksc_dat_i } : 33'h100000000;
+  assign _238_ = \MUX_fabric_upstreamConnectors_0_inner_pending$write_1__SEL_3  ? (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:805.7-807.50" *) \fabric_upstreamConnectors_0_inner_fReq_rv$port0__write_1  : fabric_upstreamConnectors_0_inner_fReq_rv;
+  assign _239_ = \fabric_upstreamConnectors_0_inner_fReq_rv$EN_port1__write  ? (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:812.7-814.62" *) 70'h0aaaaaaaaaaaaaaaaa : \fabric_upstreamConnectors_0_inner_fReq_rv$port1__read ;
+  assign _240_ = \fabric_upstreamConnectors_0_inner_fRes_rv$EN_port0__write  ? (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:841.7-843.50" *) \fabric_upstreamConnectors_0_inner_fRes_rv$port0__write_1  : fabric_upstreamConnectors_0_inner_fRes_rv;
+  assign _241_ = \fabric_upstreamConnectors_0_inner_fRes_rv$EN_port1__write  ? (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:848.7-850.62" *) 34'h0aaaaaaaa : \fabric_upstreamConnectors_0_inner_fRes_rv$port1__read ;
+  assign _242_ = _077_ ? (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:858.9-865.62" *) \fabric_upstreamRequests_0_rv$port1__read [68:37] : { 24'h000000, \fabric_upstreamRequests_0_rv$port1__read [44:37] };
+  assign _243_ = \fabric_downstreamConnectors_0_fReq_rv$EN_port0__write  ? (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:868.7-870.46" *) \fabric_downstreamConnectors_0_fReq_rv$port0__write_1  : fabric_downstreamConnectors_0_fReq_rv;
+  assign _244_ = \fabric_downstreamConnectors_0_fReq_rv$EN_port1__write  ? (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:877.7-879.58" *) 70'h0aaaaaaaaaaaaaaaaa : \fabric_downstreamConnectors_0_fReq_rv$port1__read ;
+  assign _245_ = \fabric_downstreamConnectors_0_fRes_rv$EN_port0__write  ? (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:890.7-892.46" *) \fabric_downstreamConnectors_0_fRes_rv$port0__write_1  : fabric_downstreamConnectors_0_fRes_rv;
+  assign _246_ = WILL_FIRE_RL_fabric_response_route ? (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:894.7-896.58" *) 34'h0aaaaaaaa : \fabric_downstreamConnectors_0_fRes_rv$port1__read ;
+  assign _247_ = \fabric_downstreamConnectors_1_fReq_rv$EN_port0__write  ? (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:903.7-905.46" *) \fabric_downstreamConnectors_0_fReq_rv$port0__write_1  : fabric_downstreamConnectors_1_fReq_rv;
+  assign _248_ = \fabric_downstreamConnectors_1_fReq_rv$EN_port1__write  ? (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:912.7-914.58" *) 70'h0aaaaaaaaaaaaaaaaa : \fabric_downstreamConnectors_1_fReq_rv$port1__read ;
+  assign _249_ = \fabric_downstreamConnectors_1_fRes_rv$EN_port0__write  ? (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:925.7-927.46" *) \fabric_downstreamConnectors_1_fRes_rv$port0__write_1  : fabric_downstreamConnectors_1_fRes_rv;
+  assign _250_ = WILL_FIRE_RL_fabric_response_route_1 ? (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:929.7-931.58" *) 34'h0aaaaaaaa : \fabric_downstreamConnectors_1_fRes_rv$port1__read ;
+  assign _251_ = \fabric_downstreamConnectors_2_fReq_rv$EN_port0__write  ? (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:938.7-940.46" *) \fabric_downstreamConnectors_0_fReq_rv$port0__write_1  : fabric_downstreamConnectors_2_fReq_rv;
+  assign _252_ = \fabric_downstreamConnectors_2_fReq_rv$EN_port1__write  ? (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:947.7-949.58" *) 70'h0aaaaaaaaaaaaaaaaa : \fabric_downstreamConnectors_2_fReq_rv$port1__read ;
+  assign _253_ = \fabric_downstreamConnectors_2_fRes_rv$EN_port0__write  ? (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:960.7-962.46" *) \fabric_downstreamConnectors_2_fRes_rv$port0__write_1  : fabric_downstreamConnectors_2_fRes_rv;
+  assign _254_ = WILL_FIRE_RL_fabric_response_route_2 ? (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:964.7-966.58" *) 34'h0aaaaaaaa : \fabric_downstreamConnectors_2_fRes_rv$port1__read ;
+  assign _255_ = \fabric_upstreamRequests_0_rv$EN_port0__write  ? (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:974.7-976.37" *) \fabric_upstreamRequests_0_rv$port0__write_1  : fabric_upstreamRequests_0_rv;
+  assign _256_ = \fabric_upstreamRequests_0_rv$EN_port1__write  ? (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:991.7-993.49" *) 70'h0aaaaaaaaaaaaaaaaa : \fabric_upstreamRequests_0_rv$port1__read ;
   always @* begin
-    if (\$auto$verilog_backend.cc:2083:dump_module$182 ) begin end
+    if (\$auto$verilog_backend.cc:2083:dump_module$251 ) begin end
     _000_ = fabric_downstreamConnectors_0_fReq_rv;
     _001_ = fabric_downstreamConnectors_0_fRes_rv;
     _002_ = fabric_downstreamConnectors_1_fReq_rv;
     _003_ = fabric_downstreamConnectors_1_fRes_rv;
-    _004_ = fabric_downstreamPending_0_rv;
-    _005_ = fabric_downstreamPending_1_rv;
-    _006_ = fabric_upstreamConnectors_0_inner_fReq_rv;
-    _007_ = fabric_upstreamConnectors_0_inner_fRes_rv;
-    _008_ = fabric_upstreamConnectors_0_inner_pending;
-    _009_ = fabric_upstreamRequests_0_rv;
-    (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:829.5-882.10" *)
-    casez (_016_)
-      /* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:829.9-829.22" */
+    _004_ = fabric_downstreamConnectors_2_fReq_rv;
+    _005_ = fabric_downstreamConnectors_2_fRes_rv;
+    _006_ = fabric_downstreamPending_0_rv;
+    _007_ = fabric_downstreamPending_1_rv;
+    _008_ = fabric_downstreamPending_2_rv;
+    _009_ = fabric_upstreamConnectors_0_inner_fReq_rv;
+    _011_ = fabric_upstreamConnectors_0_inner_fRes_rv;
+    _012_ = fabric_upstreamConnectors_0_inner_pending;
+    _013_ = fabric_upstreamRequests_0_rv;
+    (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1103.5-1170.10" *)
+    casez (_017_)
+      /* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1103.9-1103.22" */
       1'h1:
         begin
           _000_ = 70'h0aaaaaaaaaaaaaaaaa;
           _001_ = 34'h0aaaaaaaa;
           _002_ = 70'h0aaaaaaaaaaaaaaaaa;
           _003_ = 34'h0aaaaaaaa;
-          _004_ = 1'h0;
-          _005_ = 1'h0;
-          _006_ = 70'h0aaaaaaaaaaaaaaaaa;
-          _007_ = 34'h0aaaaaaaa;
+          _004_ = 70'h0aaaaaaaaaaaaaaaaa;
+          _005_ = 34'h0aaaaaaaa;
+          _006_ = 1'h0;
+          _007_ = 1'h0;
           _008_ = 1'h0;
           _009_ = 70'h0aaaaaaaaaaaaaaaaa;
+          _011_ = 34'h0aaaaaaaa;
+          _012_ = 1'h0;
+          _013_ = 70'h0aaaaaaaaaaaaaaaaa;
         end
-      /* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:850.5-850.9" */
+      /* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1129.5-1129.9" */
       default:
         begin
-          (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:852.9-854.51" *)
+          (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1131.9-1133.51" *)
           casez (\fabric_downstreamConnectors_0_fReq_rv$EN )
-            /* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:852.13-852.53" */
+            /* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1131.13-1131.53" */
             1'h1:
                 _000_ = \fabric_downstreamConnectors_0_fReq_rv$D_IN ;
             default:
                 /* empty */;
           endcase
-          (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:855.2-857.51" *)
+          (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1134.2-1136.51" *)
           casez (\fabric_downstreamConnectors_0_fRes_rv$EN )
-            /* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:855.6-855.46" */
+            /* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1134.6-1134.46" */
             1'h1:
                 _001_ = \fabric_downstreamConnectors_0_fRes_rv$D_IN ;
             default:
                 /* empty */;
           endcase
-          (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:858.2-860.51" *)
+          (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1137.2-1139.51" *)
           casez (\fabric_downstreamConnectors_1_fReq_rv$EN )
-            /* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:858.6-858.46" */
+            /* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1137.6-1137.46" */
             1'h1:
                 _002_ = \fabric_downstreamConnectors_1_fReq_rv$D_IN ;
             default:
                 /* empty */;
           endcase
-          (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:861.2-863.51" *)
+          (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1140.2-1142.51" *)
           casez (\fabric_downstreamConnectors_1_fRes_rv$EN )
-            /* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:861.6-861.46" */
+            /* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1140.6-1140.46" */
             1'h1:
                 _003_ = \fabric_downstreamConnectors_1_fRes_rv$D_IN ;
             default:
                 /* empty */;
           endcase
-          (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:864.2-866.43" *)
+          (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1143.2-1145.51" *)
+          casez (\fabric_downstreamConnectors_2_fReq_rv$EN )
+            /* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1143.6-1143.46" */
+            1'h1:
+                _004_ = \fabric_downstreamConnectors_2_fReq_rv$D_IN ;
+            default:
+                /* empty */;
+          endcase
+          (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1146.2-1148.51" *)
+          casez (\fabric_downstreamConnectors_2_fRes_rv$EN )
+            /* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1146.6-1146.46" */
+            1'h1:
+                _005_ = \fabric_downstreamConnectors_2_fRes_rv$D_IN ;
+            default:
+                /* empty */;
+          endcase
+          (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1149.2-1151.43" *)
           casez (\fabric_downstreamPending_0_rv$EN )
-            /* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:864.6-864.38" */
+            /* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1149.6-1149.38" */
             1'h1:
-                _004_ = \fabric_downstreamPending_0_rv$D_IN ;
+                _006_ = \fabric_downstreamPending_0_rv$D_IN ;
             default:
                 /* empty */;
           endcase
-          (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:867.2-869.43" *)
+          (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1152.2-1154.43" *)
           casez (\fabric_downstreamPending_1_rv$EN )
-            /* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:867.6-867.38" */
+            /* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1152.6-1152.38" */
             1'h1:
-                _005_ = \fabric_downstreamPending_1_rv$D_IN ;
+                _007_ = \fabric_downstreamPending_1_rv$D_IN ;
             default:
                 /* empty */;
           endcase
-          (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:870.2-872.55" *)
+          (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1155.2-1157.43" *)
+          casez (\fabric_downstreamPending_2_rv$EN )
+            /* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1155.6-1155.38" */
+            1'h1:
+                _008_ = \fabric_downstreamPending_2_rv$D_IN ;
+            default:
+                /* empty */;
+          endcase
+          (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1158.2-1160.55" *)
           casez (\fabric_upstreamConnectors_0_inner_fReq_rv$EN )
-            /* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:870.6-870.50" */
+            /* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1158.6-1158.50" */
             1'h1:
-                _006_ = \fabric_upstreamConnectors_0_inner_fReq_rv$D_IN ;
+                _009_ = \fabric_upstreamConnectors_0_inner_fReq_rv$D_IN ;
             default:
                 /* empty */;
           endcase
-          (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:873.2-875.55" *)
+          (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1161.2-1163.55" *)
           casez (\fabric_upstreamConnectors_0_inner_fRes_rv$EN )
-            /* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:873.6-873.50" */
+            /* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1161.6-1161.50" */
             1'h1:
-                _007_ = \fabric_upstreamConnectors_0_inner_fRes_rv$D_IN ;
+                _011_ = \fabric_upstreamConnectors_0_inner_fRes_rv$D_IN ;
             default:
                 /* empty */;
           endcase
-          (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:876.2-878.55" *)
+          (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1164.2-1166.55" *)
           casez (\fabric_upstreamConnectors_0_inner_pending$EN )
-            /* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:876.6-876.50" */
+            /* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1164.6-1164.50" */
             1'h1:
-                _008_ = \fabric_upstreamConnectors_0_inner_pending$D_IN ;
+                _012_ = \fabric_upstreamConnectors_0_inner_pending$D_IN ;
             default:
                 /* empty */;
           endcase
-          (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:879.2-881.42" *)
+          (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1167.2-1169.42" *)
           casez (\fabric_upstreamRequests_0_rv$EN )
-            /* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF100Fabric.v:879.6-879.37" */
+            /* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:1167.6-1167.37" */
             1'h1:
-                _009_ = \fabric_upstreamRequests_0_rv$D_IN ;
+                _013_ = \fabric_upstreamRequests_0_rv$D_IN ;
             default:
                 /* empty */;
           endcase
@@ -980,38 +1297,71 @@ module mkQF100Fabric(
       fabric_downstreamConnectors_0_fRes_rv <= _001_;
       fabric_downstreamConnectors_1_fReq_rv <= _002_;
       fabric_downstreamConnectors_1_fRes_rv <= _003_;
-      fabric_downstreamPending_0_rv <= _004_;
-      fabric_downstreamPending_1_rv <= _005_;
-      fabric_upstreamConnectors_0_inner_fReq_rv <= _006_;
-      fabric_upstreamConnectors_0_inner_fRes_rv <= _007_;
-      fabric_upstreamConnectors_0_inner_pending <= _008_;
-      fabric_upstreamRequests_0_rv <= _009_;
+      fabric_downstreamConnectors_2_fReq_rv <= _004_;
+      fabric_downstreamConnectors_2_fRes_rv <= _005_;
+      fabric_downstreamPending_0_rv <= _006_;
+      fabric_downstreamPending_1_rv <= _007_;
+      fabric_downstreamPending_2_rv <= _008_;
+      fabric_upstreamConnectors_0_inner_fReq_rv <= _009_;
+      fabric_upstreamConnectors_0_inner_fRes_rv <= _011_;
+      fabric_upstreamConnectors_0_inner_pending <= _012_;
+      fabric_upstreamRequests_0_rv <= _013_;
   end
-  assign cpu_ack_o = _017_;
+  always @* begin
+    if (\$auto$verilog_backend.cc:2083:dump_module$251 ) begin end
+    _010_ = _014_;
+    (* parallel_case = 32'd1 *)
+    (* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:826.5-838.12" *)
+    casez (1'h1)
+      /* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:0.0-0.0" */
+      WILL_FIRE_RL_fabric_response_route:
+          _014_ = \MUX_fabric_upstreamConnectors_0_inner_fRes_rv$port0__write_1__VAL_1 ;
+      /* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:0.0-0.0" */
+      WILL_FIRE_RL_fabric_response_route_1:
+          _014_ = \MUX_fabric_upstreamConnectors_0_inner_fRes_rv$port0__write_1__VAL_2 ;
+      /* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:0.0-0.0" */
+      WILL_FIRE_RL_fabric_response_route_2:
+          _014_ = \MUX_fabric_upstreamConnectors_0_inner_fRes_rv$port0__write_1__VAL_3 ;
+      /* src = "bazel-out/k8-fastbuild/bin/systems/qf100/QF100/mkQF100Fabric.v:0.0-0.0" */
+      default:
+          _014_ = 34'h2aaaaaaaa;
+    endcase
+  end
+  always @* begin
+      \fabric_upstreamConnectors_0_inner_fRes_rv$port0__write_1  <= _010_;
+  end
+  assign cpu_ack_o = _037_;
   assign cpu_err_o = 1'h0;
   assign cpu_rty_o = 1'h0;
-  assign cpu_dat_o = _156_;
-  assign spi_cyc_o = _018_;
-  assign spi_stb_o = _019_;
-  assign spi_adr_o = _158_;
-  assign spi_dat_o = _159_;
-  assign spi_sel_o = _161_;
-  assign spi_we_o = _021_;
-  assign gpio_cyc_o = _022_;
-  assign gpio_stb_o = _023_;
-  assign gpio_adr_o = _162_;
-  assign gpio_dat_o = _163_;
-  assign gpio_sel_o = _165_;
-  assign gpio_we_o = _025_;
-  assign WILL_FIRE_RL_fabric_response_route = _027_;
-  assign CAN_FIRE_RL_fabric_response_route_1 = _029_;
-  assign WILL_FIRE_RL_fabric_upstreamConnectors_0_inner_process_outgoing_fast = _030_;
-  assign WILL_FIRE_RL_fabric_upstreamConnectors_0_inner_process_outgoing = _032_;
-  assign \MUX_fabric_upstreamConnectors_0_inner_fRes_rv$port0__write_1__SEL_2  = _033_;
-  assign \MUX_fabric_upstreamConnectors_0_inner_pending$write_1__SEL_3  = _035_;
+  assign cpu_dat_o = _219_;
+  assign spi_cyc_o = _038_;
+  assign spi_stb_o = _039_;
+  assign spi_adr_o = _221_;
+  assign spi_dat_o = _222_;
+  assign spi_sel_o = _224_;
+  assign spi_we_o = _041_;
+  assign gpio_cyc_o = _042_;
+  assign gpio_stb_o = _043_;
+  assign gpio_adr_o = _225_;
+  assign gpio_dat_o = _226_;
+  assign gpio_sel_o = _228_;
+  assign gpio_we_o = _045_;
+  assign ksc_cyc_o = _046_;
+  assign ksc_stb_o = _047_;
+  assign ksc_adr_o = _229_;
+  assign ksc_dat_o = _230_;
+  assign ksc_sel_o = _232_;
+  assign ksc_we_o = _049_;
+  assign WILL_FIRE_RL_fabric_response_route = _051_;
+  assign WILL_FIRE_RL_fabric_response_route_1 = _054_;
+  assign WILL_FIRE_RL_fabric_response_route_2 = _058_;
+  assign WILL_FIRE_RL_fabric_upstreamConnectors_0_inner_process_outgoing_fast = _059_;
+  assign WILL_FIRE_RL_fabric_upstreamConnectors_0_inner_process_outgoing = _061_;
+  assign \MUX_fabric_upstreamConnectors_0_inner_pending$write_1__SEL_3  = _063_;
   assign \MUX_fabric_upstreamConnectors_0_inner_fRes_rv$port0__write_1__VAL_1  = { 1'h1, \fabric_downstreamConnectors_0_fRes_rv$port1__read [32:0] };
   assign \MUX_fabric_upstreamConnectors_0_inner_fRes_rv$port0__write_1__VAL_2  = { 1'h1, \fabric_downstreamConnectors_1_fRes_rv$port1__read [32:0] };
-  assign \fabric_upstreamConnectors_0_inner_probeAck$PROBE  = _036_;
+  assign \MUX_fabric_upstreamConnectors_0_inner_fRes_rv$port0__write_1__VAL_3  = { 1'h1, \fabric_downstreamConnectors_2_fRes_rv$port1__read [32:0] };
+  assign \fabric_upstreamConnectors_0_inner_probeAck$PROBE  = _064_;
   assign \fabric_upstreamConnectors_0_inner_probeAck$PROBE_VALID  = 1'h1;
   assign \fabric_upstreamConnectors_0_inner_probeAdr$PROBE  = cpu_adr_i;
   assign \fabric_upstreamConnectors_0_inner_probeAdr$PROBE_VALID  = 1'h1;
@@ -1019,7 +1369,7 @@ module mkQF100Fabric(
   assign \fabric_upstreamConnectors_0_inner_probeCyc$PROBE_VALID  = 1'h1;
   assign \fabric_upstreamConnectors_0_inner_probeDataIn$PROBE  = cpu_dat_i;
   assign \fabric_upstreamConnectors_0_inner_probeDataIn$PROBE_VALID  = 1'h1;
-  assign \fabric_upstreamConnectors_0_inner_probeDataOut$PROBE  = _166_;
+  assign \fabric_upstreamConnectors_0_inner_probeDataOut$PROBE  = _233_;
   assign \fabric_upstreamConnectors_0_inner_probeDataOut$PROBE_VALID  = 1'h1;
   assign \fabric_upstreamConnectors_0_inner_probeSel$PROBE  = cpu_sel_i;
   assign \fabric_upstreamConnectors_0_inner_probeSel$PROBE_VALID  = 1'h1;
@@ -1028,52 +1378,65 @@ module mkQF100Fabric(
   assign \fabric_upstreamConnectors_0_inner_probeWe$PROBE  = cpu_we_i;
   assign \fabric_upstreamConnectors_0_inner_probeWe$PROBE_VALID  = 1'h1;
   assign \fabric_upstreamConnectors_0_inner_incoming$wget  = { cpu_adr_i, cpu_we_i, cpu_dat_i, cpu_sel_i };
-  assign \fabric_upstreamConnectors_0_inner_incoming$whas  = _037_;
+  assign \fabric_upstreamConnectors_0_inner_incoming$whas  = _065_;
   assign \fabric_upstreamConnectors_0_inner_outgoing$wget  = { 1'h1, \fabric_upstreamConnectors_0_inner_fRes_rv$port1__read [32:0] };
-  assign \fabric_upstreamConnectors_0_inner_outgoing$whas  = _142_;
+  assign \fabric_upstreamConnectors_0_inner_outgoing$whas  = _204_;
   assign \fabric_downstreamConnectors_0_outgoing$wget  = { 1'h1, \fabric_downstreamConnectors_0_fReq_rv$port1__read [68:0] };
-  assign \fabric_downstreamConnectors_0_incoming$wget  = _168_;
-  assign \fabric_downstreamConnectors_0_incoming$whas  = _144_;
+  assign \fabric_downstreamConnectors_0_incoming$wget  = _235_;
+  assign \fabric_downstreamConnectors_0_incoming$whas  = _206_;
   assign \fabric_downstreamConnectors_1_outgoing$wget  = { 1'h1, \fabric_downstreamConnectors_1_fReq_rv$port1__read [68:0] };
-  assign \fabric_downstreamConnectors_1_incoming$wget  = _169_;
-  assign \fabric_downstreamConnectors_1_incoming$whas  = _146_;
+  assign \fabric_downstreamConnectors_1_incoming$wget  = _236_;
+  assign \fabric_downstreamConnectors_1_incoming$whas  = _208_;
+  assign \fabric_downstreamConnectors_2_outgoing$wget  = { 1'h1, \fabric_downstreamConnectors_2_fReq_rv$port1__read [68:0] };
+  assign \fabric_downstreamConnectors_2_incoming$wget  = _237_;
+  assign \fabric_downstreamConnectors_2_incoming$whas  = _210_;
   assign \fabric_upstreamConnectors_0_inner_fReq_rv$port0__write_1  = { 1'h1, \fabric_upstreamConnectors_0_inner_incoming$wget  };
-  assign \fabric_upstreamConnectors_0_inner_fReq_rv$port1__read  = _170_;
-  assign \fabric_upstreamConnectors_0_inner_fReq_rv$EN_port1__write  = _042_;
-  assign \fabric_upstreamConnectors_0_inner_fReq_rv$port2__read  = _171_;
-  assign \fabric_upstreamConnectors_0_inner_fRes_rv$EN_port0__write  = _147_;
-  assign \fabric_upstreamConnectors_0_inner_fRes_rv$port0__write_1  = _172_;
-  assign \fabric_upstreamConnectors_0_inner_fRes_rv$port1__read  = _173_;
-  assign \fabric_upstreamConnectors_0_inner_fRes_rv$EN_port1__write  = _148_;
-  assign \fabric_upstreamConnectors_0_inner_fRes_rv$port2__read  = _174_;
-  assign \fabric_downstreamConnectors_0_fReq_rv$EN_port0__write  = _046_;
-  assign \fabric_downstreamConnectors_0_fReq_rv$port0__write_1  = { 1'h1, _175_, \fabric_upstreamRequests_0_rv$port1__read [36:0] };
-  assign \fabric_downstreamConnectors_0_fReq_rv$port1__read  = _176_;
-  assign \fabric_downstreamConnectors_0_fReq_rv$EN_port1__write  = _050_;
-  assign \fabric_downstreamConnectors_0_fReq_rv$port2__read  = _177_;
-  assign \fabric_downstreamConnectors_0_fRes_rv$EN_port0__write  = _053_;
-  assign \fabric_downstreamConnectors_0_fRes_rv$port0__write_1  = { 1'h1, _113_, \fabric_downstreamConnectors_0_incoming$wget [31:0] };
-  assign \fabric_downstreamConnectors_0_fRes_rv$port1__read  = _178_;
-  assign \fabric_downstreamConnectors_0_fRes_rv$port2__read  = _179_;
-  assign \fabric_downstreamConnectors_1_fReq_rv$EN_port0__write  = _056_;
-  assign \fabric_downstreamConnectors_1_fReq_rv$port1__read  = _180_;
-  assign \fabric_downstreamConnectors_1_fReq_rv$EN_port1__write  = _059_;
-  assign \fabric_downstreamConnectors_1_fReq_rv$port2__read  = _181_;
-  assign \fabric_downstreamConnectors_1_fRes_rv$EN_port0__write  = _062_;
-  assign \fabric_downstreamConnectors_1_fRes_rv$port0__write_1  = { 1'h1, _118_, \fabric_downstreamConnectors_1_incoming$wget [31:0] };
-  assign \fabric_downstreamConnectors_1_fRes_rv$port1__read  = _182_;
-  assign \fabric_downstreamConnectors_1_fRes_rv$port2__read  = _183_;
-  assign \fabric_upstreamRequests_0_rv$EN_port0__write  = _063_;
+  assign \fabric_upstreamConnectors_0_inner_fReq_rv$port1__read  = _238_;
+  assign \fabric_upstreamConnectors_0_inner_fReq_rv$EN_port1__write  = _072_;
+  assign \fabric_upstreamConnectors_0_inner_fReq_rv$port2__read  = _239_;
+  assign \fabric_upstreamConnectors_0_inner_fRes_rv$EN_port0__write  = _212_;
+  assign \fabric_upstreamConnectors_0_inner_fRes_rv$port1__read  = _240_;
+  assign \fabric_upstreamConnectors_0_inner_fRes_rv$EN_port1__write  = _213_;
+  assign \fabric_upstreamConnectors_0_inner_fRes_rv$port2__read  = _241_;
+  assign \fabric_downstreamConnectors_0_fReq_rv$EN_port0__write  = _075_;
+  assign \fabric_downstreamConnectors_0_fReq_rv$port0__write_1  = { 1'h1, _242_, \fabric_upstreamRequests_0_rv$port1__read [36:0] };
+  assign \fabric_downstreamConnectors_0_fReq_rv$port1__read  = _243_;
+  assign \fabric_downstreamConnectors_0_fReq_rv$EN_port1__write  = _080_;
+  assign \fabric_downstreamConnectors_0_fReq_rv$port2__read  = _244_;
+  assign \fabric_downstreamConnectors_0_fRes_rv$EN_port0__write  = _083_;
+  assign \fabric_downstreamConnectors_0_fRes_rv$port0__write_1  = { 1'h1, _168_, \fabric_downstreamConnectors_0_incoming$wget [31:0] };
+  assign \fabric_downstreamConnectors_0_fRes_rv$port1__read  = _245_;
+  assign \fabric_downstreamConnectors_0_fRes_rv$port2__read  = _246_;
+  assign \fabric_downstreamConnectors_1_fReq_rv$EN_port0__write  = _086_;
+  assign \fabric_downstreamConnectors_1_fReq_rv$port1__read  = _247_;
+  assign \fabric_downstreamConnectors_1_fReq_rv$EN_port1__write  = _089_;
+  assign \fabric_downstreamConnectors_1_fReq_rv$port2__read  = _248_;
+  assign \fabric_downstreamConnectors_1_fRes_rv$EN_port0__write  = _092_;
+  assign \fabric_downstreamConnectors_1_fRes_rv$port0__write_1  = { 1'h1, _173_, \fabric_downstreamConnectors_1_incoming$wget [31:0] };
+  assign \fabric_downstreamConnectors_1_fRes_rv$port1__read  = _249_;
+  assign \fabric_downstreamConnectors_1_fRes_rv$port2__read  = _250_;
+  assign \fabric_downstreamConnectors_2_fReq_rv$EN_port0__write  = _095_;
+  assign \fabric_downstreamConnectors_2_fReq_rv$port1__read  = _251_;
+  assign \fabric_downstreamConnectors_2_fReq_rv$EN_port1__write  = _098_;
+  assign \fabric_downstreamConnectors_2_fReq_rv$port2__read  = _252_;
+  assign \fabric_downstreamConnectors_2_fRes_rv$EN_port0__write  = _101_;
+  assign \fabric_downstreamConnectors_2_fRes_rv$port0__write_1  = { 1'h1, _178_, \fabric_downstreamConnectors_2_incoming$wget [31:0] };
+  assign \fabric_downstreamConnectors_2_fRes_rv$port1__read  = _253_;
+  assign \fabric_downstreamConnectors_2_fRes_rv$port2__read  = _254_;
+  assign \fabric_upstreamRequests_0_rv$EN_port0__write  = _102_;
   assign \fabric_upstreamRequests_0_rv$port0__write_1  = { 1'h1, \fabric_upstreamConnectors_0_inner_fReq_rv$port1__read [68:0] };
-  assign \fabric_upstreamRequests_0_rv$port1__read  = _184_;
-  assign \fabric_upstreamRequests_0_rv$EN_port1__write  = _149_;
-  assign \fabric_upstreamRequests_0_rv$port2__read  = _185_;
-  assign \fabric_downstreamPending_0_rv$EN_port0__write  = _072_;
-  assign \fabric_downstreamPending_0_rv$port1__read  = _150_;
-  assign \fabric_downstreamPending_0_rv$port2__read  = _073_;
-  assign \fabric_downstreamPending_1_rv$EN_port0__write  = _076_;
-  assign \fabric_downstreamPending_1_rv$port1__read  = _151_;
-  assign \fabric_downstreamPending_1_rv$port2__read  = _077_;
+  assign \fabric_upstreamRequests_0_rv$port1__read  = _255_;
+  assign \fabric_upstreamRequests_0_rv$EN_port1__write  = _215_;
+  assign \fabric_upstreamRequests_0_rv$port2__read  = _256_;
+  assign \fabric_downstreamPending_0_rv$EN_port0__write  = _114_;
+  assign \fabric_downstreamPending_0_rv$port1__read  = _188_;
+  assign \fabric_downstreamPending_0_rv$port2__read  = _025_;
+  assign \fabric_downstreamPending_1_rv$EN_port0__write  = _028_;
+  assign \fabric_downstreamPending_1_rv$port1__read  = _189_;
+  assign \fabric_downstreamPending_1_rv$port2__read  = _029_;
+  assign \fabric_downstreamPending_2_rv$EN_port0__write  = _032_;
+  assign \fabric_downstreamPending_2_rv$port1__read  = _190_;
+  assign \fabric_downstreamPending_2_rv$port2__read  = _033_;
   assign \fabric_downstreamConnectors_0_fReq_rv$D_IN  = \fabric_downstreamConnectors_0_fReq_rv$port2__read ;
   assign \fabric_downstreamConnectors_0_fReq_rv$EN  = 1'h1;
   assign \fabric_downstreamConnectors_0_fRes_rv$D_IN  = \fabric_downstreamConnectors_0_fRes_rv$port2__read ;
@@ -1082,16 +1445,22 @@ module mkQF100Fabric(
   assign \fabric_downstreamConnectors_1_fReq_rv$EN  = 1'h1;
   assign \fabric_downstreamConnectors_1_fRes_rv$D_IN  = \fabric_downstreamConnectors_1_fRes_rv$port2__read ;
   assign \fabric_downstreamConnectors_1_fRes_rv$EN  = 1'h1;
+  assign \fabric_downstreamConnectors_2_fReq_rv$D_IN  = \fabric_downstreamConnectors_2_fReq_rv$port2__read ;
+  assign \fabric_downstreamConnectors_2_fReq_rv$EN  = 1'h1;
+  assign \fabric_downstreamConnectors_2_fRes_rv$D_IN  = \fabric_downstreamConnectors_2_fRes_rv$port2__read ;
+  assign \fabric_downstreamConnectors_2_fRes_rv$EN  = 1'h1;
   assign \fabric_downstreamPending_0_rv$D_IN  = \fabric_downstreamPending_0_rv$port2__read ;
   assign \fabric_downstreamPending_0_rv$EN  = 1'h1;
   assign \fabric_downstreamPending_1_rv$D_IN  = \fabric_downstreamPending_1_rv$port2__read ;
   assign \fabric_downstreamPending_1_rv$EN  = 1'h1;
+  assign \fabric_downstreamPending_2_rv$D_IN  = \fabric_downstreamPending_2_rv$port2__read ;
+  assign \fabric_downstreamPending_2_rv$EN  = 1'h1;
   assign \fabric_upstreamConnectors_0_inner_fReq_rv$D_IN  = \fabric_upstreamConnectors_0_inner_fReq_rv$port2__read ;
   assign \fabric_upstreamConnectors_0_inner_fReq_rv$EN  = 1'h1;
   assign \fabric_upstreamConnectors_0_inner_fRes_rv$D_IN  = \fabric_upstreamConnectors_0_inner_fRes_rv$port2__read ;
   assign \fabric_upstreamConnectors_0_inner_fRes_rv$EN  = 1'h1;
-  assign \fabric_upstreamConnectors_0_inner_pending$D_IN  = _078_;
-  assign \fabric_upstreamConnectors_0_inner_pending$EN  = _153_;
+  assign \fabric_upstreamConnectors_0_inner_pending$D_IN  = _034_;
+  assign \fabric_upstreamConnectors_0_inner_pending$EN  = _192_;
   assign \fabric_upstreamRequests_0_rv$D_IN  = \fabric_upstreamRequests_0_rv$port2__read ;
   assign \fabric_upstreamRequests_0_rv$EN  = 1'h1;
 endmodule

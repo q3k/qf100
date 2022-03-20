@@ -1771,7 +1771,7 @@ module mkCPURegisterFile(CLK, RST_N, fetchRead_read_ix, fetchRead_read, RDY_fetc
       /* src = "bazel-out/k8-fastbuild/bin/lanai/CPU_RegisterFile/mkCPURegisterFile.v:1307.9-1307.22" */
       1'h1:
         begin
-          _003_ = 32'd8192;
+          _003_ = 32'd536879104;
           _004_ = 32'd0;
         end
       /* src = "bazel-out/k8-fastbuild/bin/lanai/CPU_RegisterFile/mkCPURegisterFile.v:1312.5-1312.9" */
@@ -7186,7 +7186,7 @@ module mkLanaiCPU(
   assign _0346_ = memory_q_rv[35:34] == (* src = "bazel-out/k8-fastbuild/bin/lanai/Lanai_CPU/mkLanaiCPU.v:941.8-941.34" *) 2'h1;
   assign _0347_ = memory_q_rv[35:34] == (* src = "bazel-out/k8-fastbuild/bin/lanai/Lanai_CPU/mkLanaiCPU.v:944.9-944.35" *) 2'h2;
   assign _0348_ = memory_q_rv[35:34] == (* src = "bazel-out/k8-fastbuild/bin/lanai/Lanai_CPU/mkLanaiCPU.v:968.9-968.35" *) 2'h1;
-  assign _0349_ = memory_waitRead_rv[31:0] >= (* src = "bazel-out/k8-fastbuild/bin/lanai/Lanai_CPU/mkLanaiCPU.v:688.7-688.47" *) 32'd536870912;
+  assign _0349_ = memory_waitRead_rv[31:0] >= (* src = "bazel-out/k8-fastbuild/bin/lanai/Lanai_CPU/mkLanaiCPU.v:688.7-688.47" *) 32'd1073741824;
   assign _0350_ = WILL_FIRE_RL_mkConnectionGetPut && (* src = "bazel-out/k8-fastbuild/bin/lanai/Lanai_CPU/mkLanaiCPU.v:1023.7-1025.52" *) _1383_;
   assign _0351_ = _0350_ && (* src = "bazel-out/k8-fastbuild/bin/lanai/Lanai_CPU/mkLanaiCPU.v:1023.7-1026.64" *) NOT_IF_fetch_mispredictMemoryF_rv_port1__read__ETC___d174;
   assign _0352_ = WILL_FIRE_RL_mkConnectionGetPut && (* src = "bazel-out/k8-fastbuild/bin/lanai/Lanai_CPU/mkLanaiCPU.v:1031.7-1033.52" *) _1384_;
@@ -8444,9 +8444,9 @@ module mkLanaiCPU(
   assign _1604_ = WILL_FIRE_RL_memory_sysmemResponse || (* src = "bazel-out/k8-fastbuild/bin/lanai/Lanai_CPU/mkLanaiCPU.v:932.7-933.34" *) EN_dmem_client_response_put;
   assign _1605_ = _0344_ || (* src = "bazel-out/k8-fastbuild/bin/lanai/Lanai_CPU/mkLanaiCPU.v:940.8-940.64" *) _0345_;
   assign _1606_ = _1605_ || (* src = "bazel-out/k8-fastbuild/bin/lanai/Lanai_CPU/mkLanaiCPU.v:940.8-941.34" *) _0346_;
-  assign _1607_ = memory_q_rv[99:68] < (* src = "bazel-out/k8-fastbuild/bin/lanai/Lanai_CPU/mkLanaiCPU.v:2230.7-2230.40" *) 32'd536870912;
-  assign _1608_ = x__read__h818 < (* src = "bazel-out/k8-fastbuild/bin/lanai/Lanai_CPU/mkLanaiCPU.v:600.29-600.57" *) 32'd536870912;
-  assign _1609_ = fetch_pcRequested_rv[31:0] < (* src = "bazel-out/k8-fastbuild/bin/lanai/Lanai_CPU/mkLanaiCPU.v:606.7-606.48" *) 32'd536870912;
+  assign _1607_ = memory_q_rv[99:68] < (* src = "bazel-out/k8-fastbuild/bin/lanai/Lanai_CPU/mkLanaiCPU.v:2230.7-2230.40" *) 32'd1073741824;
+  assign _1608_ = x__read__h818 < (* src = "bazel-out/k8-fastbuild/bin/lanai/Lanai_CPU/mkLanaiCPU.v:600.29-600.57" *) 32'd1073741824;
+  assign _1609_ = fetch_pcRequested_rv[31:0] < (* src = "bazel-out/k8-fastbuild/bin/lanai/Lanai_CPU/mkLanaiCPU.v:606.7-606.48" *) 32'd1073741824;
   assign _1610_ = compute_q_rv[61:59] != (* src = "bazel-out/k8-fastbuild/bin/lanai/Lanai_CPU/mkLanaiCPU.v:1127.7-1127.34" *) 3'h0;
   assign _1611_ = compute_q_rv[81:79] != (* src = "bazel-out/k8-fastbuild/bin/lanai/Lanai_CPU/mkLanaiCPU.v:1131.4-1131.31" *) 3'h0;
   assign _1612_ = compute_q_rv[61:59] != (* src = "bazel-out/k8-fastbuild/bin/lanai/Lanai_CPU/mkLanaiCPU.v:1135.9-1135.36" *) 3'h0;

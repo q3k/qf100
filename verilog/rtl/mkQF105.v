@@ -17,7 +17,7 @@ endmodule
 
 (* hdlname = "\\mkQF105" *)
 (* top =  1  *)
-(* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:36.1-379.10" *)
+(* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:36.1-799.10" *)
 module mkQF105(
 `ifdef USE_POWER_PINS
     vccd1,
@@ -28,435 +28,1064 @@ module mkQF105(
     inout vccd1;
     inout vssd1;
 `endif
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:318.7-319.42" *)
-  wire _00_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:321.7-322.43" *)
-  wire _01_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:324.7-325.42" *)
-  wire _02_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:327.7-328.43" *)
-  wire _03_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:359.7-360.42" *)
-  wire _04_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:362.7-363.43" *)
-  wire _05_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:365.7-366.42" *)
-  wire _06_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:368.7-369.43" *)
-  wire _07_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:189.33-189.45" *)
-  wire [15:0] _08_;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:62.19-62.24" *)
+  reg \$auto$verilog_backend.cc:2083:dump_module$5033  = 0;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:738.3-747.6" *)
+  reg [3:0] _000_;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:729.3-737.6" *)
+  reg [3:0] _001_;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:748.3-757.6" *)
+  reg [31:0] _002_;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:758.3-767.6" *)
+  reg [31:0] _003_;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:771.3-787.6" *)
+  reg _004_;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:771.3-787.6" *)
+  reg _005_;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:738.3-747.6" *)
+  reg [3:0] _006_;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:729.3-737.6" *)
+  reg [3:0] _007_;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:748.3-757.6" *)
+  reg [31:0] _008_;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:758.3-767.6" *)
+  reg [31:0] _009_;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:773.9-773.34" *)
+  wire _010_;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:509.7-510.30" *)
+  wire _011_;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:514.7-515.53" *)
+  wire _012_;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:519.7-520.53" *)
+  wire _013_;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:524.7-525.30" *)
+  wire _014_;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:529.7-530.53" *)
+  wire _015_;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:532.7-533.30" *)
+  wire _016_;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:535.7-536.43" *)
+  wire _017_;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:541.7-542.30" *)
+  wire _018_;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:544.7-545.43" *)
+  wire _019_;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:568.7-569.50" *)
+  wire _020_;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:571.7-572.51" *)
+  wire _021_;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:574.7-575.50" *)
+  wire _022_;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:577.7-578.51" *)
+  wire _023_;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:607.7-608.52" *)
+  wire _024_;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:610.7-611.47" *)
+  wire _025_;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:613.7-614.52" *)
+  wire _026_;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:630.7-631.50" *)
+  wire _027_;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:633.7-634.51" *)
+  wire _028_;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:636.7-637.50" *)
+  wire _029_;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:639.7-640.51" *)
+  wire _030_;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:642.7-643.52" *)
+  wire _031_;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:645.7-646.47" *)
+  wire _032_;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:648.7-649.52" *)
+  wire _033_;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:653.7-654.43" *)
+  wire _034_;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:658.7-659.43" *)
+  wire _035_;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:661.7-662.53" *)
+  wire _036_;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:706.7-707.43" *)
+  wire _037_;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:709.7-710.43" *)
+  wire _038_;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:530.7-530.53" *)
+  wire _039_;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:532.7-532.47" *)
+  wire _040_;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:536.7-536.43" *)
+  wire _041_;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:541.7-541.47" *)
+  wire _042_;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:545.7-545.43" *)
+  wire _043_;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:611.7-611.47" *)
+  wire _044_;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:646.7-646.47" *)
+  wire _045_;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:654.7-654.43" *)
+  wire _046_;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:659.7-659.43" *)
+  wire _047_;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:662.7-662.53" *)
+  wire _048_;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:700.7-700.53" *)
+  wire _049_;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:707.7-707.43" *)
+  wire _050_;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:710.7-710.43" *)
+  wire _051_;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:538.7-539.42" *)
+  wire _052_;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:547.7-548.42" *)
+  wire _053_;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:304.29-304.53" *)
+  wire [15:0] _054_;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:696.7-698.14" *)
+  wire [31:0] _055_;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:702.7-704.13" *)
+  wire [3:0] _056_;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:714.7-716.16" *)
+  wire [3:0] _057_;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:718.7-720.36" *)
+  wire [31:0] _058_;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:726.7-728.21" *)
+  wire [31:0] _059_;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:271.8-271.48" *)
+  wire CAN_FIRE_RL_qf100_1_ClientServerResponse;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:272.8-272.54" *)
+  wire CAN_FIRE_RL_qf100_qf100_2_ClientServerResponse;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:273.8-273.47" *)
+  wire WILL_FIRE_RL_qf100_ClientServerResponse;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:274.8-274.53" *)
+  wire WILL_FIRE_RL_qf100_qf100_3_mkConnectionGetPut;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:278.15-278.38" *)
+  reg [3:0] _theResult___fst__h3102;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:285.16-285.39" *)
+  wire [3:0] _theResult___fst__h3129;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:278.40-278.63" *)
+  reg [3:0] _theResult___fst__h3192;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:279.17-279.40" *)
+  wire [31:0] _theResult___snd__h3130;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:277.16-277.39" *)
+  reg [31:0] _theResult___snd__h3193;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:277.41-277.68" *)
+  reg [31:0] _theResult___snd_fst__h3104;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:280.3-280.13" *)
+  wire [31:0] din__h3273;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:281.3-281.13" *)
+  wire [31:0] din__h3277;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:282.3-282.13" *)
+  wire [31:0] din__h3281;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:62.19-62.24" *)
   input [37:0] io_in;
   wire [37:0] io_in;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:68.19-68.25" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:68.19-68.25" *)
   output [37:0] io_oeb;
   wire [37:0] io_oeb;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:65.19-65.25" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:65.19-65.25" *)
   output [37:0] io_out;
   wire [37:0] io_out;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:71.18-71.21" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:71.18-71.21" *)
   output [2:0] irq;
   wire [2:0] irq;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:55.20-55.30" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:55.20-55.30" *)
   input [127:0] la_data_in;
   wire [127:0] la_data_in;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:59.20-59.31" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:59.20-59.31" *)
   output [127:0] la_data_out;
   wire [127:0] la_data_out;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:56.20-56.27" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:56.20-56.27" *)
   input [127:0] la_oenb;
   wire [127:0] la_oenb;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:87.8-87.42" *)
-  wire \res_cpu$EN_dmem_client_request_get ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:88.8-88.43" *)
-  wire \res_cpu$EN_dmem_client_response_put ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:89.8-89.42" *)
-  wire \res_cpu$EN_imem_client_request_get ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:90.8-90.43" *)
-  wire \res_cpu$EN_imem_client_response_put ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:91.8-91.43" *)
-  wire \res_cpu$RDY_dmem_client_request_get ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:92.8-92.44" *)
-  wire \res_cpu$RDY_dmem_client_response_put ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:93.8-93.43" *)
-  wire \res_cpu$RDY_imem_client_request_get ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:94.8-94.44" *)
-  wire \res_cpu$RDY_imem_client_response_put ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:79.17-79.48" *)
-  wire [99:0] \res_cpu$dmem_client_request_get ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:80.17-80.49" *)
-  wire [31:0] \res_cpu$dmem_client_response_put ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:81.3-81.34" *)
-  wire [31:0] \res_cpu$imem_client_request_get ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:82.3-82.35" *)
-  wire [31:0] \res_cpu$imem_client_response_put ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:95.8-95.35" *)
-  wire \res_cpu$sysmem_client_ack_i ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:83.3-83.30" *)
-  wire [31:0] \res_cpu$sysmem_client_adr_o ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:96.8-96.35" *)
-  wire \res_cpu$sysmem_client_cyc_o ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:84.3-84.30" *)
-  wire [31:0] \res_cpu$sysmem_client_dat_i ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:85.3-85.30" *)
-  wire [31:0] \res_cpu$sysmem_client_dat_o ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:97.8-97.35" *)
-  wire \res_cpu$sysmem_client_err_i ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:98.8-98.35" *)
-  wire \res_cpu$sysmem_client_rty_i ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:86.16-86.43" *)
-  wire [3:0] \res_cpu$sysmem_client_sel_o ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:99.8-99.35" *)
-  wire \res_cpu$sysmem_client_stb_o ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:100.8-100.34" *)
-  wire \res_cpu$sysmem_client_we_o ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:115.8-115.28" *)
-  wire \res_fabric$cpu_ack_o ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:103.17-103.37" *)
-  wire [31:0] \res_fabric$cpu_adr_i ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:116.8-116.28" *)
-  wire \res_fabric$cpu_cyc_i ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:104.3-104.23" *)
-  wire [31:0] \res_fabric$cpu_dat_i ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:105.3-105.23" *)
-  wire [31:0] \res_fabric$cpu_dat_o ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:117.8-117.28" *)
-  wire \res_fabric$cpu_err_o ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:118.8-118.28" *)
-  wire \res_fabric$cpu_rty_o ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:112.16-112.36" *)
-  wire [3:0] \res_fabric$cpu_sel_i ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:119.8-119.28" *)
-  wire \res_fabric$cpu_stb_i ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:120.8-120.27" *)
-  wire \res_fabric$cpu_we_i ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:121.8-121.29" *)
-  wire \res_fabric$gpio_ack_i ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:106.3-106.24" *)
-  wire [31:0] \res_fabric$gpio_adr_o ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:122.8-122.29" *)
-  wire \res_fabric$gpio_cyc_o ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:107.3-107.24" *)
-  wire [31:0] \res_fabric$gpio_dat_i ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:108.3-108.24" *)
-  wire [31:0] \res_fabric$gpio_dat_o ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:123.8-123.29" *)
-  wire \res_fabric$gpio_err_i ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:124.8-124.29" *)
-  wire \res_fabric$gpio_rty_i ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:113.9-113.30" *)
-  wire [3:0] \res_fabric$gpio_sel_o ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:125.8-125.29" *)
-  wire \res_fabric$gpio_stb_o ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:126.8-126.28" *)
-  wire \res_fabric$gpio_we_o ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:127.8-127.28" *)
-  wire \res_fabric$spi_ack_i ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:109.3-109.23" *)
-  wire [31:0] \res_fabric$spi_adr_o ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:128.8-128.28" *)
-  wire \res_fabric$spi_cyc_o ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:110.3-110.23" *)
-  wire [31:0] \res_fabric$spi_dat_i ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:111.3-111.23" *)
-  wire [31:0] \res_fabric$spi_dat_o ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:129.8-129.28" *)
-  wire \res_fabric$spi_err_i ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:130.8-130.28" *)
-  wire \res_fabric$spi_rty_i ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:114.9-114.29" *)
-  wire [3:0] \res_fabric$spi_sel_o ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:131.8-131.28" *)
-  wire \res_fabric$spi_stb_o ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:132.8-132.27" *)
-  wire \res_fabric$spi_we_o ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:138.17-138.28" *)
-  wire [15:0] \res_gpio$in ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:138.30-138.41" *)
-  wire [15:0] \res_gpio$oe ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:138.43-138.55" *)
-  wire [15:0] \res_gpio$out ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:140.8-140.28" *)
-  wire \res_gpio$slave_ack_o ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:135.17-135.37" *)
-  wire [31:0] \res_gpio$slave_adr_i ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:141.8-141.28" *)
-  wire \res_gpio$slave_cyc_i ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:136.3-136.23" *)
-  wire [31:0] \res_gpio$slave_dat_i ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:137.3-137.23" *)
-  wire [31:0] \res_gpio$slave_dat_o ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:142.8-142.28" *)
-  wire \res_gpio$slave_err_o ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:143.8-143.28" *)
-  wire \res_gpio$slave_rty_o ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:139.16-139.36" *)
-  wire [3:0] \res_gpio$slave_sel_i ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:144.8-144.28" *)
-  wire \res_gpio$slave_stb_i ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:145.8-145.27" *)
-  wire \res_gpio$slave_we_i ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:152.8-152.42" *)
-  wire \res_mem$EN_memory_dmem_request_put ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:153.8-153.43" *)
-  wire \res_mem$EN_memory_dmem_response_get ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:154.8-154.42" *)
-  wire \res_mem$EN_memory_imem_request_put ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:155.8-155.43" *)
-  wire \res_mem$EN_memory_imem_response_get ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:156.8-156.43" *)
-  wire \res_mem$RDY_memory_dmem_request_put ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:157.8-157.44" *)
-  wire \res_mem$RDY_memory_dmem_response_get ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:158.8-158.43" *)
-  wire \res_mem$RDY_memory_imem_request_put ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:159.8-159.44" *)
-  wire \res_mem$RDY_memory_imem_response_get ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:148.17-148.48" *)
-  wire [99:0] \res_mem$memory_dmem_request_put ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:149.17-149.49" *)
-  wire [31:0] \res_mem$memory_dmem_response_get ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:150.3-150.34" *)
-  wire [31:0] \res_mem$memory_imem_request_put ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:151.3-151.35" *)
-  wire [31:0] \res_mem$memory_imem_response_get ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:164.8-164.27" *)
-  wire \res_spi$slave_ack_o ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:162.17-162.36" *)
-  wire [31:0] \res_spi$slave_adr_i ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:165.8-165.27" *)
-  wire \res_spi$slave_cyc_i ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:162.38-162.57" *)
-  wire [31:0] \res_spi$slave_dat_i ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:162.59-162.78" *)
-  wire [31:0] \res_spi$slave_dat_o ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:166.8-166.27" *)
-  wire \res_spi$slave_err_o ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:167.8-167.27" *)
-  wire \res_spi$slave_rty_o ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:163.16-163.35" *)
-  wire [3:0] \res_spi$slave_sel_i ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:168.8-168.27" *)
-  wire \res_spi$slave_stb_i ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:169.8-169.26" *)
-  wire \res_spi$slave_we_i ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:170.8-170.30" *)
-  wire \res_spi$spiMaster_miso ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:171.8-171.30" *)
-  wire \res_spi$spiMaster_mosi ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:172.8-172.30" *)
-  wire \res_spi$spiMaster_sclk ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:175.8-175.25" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:104.8-104.50" *)
+  wire \qf100_qf100_cpu$EN_dmem_client_request_get ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:105.8-105.51" *)
+  wire \qf100_qf100_cpu$EN_dmem_client_response_put ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:106.8-106.50" *)
+  wire \qf100_qf100_cpu$EN_imem_client_request_get ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:107.8-107.51" *)
+  wire \qf100_qf100_cpu$EN_imem_client_response_put ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:108.8-108.51" *)
+  wire \qf100_qf100_cpu$RDY_dmem_client_request_get ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:109.8-109.52" *)
+  wire \qf100_qf100_cpu$RDY_dmem_client_response_put ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:110.8-110.51" *)
+  wire \qf100_qf100_cpu$RDY_imem_client_request_get ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:111.8-111.52" *)
+  wire \qf100_qf100_cpu$RDY_imem_client_response_put ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:96.17-96.56" *)
+  wire [99:0] \qf100_qf100_cpu$dmem_client_request_get ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:97.17-97.57" *)
+  wire [31:0] \qf100_qf100_cpu$dmem_client_response_put ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:98.3-98.42" *)
+  wire [31:0] \qf100_qf100_cpu$imem_client_request_get ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:99.3-99.43" *)
+  wire [31:0] \qf100_qf100_cpu$imem_client_response_put ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:112.8-112.43" *)
+  wire \qf100_qf100_cpu$sysmem_client_ack_i ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:100.3-100.38" *)
+  wire [31:0] \qf100_qf100_cpu$sysmem_client_adr_o ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:113.8-113.43" *)
+  wire \qf100_qf100_cpu$sysmem_client_cyc_o ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:101.3-101.38" *)
+  wire [31:0] \qf100_qf100_cpu$sysmem_client_dat_i ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:102.3-102.38" *)
+  wire [31:0] \qf100_qf100_cpu$sysmem_client_dat_o ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:114.8-114.43" *)
+  wire \qf100_qf100_cpu$sysmem_client_err_i ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:115.8-115.43" *)
+  wire \qf100_qf100_cpu$sysmem_client_rty_i ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:103.16-103.51" *)
+  wire [3:0] \qf100_qf100_cpu$sysmem_client_sel_o ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:116.8-116.43" *)
+  wire \qf100_qf100_cpu$sysmem_client_stb_o ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:117.8-117.42" *)
+  wire \qf100_qf100_cpu$sysmem_client_we_o ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:136.8-136.36" *)
+  wire \qf100_qf100_fabric$cpu_ack_o ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:120.17-120.45" *)
+  wire [31:0] \qf100_qf100_fabric$cpu_adr_i ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:137.8-137.36" *)
+  wire \qf100_qf100_fabric$cpu_cyc_i ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:121.3-121.31" *)
+  wire [31:0] \qf100_qf100_fabric$cpu_dat_i ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:122.3-122.31" *)
+  wire [31:0] \qf100_qf100_fabric$cpu_dat_o ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:138.8-138.36" *)
+  wire \qf100_qf100_fabric$cpu_err_o ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:139.8-139.36" *)
+  wire \qf100_qf100_fabric$cpu_rty_o ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:132.16-132.44" *)
+  wire [3:0] \qf100_qf100_fabric$cpu_sel_i ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:140.8-140.36" *)
+  wire \qf100_qf100_fabric$cpu_stb_i ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:141.8-141.35" *)
+  wire \qf100_qf100_fabric$cpu_we_i ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:142.8-142.37" *)
+  wire \qf100_qf100_fabric$gpio_ack_i ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:123.3-123.32" *)
+  wire [31:0] \qf100_qf100_fabric$gpio_adr_o ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:143.8-143.37" *)
+  wire \qf100_qf100_fabric$gpio_cyc_o ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:124.3-124.32" *)
+  wire [31:0] \qf100_qf100_fabric$gpio_dat_i ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:125.3-125.32" *)
+  wire [31:0] \qf100_qf100_fabric$gpio_dat_o ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:144.8-144.37" *)
+  wire \qf100_qf100_fabric$gpio_err_i ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:145.8-145.37" *)
+  wire \qf100_qf100_fabric$gpio_rty_i ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:133.9-133.38" *)
+  wire [3:0] \qf100_qf100_fabric$gpio_sel_o ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:146.8-146.37" *)
+  wire \qf100_qf100_fabric$gpio_stb_o ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:147.8-147.36" *)
+  wire \qf100_qf100_fabric$gpio_we_o ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:148.8-148.36" *)
+  wire \qf100_qf100_fabric$ksc_ack_i ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:126.3-126.31" *)
+  wire [31:0] \qf100_qf100_fabric$ksc_adr_o ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:149.8-149.36" *)
+  wire \qf100_qf100_fabric$ksc_cyc_o ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:127.3-127.31" *)
+  wire [31:0] \qf100_qf100_fabric$ksc_dat_i ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:128.3-128.31" *)
+  wire [31:0] \qf100_qf100_fabric$ksc_dat_o ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:150.8-150.36" *)
+  wire \qf100_qf100_fabric$ksc_err_i ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:151.8-151.36" *)
+  wire \qf100_qf100_fabric$ksc_rty_i ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:134.9-134.37" *)
+  wire [3:0] \qf100_qf100_fabric$ksc_sel_o ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:152.8-152.36" *)
+  wire \qf100_qf100_fabric$ksc_stb_o ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:153.8-153.35" *)
+  wire \qf100_qf100_fabric$ksc_we_o ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:154.8-154.36" *)
+  wire \qf100_qf100_fabric$spi_ack_i ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:129.3-129.31" *)
+  wire [31:0] \qf100_qf100_fabric$spi_adr_o ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:155.8-155.36" *)
+  wire \qf100_qf100_fabric$spi_cyc_o ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:130.3-130.31" *)
+  wire [31:0] \qf100_qf100_fabric$spi_dat_i ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:131.3-131.31" *)
+  wire [31:0] \qf100_qf100_fabric$spi_dat_o ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:156.8-156.36" *)
+  wire \qf100_qf100_fabric$spi_err_i ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:157.8-157.36" *)
+  wire \qf100_qf100_fabric$spi_rty_i ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:135.9-135.37" *)
+  wire [3:0] \qf100_qf100_fabric$spi_sel_o ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:158.8-158.36" *)
+  wire \qf100_qf100_fabric$spi_stb_o ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:159.8-159.35" *)
+  wire \qf100_qf100_fabric$spi_we_o ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:166.8-166.46" *)
+  wire \qf100_qf100_fmc$EN_serverA_request_put ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:167.8-167.47" *)
+  wire \qf100_qf100_fmc$EN_serverA_response_get ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:168.8-168.46" *)
+  wire \qf100_qf100_fmc$EN_serverB_request_put ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:169.8-169.47" *)
+  wire \qf100_qf100_fmc$EN_serverB_response_get ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:170.8-170.47" *)
+  wire \qf100_qf100_fmc$RDY_serverA_request_put ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:171.8-171.48" *)
+  wire \qf100_qf100_fmc$RDY_serverA_response_get ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:172.8-172.47" *)
+  wire \qf100_qf100_fmc$RDY_serverB_request_put ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:173.8-173.48" *)
+  wire \qf100_qf100_fmc$RDY_serverB_response_get ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:162.17-162.52" *)
+  wire [31:0] \qf100_qf100_fmc$serverA_request_put ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:163.3-163.39" *)
+  wire [31:0] \qf100_qf100_fmc$serverA_response_get ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:164.3-164.38" *)
+  wire [31:0] \qf100_qf100_fmc$serverB_request_put ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:165.3-165.39" *)
+  wire [31:0] \qf100_qf100_fmc$serverB_response_get ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:174.8-174.31" *)
+  wire \qf100_qf100_fmc$spi_csb ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:175.8-175.32" *)
+  wire \qf100_qf100_fmc$spi_miso ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:176.8-176.32" *)
+  wire \qf100_qf100_fmc$spi_mosi ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:177.8-177.32" *)
+  wire \qf100_qf100_fmc$spi_sclk ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:192.8-192.53" *)
+  wire \qf100_qf100_frontend$EN_core_dmem_request_put ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:193.8-193.54" *)
+  wire \qf100_qf100_frontend$EN_core_dmem_response_get ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:194.8-194.53" *)
+  wire \qf100_qf100_frontend$EN_core_imem_request_put ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:195.8-195.54" *)
+  wire \qf100_qf100_frontend$EN_core_imem_response_get ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:196.8-196.52" *)
+  wire \qf100_qf100_frontend$EN_fmc_dmem_request_get ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:197.8-197.53" *)
+  wire \qf100_qf100_frontend$EN_fmc_dmem_response_put ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:198.8-198.52" *)
+  wire \qf100_qf100_frontend$EN_fmc_imem_request_get ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:199.8-199.53" *)
+  wire \qf100_qf100_frontend$EN_fmc_imem_response_put ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:200.8-200.52" *)
+  wire \qf100_qf100_frontend$EN_ram_dmem_request_get ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:201.8-201.53" *)
+  wire \qf100_qf100_frontend$EN_ram_dmem_response_put ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:202.8-202.52" *)
+  wire \qf100_qf100_frontend$EN_ram_imem_request_get ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:203.8-203.53" *)
+  wire \qf100_qf100_frontend$EN_ram_imem_response_put ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:204.8-204.54" *)
+  wire \qf100_qf100_frontend$RDY_core_dmem_request_put ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:205.8-205.55" *)
+  wire \qf100_qf100_frontend$RDY_core_dmem_response_get ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:206.8-206.54" *)
+  wire \qf100_qf100_frontend$RDY_core_imem_request_put ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:207.8-207.55" *)
+  wire \qf100_qf100_frontend$RDY_core_imem_response_get ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:208.8-208.53" *)
+  wire \qf100_qf100_frontend$RDY_fmc_dmem_request_get ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:209.8-209.54" *)
+  wire \qf100_qf100_frontend$RDY_fmc_dmem_response_put ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:210.8-210.53" *)
+  wire \qf100_qf100_frontend$RDY_fmc_imem_request_get ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:211.8-211.54" *)
+  wire \qf100_qf100_frontend$RDY_fmc_imem_response_put ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:212.8-212.53" *)
+  wire \qf100_qf100_frontend$RDY_ram_dmem_request_get ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:213.8-213.54" *)
+  wire \qf100_qf100_frontend$RDY_ram_dmem_response_put ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:214.8-214.53" *)
+  wire \qf100_qf100_frontend$RDY_ram_imem_request_get ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:215.8-215.54" *)
+  wire \qf100_qf100_frontend$RDY_ram_imem_response_put ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:180.17-180.59" *)
+  wire [99:0] \qf100_qf100_frontend$core_dmem_request_put ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:183.17-183.60" *)
+  wire [31:0] \qf100_qf100_frontend$core_dmem_response_get ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:184.3-184.45" *)
+  wire [31:0] \qf100_qf100_frontend$core_imem_request_put ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:185.3-185.46" *)
+  wire [31:0] \qf100_qf100_frontend$core_imem_response_get ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:181.3-181.44" *)
+  wire [99:0] \qf100_qf100_frontend$fmc_dmem_request_get ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:186.3-186.45" *)
+  wire [31:0] \qf100_qf100_frontend$fmc_dmem_response_put ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:187.3-187.44" *)
+  wire [31:0] \qf100_qf100_frontend$fmc_imem_request_get ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:188.3-188.45" *)
+  wire [31:0] \qf100_qf100_frontend$fmc_imem_response_put ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:182.3-182.44" *)
+  wire [99:0] \qf100_qf100_frontend$ram_dmem_request_get ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:189.3-189.45" *)
+  wire [31:0] \qf100_qf100_frontend$ram_dmem_response_put ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:190.3-190.44" *)
+  wire [31:0] \qf100_qf100_frontend$ram_imem_request_get ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:191.3-191.45" *)
+  wire [31:0] \qf100_qf100_frontend$ram_imem_response_put ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:221.17-221.40" *)
+  wire [15:0] \qf100_qf100_gpioCtrl$in ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:222.3-222.26" *)
+  wire [15:0] \qf100_qf100_gpioCtrl$oe ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:223.3-223.27" *)
+  wire [15:0] \qf100_qf100_gpioCtrl$out ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:225.8-225.40" *)
+  wire \qf100_qf100_gpioCtrl$slave_ack_o ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:218.17-218.49" *)
+  wire [31:0] \qf100_qf100_gpioCtrl$slave_adr_i ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:226.8-226.40" *)
+  wire \qf100_qf100_gpioCtrl$slave_cyc_i ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:219.3-219.35" *)
+  wire [31:0] \qf100_qf100_gpioCtrl$slave_dat_i ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:220.3-220.35" *)
+  wire [31:0] \qf100_qf100_gpioCtrl$slave_dat_o ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:227.8-227.40" *)
+  wire \qf100_qf100_gpioCtrl$slave_err_o ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:228.8-228.40" *)
+  wire \qf100_qf100_gpioCtrl$slave_rty_o ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:224.16-224.48" *)
+  wire [3:0] \qf100_qf100_gpioCtrl$slave_sel_i ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:229.8-229.40" *)
+  wire \qf100_qf100_gpioCtrl$slave_stb_i ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:230.8-230.39" *)
+  wire \qf100_qf100_gpioCtrl$slave_we_i ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:237.8-237.38" *)
+  wire \qf100_qf100_ksCtrl$slave_ack_o ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:233.17-233.47" *)
+  wire [31:0] \qf100_qf100_ksCtrl$slave_adr_i ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:238.8-238.38" *)
+  wire \qf100_qf100_ksCtrl$slave_cyc_i ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:234.3-234.33" *)
+  wire [31:0] \qf100_qf100_ksCtrl$slave_dat_i ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:235.3-235.33" *)
+  wire [31:0] \qf100_qf100_ksCtrl$slave_dat_o ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:239.8-239.38" *)
+  wire \qf100_qf100_ksCtrl$slave_err_o ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:240.8-240.38" *)
+  wire \qf100_qf100_ksCtrl$slave_rty_o ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:236.16-236.46" *)
+  wire [3:0] \qf100_qf100_ksCtrl$slave_sel_i ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:241.8-241.38" *)
+  wire \qf100_qf100_ksCtrl$slave_stb_i ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:242.8-242.37" *)
+  wire \qf100_qf100_ksCtrl$slave_we_i ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:249.8-249.39" *)
+  wire \qf100_qf100_spiCtrl$slave_ack_o ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:245.17-245.48" *)
+  wire [31:0] \qf100_qf100_spiCtrl$slave_adr_i ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:250.8-250.39" *)
+  wire \qf100_qf100_spiCtrl$slave_cyc_i ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:246.3-246.34" *)
+  wire [31:0] \qf100_qf100_spiCtrl$slave_dat_i ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:247.3-247.34" *)
+  wire [31:0] \qf100_qf100_spiCtrl$slave_dat_o ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:251.8-251.39" *)
+  wire \qf100_qf100_spiCtrl$slave_err_o ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:252.8-252.39" *)
+  wire \qf100_qf100_spiCtrl$slave_rty_o ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:248.16-248.47" *)
+  wire [3:0] \qf100_qf100_spiCtrl$slave_sel_i ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:253.8-253.39" *)
+  wire \qf100_qf100_spiCtrl$slave_stb_i ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:254.8-254.38" *)
+  wire \qf100_qf100_spiCtrl$slave_we_i ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:255.8-255.42" *)
+  wire \qf100_qf100_spiCtrl$spiMaster_miso ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:256.8-256.42" *)
+  wire \qf100_qf100_spiCtrl$spiMaster_mosi ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:257.8-257.42" *)
+  wire \qf100_qf100_spiCtrl$spiMaster_sclk ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:263.16-263.37" *)
+  wire [8:0] \qf100_sram_core$addr0 ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:263.39-263.60" *)
+  wire [8:0] \qf100_sram_core$addr1 ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:265.8-265.27" *)
+  wire \qf100_sram_core$cs0 ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:265.29-265.48" *)
+  wire \qf100_sram_core$cs1 ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:260.17-260.37" *)
+  wire [31:0] \qf100_sram_core$din0 ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:261.3-261.24" *)
+  wire [31:0] \qf100_sram_core$dout0 ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:262.3-262.24" *)
+  wire [31:0] \qf100_sram_core$dout1 ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:265.50-265.70" *)
+  wire \qf100_sram_core$web0 ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:264.16-264.38" *)
+  wire [3:0] \qf100_sram_core$wmask0 ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:88.7-88.30" *)
+  reg qf100_sram_inFlight0_rv;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:89.8-89.36" *)
+  wire \qf100_sram_inFlight0_rv$D_IN ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:89.38-89.64" *)
+  wire \qf100_sram_inFlight0_rv$EN ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:79.8-79.47" *)
+  wire \qf100_sram_inFlight0_rv$EN_port0__write ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:80.8-80.47" *)
+  wire \qf100_sram_inFlight0_rv$EN_port1__write ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:81.8-81.43" *)
+  wire \qf100_sram_inFlight0_rv$port1__read ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:82.8-82.43" *)
+  wire \qf100_sram_inFlight0_rv$port2__read ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:92.7-92.30" *)
+  reg qf100_sram_inFlight1_rv;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:93.8-93.36" *)
+  wire \qf100_sram_inFlight1_rv$D_IN ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:93.38-93.64" *)
+  wire \qf100_sram_inFlight1_rv$EN ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:83.8-83.47" *)
+  wire \qf100_sram_inFlight1_rv$EN_port1__write ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:84.8-84.43" *)
+  wire \qf100_sram_inFlight1_rv$port1__read ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:85.8-85.43" *)
+  wire \qf100_sram_inFlight1_rv$port2__read ;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:268.8-268.25" *)
   wire \reset_n$RESET_OUT ;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:51.10-51.18" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:283.3-283.14" *)
+  wire [31:0] valB__h3190;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:284.3-284.13" *)
+  wire [31:0] val__h3091;
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:51.10-51.18" *)
   input wb_clk_i;
   wire wb_clk_i;
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:52.10-52.18" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:52.10-52.18" *)
   input wb_rst_i;
   wire wb_rst_i;
-  assign _00_ = \res_cpu$RDY_dmem_client_request_get  && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:318.7-319.42" *) \res_mem$RDY_memory_dmem_request_put ;
-  assign _01_ = \res_cpu$RDY_dmem_client_response_put  && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:321.7-322.43" *) \res_mem$RDY_memory_dmem_response_get ;
-  assign _02_ = \res_cpu$RDY_imem_client_request_get  && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:324.7-325.42" *) \res_mem$RDY_memory_imem_request_put ;
-  assign _03_ = \res_cpu$RDY_imem_client_response_put  && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:327.7-328.43" *) \res_mem$RDY_memory_imem_response_get ;
-  assign _04_ = \res_cpu$RDY_imem_client_request_get  && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:359.7-360.42" *) \res_mem$RDY_memory_imem_request_put ;
-  assign _05_ = \res_cpu$RDY_imem_client_response_put  && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:362.7-363.43" *) \res_mem$RDY_memory_imem_response_get ;
-  assign _06_ = \res_cpu$RDY_dmem_client_request_get  && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:365.7-366.42" *) \res_mem$RDY_memory_dmem_request_put ;
-  assign _07_ = \res_cpu$RDY_dmem_client_response_put  && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:368.7-369.43" *) \res_mem$RDY_memory_dmem_response_get ;
-  assign _08_ = ~ (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:189.33-189.45" *) \res_gpio$oe ;
+  assign _010_ = \reset_n$RESET_OUT  == (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:773.9-773.34" *) 1'h0;
+  assign _011_ = \qf100_qf100_frontend$RDY_ram_imem_response_put  && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:509.7-510.30" *) qf100_sram_inFlight1_rv;
+  assign _012_ = \qf100_qf100_fmc$RDY_serverA_response_get  && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:514.7-515.53" *) \qf100_qf100_frontend$RDY_fmc_imem_response_put ;
+  assign _013_ = \qf100_qf100_fmc$RDY_serverB_response_get  && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:519.7-520.53" *) \qf100_qf100_frontend$RDY_fmc_dmem_response_put ;
+  assign _014_ = \qf100_qf100_frontend$RDY_ram_dmem_response_put  && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:524.7-525.30" *) qf100_sram_inFlight0_rv;
+  assign _015_ = CAN_FIRE_RL_qf100_1_ClientServerResponse && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:529.7-530.53" *) _039_;
+  assign _016_ = _040_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:532.7-533.30" *) qf100_sram_inFlight0_rv;
+  assign _017_ = \qf100_qf100_frontend$RDY_ram_dmem_request_get  && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:535.7-536.43" *) _041_;
+  assign _018_ = _042_ && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:541.7-542.30" *) qf100_sram_inFlight1_rv;
+  assign _019_ = \qf100_qf100_frontend$RDY_ram_imem_request_get  && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:544.7-545.43" *) _043_;
+  assign _020_ = \qf100_qf100_frontend$RDY_core_dmem_request_put  && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:568.7-569.50" *) \qf100_qf100_cpu$RDY_dmem_client_request_get ;
+  assign _021_ = \qf100_qf100_frontend$RDY_core_dmem_response_get  && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:571.7-572.51" *) \qf100_qf100_cpu$RDY_dmem_client_response_put ;
+  assign _022_ = \qf100_qf100_frontend$RDY_core_imem_request_put  && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:574.7-575.50" *) \qf100_qf100_cpu$RDY_imem_client_request_get ;
+  assign _023_ = \qf100_qf100_frontend$RDY_core_imem_response_get  && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:577.7-578.51" *) \qf100_qf100_cpu$RDY_imem_client_response_put ;
+  assign _024_ = \qf100_qf100_fmc$RDY_serverA_request_put  && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:607.7-608.52" *) \qf100_qf100_frontend$RDY_fmc_imem_request_get ;
+  assign _025_ = CAN_FIRE_RL_qf100_qf100_2_ClientServerResponse && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:610.7-611.47" *) _044_;
+  assign _026_ = \qf100_qf100_fmc$RDY_serverB_request_put  && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:613.7-614.52" *) \qf100_qf100_frontend$RDY_fmc_dmem_request_get ;
+  assign _027_ = \qf100_qf100_frontend$RDY_core_imem_request_put  && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:630.7-631.50" *) \qf100_qf100_cpu$RDY_imem_client_request_get ;
+  assign _028_ = \qf100_qf100_frontend$RDY_core_imem_response_get  && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:633.7-634.51" *) \qf100_qf100_cpu$RDY_imem_client_response_put ;
+  assign _029_ = \qf100_qf100_frontend$RDY_core_dmem_request_put  && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:636.7-637.50" *) \qf100_qf100_cpu$RDY_dmem_client_request_get ;
+  assign _030_ = \qf100_qf100_frontend$RDY_core_dmem_response_get  && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:639.7-640.51" *) \qf100_qf100_cpu$RDY_dmem_client_response_put ;
+  assign _031_ = \qf100_qf100_fmc$RDY_serverA_request_put  && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:642.7-643.52" *) \qf100_qf100_frontend$RDY_fmc_imem_request_get ;
+  assign _032_ = CAN_FIRE_RL_qf100_qf100_2_ClientServerResponse && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:645.7-646.47" *) _045_;
+  assign _033_ = \qf100_qf100_fmc$RDY_serverB_request_put  && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:648.7-649.52" *) \qf100_qf100_frontend$RDY_fmc_dmem_request_get ;
+  assign _034_ = \qf100_qf100_frontend$RDY_ram_imem_request_get  && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:653.7-654.43" *) _046_;
+  assign _035_ = \qf100_qf100_frontend$RDY_ram_dmem_request_get  && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:658.7-659.43" *) _047_;
+  assign _036_ = CAN_FIRE_RL_qf100_1_ClientServerResponse && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:661.7-662.53" *) _048_;
+  assign _037_ = \qf100_qf100_frontend$RDY_ram_dmem_request_get  && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:706.7-707.43" *) _050_;
+  assign _038_ = \qf100_qf100_frontend$RDY_ram_imem_request_get  && (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:709.7-710.43" *) _051_;
+  assign _039_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:530.7-530.53" *) WILL_FIRE_RL_qf100_qf100_3_mkConnectionGetPut;
+  assign _040_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:532.7-532.47" *) \qf100_sram_inFlight0_rv$EN_port0__write ;
+  assign _041_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:536.7-536.43" *) \qf100_sram_inFlight0_rv$port1__read ;
+  assign _042_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:541.7-541.47" *) WILL_FIRE_RL_qf100_ClientServerResponse;
+  assign _043_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:545.7-545.43" *) \qf100_sram_inFlight1_rv$port1__read ;
+  assign _044_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:611.7-611.47" *) WILL_FIRE_RL_qf100_ClientServerResponse;
+  assign _045_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:646.7-646.47" *) WILL_FIRE_RL_qf100_ClientServerResponse;
+  assign _046_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:654.7-654.43" *) \qf100_sram_inFlight1_rv$port1__read ;
+  assign _047_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:659.7-659.43" *) \qf100_sram_inFlight0_rv$port1__read ;
+  assign _048_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:662.7-662.53" *) WILL_FIRE_RL_qf100_qf100_3_mkConnectionGetPut;
+  assign _049_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:700.7-700.53" *) \qf100_qf100_frontend$ram_dmem_request_get [67];
+  assign _050_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:707.7-707.43" *) \qf100_sram_inFlight0_rv$port1__read ;
+  assign _051_ = ! (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:710.7-710.43" *) \qf100_sram_inFlight1_rv$port1__read ;
+  assign _052_ = \qf100_sram_inFlight0_rv$EN_port1__write  || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:538.7-539.42" *) \qf100_sram_inFlight0_rv$port1__read ;
+  assign _053_ = \qf100_sram_inFlight1_rv$EN_port1__write  || (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:547.7-548.42" *) \qf100_sram_inFlight1_rv$port1__read ;
+  assign _054_ = ~ (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:304.29-304.53" *) \qf100_qf100_gpioCtrl$oe ;
+  assign _055_ = \qf100_qf100_frontend$ram_dmem_request_get [67] ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:696.7-698.14" *) _theResult___snd_fst__h3104 : 32'd0;
+  assign _056_ = \qf100_qf100_frontend$ram_dmem_request_get [67] ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:702.7-704.13" *) _theResult___fst__h3102 : 4'h0;
+  assign _057_ = \qf100_qf100_frontend$ram_dmem_request_get [69] ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:714.7-716.16" *) 4'hc : 4'h3;
+  assign _058_ = \qf100_qf100_frontend$ram_dmem_request_get [69] ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:718.7-720.36" *) { val__h3091[15:0], 16'h0000 } : { 16'h0000, val__h3091[15:0] };
+  assign _059_ = \qf100_qf100_frontend$ram_dmem_request_get [67] ? (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:726.7-728.21" *) \qf100_qf100_frontend$ram_dmem_request_get [66:35] : 32'd2863311530;
   (* module_not_derived = 32'd1 *)
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:195.14-220.22" *)
-  mkLanaiCPU res_cpu (
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:310.14-335.23" *)
+  mkLanaiCPU qf100_qf100_cpu (
 `ifdef USE_POWER_PINS
     .vccd1(vccd1),
     .vssd1(vssd1),
 `endif
     .CLK(wb_clk_i),
-    .EN_dmem_client_request_get(\res_cpu$EN_dmem_client_request_get ),
-    .EN_dmem_client_response_put(\res_cpu$EN_dmem_client_response_put ),
-    .EN_imem_client_request_get(\res_cpu$EN_imem_client_request_get ),
-    .EN_imem_client_response_put(\res_cpu$EN_imem_client_response_put ),
-    .RDY_dmem_client_request_get(\res_cpu$RDY_dmem_client_request_get ),
-    .RDY_dmem_client_response_put(\res_cpu$RDY_dmem_client_response_put ),
-    .RDY_imem_client_request_get(\res_cpu$RDY_imem_client_request_get ),
-    .RDY_imem_client_response_put(\res_cpu$RDY_imem_client_response_put ),
+    .EN_dmem_client_request_get(\qf100_qf100_cpu$EN_dmem_client_request_get ),
+    .EN_dmem_client_response_put(\qf100_qf100_cpu$EN_dmem_client_response_put ),
+    .EN_imem_client_request_get(\qf100_qf100_cpu$EN_imem_client_request_get ),
+    .EN_imem_client_response_put(\qf100_qf100_cpu$EN_imem_client_response_put ),
+    .RDY_dmem_client_request_get(\qf100_qf100_cpu$RDY_dmem_client_request_get ),
+    .RDY_dmem_client_response_put(\qf100_qf100_cpu$RDY_dmem_client_response_put ),
+    .RDY_imem_client_request_get(\qf100_qf100_cpu$RDY_imem_client_request_get ),
+    .RDY_imem_client_response_put(\qf100_qf100_cpu$RDY_imem_client_response_put ),
     .RST_N(\reset_n$RESET_OUT ),
-    .dmem_client_request_get(\res_cpu$dmem_client_request_get ),
-    .dmem_client_response_put(\res_cpu$dmem_client_response_put ),
-    .imem_client_request_get(\res_cpu$imem_client_request_get ),
-    .imem_client_response_put(\res_cpu$imem_client_response_put ),
-    .sysmem_client_ack_i(\res_cpu$sysmem_client_ack_i ),
-    .sysmem_client_adr_o(\res_cpu$sysmem_client_adr_o ),
-    .sysmem_client_cyc_o(\res_cpu$sysmem_client_cyc_o ),
-    .sysmem_client_dat_i(\res_cpu$sysmem_client_dat_i ),
-    .sysmem_client_dat_o(\res_cpu$sysmem_client_dat_o ),
-    .sysmem_client_err_i(\res_cpu$sysmem_client_err_i ),
-    .sysmem_client_rty_i(\res_cpu$sysmem_client_rty_i ),
-    .sysmem_client_sel_o(\res_cpu$sysmem_client_sel_o ),
-    .sysmem_client_stb_o(\res_cpu$sysmem_client_stb_o ),
-    .sysmem_client_we_o(\res_cpu$sysmem_client_we_o )
+    .dmem_client_request_get(\qf100_qf100_cpu$dmem_client_request_get ),
+    .dmem_client_response_put(\qf100_qf100_cpu$dmem_client_response_put ),
+    .imem_client_request_get(\qf100_qf100_cpu$imem_client_request_get ),
+    .imem_client_response_put(\qf100_qf100_cpu$imem_client_response_put ),
+    .sysmem_client_ack_i(\qf100_qf100_cpu$sysmem_client_ack_i ),
+    .sysmem_client_adr_o(\qf100_qf100_cpu$sysmem_client_adr_o ),
+    .sysmem_client_cyc_o(\qf100_qf100_cpu$sysmem_client_cyc_o ),
+    .sysmem_client_dat_i(\qf100_qf100_cpu$sysmem_client_dat_i ),
+    .sysmem_client_dat_o(\qf100_qf100_cpu$sysmem_client_dat_o ),
+    .sysmem_client_err_i(\qf100_qf100_cpu$sysmem_client_err_i ),
+    .sysmem_client_rty_i(\qf100_qf100_cpu$sysmem_client_rty_i ),
+    .sysmem_client_sel_o(\qf100_qf100_cpu$sysmem_client_sel_o ),
+    .sysmem_client_stb_o(\qf100_qf100_cpu$sysmem_client_stb_o ),
+    .sysmem_client_we_o(\qf100_qf100_cpu$sysmem_client_we_o )
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:223.17-254.40" *)
-  mkQF100Fabric res_fabric (
-`ifdef USE_POWER_PINS
-    .vccd1(vccd1),
-    .vssd1(vssd1),
-`endif
-    .CLK(wb_clk_i),
-    .RST_N(\reset_n$RESET_OUT ),
-    .cpu_ack_o(\res_fabric$cpu_ack_o ),
-    .cpu_adr_i(\res_fabric$cpu_adr_i ),
-    .cpu_cyc_i(\res_fabric$cpu_cyc_i ),
-    .cpu_dat_i(\res_fabric$cpu_dat_i ),
-    .cpu_dat_o(\res_fabric$cpu_dat_o ),
-    .cpu_err_o(\res_fabric$cpu_err_o ),
-    .cpu_rty_o(\res_fabric$cpu_rty_o ),
-    .cpu_sel_i(\res_fabric$cpu_sel_i ),
-    .cpu_stb_i(\res_fabric$cpu_stb_i ),
-    .cpu_we_i(\res_fabric$cpu_we_i ),
-    .gpio_ack_i(\res_fabric$gpio_ack_i ),
-    .gpio_adr_o(\res_fabric$gpio_adr_o ),
-    .gpio_cyc_o(\res_fabric$gpio_cyc_o ),
-    .gpio_dat_i(\res_fabric$gpio_dat_i ),
-    .gpio_dat_o(\res_fabric$gpio_dat_o ),
-    .gpio_err_i(\res_fabric$gpio_err_i ),
-    .gpio_rty_i(\res_fabric$gpio_rty_i ),
-    .gpio_sel_o(\res_fabric$gpio_sel_o ),
-    .gpio_stb_o(\res_fabric$gpio_stb_o ),
-    .gpio_we_o(\res_fabric$gpio_we_o ),
-    .spi_ack_i(\res_fabric$spi_ack_i ),
-    .spi_adr_o(\res_fabric$spi_adr_o ),
-    .spi_cyc_o(\res_fabric$spi_cyc_o ),
-    .spi_dat_i(\res_fabric$spi_dat_i ),
-    .spi_dat_o(\res_fabric$spi_dat_o ),
-    .spi_err_i(\res_fabric$spi_err_i ),
-    .spi_rty_i(\res_fabric$spi_rty_i ),
-    .spi_sel_o(\res_fabric$spi_sel_o ),
-    .spi_stb_o(\res_fabric$spi_stb_o ),
-    .spi_we_o(\res_fabric$spi_we_o )
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:257.15-271.29" *)
-  mkQF100GPIO res_gpio (
-`ifdef USE_POWER_PINS
-    .vccd1(vccd1),
-    .vssd1(vssd1),
-`endif
-    .CLK(wb_clk_i),
-    .RST_N(\reset_n$RESET_OUT ),
-    .in(\res_gpio$in ),
-    .oe(\res_gpio$oe ),
-    .out(\res_gpio$out ),
-    .slave_ack_o(\res_gpio$slave_ack_o ),
-    .slave_adr_i(\res_gpio$slave_adr_i ),
-    .slave_cyc_i(\res_gpio$slave_cyc_i ),
-    .slave_dat_i(\res_gpio$slave_dat_i ),
-    .slave_dat_o(\res_gpio$slave_dat_o ),
-    .slave_err_o(\res_gpio$slave_err_o ),
-    .slave_rty_o(\res_gpio$slave_rty_o ),
-    .slave_sel_i(\res_gpio$slave_sel_i ),
-    .slave_stb_i(\res_gpio$slave_stb_i ),
-    .slave_we_i(\res_gpio$slave_we_i )
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:274.17-287.72" *)
-  mkQF100Memory res_mem (
-`ifdef USE_POWER_PINS
-    .vccd1(vccd1),
-    .vssd1(vssd1),
-`endif
-    .CLK(wb_clk_i),
-    .EN_memory_dmem_request_put(\res_mem$EN_memory_dmem_request_put ),
-    .EN_memory_dmem_response_get(\res_mem$EN_memory_dmem_response_get ),
-    .EN_memory_imem_request_put(\res_mem$EN_memory_imem_request_put ),
-    .EN_memory_imem_response_get(\res_mem$EN_memory_imem_response_get ),
-    .RDY_memory_dmem_request_put(\res_mem$RDY_memory_dmem_request_put ),
-    .RDY_memory_dmem_response_get(\res_mem$RDY_memory_dmem_response_get ),
-    .RDY_memory_imem_request_put(\res_mem$RDY_memory_imem_request_put ),
-    .RDY_memory_imem_response_get(\res_mem$RDY_memory_imem_response_get ),
-    .RST_N(\reset_n$RESET_OUT ),
-    .memory_dmem_request_put(\res_mem$memory_dmem_request_put ),
-    .memory_dmem_response_get(\res_mem$memory_dmem_response_get ),
-    .memory_imem_request_put(\res_mem$memory_imem_request_put ),
-    .memory_imem_response_get(\res_mem$memory_imem_response_get )
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:290.14-305.29" *)
-  mkQF100SPI res_spi (
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:338.17-379.47" *)
+  mkQF100Fabric qf100_qf100_fabric (
 `ifdef USE_POWER_PINS
     .vccd1(vccd1),
     .vssd1(vssd1),
 `endif
     .CLK(wb_clk_i),
     .RST_N(\reset_n$RESET_OUT ),
-    .slave_ack_o(\res_spi$slave_ack_o ),
-    .slave_adr_i(\res_spi$slave_adr_i ),
-    .slave_cyc_i(\res_spi$slave_cyc_i ),
-    .slave_dat_i(\res_spi$slave_dat_i ),
-    .slave_dat_o(\res_spi$slave_dat_o ),
-    .slave_err_o(\res_spi$slave_err_o ),
-    .slave_rty_o(\res_spi$slave_rty_o ),
-    .slave_sel_i(\res_spi$slave_sel_i ),
-    .slave_stb_i(\res_spi$slave_stb_i ),
-    .slave_we_i(\res_spi$slave_we_i ),
-    .spiMaster_miso(\res_spi$spiMaster_miso ),
-    .spiMaster_mosi(\res_spi$spiMaster_mosi ),
-    .spiMaster_sclk(\res_spi$spiMaster_sclk )
+    .cpu_ack_o(\qf100_qf100_fabric$cpu_ack_o ),
+    .cpu_adr_i(\qf100_qf100_fabric$cpu_adr_i ),
+    .cpu_cyc_i(\qf100_qf100_fabric$cpu_cyc_i ),
+    .cpu_dat_i(\qf100_qf100_fabric$cpu_dat_i ),
+    .cpu_dat_o(\qf100_qf100_fabric$cpu_dat_o ),
+    .cpu_err_o(\qf100_qf100_fabric$cpu_err_o ),
+    .cpu_rty_o(\qf100_qf100_fabric$cpu_rty_o ),
+    .cpu_sel_i(\qf100_qf100_fabric$cpu_sel_i ),
+    .cpu_stb_i(\qf100_qf100_fabric$cpu_stb_i ),
+    .cpu_we_i(\qf100_qf100_fabric$cpu_we_i ),
+    .gpio_ack_i(\qf100_qf100_fabric$gpio_ack_i ),
+    .gpio_adr_o(\qf100_qf100_fabric$gpio_adr_o ),
+    .gpio_cyc_o(\qf100_qf100_fabric$gpio_cyc_o ),
+    .gpio_dat_i(\qf100_qf100_fabric$gpio_dat_i ),
+    .gpio_dat_o(\qf100_qf100_fabric$gpio_dat_o ),
+    .gpio_err_i(\qf100_qf100_fabric$gpio_err_i ),
+    .gpio_rty_i(\qf100_qf100_fabric$gpio_rty_i ),
+    .gpio_sel_o(\qf100_qf100_fabric$gpio_sel_o ),
+    .gpio_stb_o(\qf100_qf100_fabric$gpio_stb_o ),
+    .gpio_we_o(\qf100_qf100_fabric$gpio_we_o ),
+    .ksc_ack_i(\qf100_qf100_fabric$ksc_ack_i ),
+    .ksc_adr_o(\qf100_qf100_fabric$ksc_adr_o ),
+    .ksc_cyc_o(\qf100_qf100_fabric$ksc_cyc_o ),
+    .ksc_dat_i(\qf100_qf100_fabric$ksc_dat_i ),
+    .ksc_dat_o(\qf100_qf100_fabric$ksc_dat_o ),
+    .ksc_err_i(\qf100_qf100_fabric$ksc_err_i ),
+    .ksc_rty_i(\qf100_qf100_fabric$ksc_rty_i ),
+    .ksc_sel_o(\qf100_qf100_fabric$ksc_sel_o ),
+    .ksc_stb_o(\qf100_qf100_fabric$ksc_stb_o ),
+    .ksc_we_o(\qf100_qf100_fabric$ksc_we_o ),
+    .spi_ack_i(\qf100_qf100_fabric$spi_ack_i ),
+    .spi_adr_o(\qf100_qf100_fabric$spi_adr_o ),
+    .spi_cyc_o(\qf100_qf100_fabric$spi_cyc_o ),
+    .spi_dat_i(\qf100_qf100_fabric$spi_dat_i ),
+    .spi_dat_o(\qf100_qf100_fabric$spi_dat_o ),
+    .spi_err_i(\qf100_qf100_fabric$spi_err_i ),
+    .spi_rty_i(\qf100_qf100_fabric$spi_rty_i ),
+    .spi_sel_o(\qf100_qf100_fabric$spi_sel_o ),
+    .spi_stb_o(\qf100_qf100_fabric$spi_stb_o ),
+    .spi_we_o(\qf100_qf100_fabric$spi_we_o )
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/QF100/mkQF105.v:308.17-308.76" *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:382.26-400.75" *)
+  mkQF100FlashController qf100_qf100_fmc (
+`ifdef USE_POWER_PINS
+    .vccd1(vccd1),
+    .vssd1(vssd1),
+`endif
+    .CLK(wb_clk_i),
+    .EN_serverA_request_put(\qf100_qf100_fmc$EN_serverA_request_put ),
+    .EN_serverA_response_get(\qf100_qf100_fmc$EN_serverA_response_get ),
+    .EN_serverB_request_put(\qf100_qf100_fmc$EN_serverB_request_put ),
+    .EN_serverB_response_get(\qf100_qf100_fmc$EN_serverB_response_get ),
+    .RDY_serverA_request_put(\qf100_qf100_fmc$RDY_serverA_request_put ),
+    .RDY_serverA_response_get(\qf100_qf100_fmc$RDY_serverA_response_get ),
+    .RDY_serverB_request_put(\qf100_qf100_fmc$RDY_serverB_request_put ),
+    .RDY_serverB_response_get(\qf100_qf100_fmc$RDY_serverB_response_get ),
+    .RST_N(\reset_n$RESET_OUT ),
+    .serverA_request_put(\qf100_qf100_fmc$serverA_request_put ),
+    .serverA_response_get(\qf100_qf100_fmc$serverA_response_get ),
+    .serverB_request_put(\qf100_qf100_fmc$serverB_request_put ),
+    .serverB_response_get(\qf100_qf100_fmc$serverB_response_get ),
+    .spi_csb(\qf100_qf100_fmc$spi_csb ),
+    .spi_miso(\qf100_qf100_fmc$spi_miso ),
+    .spi_mosi(\qf100_qf100_fmc$spi_mosi ),
+    .spi_sclk(\qf100_qf100_fmc$spi_sclk )
+  );
+  (* module_not_derived = 32'd1 *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:403.19-440.87" *)
+  mkLanaiFrontend qf100_qf100_frontend (
+`ifdef USE_POWER_PINS
+    .vccd1(vccd1),
+    .vssd1(vssd1),
+`endif
+    .CLK(wb_clk_i),
+    .EN_core_dmem_request_put(\qf100_qf100_frontend$EN_core_dmem_request_put ),
+    .EN_core_dmem_response_get(\qf100_qf100_frontend$EN_core_dmem_response_get ),
+    .EN_core_imem_request_put(\qf100_qf100_frontend$EN_core_imem_request_put ),
+    .EN_core_imem_response_get(\qf100_qf100_frontend$EN_core_imem_response_get ),
+    .EN_fmc_dmem_request_get(\qf100_qf100_frontend$EN_fmc_dmem_request_get ),
+    .EN_fmc_dmem_response_put(\qf100_qf100_frontend$EN_fmc_dmem_response_put ),
+    .EN_fmc_imem_request_get(\qf100_qf100_frontend$EN_fmc_imem_request_get ),
+    .EN_fmc_imem_response_put(\qf100_qf100_frontend$EN_fmc_imem_response_put ),
+    .EN_ram_dmem_request_get(\qf100_qf100_frontend$EN_ram_dmem_request_get ),
+    .EN_ram_dmem_response_put(\qf100_qf100_frontend$EN_ram_dmem_response_put ),
+    .EN_ram_imem_request_get(\qf100_qf100_frontend$EN_ram_imem_request_get ),
+    .EN_ram_imem_response_put(\qf100_qf100_frontend$EN_ram_imem_response_put ),
+    .RDY_core_dmem_request_put(\qf100_qf100_frontend$RDY_core_dmem_request_put ),
+    .RDY_core_dmem_response_get(\qf100_qf100_frontend$RDY_core_dmem_response_get ),
+    .RDY_core_imem_request_put(\qf100_qf100_frontend$RDY_core_imem_request_put ),
+    .RDY_core_imem_response_get(\qf100_qf100_frontend$RDY_core_imem_response_get ),
+    .RDY_fmc_dmem_request_get(\qf100_qf100_frontend$RDY_fmc_dmem_request_get ),
+    .RDY_fmc_dmem_response_put(\qf100_qf100_frontend$RDY_fmc_dmem_response_put ),
+    .RDY_fmc_imem_request_get(\qf100_qf100_frontend$RDY_fmc_imem_request_get ),
+    .RDY_fmc_imem_response_put(\qf100_qf100_frontend$RDY_fmc_imem_response_put ),
+    .RDY_ram_dmem_request_get(\qf100_qf100_frontend$RDY_ram_dmem_request_get ),
+    .RDY_ram_dmem_response_put(\qf100_qf100_frontend$RDY_ram_dmem_response_put ),
+    .RDY_ram_imem_request_get(\qf100_qf100_frontend$RDY_ram_imem_request_get ),
+    .RDY_ram_imem_response_put(\qf100_qf100_frontend$RDY_ram_imem_response_put ),
+    .RST_N(\reset_n$RESET_OUT ),
+    .core_dmem_request_put(\qf100_qf100_frontend$core_dmem_request_put ),
+    .core_dmem_response_get(\qf100_qf100_frontend$core_dmem_response_get ),
+    .core_imem_request_put(\qf100_qf100_frontend$core_imem_request_put ),
+    .core_imem_response_get(\qf100_qf100_frontend$core_imem_response_get ),
+    .fmc_dmem_request_get(\qf100_qf100_frontend$fmc_dmem_request_get ),
+    .fmc_dmem_response_put(\qf100_qf100_frontend$fmc_dmem_response_put ),
+    .fmc_imem_request_get(\qf100_qf100_frontend$fmc_imem_request_get ),
+    .fmc_imem_response_put(\qf100_qf100_frontend$fmc_imem_response_put ),
+    .ram_dmem_request_get(\qf100_qf100_frontend$ram_dmem_request_get ),
+    .ram_dmem_response_put(\qf100_qf100_frontend$ram_dmem_response_put ),
+    .ram_imem_request_get(\qf100_qf100_frontend$ram_imem_request_get ),
+    .ram_imem_response_put(\qf100_qf100_frontend$ram_imem_response_put )
+  );
+  (* module_not_derived = 32'd1 *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:443.15-457.39" *)
+  mkQF100GPIO qf100_qf100_gpioCtrl (
+`ifdef USE_POWER_PINS
+    .vccd1(vccd1),
+    .vssd1(vssd1),
+`endif
+    .CLK(wb_clk_i),
+    .RST_N(\reset_n$RESET_OUT ),
+    .in(\qf100_qf100_gpioCtrl$in ),
+    .oe(\qf100_qf100_gpioCtrl$oe ),
+    .out(\qf100_qf100_gpioCtrl$out ),
+    .slave_ack_o(\qf100_qf100_gpioCtrl$slave_ack_o ),
+    .slave_adr_i(\qf100_qf100_gpioCtrl$slave_adr_i ),
+    .slave_cyc_i(\qf100_qf100_gpioCtrl$slave_cyc_i ),
+    .slave_dat_i(\qf100_qf100_gpioCtrl$slave_dat_i ),
+    .slave_dat_o(\qf100_qf100_gpioCtrl$slave_dat_o ),
+    .slave_err_o(\qf100_qf100_gpioCtrl$slave_err_o ),
+    .slave_rty_o(\qf100_qf100_gpioCtrl$slave_rty_o ),
+    .slave_sel_i(\qf100_qf100_gpioCtrl$slave_sel_i ),
+    .slave_stb_i(\qf100_qf100_gpioCtrl$slave_stb_i ),
+    .slave_we_i(\qf100_qf100_gpioCtrl$slave_we_i )
+  );
+  (* module_not_derived = 32'd1 *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:460.14-471.50" *)
+  mkQF100KSC qf100_qf100_ksCtrl (
+`ifdef USE_POWER_PINS
+    .vccd1(vccd1),
+    .vssd1(vssd1),
+`endif
+    .CLK(wb_clk_i),
+    .RST_N(\reset_n$RESET_OUT ),
+    .slave_ack_o(\qf100_qf100_ksCtrl$slave_ack_o ),
+    .slave_adr_i(\qf100_qf100_ksCtrl$slave_adr_i ),
+    .slave_cyc_i(\qf100_qf100_ksCtrl$slave_cyc_i ),
+    .slave_dat_i(\qf100_qf100_ksCtrl$slave_dat_i ),
+    .slave_dat_o(\qf100_qf100_ksCtrl$slave_dat_o ),
+    .slave_err_o(\qf100_qf100_ksCtrl$slave_err_o ),
+    .slave_rty_o(\qf100_qf100_ksCtrl$slave_rty_o ),
+    .slave_sel_i(\qf100_qf100_ksCtrl$slave_sel_i ),
+    .slave_stb_i(\qf100_qf100_ksCtrl$slave_stb_i ),
+    .slave_we_i(\qf100_qf100_ksCtrl$slave_we_i )
+  );
+  (* module_not_derived = 32'd1 *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:474.14-489.27" *)
+  mkQF100SPI qf100_qf100_spiCtrl (
+`ifdef USE_POWER_PINS
+    .vccd1(vccd1),
+    .vssd1(vssd1),
+`endif
+    .CLK(wb_clk_i),
+    .RST_N(\reset_n$RESET_OUT ),
+    .slave_ack_o(\qf100_qf100_spiCtrl$slave_ack_o ),
+    .slave_adr_i(\qf100_qf100_spiCtrl$slave_adr_i ),
+    .slave_cyc_i(\qf100_qf100_spiCtrl$slave_cyc_i ),
+    .slave_dat_i(\qf100_qf100_spiCtrl$slave_dat_i ),
+    .slave_dat_o(\qf100_qf100_spiCtrl$slave_dat_o ),
+    .slave_err_o(\qf100_qf100_spiCtrl$slave_err_o ),
+    .slave_rty_o(\qf100_qf100_spiCtrl$slave_rty_o ),
+    .slave_sel_i(\qf100_qf100_spiCtrl$slave_sel_i ),
+    .slave_stb_i(\qf100_qf100_spiCtrl$slave_stb_i ),
+    .slave_we_i(\qf100_qf100_spiCtrl$slave_we_i ),
+    .spiMaster_miso(\qf100_qf100_spiCtrl$spiMaster_miso ),
+    .spiMaster_mosi(\qf100_qf100_spiCtrl$spiMaster_mosi ),
+    .spiMaster_sclk(\qf100_qf100_spiCtrl$spiMaster_sclk )
+  );
+  (* module_not_derived = 32'd1 *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:492.45-502.42" *)
+  sky130_sram_2kbyte_1rw1r_32x512_8_wrapper qf100_sram_core (
+`ifdef USE_POWER_PINS
+    .vccd1(vccd1),
+    .vssd1(vssd1),
+`endif
+    .addr0(\qf100_sram_core$addr0 ),
+    .addr1(\qf100_sram_core$addr1 ),
+    .clk0(wb_clk_i),
+    .clk1(wb_clk_i),
+    .cs0(\qf100_sram_core$cs0 ),
+    .cs1(\qf100_sram_core$cs1 ),
+    .din0(\qf100_sram_core$din0 ),
+    .dout0(\qf100_sram_core$dout0 ),
+    .dout1(\qf100_sram_core$dout1 ),
+    .web0(\qf100_sram_core$web0 ),
+    .wmask0(\qf100_sram_core$wmask0 )
+  );
+  (* module_not_derived = 32'd1 *)
+  (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:505.17-505.76" *)
   ResetInverter reset_n (
     .RESET_IN(wb_rst_i),
     .RESET_OUT(\reset_n$RESET_OUT )
   );
+  always @* begin
+    if (\$auto$verilog_backend.cc:2083:dump_module$5033 ) begin end
+    _001_ = _007_;
+    (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:731.5-736.12" *)
+    casez (\qf100_qf100_frontend$ram_dmem_request_get [69:68])
+      /* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:0.0-0.0" */
+      2'h0:
+          _007_ = 4'h8;
+      /* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:0.0-0.0" */
+      2'h1:
+          _007_ = 4'h4;
+      /* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:0.0-0.0" */
+      2'h2:
+          _007_ = 4'h2;
+      /* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:0.0-0.0" */
+      2'h3:
+          _007_ = 4'h1;
+      default:
+          _007_ = _theResult___fst__h3192;
+    endcase
+  end
+  always @* begin
+      _theResult___fst__h3192 <= _001_;
+  end
+  always @* begin
+    if (\$auto$verilog_backend.cc:2083:dump_module$5033 ) begin end
+    _000_ = _006_;
+    (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:741.5-746.12" *)
+    casez (\qf100_qf100_frontend$ram_dmem_request_get [34:33])
+      /* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:0.0-0.0" */
+      2'h0:
+          _006_ = 4'hf;
+      /* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:0.0-0.0" */
+      2'h1:
+          _006_ = _theResult___fst__h3129;
+      /* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:0.0-0.0" */
+      2'h2:
+          _006_ = _theResult___fst__h3192;
+      /* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:0.0-0.0" */
+      2'h3:
+          _006_ = 4'h0;
+      default:
+          _006_ = _theResult___fst__h3102;
+    endcase
+  end
+  always @* begin
+      _theResult___fst__h3102 <= _000_;
+  end
+  always @* begin
+    if (\$auto$verilog_backend.cc:2083:dump_module$5033 ) begin end
+    _002_ = _008_;
+    (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:751.5-756.12" *)
+    casez (\qf100_qf100_frontend$ram_dmem_request_get [69:68])
+      /* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:0.0-0.0" */
+      2'h0:
+          _008_ = din__h3281;
+      /* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:0.0-0.0" */
+      2'h1:
+          _008_ = din__h3277;
+      /* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:0.0-0.0" */
+      2'h2:
+          _008_ = din__h3273;
+      /* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:0.0-0.0" */
+      2'h3:
+          _008_ = valB__h3190;
+      default:
+          _008_ = _theResult___snd__h3193;
+    endcase
+  end
+  always @* begin
+      _theResult___snd__h3193 <= _002_;
+  end
+  always @* begin
+    if (\$auto$verilog_backend.cc:2083:dump_module$5033 ) begin end
+    _003_ = _009_;
+    (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:761.5-766.12" *)
+    casez (\qf100_qf100_frontend$ram_dmem_request_get [34:33])
+      /* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:0.0-0.0" */
+      2'h0:
+          _009_ = val__h3091;
+      /* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:0.0-0.0" */
+      2'h1:
+          _009_ = _theResult___snd__h3130;
+      /* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:0.0-0.0" */
+      2'h2:
+          _009_ = _theResult___snd__h3193;
+      /* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:0.0-0.0" */
+      2'h3:
+          _009_ = 32'd0;
+      default:
+          _009_ = _theResult___snd_fst__h3104;
+    endcase
+  end
+  always @* begin
+      _theResult___snd_fst__h3104 <= _003_;
+  end
+  always @* begin
+    if (\$auto$verilog_backend.cc:2083:dump_module$5033 ) begin end
+    _004_ = qf100_sram_inFlight0_rv;
+    _005_ = qf100_sram_inFlight1_rv;
+    (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:773.5-786.10" *)
+    casez (_010_)
+      /* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:773.9-773.34" */
+      1'h1:
+        begin
+          _004_ = 1'h0;
+          _005_ = 1'h0;
+        end
+      /* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:778.5-778.9" */
+      default:
+        begin
+          (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:780.9-782.37" *)
+          casez (\qf100_sram_inFlight0_rv$EN )
+            /* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:780.13-780.39" */
+            1'h1:
+                _004_ = \qf100_sram_inFlight0_rv$D_IN ;
+            default:
+                /* empty */;
+          endcase
+          (* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:783.2-785.37" *)
+          casez (\qf100_sram_inFlight1_rv$EN )
+            /* src = "bazel-out/k8-fastbuild/bin/boards/qf100/Board/mkQF105.v:783.6-783.32" */
+            1'h1:
+                _005_ = \qf100_sram_inFlight1_rv$D_IN ;
+            default:
+                /* empty */;
+          endcase
+        end
+    endcase
+  end
+  always @(posedge wb_clk_i) begin
+      qf100_sram_inFlight0_rv <= _004_;
+      qf100_sram_inFlight1_rv <= _005_;
+  end
   assign la_data_out = 128'h00000000000000000000000000000000;
-  assign io_out = { 19'h00000, \res_gpio$out , 1'h0, \res_spi$spiMaster_mosi , \res_spi$spiMaster_sclk  };
-  assign io_oeb = { 19'h7ffff, _08_, 3'h4 };
+  assign io_out = { 7'h00, \qf100_qf100_gpioCtrl$out , 1'h0, \qf100_qf100_spiCtrl$spiMaster_mosi , \qf100_qf100_spiCtrl$spiMaster_sclk , 1'h0, \qf100_qf100_fmc$spi_mosi , \qf100_qf100_fmc$spi_sclk , \qf100_qf100_fmc$spi_csb , 8'h00 };
+  assign io_oeb = { 7'h7f, _054_, 15'h48ff };
   assign irq = 3'h0;
-  assign \res_cpu$dmem_client_response_put  = \res_mem$memory_dmem_response_get ;
-  assign \res_cpu$imem_client_response_put  = \res_mem$memory_imem_response_get ;
-  assign \res_cpu$sysmem_client_ack_i  = \res_fabric$cpu_ack_o ;
-  assign \res_cpu$sysmem_client_dat_i  = \res_fabric$cpu_dat_o ;
-  assign \res_cpu$sysmem_client_err_i  = \res_fabric$cpu_err_o ;
-  assign \res_cpu$sysmem_client_rty_i  = \res_fabric$cpu_rty_o ;
-  assign \res_cpu$EN_dmem_client_request_get  = _00_;
-  assign \res_cpu$EN_dmem_client_response_put  = _01_;
-  assign \res_cpu$EN_imem_client_request_get  = _02_;
-  assign \res_cpu$EN_imem_client_response_put  = _03_;
-  assign \res_fabric$cpu_adr_i  = \res_cpu$sysmem_client_adr_o ;
-  assign \res_fabric$cpu_cyc_i  = \res_cpu$sysmem_client_cyc_o ;
-  assign \res_fabric$cpu_dat_i  = \res_cpu$sysmem_client_dat_o ;
-  assign \res_fabric$cpu_sel_i  = \res_cpu$sysmem_client_sel_o ;
-  assign \res_fabric$cpu_stb_i  = \res_cpu$sysmem_client_stb_o ;
-  assign \res_fabric$cpu_we_i  = \res_cpu$sysmem_client_we_o ;
-  assign \res_fabric$gpio_ack_i  = \res_gpio$slave_ack_o ;
-  assign \res_fabric$gpio_dat_i  = \res_gpio$slave_dat_o ;
-  assign \res_fabric$gpio_err_i  = \res_gpio$slave_err_o ;
-  assign \res_fabric$gpio_rty_i  = \res_gpio$slave_rty_o ;
-  assign \res_fabric$spi_ack_i  = \res_spi$slave_ack_o ;
-  assign \res_fabric$spi_dat_i  = \res_spi$slave_dat_o ;
-  assign \res_fabric$spi_err_i  = \res_spi$slave_err_o ;
-  assign \res_fabric$spi_rty_i  = \res_spi$slave_rty_o ;
-  assign \res_gpio$in  = io_in[18:3];
-  assign \res_gpio$slave_adr_i  = \res_fabric$gpio_adr_o ;
-  assign \res_gpio$slave_cyc_i  = \res_fabric$gpio_cyc_o ;
-  assign \res_gpio$slave_dat_i  = \res_fabric$gpio_dat_o ;
-  assign \res_gpio$slave_sel_i  = \res_fabric$gpio_sel_o ;
-  assign \res_gpio$slave_stb_i  = \res_fabric$gpio_stb_o ;
-  assign \res_gpio$slave_we_i  = \res_fabric$gpio_we_o ;
-  assign \res_mem$memory_dmem_request_put  = \res_cpu$dmem_client_request_get ;
-  assign \res_mem$memory_imem_request_put  = \res_cpu$imem_client_request_get ;
-  assign \res_mem$EN_memory_imem_request_put  = _04_;
-  assign \res_mem$EN_memory_imem_response_get  = _05_;
-  assign \res_mem$EN_memory_dmem_request_put  = _06_;
-  assign \res_mem$EN_memory_dmem_response_get  = _07_;
-  assign \res_spi$slave_adr_i  = \res_fabric$spi_adr_o ;
-  assign \res_spi$slave_cyc_i  = \res_fabric$spi_cyc_o ;
-  assign \res_spi$slave_dat_i  = \res_fabric$spi_dat_o ;
-  assign \res_spi$slave_sel_i  = \res_fabric$spi_sel_o ;
-  assign \res_spi$slave_stb_i  = \res_fabric$spi_stb_o ;
-  assign \res_spi$slave_we_i  = \res_fabric$spi_we_o ;
-  assign \res_spi$spiMaster_miso  = io_in[2];
+  assign WILL_FIRE_RL_qf100_ClientServerResponse = _011_;
+  assign CAN_FIRE_RL_qf100_qf100_2_ClientServerResponse = _012_;
+  assign WILL_FIRE_RL_qf100_qf100_3_mkConnectionGetPut = _013_;
+  assign CAN_FIRE_RL_qf100_1_ClientServerResponse = _014_;
+  assign \qf100_sram_inFlight0_rv$EN_port0__write  = _015_;
+  assign \qf100_sram_inFlight0_rv$port1__read  = _016_;
+  assign \qf100_sram_inFlight0_rv$EN_port1__write  = _017_;
+  assign \qf100_sram_inFlight0_rv$port2__read  = _052_;
+  assign \qf100_sram_inFlight1_rv$port1__read  = _018_;
+  assign \qf100_sram_inFlight1_rv$EN_port1__write  = _019_;
+  assign \qf100_sram_inFlight1_rv$port2__read  = _053_;
+  assign \qf100_sram_inFlight0_rv$D_IN  = \qf100_sram_inFlight0_rv$port2__read ;
+  assign \qf100_sram_inFlight0_rv$EN  = 1'h1;
+  assign \qf100_sram_inFlight1_rv$D_IN  = \qf100_sram_inFlight1_rv$port2__read ;
+  assign \qf100_sram_inFlight1_rv$EN  = 1'h1;
+  assign \qf100_qf100_cpu$dmem_client_response_put  = \qf100_qf100_frontend$core_dmem_response_get ;
+  assign \qf100_qf100_cpu$imem_client_response_put  = \qf100_qf100_frontend$core_imem_response_get ;
+  assign \qf100_qf100_cpu$sysmem_client_ack_i  = \qf100_qf100_fabric$cpu_ack_o ;
+  assign \qf100_qf100_cpu$sysmem_client_dat_i  = \qf100_qf100_fabric$cpu_dat_o ;
+  assign \qf100_qf100_cpu$sysmem_client_err_i  = \qf100_qf100_fabric$cpu_err_o ;
+  assign \qf100_qf100_cpu$sysmem_client_rty_i  = \qf100_qf100_fabric$cpu_rty_o ;
+  assign \qf100_qf100_cpu$EN_dmem_client_request_get  = _020_;
+  assign \qf100_qf100_cpu$EN_dmem_client_response_put  = _021_;
+  assign \qf100_qf100_cpu$EN_imem_client_request_get  = _022_;
+  assign \qf100_qf100_cpu$EN_imem_client_response_put  = _023_;
+  assign \qf100_qf100_fabric$cpu_adr_i  = \qf100_qf100_cpu$sysmem_client_adr_o ;
+  assign \qf100_qf100_fabric$cpu_cyc_i  = \qf100_qf100_cpu$sysmem_client_cyc_o ;
+  assign \qf100_qf100_fabric$cpu_dat_i  = \qf100_qf100_cpu$sysmem_client_dat_o ;
+  assign \qf100_qf100_fabric$cpu_sel_i  = \qf100_qf100_cpu$sysmem_client_sel_o ;
+  assign \qf100_qf100_fabric$cpu_stb_i  = \qf100_qf100_cpu$sysmem_client_stb_o ;
+  assign \qf100_qf100_fabric$cpu_we_i  = \qf100_qf100_cpu$sysmem_client_we_o ;
+  assign \qf100_qf100_fabric$gpio_ack_i  = \qf100_qf100_gpioCtrl$slave_ack_o ;
+  assign \qf100_qf100_fabric$gpio_dat_i  = \qf100_qf100_gpioCtrl$slave_dat_o ;
+  assign \qf100_qf100_fabric$gpio_err_i  = \qf100_qf100_gpioCtrl$slave_err_o ;
+  assign \qf100_qf100_fabric$gpio_rty_i  = \qf100_qf100_gpioCtrl$slave_rty_o ;
+  assign \qf100_qf100_fabric$ksc_ack_i  = \qf100_qf100_ksCtrl$slave_ack_o ;
+  assign \qf100_qf100_fabric$ksc_dat_i  = \qf100_qf100_ksCtrl$slave_dat_o ;
+  assign \qf100_qf100_fabric$ksc_err_i  = \qf100_qf100_ksCtrl$slave_err_o ;
+  assign \qf100_qf100_fabric$ksc_rty_i  = \qf100_qf100_ksCtrl$slave_rty_o ;
+  assign \qf100_qf100_fabric$spi_ack_i  = \qf100_qf100_spiCtrl$slave_ack_o ;
+  assign \qf100_qf100_fabric$spi_dat_i  = \qf100_qf100_spiCtrl$slave_dat_o ;
+  assign \qf100_qf100_fabric$spi_err_i  = \qf100_qf100_spiCtrl$slave_err_o ;
+  assign \qf100_qf100_fabric$spi_rty_i  = \qf100_qf100_spiCtrl$slave_rty_o ;
+  assign \qf100_qf100_fmc$serverA_request_put  = \qf100_qf100_frontend$fmc_imem_request_get ;
+  assign \qf100_qf100_fmc$serverB_request_put  = \qf100_qf100_frontend$fmc_dmem_request_get [99:68];
+  assign \qf100_qf100_fmc$spi_miso  = io_in[11];
+  assign \qf100_qf100_fmc$EN_serverA_request_put  = _024_;
+  assign \qf100_qf100_fmc$EN_serverA_response_get  = _025_;
+  assign \qf100_qf100_fmc$EN_serverB_request_put  = _026_;
+  assign \qf100_qf100_fmc$EN_serverB_response_get  = WILL_FIRE_RL_qf100_qf100_3_mkConnectionGetPut;
+  assign \qf100_qf100_frontend$core_dmem_request_put  = \qf100_qf100_cpu$dmem_client_request_get ;
+  assign \qf100_qf100_frontend$core_imem_request_put  = \qf100_qf100_cpu$imem_client_request_get ;
+  assign \qf100_qf100_frontend$fmc_dmem_response_put  = \qf100_qf100_fmc$serverB_response_get ;
+  assign \qf100_qf100_frontend$fmc_imem_response_put  = \qf100_qf100_fmc$serverA_response_get ;
+  assign \qf100_qf100_frontend$ram_dmem_response_put  = \qf100_sram_core$dout0 ;
+  assign \qf100_qf100_frontend$ram_imem_response_put  = \qf100_sram_core$dout1 ;
+  assign \qf100_qf100_frontend$EN_core_imem_request_put  = _027_;
+  assign \qf100_qf100_frontend$EN_core_imem_response_get  = _028_;
+  assign \qf100_qf100_frontend$EN_core_dmem_request_put  = _029_;
+  assign \qf100_qf100_frontend$EN_core_dmem_response_get  = _030_;
+  assign \qf100_qf100_frontend$EN_fmc_imem_request_get  = _031_;
+  assign \qf100_qf100_frontend$EN_fmc_imem_response_put  = _032_;
+  assign \qf100_qf100_frontend$EN_fmc_dmem_request_get  = _033_;
+  assign \qf100_qf100_frontend$EN_fmc_dmem_response_put  = WILL_FIRE_RL_qf100_qf100_3_mkConnectionGetPut;
+  assign \qf100_qf100_frontend$EN_ram_imem_request_get  = _034_;
+  assign \qf100_qf100_frontend$EN_ram_imem_response_put  = WILL_FIRE_RL_qf100_ClientServerResponse;
+  assign \qf100_qf100_frontend$EN_ram_dmem_request_get  = _035_;
+  assign \qf100_qf100_frontend$EN_ram_dmem_response_put  = _036_;
+  assign \qf100_qf100_gpioCtrl$in  = io_in[30:15];
+  assign \qf100_qf100_gpioCtrl$slave_adr_i  = \qf100_qf100_fabric$gpio_adr_o ;
+  assign \qf100_qf100_gpioCtrl$slave_cyc_i  = \qf100_qf100_fabric$gpio_cyc_o ;
+  assign \qf100_qf100_gpioCtrl$slave_dat_i  = \qf100_qf100_fabric$gpio_dat_o ;
+  assign \qf100_qf100_gpioCtrl$slave_sel_i  = \qf100_qf100_fabric$gpio_sel_o ;
+  assign \qf100_qf100_gpioCtrl$slave_stb_i  = \qf100_qf100_fabric$gpio_stb_o ;
+  assign \qf100_qf100_gpioCtrl$slave_we_i  = \qf100_qf100_fabric$gpio_we_o ;
+  assign \qf100_qf100_ksCtrl$slave_adr_i  = \qf100_qf100_fabric$ksc_adr_o ;
+  assign \qf100_qf100_ksCtrl$slave_cyc_i  = \qf100_qf100_fabric$ksc_cyc_o ;
+  assign \qf100_qf100_ksCtrl$slave_dat_i  = \qf100_qf100_fabric$ksc_dat_o ;
+  assign \qf100_qf100_ksCtrl$slave_sel_i  = \qf100_qf100_fabric$ksc_sel_o ;
+  assign \qf100_qf100_ksCtrl$slave_stb_i  = \qf100_qf100_fabric$ksc_stb_o ;
+  assign \qf100_qf100_ksCtrl$slave_we_i  = \qf100_qf100_fabric$ksc_we_o ;
+  assign \qf100_qf100_spiCtrl$slave_adr_i  = \qf100_qf100_fabric$spi_adr_o ;
+  assign \qf100_qf100_spiCtrl$slave_cyc_i  = \qf100_qf100_fabric$spi_cyc_o ;
+  assign \qf100_qf100_spiCtrl$slave_dat_i  = \qf100_qf100_fabric$spi_dat_o ;
+  assign \qf100_qf100_spiCtrl$slave_sel_i  = \qf100_qf100_fabric$spi_sel_o ;
+  assign \qf100_qf100_spiCtrl$slave_stb_i  = \qf100_qf100_fabric$spi_stb_o ;
+  assign \qf100_qf100_spiCtrl$slave_we_i  = \qf100_qf100_fabric$spi_we_o ;
+  assign \qf100_qf100_spiCtrl$spiMaster_miso  = io_in[14];
+  assign \qf100_sram_core$addr0  = \qf100_qf100_frontend$ram_dmem_request_get [76:68];
+  assign \qf100_sram_core$addr1  = \qf100_qf100_frontend$ram_imem_request_get [8:0];
+  assign \qf100_sram_core$din0  = _055_;
+  assign \qf100_sram_core$web0  = _049_;
+  assign \qf100_sram_core$wmask0  = _056_;
+  assign \qf100_sram_core$cs0  = _037_;
+  assign \qf100_sram_core$cs1  = _038_;
+  assign _theResult___fst__h3129 = _057_;
+  assign _theResult___snd__h3130 = _058_;
+  assign din__h3273 = { 16'h0000, val__h3091[7:0], 8'h00 };
+  assign din__h3277 = { 8'h00, val__h3091[7:0], 16'h0000 };
+  assign din__h3281 = { val__h3091[7:0], 24'h000000 };
+  assign valB__h3190 = { 24'h000000, val__h3091[7:0] };
+  assign val__h3091 = _059_;
 endmodule
 
