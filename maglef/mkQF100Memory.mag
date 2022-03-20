@@ -1,871 +1,865 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1647562444
+timestamp 1647708260
 << obsli1 >>
-rect 1104 2159 68448 69105
+rect 1104 2159 62652 63665
 << obsm1 >>
-rect 106 1368 69538 69136
+rect 106 892 63650 63696
 << metal2 >>
 rect 110 0 166 800
 rect 386 0 442 800
-rect 754 0 810 800
-rect 1122 0 1178 800
-rect 1398 0 1454 800
-rect 1766 0 1822 800
-rect 2134 0 2190 800
-rect 2410 0 2466 800
-rect 2778 0 2834 800
+rect 662 0 718 800
+rect 1030 0 1086 800
+rect 1306 0 1362 800
+rect 1582 0 1638 800
+rect 1950 0 2006 800
+rect 2226 0 2282 800
+rect 2502 0 2558 800
+rect 2870 0 2926 800
 rect 3146 0 3202 800
-rect 3422 0 3478 800
+rect 3514 0 3570 800
 rect 3790 0 3846 800
-rect 4158 0 4214 800
+rect 4066 0 4122 800
 rect 4434 0 4490 800
-rect 4802 0 4858 800
-rect 5170 0 5226 800
-rect 5446 0 5502 800
-rect 5814 0 5870 800
-rect 6182 0 6238 800
-rect 6458 0 6514 800
-rect 6826 0 6882 800
+rect 4710 0 4766 800
+rect 4986 0 5042 800
+rect 5354 0 5410 800
+rect 5630 0 5686 800
+rect 5998 0 6054 800
+rect 6274 0 6330 800
+rect 6550 0 6606 800
+rect 6918 0 6974 800
 rect 7194 0 7250 800
 rect 7470 0 7526 800
 rect 7838 0 7894 800
-rect 8206 0 8262 800
-rect 8482 0 8538 800
-rect 8850 0 8906 800
-rect 9218 0 9274 800
-rect 9494 0 9550 800
-rect 9862 0 9918 800
-rect 10230 0 10286 800
-rect 10506 0 10562 800
+rect 8114 0 8170 800
+rect 8390 0 8446 800
+rect 8758 0 8814 800
+rect 9034 0 9090 800
+rect 9402 0 9458 800
+rect 9678 0 9734 800
+rect 9954 0 10010 800
+rect 10322 0 10378 800
+rect 10598 0 10654 800
 rect 10874 0 10930 800
 rect 11242 0 11298 800
 rect 11518 0 11574 800
 rect 11886 0 11942 800
-rect 12254 0 12310 800
-rect 12530 0 12586 800
-rect 12898 0 12954 800
-rect 13266 0 13322 800
-rect 13542 0 13598 800
-rect 13910 0 13966 800
+rect 12162 0 12218 800
+rect 12438 0 12494 800
+rect 12806 0 12862 800
+rect 13082 0 13138 800
+rect 13358 0 13414 800
+rect 13726 0 13782 800
+rect 14002 0 14058 800
 rect 14278 0 14334 800
-rect 14554 0 14610 800
+rect 14646 0 14702 800
 rect 14922 0 14978 800
 rect 15290 0 15346 800
 rect 15566 0 15622 800
-rect 15934 0 15990 800
-rect 16302 0 16358 800
-rect 16578 0 16634 800
-rect 16946 0 17002 800
-rect 17314 0 17370 800
-rect 17590 0 17646 800
-rect 17958 0 18014 800
+rect 15842 0 15898 800
+rect 16210 0 16266 800
+rect 16486 0 16542 800
+rect 16762 0 16818 800
+rect 17130 0 17186 800
+rect 17406 0 17462 800
+rect 17774 0 17830 800
+rect 18050 0 18106 800
 rect 18326 0 18382 800
-rect 18602 0 18658 800
+rect 18694 0 18750 800
 rect 18970 0 19026 800
-rect 19338 0 19394 800
+rect 19246 0 19302 800
 rect 19614 0 19670 800
-rect 19982 0 20038 800
-rect 20350 0 20406 800
-rect 20626 0 20682 800
-rect 20994 0 21050 800
-rect 21362 0 21418 800
-rect 21638 0 21694 800
-rect 22006 0 22062 800
+rect 19890 0 19946 800
+rect 20166 0 20222 800
+rect 20534 0 20590 800
+rect 20810 0 20866 800
+rect 21178 0 21234 800
+rect 21454 0 21510 800
+rect 21730 0 21786 800
+rect 22098 0 22154 800
 rect 22374 0 22430 800
 rect 22650 0 22706 800
 rect 23018 0 23074 800
-rect 23386 0 23442 800
+rect 23294 0 23350 800
 rect 23662 0 23718 800
-rect 24030 0 24086 800
-rect 24398 0 24454 800
-rect 24674 0 24730 800
-rect 25042 0 25098 800
-rect 25410 0 25466 800
-rect 25686 0 25742 800
+rect 23938 0 23994 800
+rect 24214 0 24270 800
+rect 24582 0 24638 800
+rect 24858 0 24914 800
+rect 25134 0 25190 800
+rect 25502 0 25558 800
+rect 25778 0 25834 800
 rect 26054 0 26110 800
 rect 26422 0 26478 800
 rect 26698 0 26754 800
 rect 27066 0 27122 800
-rect 27434 0 27490 800
-rect 27710 0 27766 800
-rect 28078 0 28134 800
-rect 28446 0 28502 800
-rect 28722 0 28778 800
-rect 29090 0 29146 800
-rect 29458 0 29514 800
-rect 29734 0 29790 800
+rect 27342 0 27398 800
+rect 27618 0 27674 800
+rect 27986 0 28042 800
+rect 28262 0 28318 800
+rect 28538 0 28594 800
+rect 28906 0 28962 800
+rect 29182 0 29238 800
+rect 29550 0 29606 800
+rect 29826 0 29882 800
 rect 30102 0 30158 800
 rect 30470 0 30526 800
 rect 30746 0 30802 800
-rect 31114 0 31170 800
-rect 31482 0 31538 800
-rect 31758 0 31814 800
-rect 32126 0 32182 800
-rect 32494 0 32550 800
-rect 32770 0 32826 800
-rect 33138 0 33194 800
+rect 31022 0 31078 800
+rect 31390 0 31446 800
+rect 31666 0 31722 800
+rect 32034 0 32090 800
+rect 32310 0 32366 800
+rect 32586 0 32642 800
+rect 32954 0 33010 800
+rect 33230 0 33286 800
 rect 33506 0 33562 800
-rect 33782 0 33838 800
+rect 33874 0 33930 800
 rect 34150 0 34206 800
-rect 34518 0 34574 800
-rect 34886 0 34942 800
-rect 35162 0 35218 800
-rect 35530 0 35586 800
-rect 35898 0 35954 800
-rect 36174 0 36230 800
-rect 36542 0 36598 800
+rect 34426 0 34482 800
+rect 34794 0 34850 800
+rect 35070 0 35126 800
+rect 35438 0 35494 800
+rect 35714 0 35770 800
+rect 35990 0 36046 800
+rect 36358 0 36414 800
+rect 36634 0 36690 800
 rect 36910 0 36966 800
-rect 37186 0 37242 800
+rect 37278 0 37334 800
 rect 37554 0 37610 800
 rect 37922 0 37978 800
 rect 38198 0 38254 800
-rect 38566 0 38622 800
-rect 38934 0 38990 800
-rect 39210 0 39266 800
-rect 39578 0 39634 800
-rect 39946 0 40002 800
-rect 40222 0 40278 800
-rect 40590 0 40646 800
+rect 38474 0 38530 800
+rect 38842 0 38898 800
+rect 39118 0 39174 800
+rect 39394 0 39450 800
+rect 39762 0 39818 800
+rect 40038 0 40094 800
+rect 40314 0 40370 800
+rect 40682 0 40738 800
 rect 40958 0 41014 800
-rect 41234 0 41290 800
+rect 41326 0 41382 800
 rect 41602 0 41658 800
-rect 41970 0 42026 800
+rect 41878 0 41934 800
 rect 42246 0 42302 800
-rect 42614 0 42670 800
-rect 42982 0 43038 800
-rect 43258 0 43314 800
-rect 43626 0 43682 800
-rect 43994 0 44050 800
-rect 44270 0 44326 800
-rect 44638 0 44694 800
+rect 42522 0 42578 800
+rect 42798 0 42854 800
+rect 43166 0 43222 800
+rect 43442 0 43498 800
+rect 43810 0 43866 800
+rect 44086 0 44142 800
+rect 44362 0 44418 800
+rect 44730 0 44786 800
 rect 45006 0 45062 800
 rect 45282 0 45338 800
 rect 45650 0 45706 800
-rect 46018 0 46074 800
-rect 46294 0 46350 800
-rect 46662 0 46718 800
-rect 47030 0 47086 800
-rect 47306 0 47362 800
-rect 47674 0 47730 800
-rect 48042 0 48098 800
-rect 48318 0 48374 800
+rect 45926 0 45982 800
+rect 46202 0 46258 800
+rect 46570 0 46626 800
+rect 46846 0 46902 800
+rect 47214 0 47270 800
+rect 47490 0 47546 800
+rect 47766 0 47822 800
+rect 48134 0 48190 800
+rect 48410 0 48466 800
 rect 48686 0 48742 800
 rect 49054 0 49110 800
 rect 49330 0 49386 800
 rect 49698 0 49754 800
-rect 50066 0 50122 800
-rect 50342 0 50398 800
-rect 50710 0 50766 800
-rect 51078 0 51134 800
-rect 51354 0 51410 800
-rect 51722 0 51778 800
+rect 49974 0 50030 800
+rect 50250 0 50306 800
+rect 50618 0 50674 800
+rect 50894 0 50950 800
+rect 51170 0 51226 800
+rect 51538 0 51594 800
+rect 51814 0 51870 800
 rect 52090 0 52146 800
-rect 52366 0 52422 800
+rect 52458 0 52514 800
 rect 52734 0 52790 800
 rect 53102 0 53158 800
 rect 53378 0 53434 800
-rect 53746 0 53802 800
-rect 54114 0 54170 800
-rect 54390 0 54446 800
-rect 54758 0 54814 800
-rect 55126 0 55182 800
-rect 55402 0 55458 800
-rect 55770 0 55826 800
+rect 53654 0 53710 800
+rect 54022 0 54078 800
+rect 54298 0 54354 800
+rect 54574 0 54630 800
+rect 54942 0 54998 800
+rect 55218 0 55274 800
+rect 55586 0 55642 800
+rect 55862 0 55918 800
 rect 56138 0 56194 800
-rect 56414 0 56470 800
+rect 56506 0 56562 800
 rect 56782 0 56838 800
-rect 57150 0 57206 800
+rect 57058 0 57114 800
 rect 57426 0 57482 800
-rect 57794 0 57850 800
-rect 58162 0 58218 800
-rect 58438 0 58494 800
-rect 58806 0 58862 800
-rect 59174 0 59230 800
-rect 59450 0 59506 800
-rect 59818 0 59874 800
+rect 57702 0 57758 800
+rect 57978 0 58034 800
+rect 58346 0 58402 800
+rect 58622 0 58678 800
+rect 58990 0 59046 800
+rect 59266 0 59322 800
+rect 59542 0 59598 800
+rect 59910 0 59966 800
 rect 60186 0 60242 800
 rect 60462 0 60518 800
 rect 60830 0 60886 800
-rect 61198 0 61254 800
+rect 61106 0 61162 800
 rect 61474 0 61530 800
-rect 61842 0 61898 800
-rect 62210 0 62266 800
-rect 62486 0 62542 800
-rect 62854 0 62910 800
-rect 63222 0 63278 800
-rect 63498 0 63554 800
-rect 63866 0 63922 800
-rect 64234 0 64290 800
-rect 64510 0 64566 800
-rect 64878 0 64934 800
-rect 65246 0 65302 800
-rect 65522 0 65578 800
-rect 65890 0 65946 800
-rect 66258 0 66314 800
-rect 66534 0 66590 800
-rect 66902 0 66958 800
-rect 67270 0 67326 800
-rect 67546 0 67602 800
-rect 67914 0 67970 800
-rect 68282 0 68338 800
-rect 68558 0 68614 800
-rect 68926 0 68982 800
-rect 69294 0 69350 800
+rect 61750 0 61806 800
+rect 62026 0 62082 800
+rect 62394 0 62450 800
+rect 62670 0 62726 800
+rect 62946 0 63002 800
+rect 63314 0 63370 800
+rect 63590 0 63646 800
 << obsm2 >>
-rect 112 856 69534 69329
+rect 112 856 63644 63696
 rect 222 734 330 856
-rect 498 734 698 856
-rect 866 734 1066 856
-rect 1234 734 1342 856
-rect 1510 734 1710 856
-rect 1878 734 2078 856
-rect 2246 734 2354 856
-rect 2522 734 2722 856
-rect 2890 734 3090 856
-rect 3258 734 3366 856
-rect 3534 734 3734 856
-rect 3902 734 4102 856
-rect 4270 734 4378 856
-rect 4546 734 4746 856
-rect 4914 734 5114 856
-rect 5282 734 5390 856
-rect 5558 734 5758 856
-rect 5926 734 6126 856
-rect 6294 734 6402 856
-rect 6570 734 6770 856
-rect 6938 734 7138 856
+rect 498 734 606 856
+rect 774 734 974 856
+rect 1142 734 1250 856
+rect 1418 734 1526 856
+rect 1694 734 1894 856
+rect 2062 734 2170 856
+rect 2338 734 2446 856
+rect 2614 734 2814 856
+rect 2982 734 3090 856
+rect 3258 734 3458 856
+rect 3626 734 3734 856
+rect 3902 734 4010 856
+rect 4178 734 4378 856
+rect 4546 734 4654 856
+rect 4822 734 4930 856
+rect 5098 734 5298 856
+rect 5466 734 5574 856
+rect 5742 734 5942 856
+rect 6110 734 6218 856
+rect 6386 734 6494 856
+rect 6662 734 6862 856
+rect 7030 734 7138 856
 rect 7306 734 7414 856
 rect 7582 734 7782 856
-rect 7950 734 8150 856
-rect 8318 734 8426 856
-rect 8594 734 8794 856
-rect 8962 734 9162 856
-rect 9330 734 9438 856
-rect 9606 734 9806 856
-rect 9974 734 10174 856
-rect 10342 734 10450 856
-rect 10618 734 10818 856
+rect 7950 734 8058 856
+rect 8226 734 8334 856
+rect 8502 734 8702 856
+rect 8870 734 8978 856
+rect 9146 734 9346 856
+rect 9514 734 9622 856
+rect 9790 734 9898 856
+rect 10066 734 10266 856
+rect 10434 734 10542 856
+rect 10710 734 10818 856
 rect 10986 734 11186 856
 rect 11354 734 11462 856
 rect 11630 734 11830 856
-rect 11998 734 12198 856
-rect 12366 734 12474 856
-rect 12642 734 12842 856
-rect 13010 734 13210 856
-rect 13378 734 13486 856
-rect 13654 734 13854 856
-rect 14022 734 14222 856
-rect 14390 734 14498 856
-rect 14666 734 14866 856
+rect 11998 734 12106 856
+rect 12274 734 12382 856
+rect 12550 734 12750 856
+rect 12918 734 13026 856
+rect 13194 734 13302 856
+rect 13470 734 13670 856
+rect 13838 734 13946 856
+rect 14114 734 14222 856
+rect 14390 734 14590 856
+rect 14758 734 14866 856
 rect 15034 734 15234 856
 rect 15402 734 15510 856
-rect 15678 734 15878 856
-rect 16046 734 16246 856
-rect 16414 734 16522 856
-rect 16690 734 16890 856
-rect 17058 734 17258 856
-rect 17426 734 17534 856
-rect 17702 734 17902 856
-rect 18070 734 18270 856
-rect 18438 734 18546 856
-rect 18714 734 18914 856
-rect 19082 734 19282 856
-rect 19450 734 19558 856
-rect 19726 734 19926 856
-rect 20094 734 20294 856
-rect 20462 734 20570 856
-rect 20738 734 20938 856
-rect 21106 734 21306 856
-rect 21474 734 21582 856
-rect 21750 734 21950 856
-rect 22118 734 22318 856
+rect 15678 734 15786 856
+rect 15954 734 16154 856
+rect 16322 734 16430 856
+rect 16598 734 16706 856
+rect 16874 734 17074 856
+rect 17242 734 17350 856
+rect 17518 734 17718 856
+rect 17886 734 17994 856
+rect 18162 734 18270 856
+rect 18438 734 18638 856
+rect 18806 734 18914 856
+rect 19082 734 19190 856
+rect 19358 734 19558 856
+rect 19726 734 19834 856
+rect 20002 734 20110 856
+rect 20278 734 20478 856
+rect 20646 734 20754 856
+rect 20922 734 21122 856
+rect 21290 734 21398 856
+rect 21566 734 21674 856
+rect 21842 734 22042 856
+rect 22210 734 22318 856
 rect 22486 734 22594 856
 rect 22762 734 22962 856
-rect 23130 734 23330 856
-rect 23498 734 23606 856
-rect 23774 734 23974 856
-rect 24142 734 24342 856
-rect 24510 734 24618 856
-rect 24786 734 24986 856
-rect 25154 734 25354 856
-rect 25522 734 25630 856
-rect 25798 734 25998 856
+rect 23130 734 23238 856
+rect 23406 734 23606 856
+rect 23774 734 23882 856
+rect 24050 734 24158 856
+rect 24326 734 24526 856
+rect 24694 734 24802 856
+rect 24970 734 25078 856
+rect 25246 734 25446 856
+rect 25614 734 25722 856
+rect 25890 734 25998 856
 rect 26166 734 26366 856
 rect 26534 734 26642 856
 rect 26810 734 27010 856
-rect 27178 734 27378 856
-rect 27546 734 27654 856
-rect 27822 734 28022 856
-rect 28190 734 28390 856
-rect 28558 734 28666 856
-rect 28834 734 29034 856
-rect 29202 734 29402 856
-rect 29570 734 29678 856
-rect 29846 734 30046 856
+rect 27178 734 27286 856
+rect 27454 734 27562 856
+rect 27730 734 27930 856
+rect 28098 734 28206 856
+rect 28374 734 28482 856
+rect 28650 734 28850 856
+rect 29018 734 29126 856
+rect 29294 734 29494 856
+rect 29662 734 29770 856
+rect 29938 734 30046 856
 rect 30214 734 30414 856
 rect 30582 734 30690 856
-rect 30858 734 31058 856
-rect 31226 734 31426 856
-rect 31594 734 31702 856
-rect 31870 734 32070 856
-rect 32238 734 32438 856
-rect 32606 734 32714 856
-rect 32882 734 33082 856
-rect 33250 734 33450 856
-rect 33618 734 33726 856
-rect 33894 734 34094 856
-rect 34262 734 34462 856
-rect 34630 734 34830 856
-rect 34998 734 35106 856
-rect 35274 734 35474 856
-rect 35642 734 35842 856
-rect 36010 734 36118 856
-rect 36286 734 36486 856
-rect 36654 734 36854 856
-rect 37022 734 37130 856
-rect 37298 734 37498 856
+rect 30858 734 30966 856
+rect 31134 734 31334 856
+rect 31502 734 31610 856
+rect 31778 734 31978 856
+rect 32146 734 32254 856
+rect 32422 734 32530 856
+rect 32698 734 32898 856
+rect 33066 734 33174 856
+rect 33342 734 33450 856
+rect 33618 734 33818 856
+rect 33986 734 34094 856
+rect 34262 734 34370 856
+rect 34538 734 34738 856
+rect 34906 734 35014 856
+rect 35182 734 35382 856
+rect 35550 734 35658 856
+rect 35826 734 35934 856
+rect 36102 734 36302 856
+rect 36470 734 36578 856
+rect 36746 734 36854 856
+rect 37022 734 37222 856
+rect 37390 734 37498 856
 rect 37666 734 37866 856
 rect 38034 734 38142 856
-rect 38310 734 38510 856
-rect 38678 734 38878 856
-rect 39046 734 39154 856
-rect 39322 734 39522 856
-rect 39690 734 39890 856
-rect 40058 734 40166 856
-rect 40334 734 40534 856
-rect 40702 734 40902 856
-rect 41070 734 41178 856
-rect 41346 734 41546 856
-rect 41714 734 41914 856
-rect 42082 734 42190 856
-rect 42358 734 42558 856
-rect 42726 734 42926 856
-rect 43094 734 43202 856
-rect 43370 734 43570 856
-rect 43738 734 43938 856
-rect 44106 734 44214 856
-rect 44382 734 44582 856
-rect 44750 734 44950 856
+rect 38310 734 38418 856
+rect 38586 734 38786 856
+rect 38954 734 39062 856
+rect 39230 734 39338 856
+rect 39506 734 39706 856
+rect 39874 734 39982 856
+rect 40150 734 40258 856
+rect 40426 734 40626 856
+rect 40794 734 40902 856
+rect 41070 734 41270 856
+rect 41438 734 41546 856
+rect 41714 734 41822 856
+rect 41990 734 42190 856
+rect 42358 734 42466 856
+rect 42634 734 42742 856
+rect 42910 734 43110 856
+rect 43278 734 43386 856
+rect 43554 734 43754 856
+rect 43922 734 44030 856
+rect 44198 734 44306 856
+rect 44474 734 44674 856
+rect 44842 734 44950 856
 rect 45118 734 45226 856
 rect 45394 734 45594 856
-rect 45762 734 45962 856
-rect 46130 734 46238 856
-rect 46406 734 46606 856
-rect 46774 734 46974 856
-rect 47142 734 47250 856
-rect 47418 734 47618 856
-rect 47786 734 47986 856
-rect 48154 734 48262 856
-rect 48430 734 48630 856
+rect 45762 734 45870 856
+rect 46038 734 46146 856
+rect 46314 734 46514 856
+rect 46682 734 46790 856
+rect 46958 734 47158 856
+rect 47326 734 47434 856
+rect 47602 734 47710 856
+rect 47878 734 48078 856
+rect 48246 734 48354 856
+rect 48522 734 48630 856
 rect 48798 734 48998 856
 rect 49166 734 49274 856
 rect 49442 734 49642 856
-rect 49810 734 50010 856
-rect 50178 734 50286 856
-rect 50454 734 50654 856
-rect 50822 734 51022 856
-rect 51190 734 51298 856
-rect 51466 734 51666 856
-rect 51834 734 52034 856
-rect 52202 734 52310 856
-rect 52478 734 52678 856
+rect 49810 734 49918 856
+rect 50086 734 50194 856
+rect 50362 734 50562 856
+rect 50730 734 50838 856
+rect 51006 734 51114 856
+rect 51282 734 51482 856
+rect 51650 734 51758 856
+rect 51926 734 52034 856
+rect 52202 734 52402 856
+rect 52570 734 52678 856
 rect 52846 734 53046 856
 rect 53214 734 53322 856
-rect 53490 734 53690 856
-rect 53858 734 54058 856
-rect 54226 734 54334 856
-rect 54502 734 54702 856
-rect 54870 734 55070 856
-rect 55238 734 55346 856
-rect 55514 734 55714 856
-rect 55882 734 56082 856
-rect 56250 734 56358 856
-rect 56526 734 56726 856
-rect 56894 734 57094 856
-rect 57262 734 57370 856
-rect 57538 734 57738 856
-rect 57906 734 58106 856
-rect 58274 734 58382 856
-rect 58550 734 58750 856
-rect 58918 734 59118 856
-rect 59286 734 59394 856
-rect 59562 734 59762 856
-rect 59930 734 60130 856
+rect 53490 734 53598 856
+rect 53766 734 53966 856
+rect 54134 734 54242 856
+rect 54410 734 54518 856
+rect 54686 734 54886 856
+rect 55054 734 55162 856
+rect 55330 734 55530 856
+rect 55698 734 55806 856
+rect 55974 734 56082 856
+rect 56250 734 56450 856
+rect 56618 734 56726 856
+rect 56894 734 57002 856
+rect 57170 734 57370 856
+rect 57538 734 57646 856
+rect 57814 734 57922 856
+rect 58090 734 58290 856
+rect 58458 734 58566 856
+rect 58734 734 58934 856
+rect 59102 734 59210 856
+rect 59378 734 59486 856
+rect 59654 734 59854 856
+rect 60022 734 60130 856
 rect 60298 734 60406 856
 rect 60574 734 60774 856
-rect 60942 734 61142 856
-rect 61310 734 61418 856
-rect 61586 734 61786 856
-rect 61954 734 62154 856
-rect 62322 734 62430 856
-rect 62598 734 62798 856
-rect 62966 734 63166 856
-rect 63334 734 63442 856
-rect 63610 734 63810 856
-rect 63978 734 64178 856
-rect 64346 734 64454 856
-rect 64622 734 64822 856
-rect 64990 734 65190 856
-rect 65358 734 65466 856
-rect 65634 734 65834 856
-rect 66002 734 66202 856
-rect 66370 734 66478 856
-rect 66646 734 66846 856
-rect 67014 734 67214 856
-rect 67382 734 67490 856
-rect 67658 734 67858 856
-rect 68026 734 68226 856
-rect 68394 734 68502 856
-rect 68670 734 68870 856
-rect 69038 734 69238 856
-rect 69406 734 69534 856
+rect 60942 734 61050 856
+rect 61218 734 61418 856
+rect 61586 734 61694 856
+rect 61862 734 61970 856
+rect 62138 734 62338 856
+rect 62506 734 62614 856
+rect 62782 734 62890 856
+rect 63058 734 63258 856
+rect 63426 734 63534 856
 << obsm3 >>
-rect 422 1939 69539 69325
+rect 606 2143 63191 63681
 << metal4 >>
-rect 4208 2128 4528 69136
-rect 19568 2128 19888 69136
-rect 34928 2128 35248 69136
-rect 50288 2128 50608 69136
-rect 65648 2128 65968 69136
+rect 4208 2128 4528 63696
+rect 19568 2128 19888 63696
+rect 34928 2128 35248 63696
+rect 50288 2128 50608 63696
 << obsm4 >>
-rect 427 69216 69493 69325
-rect 427 2075 4128 69216
-rect 4608 2075 19488 69216
-rect 19968 2075 34848 69216
-rect 35328 2075 50208 69216
-rect 50688 2075 65568 69216
-rect 66048 2075 69493 69216
+rect 611 2347 4128 60621
+rect 4608 2347 19488 60621
+rect 19968 2347 34848 60621
+rect 35328 2347 50208 60621
+rect 50688 2347 62501 60621
 << labels >>
 rlabel metal2 s 110 0 166 800 6 CLK
 port 1 nsew signal input
-rlabel metal2 s 754 0 810 800 6 EN_memory_dmem_request_put
+rlabel metal2 s 662 0 718 800 6 EN_memory_dmem_request_put
 port 2 nsew signal input
-rlabel metal2 s 1122 0 1178 800 6 EN_memory_dmem_response_get
+rlabel metal2 s 1030 0 1086 800 6 EN_memory_dmem_response_get
 port 3 nsew signal input
-rlabel metal2 s 1398 0 1454 800 6 EN_memory_imem_request_put
+rlabel metal2 s 1306 0 1362 800 6 EN_memory_imem_request_put
 port 4 nsew signal input
-rlabel metal2 s 1766 0 1822 800 6 EN_memory_imem_response_get
+rlabel metal2 s 1582 0 1638 800 6 EN_memory_imem_response_get
 port 5 nsew signal input
-rlabel metal2 s 2134 0 2190 800 6 RDY_memory_dmem_request_put
+rlabel metal2 s 1950 0 2006 800 6 RDY_memory_dmem_request_put
 port 6 nsew signal output
-rlabel metal2 s 2410 0 2466 800 6 RDY_memory_dmem_response_get
+rlabel metal2 s 2226 0 2282 800 6 RDY_memory_dmem_response_get
 port 7 nsew signal output
-rlabel metal2 s 2778 0 2834 800 6 RDY_memory_imem_request_put
+rlabel metal2 s 2502 0 2558 800 6 RDY_memory_imem_request_put
 port 8 nsew signal output
-rlabel metal2 s 3146 0 3202 800 6 RDY_memory_imem_response_get
+rlabel metal2 s 2870 0 2926 800 6 RDY_memory_imem_response_get
 port 9 nsew signal output
 rlabel metal2 s 386 0 442 800 6 RST_N
 port 10 nsew signal input
-rlabel metal4 s 19568 2128 19888 69136 6 VGND
-port 11 nsew ground input
-rlabel metal4 s 50288 2128 50608 69136 6 VGND
-port 11 nsew ground input
-rlabel metal4 s 4208 2128 4528 69136 6 VPWR
-port 12 nsew power input
-rlabel metal4 s 34928 2128 35248 69136 6 VPWR
-port 12 nsew power input
-rlabel metal4 s 65648 2128 65968 69136 6 VPWR
-port 12 nsew power input
-rlabel metal2 s 3422 0 3478 800 6 memory_dmem_request_put[0]
+rlabel metal2 s 3146 0 3202 800 6 memory_dmem_request_put[0]
+port 11 nsew signal input
+rlabel metal2 s 15566 0 15622 800 6 memory_dmem_request_put[10]
+port 12 nsew signal input
+rlabel metal2 s 16762 0 16818 800 6 memory_dmem_request_put[11]
 port 13 nsew signal input
-rlabel metal2 s 16946 0 17002 800 6 memory_dmem_request_put[10]
+rlabel metal2 s 18050 0 18106 800 6 memory_dmem_request_put[12]
 port 14 nsew signal input
-rlabel metal2 s 18326 0 18382 800 6 memory_dmem_request_put[11]
+rlabel metal2 s 19246 0 19302 800 6 memory_dmem_request_put[13]
 port 15 nsew signal input
-rlabel metal2 s 19614 0 19670 800 6 memory_dmem_request_put[12]
+rlabel metal2 s 20534 0 20590 800 6 memory_dmem_request_put[14]
 port 16 nsew signal input
-rlabel metal2 s 20994 0 21050 800 6 memory_dmem_request_put[13]
+rlabel metal2 s 21730 0 21786 800 6 memory_dmem_request_put[15]
 port 17 nsew signal input
-rlabel metal2 s 22374 0 22430 800 6 memory_dmem_request_put[14]
+rlabel metal2 s 23018 0 23074 800 6 memory_dmem_request_put[16]
 port 18 nsew signal input
-rlabel metal2 s 23662 0 23718 800 6 memory_dmem_request_put[15]
+rlabel metal2 s 24214 0 24270 800 6 memory_dmem_request_put[17]
 port 19 nsew signal input
-rlabel metal2 s 25042 0 25098 800 6 memory_dmem_request_put[16]
+rlabel metal2 s 25502 0 25558 800 6 memory_dmem_request_put[18]
 port 20 nsew signal input
-rlabel metal2 s 26422 0 26478 800 6 memory_dmem_request_put[17]
+rlabel metal2 s 26698 0 26754 800 6 memory_dmem_request_put[19]
 port 21 nsew signal input
-rlabel metal2 s 27710 0 27766 800 6 memory_dmem_request_put[18]
+rlabel metal2 s 4434 0 4490 800 6 memory_dmem_request_put[1]
 port 22 nsew signal input
-rlabel metal2 s 29090 0 29146 800 6 memory_dmem_request_put[19]
+rlabel metal2 s 27986 0 28042 800 6 memory_dmem_request_put[20]
 port 23 nsew signal input
-rlabel metal2 s 4802 0 4858 800 6 memory_dmem_request_put[1]
+rlabel metal2 s 29182 0 29238 800 6 memory_dmem_request_put[21]
 port 24 nsew signal input
-rlabel metal2 s 30470 0 30526 800 6 memory_dmem_request_put[20]
+rlabel metal2 s 30470 0 30526 800 6 memory_dmem_request_put[22]
 port 25 nsew signal input
-rlabel metal2 s 31758 0 31814 800 6 memory_dmem_request_put[21]
+rlabel metal2 s 31666 0 31722 800 6 memory_dmem_request_put[23]
 port 26 nsew signal input
-rlabel metal2 s 33138 0 33194 800 6 memory_dmem_request_put[22]
+rlabel metal2 s 32954 0 33010 800 6 memory_dmem_request_put[24]
 port 27 nsew signal input
-rlabel metal2 s 34518 0 34574 800 6 memory_dmem_request_put[23]
+rlabel metal2 s 34150 0 34206 800 6 memory_dmem_request_put[25]
 port 28 nsew signal input
-rlabel metal2 s 35898 0 35954 800 6 memory_dmem_request_put[24]
+rlabel metal2 s 35438 0 35494 800 6 memory_dmem_request_put[26]
 port 29 nsew signal input
-rlabel metal2 s 37186 0 37242 800 6 memory_dmem_request_put[25]
+rlabel metal2 s 36634 0 36690 800 6 memory_dmem_request_put[27]
 port 30 nsew signal input
-rlabel metal2 s 38566 0 38622 800 6 memory_dmem_request_put[26]
+rlabel metal2 s 37922 0 37978 800 6 memory_dmem_request_put[28]
 port 31 nsew signal input
-rlabel metal2 s 39946 0 40002 800 6 memory_dmem_request_put[27]
+rlabel metal2 s 39118 0 39174 800 6 memory_dmem_request_put[29]
 port 32 nsew signal input
-rlabel metal2 s 41234 0 41290 800 6 memory_dmem_request_put[28]
+rlabel metal2 s 5630 0 5686 800 6 memory_dmem_request_put[2]
 port 33 nsew signal input
-rlabel metal2 s 42614 0 42670 800 6 memory_dmem_request_put[29]
+rlabel metal2 s 40314 0 40370 800 6 memory_dmem_request_put[30]
 port 34 nsew signal input
-rlabel metal2 s 6182 0 6238 800 6 memory_dmem_request_put[2]
+rlabel metal2 s 41602 0 41658 800 6 memory_dmem_request_put[31]
 port 35 nsew signal input
-rlabel metal2 s 43994 0 44050 800 6 memory_dmem_request_put[30]
+rlabel metal2 s 42798 0 42854 800 6 memory_dmem_request_put[32]
 port 36 nsew signal input
-rlabel metal2 s 45282 0 45338 800 6 memory_dmem_request_put[31]
+rlabel metal2 s 43166 0 43222 800 6 memory_dmem_request_put[33]
 port 37 nsew signal input
-rlabel metal2 s 46662 0 46718 800 6 memory_dmem_request_put[32]
+rlabel metal2 s 43442 0 43498 800 6 memory_dmem_request_put[34]
 port 38 nsew signal input
-rlabel metal2 s 47030 0 47086 800 6 memory_dmem_request_put[33]
+rlabel metal2 s 43810 0 43866 800 6 memory_dmem_request_put[35]
 port 39 nsew signal input
-rlabel metal2 s 47306 0 47362 800 6 memory_dmem_request_put[34]
+rlabel metal2 s 44086 0 44142 800 6 memory_dmem_request_put[36]
 port 40 nsew signal input
-rlabel metal2 s 47674 0 47730 800 6 memory_dmem_request_put[35]
+rlabel metal2 s 44362 0 44418 800 6 memory_dmem_request_put[37]
 port 41 nsew signal input
-rlabel metal2 s 48042 0 48098 800 6 memory_dmem_request_put[36]
+rlabel metal2 s 44730 0 44786 800 6 memory_dmem_request_put[38]
 port 42 nsew signal input
-rlabel metal2 s 48318 0 48374 800 6 memory_dmem_request_put[37]
+rlabel metal2 s 45006 0 45062 800 6 memory_dmem_request_put[39]
 port 43 nsew signal input
-rlabel metal2 s 48686 0 48742 800 6 memory_dmem_request_put[38]
+rlabel metal2 s 6918 0 6974 800 6 memory_dmem_request_put[3]
 port 44 nsew signal input
-rlabel metal2 s 49054 0 49110 800 6 memory_dmem_request_put[39]
+rlabel metal2 s 45282 0 45338 800 6 memory_dmem_request_put[40]
 port 45 nsew signal input
-rlabel metal2 s 7470 0 7526 800 6 memory_dmem_request_put[3]
+rlabel metal2 s 45650 0 45706 800 6 memory_dmem_request_put[41]
 port 46 nsew signal input
-rlabel metal2 s 49330 0 49386 800 6 memory_dmem_request_put[40]
+rlabel metal2 s 45926 0 45982 800 6 memory_dmem_request_put[42]
 port 47 nsew signal input
-rlabel metal2 s 49698 0 49754 800 6 memory_dmem_request_put[41]
+rlabel metal2 s 46202 0 46258 800 6 memory_dmem_request_put[43]
 port 48 nsew signal input
-rlabel metal2 s 50066 0 50122 800 6 memory_dmem_request_put[42]
+rlabel metal2 s 46570 0 46626 800 6 memory_dmem_request_put[44]
 port 49 nsew signal input
-rlabel metal2 s 50342 0 50398 800 6 memory_dmem_request_put[43]
+rlabel metal2 s 46846 0 46902 800 6 memory_dmem_request_put[45]
 port 50 nsew signal input
-rlabel metal2 s 50710 0 50766 800 6 memory_dmem_request_put[44]
+rlabel metal2 s 47214 0 47270 800 6 memory_dmem_request_put[46]
 port 51 nsew signal input
-rlabel metal2 s 51078 0 51134 800 6 memory_dmem_request_put[45]
+rlabel metal2 s 47490 0 47546 800 6 memory_dmem_request_put[47]
 port 52 nsew signal input
-rlabel metal2 s 51354 0 51410 800 6 memory_dmem_request_put[46]
+rlabel metal2 s 47766 0 47822 800 6 memory_dmem_request_put[48]
 port 53 nsew signal input
-rlabel metal2 s 51722 0 51778 800 6 memory_dmem_request_put[47]
+rlabel metal2 s 48134 0 48190 800 6 memory_dmem_request_put[49]
 port 54 nsew signal input
-rlabel metal2 s 52090 0 52146 800 6 memory_dmem_request_put[48]
+rlabel metal2 s 8114 0 8170 800 6 memory_dmem_request_put[4]
 port 55 nsew signal input
-rlabel metal2 s 52366 0 52422 800 6 memory_dmem_request_put[49]
+rlabel metal2 s 48410 0 48466 800 6 memory_dmem_request_put[50]
 port 56 nsew signal input
-rlabel metal2 s 8850 0 8906 800 6 memory_dmem_request_put[4]
+rlabel metal2 s 48686 0 48742 800 6 memory_dmem_request_put[51]
 port 57 nsew signal input
-rlabel metal2 s 52734 0 52790 800 6 memory_dmem_request_put[50]
+rlabel metal2 s 49054 0 49110 800 6 memory_dmem_request_put[52]
 port 58 nsew signal input
-rlabel metal2 s 53102 0 53158 800 6 memory_dmem_request_put[51]
+rlabel metal2 s 49330 0 49386 800 6 memory_dmem_request_put[53]
 port 59 nsew signal input
-rlabel metal2 s 53378 0 53434 800 6 memory_dmem_request_put[52]
+rlabel metal2 s 49698 0 49754 800 6 memory_dmem_request_put[54]
 port 60 nsew signal input
-rlabel metal2 s 53746 0 53802 800 6 memory_dmem_request_put[53]
+rlabel metal2 s 49974 0 50030 800 6 memory_dmem_request_put[55]
 port 61 nsew signal input
-rlabel metal2 s 54114 0 54170 800 6 memory_dmem_request_put[54]
+rlabel metal2 s 50250 0 50306 800 6 memory_dmem_request_put[56]
 port 62 nsew signal input
-rlabel metal2 s 54390 0 54446 800 6 memory_dmem_request_put[55]
+rlabel metal2 s 50618 0 50674 800 6 memory_dmem_request_put[57]
 port 63 nsew signal input
-rlabel metal2 s 54758 0 54814 800 6 memory_dmem_request_put[56]
+rlabel metal2 s 50894 0 50950 800 6 memory_dmem_request_put[58]
 port 64 nsew signal input
-rlabel metal2 s 55126 0 55182 800 6 memory_dmem_request_put[57]
+rlabel metal2 s 51170 0 51226 800 6 memory_dmem_request_put[59]
 port 65 nsew signal input
-rlabel metal2 s 55402 0 55458 800 6 memory_dmem_request_put[58]
+rlabel metal2 s 9402 0 9458 800 6 memory_dmem_request_put[5]
 port 66 nsew signal input
-rlabel metal2 s 55770 0 55826 800 6 memory_dmem_request_put[59]
+rlabel metal2 s 51538 0 51594 800 6 memory_dmem_request_put[60]
 port 67 nsew signal input
-rlabel metal2 s 10230 0 10286 800 6 memory_dmem_request_put[5]
+rlabel metal2 s 51814 0 51870 800 6 memory_dmem_request_put[61]
 port 68 nsew signal input
-rlabel metal2 s 56138 0 56194 800 6 memory_dmem_request_put[60]
+rlabel metal2 s 52090 0 52146 800 6 memory_dmem_request_put[62]
 port 69 nsew signal input
-rlabel metal2 s 56414 0 56470 800 6 memory_dmem_request_put[61]
+rlabel metal2 s 52458 0 52514 800 6 memory_dmem_request_put[63]
 port 70 nsew signal input
-rlabel metal2 s 56782 0 56838 800 6 memory_dmem_request_put[62]
+rlabel metal2 s 52734 0 52790 800 6 memory_dmem_request_put[64]
 port 71 nsew signal input
-rlabel metal2 s 57150 0 57206 800 6 memory_dmem_request_put[63]
+rlabel metal2 s 53102 0 53158 800 6 memory_dmem_request_put[65]
 port 72 nsew signal input
-rlabel metal2 s 57426 0 57482 800 6 memory_dmem_request_put[64]
+rlabel metal2 s 53378 0 53434 800 6 memory_dmem_request_put[66]
 port 73 nsew signal input
-rlabel metal2 s 57794 0 57850 800 6 memory_dmem_request_put[65]
+rlabel metal2 s 53654 0 53710 800 6 memory_dmem_request_put[67]
 port 74 nsew signal input
-rlabel metal2 s 58162 0 58218 800 6 memory_dmem_request_put[66]
+rlabel metal2 s 54022 0 54078 800 6 memory_dmem_request_put[68]
 port 75 nsew signal input
-rlabel metal2 s 58438 0 58494 800 6 memory_dmem_request_put[67]
+rlabel metal2 s 54298 0 54354 800 6 memory_dmem_request_put[69]
 port 76 nsew signal input
-rlabel metal2 s 58806 0 58862 800 6 memory_dmem_request_put[68]
+rlabel metal2 s 10598 0 10654 800 6 memory_dmem_request_put[6]
 port 77 nsew signal input
-rlabel metal2 s 59174 0 59230 800 6 memory_dmem_request_put[69]
+rlabel metal2 s 54574 0 54630 800 6 memory_dmem_request_put[70]
 port 78 nsew signal input
-rlabel metal2 s 11518 0 11574 800 6 memory_dmem_request_put[6]
+rlabel metal2 s 54942 0 54998 800 6 memory_dmem_request_put[71]
 port 79 nsew signal input
-rlabel metal2 s 59450 0 59506 800 6 memory_dmem_request_put[70]
+rlabel metal2 s 55218 0 55274 800 6 memory_dmem_request_put[72]
 port 80 nsew signal input
-rlabel metal2 s 59818 0 59874 800 6 memory_dmem_request_put[71]
+rlabel metal2 s 55586 0 55642 800 6 memory_dmem_request_put[73]
 port 81 nsew signal input
-rlabel metal2 s 60186 0 60242 800 6 memory_dmem_request_put[72]
+rlabel metal2 s 55862 0 55918 800 6 memory_dmem_request_put[74]
 port 82 nsew signal input
-rlabel metal2 s 60462 0 60518 800 6 memory_dmem_request_put[73]
+rlabel metal2 s 56138 0 56194 800 6 memory_dmem_request_put[75]
 port 83 nsew signal input
-rlabel metal2 s 60830 0 60886 800 6 memory_dmem_request_put[74]
+rlabel metal2 s 56506 0 56562 800 6 memory_dmem_request_put[76]
 port 84 nsew signal input
-rlabel metal2 s 61198 0 61254 800 6 memory_dmem_request_put[75]
+rlabel metal2 s 56782 0 56838 800 6 memory_dmem_request_put[77]
 port 85 nsew signal input
-rlabel metal2 s 61474 0 61530 800 6 memory_dmem_request_put[76]
+rlabel metal2 s 57058 0 57114 800 6 memory_dmem_request_put[78]
 port 86 nsew signal input
-rlabel metal2 s 61842 0 61898 800 6 memory_dmem_request_put[77]
+rlabel metal2 s 57426 0 57482 800 6 memory_dmem_request_put[79]
 port 87 nsew signal input
-rlabel metal2 s 62210 0 62266 800 6 memory_dmem_request_put[78]
+rlabel metal2 s 11886 0 11942 800 6 memory_dmem_request_put[7]
 port 88 nsew signal input
-rlabel metal2 s 62486 0 62542 800 6 memory_dmem_request_put[79]
+rlabel metal2 s 57702 0 57758 800 6 memory_dmem_request_put[80]
 port 89 nsew signal input
-rlabel metal2 s 12898 0 12954 800 6 memory_dmem_request_put[7]
+rlabel metal2 s 57978 0 58034 800 6 memory_dmem_request_put[81]
 port 90 nsew signal input
-rlabel metal2 s 62854 0 62910 800 6 memory_dmem_request_put[80]
+rlabel metal2 s 58346 0 58402 800 6 memory_dmem_request_put[82]
 port 91 nsew signal input
-rlabel metal2 s 63222 0 63278 800 6 memory_dmem_request_put[81]
+rlabel metal2 s 58622 0 58678 800 6 memory_dmem_request_put[83]
 port 92 nsew signal input
-rlabel metal2 s 63498 0 63554 800 6 memory_dmem_request_put[82]
+rlabel metal2 s 58990 0 59046 800 6 memory_dmem_request_put[84]
 port 93 nsew signal input
-rlabel metal2 s 63866 0 63922 800 6 memory_dmem_request_put[83]
+rlabel metal2 s 59266 0 59322 800 6 memory_dmem_request_put[85]
 port 94 nsew signal input
-rlabel metal2 s 64234 0 64290 800 6 memory_dmem_request_put[84]
+rlabel metal2 s 59542 0 59598 800 6 memory_dmem_request_put[86]
 port 95 nsew signal input
-rlabel metal2 s 64510 0 64566 800 6 memory_dmem_request_put[85]
+rlabel metal2 s 59910 0 59966 800 6 memory_dmem_request_put[87]
 port 96 nsew signal input
-rlabel metal2 s 64878 0 64934 800 6 memory_dmem_request_put[86]
+rlabel metal2 s 60186 0 60242 800 6 memory_dmem_request_put[88]
 port 97 nsew signal input
-rlabel metal2 s 65246 0 65302 800 6 memory_dmem_request_put[87]
+rlabel metal2 s 60462 0 60518 800 6 memory_dmem_request_put[89]
 port 98 nsew signal input
-rlabel metal2 s 65522 0 65578 800 6 memory_dmem_request_put[88]
+rlabel metal2 s 13082 0 13138 800 6 memory_dmem_request_put[8]
 port 99 nsew signal input
-rlabel metal2 s 65890 0 65946 800 6 memory_dmem_request_put[89]
+rlabel metal2 s 60830 0 60886 800 6 memory_dmem_request_put[90]
 port 100 nsew signal input
-rlabel metal2 s 14278 0 14334 800 6 memory_dmem_request_put[8]
+rlabel metal2 s 61106 0 61162 800 6 memory_dmem_request_put[91]
 port 101 nsew signal input
-rlabel metal2 s 66258 0 66314 800 6 memory_dmem_request_put[90]
+rlabel metal2 s 61474 0 61530 800 6 memory_dmem_request_put[92]
 port 102 nsew signal input
-rlabel metal2 s 66534 0 66590 800 6 memory_dmem_request_put[91]
+rlabel metal2 s 61750 0 61806 800 6 memory_dmem_request_put[93]
 port 103 nsew signal input
-rlabel metal2 s 66902 0 66958 800 6 memory_dmem_request_put[92]
+rlabel metal2 s 62026 0 62082 800 6 memory_dmem_request_put[94]
 port 104 nsew signal input
-rlabel metal2 s 67270 0 67326 800 6 memory_dmem_request_put[93]
+rlabel metal2 s 62394 0 62450 800 6 memory_dmem_request_put[95]
 port 105 nsew signal input
-rlabel metal2 s 67546 0 67602 800 6 memory_dmem_request_put[94]
+rlabel metal2 s 62670 0 62726 800 6 memory_dmem_request_put[96]
 port 106 nsew signal input
-rlabel metal2 s 67914 0 67970 800 6 memory_dmem_request_put[95]
+rlabel metal2 s 62946 0 63002 800 6 memory_dmem_request_put[97]
 port 107 nsew signal input
-rlabel metal2 s 68282 0 68338 800 6 memory_dmem_request_put[96]
+rlabel metal2 s 63314 0 63370 800 6 memory_dmem_request_put[98]
 port 108 nsew signal input
-rlabel metal2 s 68558 0 68614 800 6 memory_dmem_request_put[97]
+rlabel metal2 s 63590 0 63646 800 6 memory_dmem_request_put[99]
 port 109 nsew signal input
-rlabel metal2 s 68926 0 68982 800 6 memory_dmem_request_put[98]
+rlabel metal2 s 14278 0 14334 800 6 memory_dmem_request_put[9]
 port 110 nsew signal input
-rlabel metal2 s 69294 0 69350 800 6 memory_dmem_request_put[99]
-port 111 nsew signal input
-rlabel metal2 s 15566 0 15622 800 6 memory_dmem_request_put[9]
-port 112 nsew signal input
-rlabel metal2 s 3790 0 3846 800 6 memory_dmem_response_get[0]
+rlabel metal2 s 3514 0 3570 800 6 memory_dmem_response_get[0]
+port 111 nsew signal output
+rlabel metal2 s 15842 0 15898 800 6 memory_dmem_response_get[10]
+port 112 nsew signal output
+rlabel metal2 s 17130 0 17186 800 6 memory_dmem_response_get[11]
 port 113 nsew signal output
-rlabel metal2 s 17314 0 17370 800 6 memory_dmem_response_get[10]
+rlabel metal2 s 18326 0 18382 800 6 memory_dmem_response_get[12]
 port 114 nsew signal output
-rlabel metal2 s 18602 0 18658 800 6 memory_dmem_response_get[11]
+rlabel metal2 s 19614 0 19670 800 6 memory_dmem_response_get[13]
 port 115 nsew signal output
-rlabel metal2 s 19982 0 20038 800 6 memory_dmem_response_get[12]
+rlabel metal2 s 20810 0 20866 800 6 memory_dmem_response_get[14]
 port 116 nsew signal output
-rlabel metal2 s 21362 0 21418 800 6 memory_dmem_response_get[13]
+rlabel metal2 s 22098 0 22154 800 6 memory_dmem_response_get[15]
 port 117 nsew signal output
-rlabel metal2 s 22650 0 22706 800 6 memory_dmem_response_get[14]
+rlabel metal2 s 23294 0 23350 800 6 memory_dmem_response_get[16]
 port 118 nsew signal output
-rlabel metal2 s 24030 0 24086 800 6 memory_dmem_response_get[15]
+rlabel metal2 s 24582 0 24638 800 6 memory_dmem_response_get[17]
 port 119 nsew signal output
-rlabel metal2 s 25410 0 25466 800 6 memory_dmem_response_get[16]
+rlabel metal2 s 25778 0 25834 800 6 memory_dmem_response_get[18]
 port 120 nsew signal output
-rlabel metal2 s 26698 0 26754 800 6 memory_dmem_response_get[17]
+rlabel metal2 s 27066 0 27122 800 6 memory_dmem_response_get[19]
 port 121 nsew signal output
-rlabel metal2 s 28078 0 28134 800 6 memory_dmem_response_get[18]
+rlabel metal2 s 4710 0 4766 800 6 memory_dmem_response_get[1]
 port 122 nsew signal output
-rlabel metal2 s 29458 0 29514 800 6 memory_dmem_response_get[19]
+rlabel metal2 s 28262 0 28318 800 6 memory_dmem_response_get[20]
 port 123 nsew signal output
-rlabel metal2 s 5170 0 5226 800 6 memory_dmem_response_get[1]
+rlabel metal2 s 29550 0 29606 800 6 memory_dmem_response_get[21]
 port 124 nsew signal output
-rlabel metal2 s 30746 0 30802 800 6 memory_dmem_response_get[20]
+rlabel metal2 s 30746 0 30802 800 6 memory_dmem_response_get[22]
 port 125 nsew signal output
-rlabel metal2 s 32126 0 32182 800 6 memory_dmem_response_get[21]
+rlabel metal2 s 32034 0 32090 800 6 memory_dmem_response_get[23]
 port 126 nsew signal output
-rlabel metal2 s 33506 0 33562 800 6 memory_dmem_response_get[22]
+rlabel metal2 s 33230 0 33286 800 6 memory_dmem_response_get[24]
 port 127 nsew signal output
-rlabel metal2 s 34886 0 34942 800 6 memory_dmem_response_get[23]
+rlabel metal2 s 34426 0 34482 800 6 memory_dmem_response_get[25]
 port 128 nsew signal output
-rlabel metal2 s 36174 0 36230 800 6 memory_dmem_response_get[24]
+rlabel metal2 s 35714 0 35770 800 6 memory_dmem_response_get[26]
 port 129 nsew signal output
-rlabel metal2 s 37554 0 37610 800 6 memory_dmem_response_get[25]
+rlabel metal2 s 36910 0 36966 800 6 memory_dmem_response_get[27]
 port 130 nsew signal output
-rlabel metal2 s 38934 0 38990 800 6 memory_dmem_response_get[26]
+rlabel metal2 s 38198 0 38254 800 6 memory_dmem_response_get[28]
 port 131 nsew signal output
-rlabel metal2 s 40222 0 40278 800 6 memory_dmem_response_get[27]
+rlabel metal2 s 39394 0 39450 800 6 memory_dmem_response_get[29]
 port 132 nsew signal output
-rlabel metal2 s 41602 0 41658 800 6 memory_dmem_response_get[28]
+rlabel metal2 s 5998 0 6054 800 6 memory_dmem_response_get[2]
 port 133 nsew signal output
-rlabel metal2 s 42982 0 43038 800 6 memory_dmem_response_get[29]
+rlabel metal2 s 40682 0 40738 800 6 memory_dmem_response_get[30]
 port 134 nsew signal output
-rlabel metal2 s 6458 0 6514 800 6 memory_dmem_response_get[2]
+rlabel metal2 s 41878 0 41934 800 6 memory_dmem_response_get[31]
 port 135 nsew signal output
-rlabel metal2 s 44270 0 44326 800 6 memory_dmem_response_get[30]
+rlabel metal2 s 7194 0 7250 800 6 memory_dmem_response_get[3]
 port 136 nsew signal output
-rlabel metal2 s 45650 0 45706 800 6 memory_dmem_response_get[31]
+rlabel metal2 s 8390 0 8446 800 6 memory_dmem_response_get[4]
 port 137 nsew signal output
-rlabel metal2 s 7838 0 7894 800 6 memory_dmem_response_get[3]
+rlabel metal2 s 9678 0 9734 800 6 memory_dmem_response_get[5]
 port 138 nsew signal output
-rlabel metal2 s 9218 0 9274 800 6 memory_dmem_response_get[4]
+rlabel metal2 s 10874 0 10930 800 6 memory_dmem_response_get[6]
 port 139 nsew signal output
-rlabel metal2 s 10506 0 10562 800 6 memory_dmem_response_get[5]
+rlabel metal2 s 12162 0 12218 800 6 memory_dmem_response_get[7]
 port 140 nsew signal output
-rlabel metal2 s 11886 0 11942 800 6 memory_dmem_response_get[6]
+rlabel metal2 s 13358 0 13414 800 6 memory_dmem_response_get[8]
 port 141 nsew signal output
-rlabel metal2 s 13266 0 13322 800 6 memory_dmem_response_get[7]
+rlabel metal2 s 14646 0 14702 800 6 memory_dmem_response_get[9]
 port 142 nsew signal output
-rlabel metal2 s 14554 0 14610 800 6 memory_dmem_response_get[8]
-port 143 nsew signal output
-rlabel metal2 s 15934 0 15990 800 6 memory_dmem_response_get[9]
-port 144 nsew signal output
-rlabel metal2 s 4158 0 4214 800 6 memory_imem_request_put[0]
+rlabel metal2 s 3790 0 3846 800 6 memory_imem_request_put[0]
+port 143 nsew signal input
+rlabel metal2 s 16210 0 16266 800 6 memory_imem_request_put[10]
+port 144 nsew signal input
+rlabel metal2 s 17406 0 17462 800 6 memory_imem_request_put[11]
 port 145 nsew signal input
-rlabel metal2 s 17590 0 17646 800 6 memory_imem_request_put[10]
+rlabel metal2 s 18694 0 18750 800 6 memory_imem_request_put[12]
 port 146 nsew signal input
-rlabel metal2 s 18970 0 19026 800 6 memory_imem_request_put[11]
+rlabel metal2 s 19890 0 19946 800 6 memory_imem_request_put[13]
 port 147 nsew signal input
-rlabel metal2 s 20350 0 20406 800 6 memory_imem_request_put[12]
+rlabel metal2 s 21178 0 21234 800 6 memory_imem_request_put[14]
 port 148 nsew signal input
-rlabel metal2 s 21638 0 21694 800 6 memory_imem_request_put[13]
+rlabel metal2 s 22374 0 22430 800 6 memory_imem_request_put[15]
 port 149 nsew signal input
-rlabel metal2 s 23018 0 23074 800 6 memory_imem_request_put[14]
+rlabel metal2 s 23662 0 23718 800 6 memory_imem_request_put[16]
 port 150 nsew signal input
-rlabel metal2 s 24398 0 24454 800 6 memory_imem_request_put[15]
+rlabel metal2 s 24858 0 24914 800 6 memory_imem_request_put[17]
 port 151 nsew signal input
-rlabel metal2 s 25686 0 25742 800 6 memory_imem_request_put[16]
+rlabel metal2 s 26054 0 26110 800 6 memory_imem_request_put[18]
 port 152 nsew signal input
-rlabel metal2 s 27066 0 27122 800 6 memory_imem_request_put[17]
+rlabel metal2 s 27342 0 27398 800 6 memory_imem_request_put[19]
 port 153 nsew signal input
-rlabel metal2 s 28446 0 28502 800 6 memory_imem_request_put[18]
+rlabel metal2 s 4986 0 5042 800 6 memory_imem_request_put[1]
 port 154 nsew signal input
-rlabel metal2 s 29734 0 29790 800 6 memory_imem_request_put[19]
+rlabel metal2 s 28538 0 28594 800 6 memory_imem_request_put[20]
 port 155 nsew signal input
-rlabel metal2 s 5446 0 5502 800 6 memory_imem_request_put[1]
+rlabel metal2 s 29826 0 29882 800 6 memory_imem_request_put[21]
 port 156 nsew signal input
-rlabel metal2 s 31114 0 31170 800 6 memory_imem_request_put[20]
+rlabel metal2 s 31022 0 31078 800 6 memory_imem_request_put[22]
 port 157 nsew signal input
-rlabel metal2 s 32494 0 32550 800 6 memory_imem_request_put[21]
+rlabel metal2 s 32310 0 32366 800 6 memory_imem_request_put[23]
 port 158 nsew signal input
-rlabel metal2 s 33782 0 33838 800 6 memory_imem_request_put[22]
+rlabel metal2 s 33506 0 33562 800 6 memory_imem_request_put[24]
 port 159 nsew signal input
-rlabel metal2 s 35162 0 35218 800 6 memory_imem_request_put[23]
+rlabel metal2 s 34794 0 34850 800 6 memory_imem_request_put[25]
 port 160 nsew signal input
-rlabel metal2 s 36542 0 36598 800 6 memory_imem_request_put[24]
+rlabel metal2 s 35990 0 36046 800 6 memory_imem_request_put[26]
 port 161 nsew signal input
-rlabel metal2 s 37922 0 37978 800 6 memory_imem_request_put[25]
+rlabel metal2 s 37278 0 37334 800 6 memory_imem_request_put[27]
 port 162 nsew signal input
-rlabel metal2 s 39210 0 39266 800 6 memory_imem_request_put[26]
+rlabel metal2 s 38474 0 38530 800 6 memory_imem_request_put[28]
 port 163 nsew signal input
-rlabel metal2 s 40590 0 40646 800 6 memory_imem_request_put[27]
+rlabel metal2 s 39762 0 39818 800 6 memory_imem_request_put[29]
 port 164 nsew signal input
-rlabel metal2 s 41970 0 42026 800 6 memory_imem_request_put[28]
+rlabel metal2 s 6274 0 6330 800 6 memory_imem_request_put[2]
 port 165 nsew signal input
-rlabel metal2 s 43258 0 43314 800 6 memory_imem_request_put[29]
+rlabel metal2 s 40958 0 41014 800 6 memory_imem_request_put[30]
 port 166 nsew signal input
-rlabel metal2 s 6826 0 6882 800 6 memory_imem_request_put[2]
+rlabel metal2 s 42246 0 42302 800 6 memory_imem_request_put[31]
 port 167 nsew signal input
-rlabel metal2 s 44638 0 44694 800 6 memory_imem_request_put[30]
+rlabel metal2 s 7470 0 7526 800 6 memory_imem_request_put[3]
 port 168 nsew signal input
-rlabel metal2 s 46018 0 46074 800 6 memory_imem_request_put[31]
+rlabel metal2 s 8758 0 8814 800 6 memory_imem_request_put[4]
 port 169 nsew signal input
-rlabel metal2 s 8206 0 8262 800 6 memory_imem_request_put[3]
+rlabel metal2 s 9954 0 10010 800 6 memory_imem_request_put[5]
 port 170 nsew signal input
-rlabel metal2 s 9494 0 9550 800 6 memory_imem_request_put[4]
+rlabel metal2 s 11242 0 11298 800 6 memory_imem_request_put[6]
 port 171 nsew signal input
-rlabel metal2 s 10874 0 10930 800 6 memory_imem_request_put[5]
+rlabel metal2 s 12438 0 12494 800 6 memory_imem_request_put[7]
 port 172 nsew signal input
-rlabel metal2 s 12254 0 12310 800 6 memory_imem_request_put[6]
+rlabel metal2 s 13726 0 13782 800 6 memory_imem_request_put[8]
 port 173 nsew signal input
-rlabel metal2 s 13542 0 13598 800 6 memory_imem_request_put[7]
+rlabel metal2 s 14922 0 14978 800 6 memory_imem_request_put[9]
 port 174 nsew signal input
-rlabel metal2 s 14922 0 14978 800 6 memory_imem_request_put[8]
-port 175 nsew signal input
-rlabel metal2 s 16302 0 16358 800 6 memory_imem_request_put[9]
-port 176 nsew signal input
-rlabel metal2 s 4434 0 4490 800 6 memory_imem_response_get[0]
+rlabel metal2 s 4066 0 4122 800 6 memory_imem_response_get[0]
+port 175 nsew signal output
+rlabel metal2 s 16486 0 16542 800 6 memory_imem_response_get[10]
+port 176 nsew signal output
+rlabel metal2 s 17774 0 17830 800 6 memory_imem_response_get[11]
 port 177 nsew signal output
-rlabel metal2 s 17958 0 18014 800 6 memory_imem_response_get[10]
+rlabel metal2 s 18970 0 19026 800 6 memory_imem_response_get[12]
 port 178 nsew signal output
-rlabel metal2 s 19338 0 19394 800 6 memory_imem_response_get[11]
+rlabel metal2 s 20166 0 20222 800 6 memory_imem_response_get[13]
 port 179 nsew signal output
-rlabel metal2 s 20626 0 20682 800 6 memory_imem_response_get[12]
+rlabel metal2 s 21454 0 21510 800 6 memory_imem_response_get[14]
 port 180 nsew signal output
-rlabel metal2 s 22006 0 22062 800 6 memory_imem_response_get[13]
+rlabel metal2 s 22650 0 22706 800 6 memory_imem_response_get[15]
 port 181 nsew signal output
-rlabel metal2 s 23386 0 23442 800 6 memory_imem_response_get[14]
+rlabel metal2 s 23938 0 23994 800 6 memory_imem_response_get[16]
 port 182 nsew signal output
-rlabel metal2 s 24674 0 24730 800 6 memory_imem_response_get[15]
+rlabel metal2 s 25134 0 25190 800 6 memory_imem_response_get[17]
 port 183 nsew signal output
-rlabel metal2 s 26054 0 26110 800 6 memory_imem_response_get[16]
+rlabel metal2 s 26422 0 26478 800 6 memory_imem_response_get[18]
 port 184 nsew signal output
-rlabel metal2 s 27434 0 27490 800 6 memory_imem_response_get[17]
+rlabel metal2 s 27618 0 27674 800 6 memory_imem_response_get[19]
 port 185 nsew signal output
-rlabel metal2 s 28722 0 28778 800 6 memory_imem_response_get[18]
+rlabel metal2 s 5354 0 5410 800 6 memory_imem_response_get[1]
 port 186 nsew signal output
-rlabel metal2 s 30102 0 30158 800 6 memory_imem_response_get[19]
+rlabel metal2 s 28906 0 28962 800 6 memory_imem_response_get[20]
 port 187 nsew signal output
-rlabel metal2 s 5814 0 5870 800 6 memory_imem_response_get[1]
+rlabel metal2 s 30102 0 30158 800 6 memory_imem_response_get[21]
 port 188 nsew signal output
-rlabel metal2 s 31482 0 31538 800 6 memory_imem_response_get[20]
+rlabel metal2 s 31390 0 31446 800 6 memory_imem_response_get[22]
 port 189 nsew signal output
-rlabel metal2 s 32770 0 32826 800 6 memory_imem_response_get[21]
+rlabel metal2 s 32586 0 32642 800 6 memory_imem_response_get[23]
 port 190 nsew signal output
-rlabel metal2 s 34150 0 34206 800 6 memory_imem_response_get[22]
+rlabel metal2 s 33874 0 33930 800 6 memory_imem_response_get[24]
 port 191 nsew signal output
-rlabel metal2 s 35530 0 35586 800 6 memory_imem_response_get[23]
+rlabel metal2 s 35070 0 35126 800 6 memory_imem_response_get[25]
 port 192 nsew signal output
-rlabel metal2 s 36910 0 36966 800 6 memory_imem_response_get[24]
+rlabel metal2 s 36358 0 36414 800 6 memory_imem_response_get[26]
 port 193 nsew signal output
-rlabel metal2 s 38198 0 38254 800 6 memory_imem_response_get[25]
+rlabel metal2 s 37554 0 37610 800 6 memory_imem_response_get[27]
 port 194 nsew signal output
-rlabel metal2 s 39578 0 39634 800 6 memory_imem_response_get[26]
+rlabel metal2 s 38842 0 38898 800 6 memory_imem_response_get[28]
 port 195 nsew signal output
-rlabel metal2 s 40958 0 41014 800 6 memory_imem_response_get[27]
+rlabel metal2 s 40038 0 40094 800 6 memory_imem_response_get[29]
 port 196 nsew signal output
-rlabel metal2 s 42246 0 42302 800 6 memory_imem_response_get[28]
+rlabel metal2 s 6550 0 6606 800 6 memory_imem_response_get[2]
 port 197 nsew signal output
-rlabel metal2 s 43626 0 43682 800 6 memory_imem_response_get[29]
+rlabel metal2 s 41326 0 41382 800 6 memory_imem_response_get[30]
 port 198 nsew signal output
-rlabel metal2 s 7194 0 7250 800 6 memory_imem_response_get[2]
+rlabel metal2 s 42522 0 42578 800 6 memory_imem_response_get[31]
 port 199 nsew signal output
-rlabel metal2 s 45006 0 45062 800 6 memory_imem_response_get[30]
+rlabel metal2 s 7838 0 7894 800 6 memory_imem_response_get[3]
 port 200 nsew signal output
-rlabel metal2 s 46294 0 46350 800 6 memory_imem_response_get[31]
+rlabel metal2 s 9034 0 9090 800 6 memory_imem_response_get[4]
 port 201 nsew signal output
-rlabel metal2 s 8482 0 8538 800 6 memory_imem_response_get[3]
+rlabel metal2 s 10322 0 10378 800 6 memory_imem_response_get[5]
 port 202 nsew signal output
-rlabel metal2 s 9862 0 9918 800 6 memory_imem_response_get[4]
+rlabel metal2 s 11518 0 11574 800 6 memory_imem_response_get[6]
 port 203 nsew signal output
-rlabel metal2 s 11242 0 11298 800 6 memory_imem_response_get[5]
+rlabel metal2 s 12806 0 12862 800 6 memory_imem_response_get[7]
 port 204 nsew signal output
-rlabel metal2 s 12530 0 12586 800 6 memory_imem_response_get[6]
+rlabel metal2 s 14002 0 14058 800 6 memory_imem_response_get[8]
 port 205 nsew signal output
-rlabel metal2 s 13910 0 13966 800 6 memory_imem_response_get[7]
+rlabel metal2 s 15290 0 15346 800 6 memory_imem_response_get[9]
 port 206 nsew signal output
-rlabel metal2 s 15290 0 15346 800 6 memory_imem_response_get[8]
-port 207 nsew signal output
-rlabel metal2 s 16578 0 16634 800 6 memory_imem_response_get[9]
-port 208 nsew signal output
+rlabel metal4 s 4208 2128 4528 63696 6 vccd1
+port 207 nsew power input
+rlabel metal4 s 34928 2128 35248 63696 6 vccd1
+port 207 nsew power input
+rlabel metal4 s 19568 2128 19888 63696 6 vssd1
+port 208 nsew ground input
+rlabel metal4 s 50288 2128 50608 63696 6 vssd1
+port 208 nsew ground input
 << properties >>
-string FIXED_BBOX 0 0 69563 71707
+string FIXED_BBOX 0 0 63848 65992
 string LEFclass BLOCK
 string LEFview TRUE
-string GDS_END 20333678
+string GDS_END 11871826
 string GDS_FILE /home/q3k/sky130/qf105/openlane/mkQF100Memory/runs/mkQF100Memory/results/finishing/mkQF100Memory.magic.gds
-string GDS_START 1520290
+string GDS_START 985288
 << end >>
 

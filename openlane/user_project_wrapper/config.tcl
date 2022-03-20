@@ -103,3 +103,10 @@ set ::env(DIODE_INSERTION_STRATEGY) 4
 set ::env(CLOCK_PORT)   "wb_clk_i"
 set ::env(CLOCK_NET)    "wb_clk_i"
 set ::env(CLOCK_PERIOD) "30"
+
+set ::env(DECAP_CELL) "\
+	sky130_fd_sc_hd__decap_3 \
+	sky130_fd_sc_hd__decap_4 \
+	sky130_fd_sc_hd__decap_6 \
+	sky130_fd_sc_hd__decap_8 \
+	sky130_ef_sc_hd__decap_12"

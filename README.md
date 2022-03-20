@@ -28,6 +28,5 @@ To update the bundle from qfc:
 
     $ cd qfc
     $ bazel build //boards/qf100
-    $ cp bazel-bin/boards/qf100/qf100/*v ../qf105/verilog/rtl/
+    $ cp bazel-bin/boards/qf100/qf100/*v ../verilog/rtl/
 
-You will then have to manually edit mkQF105.v to add power pin passing (gated behind ifdef) to all hard macro instantiations (TODO: automate this).
