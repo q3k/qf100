@@ -18,11 +18,11 @@ set ::env(STD_CELL_LIBRARY) "sky130_fd_sc_hd"
 
 set script_dir [file dirname [file normalize [info script]]]
 
-set ::env(DESIGN_NAME) mkQF100Fabric
+set ::env(DESIGN_NAME) mkLanaiFrontend
 
 set ::env(VERILOG_FILES) "\
 	$::env(CARAVEL_ROOT)/verilog/rtl/defines.v \
-	$script_dir/../../verilog/rtl/mkQF100Fabric.v"
+	$script_dir/../../verilog/rtl/mkLanaiFrontend.v"
 
 set ::env(DESIGN_IS_CORE) 0
 
@@ -30,11 +30,11 @@ set ::env(CLOCK_PORT) "CLK"
 set ::env(CLOCK_NET) "CLK"
 set ::env(CLOCK_PERIOD) "20"
 
-set ::env(FP_SIZING) absolute
-set ::env(DIE_AREA) "0 0 800 300"
+#set ::env(FP_SIZING) absolute
+#set ::env(DIE_AREA) "0 0 500 300"
 
-#set ::env(FP_SIZING) relative
-#set ::env(FP_CORE_UTIL) "30"
+set ::env(FP_SIZING) relative
+set ::env(FP_CORE_UTIL) "30"
 
 set ::env(FP_PIN_ORDER_CFG) $script_dir/pin_order.cfg
 
@@ -57,7 +57,7 @@ set ::env(RT_MAX_LAYER) {met4}
 set ::env(VDD_NETS) [list {vccd1}]
 set ::env(GND_NETS) [list {vssd1}]
 
-set ::env(DIODE_INSERTION_STRATEGY) 2 
-#set ::env(GLB_RT_MAX_DIODE_INS_ITERS) 2
+set ::env(DIODE_INSERTION_STRATEGY) 4 
+set ::env(GLB_RT_MAX_DIODE_INS_ITERS) 10
 # If you're going to use multiple power domains, then disable cvc run.
 set ::env(RUN_CVC) 1

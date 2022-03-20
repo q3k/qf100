@@ -36,6 +36,7 @@ set ::env(DESIGN_NAME) user_project_wrapper
 set ::env(VERILOG_FILES) "\
 	$::env(CARAVEL_ROOT)/verilog/rtl/defines.v \
 	$script_dir/../../verilog/rtl/user_project_wrapper.v \
+	$script_dir/../../verilog/rtl/sky130_sram_2kbyte_1rw1r_32x512_8_wrapper.v \
 	$script_dir/../../verilog/rtl/mkQF105.v"
 
 ## Clock configurations
@@ -55,24 +56,33 @@ set ::env(MACRO_PLACEMENT_CFG) $script_dir/macro.cfg
 ### Black-box verilog and views
 set ::env(VERILOG_FILES_BLACKBOX) "\
 	$::env(CARAVEL_ROOT)/verilog/rtl/defines.v \
+        $::env(PDK_ROOT)/sky130A/libs.ref/sky130_sram_macros/verilog/sky130_sram_2kbyte_1rw1r_32x512_8.v \
 	$script_dir/../../verilog/rtl/mkLanaiCPU.v \
+	$script_dir/../../verilog/rtl/mkLanaiFrontend.v \
 	$script_dir/../../verilog/rtl/mkQF100Fabric.v \
-	$script_dir/../../verilog/rtl/mkQF100Memory.v \
+	$script_dir/../../verilog/rtl/mkQF100FlashController.v \
 	$script_dir/../../verilog/rtl/mkQF100GPIO.v \
+	$script_dir/../../verilog/rtl/mkQF100KSC.v \
 	$script_dir/../../verilog/rtl/mkQF100SPI.v"
 
 set ::env(EXTRA_LEFS) "\
+	$::env(PDK_ROOT)/sky130A/libs.ref/sky130_sram_macros/lef/sky130_sram_2kbyte_1rw1r_32x512_8.lef \
 	$script_dir/../../lef/mkLanaiCPU.lef \
+	$script_dir/../../lef/mkLanaiFrontend.lef \
 	$script_dir/../../lef/mkQF100Fabric.lef \
-	$script_dir/../../lef/mkQF100Memory.lef \
+	$script_dir/../../lef/mkQF100FlashController.lef \
 	$script_dir/../../lef/mkQF100GPIO.lef \
+	$script_dir/../../lef/mkQF100KSC.lef \
 	$script_dir/../../lef/mkQF100SPI.lef"
 
 set ::env(EXTRA_GDS_FILES) "\
+	$::env(PDK_ROOT)/sky130A/libs.ref/sky130_sram_macros/gds/sky130_sram_2kbyte_1rw1r_32x512_8.gds \
 	$script_dir/../../gds/mkLanaiCPU.gds \
+	$script_dir/../../gds/mkLanaiFrontend.gds \
 	$script_dir/../../gds/mkQF100Fabric.gds \
-	$script_dir/../../gds/mkQF100Memory.gds \
+	$script_dir/../../gds/mkQF100FlashController.gds \
 	$script_dir/../../gds/mkQF100GPIO.gds \
+	$script_dir/../../gds/mkQF100KSC.gds \
 	$script_dir/../../gds/mkQF100SPI.gds"
 
 # set ::env(GLB_RT_MAXLAYER) 5
@@ -82,7 +92,7 @@ set ::env(RT_MAX_LAYER) {met4}
 # any issue with pdn connections will be flagged with LVS so it is not a critical check.
 set ::env(FP_PDN_CHECK_NODES) 0
 
-set ::env(PL_TARGET_DENSITY) "0.10"
+set ::env(PL_TARGET_DENSITY) "0.05"
 
 # The following is because there are no std cells in the example wrapper project.
 #set ::env(SYNTH_TOP_LEVEL) 1
@@ -102,7 +112,7 @@ set ::env(DIODE_INSERTION_STRATEGY) 4
 
 set ::env(CLOCK_PORT)   "wb_clk_i"
 set ::env(CLOCK_NET)    "wb_clk_i"
-set ::env(CLOCK_PERIOD) "30"
+set ::env(CLOCK_PERIOD) "20"
 
 set ::env(DECAP_CELL) "\
 	sky130_fd_sc_hd__decap_3 \

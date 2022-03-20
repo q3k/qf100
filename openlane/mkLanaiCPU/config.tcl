@@ -26,14 +26,14 @@ set ::env(VERILOG_FILES) "\
 
 set ::env(CLOCK_PORT) "CLK"
 set ::env(CLOCK_NET) "CLK"
-set ::env(CLOCK_PERIOD) "40"
+set ::env(CLOCK_PERIOD) "25"
 set ::env(CLOCK_BUFFER_FANOUT) "8"
 
 set ::env(CTS_CLK_BUFFER_LIST) "sky130_fd_sc_hd__clkbuf_4 sky130_fd_sc_hd__clkbuf_8"
 set ::env(CTS_SINK_CLUSTERING_SIZE) "16"
 
 set ::env(FP_SIZING) relative
-set ::env(FP_CORE_UTIL) "25"
+set ::env(FP_CORE_UTIL) "30"
 set ::env(FP_PIN_ORDER_CFG) $script_dir/pin_order.cfg
 set ::env(FP_PDN_CORE_RING) 0
 
@@ -41,7 +41,7 @@ set ::env(SYNTH_MAX_FANOUT) 4
 set ::env(SYNTH_STRATEGY) "AREA 0"
 
 set ::env(PL_BASIC_PLACEMENT) 0
-set ::env(PL_TARGET_DENSITY) 0.27
+set ::env(PL_TARGET_DENSITY) 0.35
 set ::env(PL_TIME_DRIVEN) 1
 #set ::env(PL_ROUTABILITY_DRIVEN) 1
 set ::env(PL_RESIZER_DESIGN_OPTIMIZATIONS) "1"
