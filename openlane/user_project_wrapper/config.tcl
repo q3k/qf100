@@ -120,3 +120,13 @@ set ::env(DECAP_CELL) "\
 	sky130_fd_sc_hd__decap_6 \
 	sky130_fd_sc_hd__decap_8 \
 	sky130_ef_sc_hd__decap_12"
+
+
+# save some time
+set ::env(RUN_KLAYOUT_XOR) 0
+set ::env(RUN_KLAYOUT_DRC) 0
+# no point in running DRC with magic once openram is in because it will find 3M issues
+# try to turn off all DRC checking so the flow completes and use precheck for DRC instead.
+set ::env(MAGIC_DRC_USE_GDS) 0
+set ::env(RUN_MAGIC_DRC) 0
+set ::env(QUIT_ON_MAGIC_DRC) 0
