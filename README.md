@@ -5,10 +5,13 @@ The QF105 System-on-Chip is an OpenMPW5 tapeout of the QF100 System-on-Chip fami
 The QF100 System-on-Chip family is a simple, microcontroller-style system comprised of the following:
 
  1. A 3-stage, in-order 32-bit Lanai core
- 2. DFF-based RAM consisting of 1024 32-bit words (4KB)
+ 2. 2KB of SRAM
  3. A Wishbone interconnect/fabric
  4. An SPI controller
  5. A GPIO controller
+ 6. A simple timer
+
+Notably absent are: an interrupt system and a debug interface.
 
 <img src="https://object.ceph-eu.hswaw.net/q3k-personal/e1a5e381b78e7aaed10e88473902ae9adb624aaf87846746058479aaa5e6ced1.jpg" width="300">
 
