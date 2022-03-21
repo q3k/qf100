@@ -6,10 +6,11 @@ The QF100 System-on-Chip family is a simple, microcontroller-style system compri
 
  1. A 3-stage, in-order 32-bit Lanai core
  2. 2KB of SRAM
- 3. A Wishbone interconnect/fabric
- 4. An SPI controller
- 5. A GPIO controller
- 6. A simple timer
+ 3. An SPI flash memory controller with 1024kb of instruction/data cache
+ 3. A Wishbone interconnect/fabric containing:
+   1. An SPI controller
+   2. A GPIO controller
+   3. A simple timer
 
 Notably absent are: an interrupt system and a debug interface.
 
