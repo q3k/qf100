@@ -10,7 +10,7 @@ The QF100 System-on-Chip family is a simple, microcontroller-style system compri
  4. An SPI controller
  5. A GPIO controller
 
-<img src="https://object.ceph-eu.hswaw.net/q3k-personal/bb3aa61f860cb55ffbf6447d1dfef52042bdeaa7ba2878203ce096bf02bcfd74.png" width="300">
+<img src="https://object.ceph-eu.hswaw.net/q3k-personal/e1a5e381b78e7aaed10e88473902ae9adb624aaf87846746058479aaa5e6ced1.jpg" width="300">
 
 ## Lanai
 
