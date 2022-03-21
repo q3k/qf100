@@ -121,6 +121,11 @@ set ::env(DECAP_CELL) "\
 	sky130_fd_sc_hd__decap_8 \
 	sky130_ef_sc_hd__decap_12"
 
+# obstruct openram block, otherwise DRC fails?
+set ::env(GLB_RT_OBS)  "met1 500 2800 1170.78 3199.26,
+       met2 500 2800 1170.78 3199.26,
+       met3 500 2800 1170.78 3199.26,
+       met4 500 2800 1170.78 3199.26"
 
 # save some time
 set ::env(RUN_KLAYOUT_XOR) 0
